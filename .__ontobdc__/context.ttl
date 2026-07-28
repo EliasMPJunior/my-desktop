@@ -1,0 +1,10 @@
+@prefix : <urn:ontobdc:context/> .
+@prefix obdc: <http://ontobdc.org/ontology/domain/ns.ttl#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+:CurrentContext a obdc:ExecutionContext,
+        owl:NamedIndividual ;
+    obdc:containerPath "250k-2609-a-2709" ;
+    obdc:contextLanguage "en" ;
+    obdc:create "250k-2609-a-2709" ;
+    obdc:projectRootLocation <file:///workspace/scratch/308983dca508/my-desktop> .
