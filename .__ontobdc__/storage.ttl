@@ -17,3 +17,11 @@
     ct:creationDate "2026-07-28T20:48:39.714158+00:00"^^xsd:dateTime ;
     ct:description "Local storage container at Storage Container: 250k-2609-a-2709"@en ;
     prov:atLocation <file:///workspace/scratch/308983dca508/my-desktop/250k-2609-a-2709> .
+
+<urn:ontobdc:storage/local/strategic-planning> a obdc:DataContainer ;
+    dcterms:identifier "urn:ontobdc:storage/local/strategic-planning" ;
+    dcterms:title "Storage Container: strategic-planning"@en ;
+    ct:creationDate "2026-07-29T00:07:51.756363+00:00"^^xsd:dateTime ;
+    ct:description "Local storage container at Storage Container: strategic-planning"@en ;
+    prov:atLocation <file:///workspace/scratch/308983dca508/my-desktop/strategic-planning> .
+
