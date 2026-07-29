@@ -18,6 +18,13 @@
     ct:description "Local storage container at Storage Container: 250k-2609-a-2709"@en ;
     prov:atLocation <file:///workspace/scratch/308983dca508/my-desktop/250k-2609-a-2709> .
 
+<urn:ontobdc:storage/local/brasidata> a obdc:DataContainer ;
+    dcterms:identifier "urn:ontobdc:storage/local/brasidata" ;
+    dcterms:title "Storage Container: brasidata"@en ;
+    ct:creationDate "2026-07-29T00:58:55.373173+00:00"^^xsd:dateTime ;
+    ct:description "Local storage container at Storage Container: brasidata"@en ;
+    prov:atLocation <file:///workspace/scratch/308983dca508/my-desktop/brasidata> .
+
 <urn:ontobdc:storage/local/strategic-planning> a obdc:DataContainer ;
     dcterms:identifier "urn:ontobdc:storage/local/strategic-planning" ;
     dcterms:title "Storage Container: strategic-planning"@en ;
