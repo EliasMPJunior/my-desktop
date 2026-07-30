@@ -1,0 +1,41 @@
+{
+  "name": "ontobdc_container",
+  "resources": [
+    {
+      "dialect": {
+        "excel": {
+          "sheet": "WebLink"
+        }
+      },
+      "format": "xlsx",
+      "mediatype": "application/vnd.ms-excel",
+      "name": "web_link",
+      "path": "../payload/document/web_link.xlsx",
+      "schema": {
+        "fields": [
+          {
+            "name": "GlobalId",
+            "type": "string"
+          },
+          {
+            "name": "Name",
+            "type": "string"
+          },
+          {
+            "name": "Description",
+            "type": "string"
+          },
+          {
+            "name": "Url",
+            "type": "string"
+          }
+        ],
+        "primaryKey": [
+          "GlobalId"
+        ]
+      },
+      "scheme": "file",
+      "type": "table"
+    }
+  ]
+}
