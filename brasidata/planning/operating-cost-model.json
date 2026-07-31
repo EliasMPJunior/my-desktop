@@ -1,0 +1,65 @@
+{
+  "pricingModel": {
+    "salaryBenchmark": {
+      "currency": "BRL",
+      "baseMonthlySalary": 10000.00,
+      "monthlyBenefits": 2000.00,
+      "monthlyHealthPlan": 2100.00,
+      "monthlyOperatingExpenses": 5000.00,
+      "multipliers": {
+        "baseSalaryMonths": 12,
+        "benefitMonths": 12,
+        "healthPlanMonths": 12,
+        "operatingExpenseMonths": 12,
+        "vacationBonusMultiplier": 0.3333333333,
+        "thirteenthSalaryMultiplier": 1
+      },
+      "calculation": {
+        "annualBaseSalary": {
+          "formula": "10000.00 * 12",
+          "value": 120000.00
+        },
+        "annualBenefits": {
+          "formula": "2000.00 * 12",
+          "value": 24000.00
+        },
+        "annualHealthPlan": {
+          "formula": "2100.00 * 12",
+          "value": 25200.00
+        },
+        "annualOperatingExpenses": {
+          "formula": "5000.00 * 12",
+          "value": 60000.00
+        },
+        "vacationBonus": {
+          "formula": "10000.00 / 3",
+          "value": 3333.33
+        },
+        "thirteenthSalary": {
+          "formula": "10000.00 * 1",
+          "value": 10000.00
+        }
+      },
+      "annualCost": {
+        "formula": "120000.00 + 24000.00 + 25200.00 + 60000.00 + 3333.33 + 10000.00",
+        "value": 242533.33
+      },
+      "revenueAllocation": {
+        "annualCostFraction": {
+          "numerator": 2,
+          "denominator": 3,
+          "decimalValue": 0.6666666667
+        },
+        "totalAmount": {
+          "formula": "annualCost / (2 / 3)",
+          "value": 363800.00
+        },
+        "remainingFractionAmount": {
+          "fraction": "1/3",
+          "formula": "totalAmount - annualCost",
+          "value": 121266.67
+        }
+      }
+    }
+  }
+}

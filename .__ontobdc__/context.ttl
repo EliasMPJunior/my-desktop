@@ -1,0 +1,13 @@
+@prefix : <urn:ontobdc:context/> .
+@prefix obdc: <http://ontobdc.org/ontology/domain/ns.ttl#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+:CurrentContext a obdc:ExecutionContext,
+        owl:NamedIndividual ;
+    obdc:containerId "urn:ontobdc:storage/local/strategic-planning" ;
+    obdc:containerPath "/workspace/scratch/308983dca508/my-desktop/strategic-planning" ;
+    obdc:contextLanguage "en" ;
+    obdc:create "R$250k Set26-Set27" ;
+    obdc:entity "WorkStream" ;
+    obdc:projectRootLocation <file:///workspace/scratch/308983dca508/my-desktop> .
+

@@ -1,0 +1,65 @@
+{
+  "name": "ontobdc_container",
+  "resources": [
+    {
+      "dialect": {
+        "excel": {
+          "sheet": "WorkStream"
+        }
+      },
+      "format": "xlsx",
+      "mediatype": "application/vnd.ms-excel",
+      "name": "work_stream",
+      "path": "../payload/document/workstreams.xlsx",
+      "schema": {
+        "fields": [
+          {
+            "name": "GlobalId",
+            "type": "string"
+          },
+          {
+            "name": "Description",
+            "type": "string"
+          },
+          {
+            "name": "Name",
+            "type": "string"
+          },
+          {
+            "name": "What",
+            "type": "string"
+          },
+          {
+            "name": "Why",
+            "type": "string"
+          },
+          {
+            "name": "Who",
+            "type": "string"
+          },
+          {
+            "name": "Where",
+            "type": "string"
+          },
+          {
+            "name": "When",
+            "type": "string"
+          },
+          {
+            "name": "How",
+            "type": "string"
+          },
+          {
+            "name": "HowMuch",
+            "type": "string"
+          }
+        ],
+        "primaryKey": [
+          "GlobalId"
+        ]
+      },
+      "scheme": "file",
+      "type": "table"
+    }
+  ]
+}
