@@ -5,7 +5,7 @@ import re
 import sys
 from datetime import datetime
 from pathlib import Path
-from typing import Any, Dict, List, cast
+from typing import Any, Callable, Dict, List, cast
 
 try:
     import yaml
@@ -17,6 +17,12 @@ except ImportError as exc:
         f"Missing {missing}. Install dependencies with: "
         "python -m pip install jinja2 pyyaml"
     ) from exc
+
+from godfile import (
+    ProjectInformationError,
+    count_indexed_files,
+    project_path_from_ontology,
+)
 
 ROOT = Path(__file__).resolve().parent
 TEMPLATE_DIR = ROOT / "template"
@@ -74,6 +80,52 @@ def generation_date() -> str:
     return f"{current.day} de {MONTHS_PT_BR[current.month]} de {current.year}"
 
 
+def generated_project_value(
+    label: str,
+    resolver: Callable[[Path], Any],
+) -> Any:
+    try:
+        return resolver(ROOT)
+    except ProjectInformationError as exc:
+        print(f"Warning: {label}: {exc}", file=sys.stderr)
+        return "Não disponível"
+
+
+def enrich_project_information(raw_data: Dict[str, Any]) -> None:
+    project = raw_data.setdefault("project", {})
+    raw_fields = project.setdefault("fields", [])
+    if not isinstance(raw_fields, list):
+        raise TypeError("project.fields must be a list")
+
+    generated_labels = {"Path", "Arquivos indexados"}
+    fields = [
+        field
+        for field in raw_fields
+        if not (
+            isinstance(field, dict)
+            and field.get("label") in generated_labels
+        )
+    ]
+
+    project_path = generated_project_value(
+        "project path",
+        project_path_from_ontology,
+    )
+    indexed_files = generated_project_value(
+        "indexed files",
+        count_indexed_files,
+    )
+
+    fields.extend(
+        [
+            {"label": "Path", "value": project_path},
+            {"label": "Arquivos indexados", "value": indexed_files},
+        ]
+    )
+    project["fields"] = fields
+    project["path"] = project_path
+
+
 def main() -> int:
     if not VIEW_FILE.is_file():
         print(f"View not found: {VIEW_FILE}", file=sys.stderr)
@@ -83,6 +135,7 @@ def main() -> int:
         Dict[str, Any],
         yaml.safe_load(VIEW_FILE.read_text(encoding="utf-8")) or {},
     )
+    enrich_project_information(raw_data)
     raw_data["generation"] = {"date": generation_date()}
     data: Dict[str, Any] = prepare_view_data(raw_data)
     env = Environment(
