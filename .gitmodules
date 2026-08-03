@@ -1,0 +1,12 @@
+[submodule "elias-web"]
+	path = elias-web
+	url = https://github.com/EliasMPJunior/eliasmpjunior.github.io.git
+[submodule "ontobdc"]
+	path = ontobdc
+	url = https://github.com/EliasMPJunior/ontobdc-wip.git
+[submodule "olivia-15-web"]
+	path = olivia-15-web
+	url = https://github.com/EliasMPJunior/olivia-15-web.git
+[submodule "dev"]
+	path = dev
+	url = git@github.com:EliasMPJunior/ontobdc-dev.git

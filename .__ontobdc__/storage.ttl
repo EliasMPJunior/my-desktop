@@ -25,6 +25,13 @@
     ct:description "Local storage container at Storage Container: brasidata"@en ;
     prov:atLocation <file:///workspace/scratch/308983dca508/my-desktop/brasidata> .
 
+<urn:ontobdc:storage/local/elias-web> a obdc:DataContainer ;
+    dcterms:identifier "urn:ontobdc:storage/local/elias-web" ;
+    dcterms:title "Storage Container: elias-web"@en ;
+    ct:creationDate "2026-08-02T16:38:39.936106+00:00"^^xsd:dateTime ;
+    ct:description "Local storage container at Storage Container: elias-web"@en ;
+    prov:atLocation <file:///Users/eliasmpjunior/dev/bim/my-desktop/elias-web> .
+
 <urn:ontobdc:storage/local/social> a obdc:DataContainer ;
     dcterms:identifier "urn:ontobdc:storage/local/social" ;
     dcterms:title "Storage Container: social"@en ;

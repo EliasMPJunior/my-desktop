@@ -5,9 +5,9 @@
 :CurrentContext a obdc:ExecutionContext,
         owl:NamedIndividual ;
     obdc:containerId "urn:ontobdc:storage/local/strategic-planning" ;
-    obdc:containerPath "/workspace/scratch/308983dca508/my-desktop/strategic-planning" ;
+    obdc:containerPath "." ;
     obdc:contextLanguage "en" ;
-    obdc:create "R$250k Set26-Set27" ;
+    obdc:create "." ;
     obdc:entity "WorkStream" ;
     obdc:projectRootLocation <file:///workspace/scratch/308983dca508/my-desktop> .
 
