@@ -66,7 +66,9 @@
         <article class="view-panel" data-card="project-information-card">
           <header class="view-panel-head">
             <h2 class="view-panel-title">Project Information</h2>
-            <p class="view-panel-copy"><span class="view-panel-copy-diamond">◆</span>segunda-feira, 27 de julho de 2026</p>
+            <p class="view-panel-copy" id="project-current-date">
+              <span class="view-panel-copy-diamond">◆</span>Página gerada em 3 de agosto de 2026.
+            </p>
           </header>
           <div class="view-panel-body">
             <dl class="metadata-list">
@@ -108,6 +110,35 @@
   "name": "Real Estate Brazil (Official)-Obras - Exp LabSea2025",
   "path": "./"
 };
+  </script>
+  <script>
+    (function () {
+      const dateElement = document.getElementById("project-current-date");
+      if (!dateElement) {
+        return;
+      }
+
+      try {
+        const timeZone = Intl.DateTimeFormat().resolvedOptions().timeZone;
+        const formattedDate = new Intl.DateTimeFormat("pt-BR", {
+          dateStyle: "full",
+          timeStyle: "short",
+          timeZone,
+        }).format(new Date());
+
+        dateElement.innerHTML = "";
+        const diamond = document.createElement("span");
+        diamond.className = "view-panel-copy-diamond";
+        diamond.textContent = "◆";
+        dateElement.appendChild(diamond);
+        dateElement.appendChild(document.createTextNode(formattedDate));
+        if (timeZone) {
+          dateElement.title = `Fuso horário: ${timeZone}`;
+        }
+      } catch (error) {
+        console.warn("Não foi possível obter a data local do usuário.", error);
+      }
+    }());
   </script>
   <script defer src="https://cdn.jsdelivr.net/pyodide/v0.27.2/full/pyodide.js"></script>
   <script defer src="./.__ontobdc__/asset/infobim-view/js/pyodide_bootstrap.js"></script>
