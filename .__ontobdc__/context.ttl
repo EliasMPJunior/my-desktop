@@ -5,9 +5,12 @@
 :CurrentContext a obdc:ExecutionContext,
         owl:NamedIndividual ;
     obdc:containerId "urn:ontobdc:storage/local/strategic-planning" ;
-    obdc:containerPath "." ;
+    obdc:containerPath "/Users/eliasmpjunior/dev/bim/my-desktop/elias-web" ;
     obdc:contextLanguage "en" ;
     obdc:create "." ;
     obdc:entity "WorkStream" ;
-    obdc:projectRootLocation <file:///workspace/scratch/308983dca508/my-desktop> .
+    obdc:language "en" ;
+    obdc:projectRootLocation <file:///workspace/scratch/308983dca508/my-desktop> ;
+    obdc:representation "html" ;
+    obdc:viewType "standard" .
 
