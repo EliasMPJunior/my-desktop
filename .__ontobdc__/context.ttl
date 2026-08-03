@@ -5,7 +5,7 @@
 :CurrentContext a obdc:ExecutionContext,
         owl:NamedIndividual ;
     obdc:containerId "urn:ontobdc:storage/local/strategic-planning" ;
-    obdc:containerPath "/Users/eliasmpjunior/dev/bim/my-desktop/elias-web" ;
+    obdc:containerPath "C:\\workspace\\scratch\\308983dca508\\my-desktop\\strategic-planning" ;
     obdc:contextLanguage "en" ;
     obdc:create "." ;
     obdc:entity "WorkStream" ;
