@@ -26,6 +26,10 @@
       grid-column: span 4;
     }
 
+    .view-column-main {
+      grid-column: span 8;
+    }
+
     .view-topbar > *,
     .view-grid > *,
     .view-brand-copy,
@@ -73,12 +77,145 @@
       letter-spacing: -0.05em;
     }
 
+    .project-tabs-card {
+      min-height: 720px;
+    }
+
+    .project-tabs-shell {
+      display: grid;
+      grid-template-rows: auto minmax(0, 1fr);
+      min-height: 620px;
+    }
+
+    .project-tabs-nav {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      min-width: 0;
+      padding: 12px 18px 0;
+      overflow-x: auto;
+      border-bottom: 1px solid var(--line);
+      scrollbar-width: thin;
+    }
+
+    .project-tab {
+      position: relative;
+      display: inline-flex;
+      align-items: center;
+      gap: 9px;
+      flex: 0 0 auto;
+      appearance: none;
+      min-height: 48px;
+      padding: 10px 14px 13px;
+      border: 0;
+      border-radius: 14px 14px 0 0;
+      color: var(--text-soft);
+      background: transparent;
+      font: inherit;
+      font-size: 0.88rem;
+      font-weight: 800;
+      cursor: pointer;
+      transition:
+        color 160ms ease,
+        background 160ms ease;
+    }
+
+    .project-tab::after {
+      content: "";
+      position: absolute;
+      right: 10px;
+      bottom: -1px;
+      left: 10px;
+      height: 2px;
+      border-radius: 999px;
+      background: transparent;
+    }
+
+    .project-tab:hover {
+      color: var(--text);
+      background: rgba(255, 255, 255, 0.03);
+    }
+
+    .project-tab:focus-visible {
+      outline: 2px solid var(--accent-strong);
+      outline-offset: -2px;
+    }
+
+    .project-tab[aria-selected="true"] {
+      color: var(--accent);
+      background: rgba(103, 232, 249, 0.08);
+    }
+
+    .project-tab[aria-selected="true"]::after {
+      background: linear-gradient(90deg, var(--accent), var(--accent-strong));
+    }
+
+    .project-tab-icon {
+      font-size: 1rem;
+      line-height: 1;
+    }
+
+    .project-tabs-content {
+      min-width: 0;
+      min-height: 0;
+    }
+
+    .project-tab-panel {
+      min-height: 540px;
+      padding: 28px;
+    }
+
+    .project-tab-panel[hidden] {
+      display: none;
+    }
+
+    .project-tab-empty {
+      display: grid;
+      align-content: center;
+      justify-items: center;
+      min-height: 470px;
+      padding: 36px;
+      border: 1px dashed rgba(103, 232, 249, 0.22);
+      border-radius: 22px;
+      background:
+        radial-gradient(circle at center, rgba(103, 232, 249, 0.07), transparent 62%),
+        rgba(255, 255, 255, 0.018);
+      text-align: center;
+    }
+
+    .project-tab-empty-icon {
+      display: grid;
+      place-items: center;
+      width: 68px;
+      height: 68px;
+      margin-bottom: 18px;
+      border: 1px solid rgba(103, 232, 249, 0.22);
+      border-radius: 20px;
+      color: var(--accent);
+      background: rgba(103, 232, 249, 0.08);
+      font-size: 1.8rem;
+    }
+
+    .project-tab-empty h3 {
+      margin: 0;
+      color: var(--text);
+      font-size: clamp(1.35rem, 2vw, 1.8rem);
+    }
+
+    .project-tab-empty p {
+      max-width: 58ch;
+      margin: 10px 0 0;
+      color: var(--text-soft);
+      line-height: 1.7;
+    }
+
     @media (max-width: 1200px) {
       .view-hero-meta {
         grid-template-columns: repeat(2, minmax(0, 1fr));
       }
 
-      .view-column-third {
+      .view-column-third,
+      .view-column-main {
         grid-column: span 6;
       }
 
@@ -89,7 +226,9 @@
 
     @media (max-width: 1050px) {
       .view-topbar-primary,
-      .view-hero-meta {
+      .view-hero-meta,
+      .view-column-third,
+      .view-column-main {
         grid-column: 1 / -1;
       }
 
@@ -103,10 +242,6 @@
     }
 
     @media (max-width: 760px) {
-      .view-column-third {
-        grid-column: 1 / -1;
-      }
-
       .view-hero-meta {
         grid-template-columns: repeat(2, minmax(0, 1fr));
       }
@@ -128,6 +263,21 @@
       .runtime-console {
         max-width: 100%;
         overflow-x: auto;
+      }
+
+      .project-tabs-card,
+      .project-tabs-shell {
+        min-height: 0;
+      }
+
+      .project-tab-panel {
+        min-height: 430px;
+        padding: 18px;
+      }
+
+      .project-tab-empty {
+        min-height: 390px;
+        padding: 24px;
       }
     }
 
@@ -203,6 +353,27 @@
       .runtime-console {
         padding: 12px;
         font-size: 0.76rem;
+      }
+
+      .project-tabs-nav {
+        padding-inline: 10px;
+      }
+
+      .project-tab {
+        min-height: 44px;
+        padding-inline: 11px;
+        font-size: 0.8rem;
+      }
+
+      .project-tab-panel {
+        min-height: 360px;
+        padding: 12px;
+      }
+
+      .project-tab-empty {
+        min-height: 336px;
+        padding: 20px;
+        border-radius: 18px;
       }
     }
   </style>
@@ -284,6 +455,133 @@
           </div>
         </article>
       </div>
+
+      <div class="view-column view-column-main">
+        <article class="view-panel project-tabs-card" data-card="project-tabs-card">
+          <header class="view-panel-head">
+            <h2 class="view-panel-title">Conteúdo do projeto</h2>
+            <p class="view-panel-copy">Navegue pelas categorias de informação disponíveis.</p>
+          </header>
+          <div class="project-tabs-shell">
+            <div
+              class="project-tabs-nav"
+              role="tablist"
+              aria-label="Conteúdo do projeto"
+              data-project-tablist
+            >
+              <button
+                class="project-tab"
+                type="button"
+                id="project-tab-drawings"
+                role="tab"
+                aria-selected="true"
+                aria-controls="project-tab-panel-drawings"
+                tabindex="0"
+                data-tab-id="drawings"
+              >
+                <span class="project-tab-icon" aria-hidden="true">⌗</span>
+                <span>Pranchas</span>
+              </button>
+              <button
+                class="project-tab"
+                type="button"
+                id="project-tab-documents"
+                role="tab"
+                aria-selected="false"
+                aria-controls="project-tab-panel-documents"
+                tabindex="-1"
+                data-tab-id="documents"
+              >
+                <span class="project-tab-icon" aria-hidden="true">▦</span>
+                <span>Documentos</span>
+              </button>
+              <button
+                class="project-tab"
+                type="button"
+                id="project-tab-photos"
+                role="tab"
+                aria-selected="false"
+                aria-controls="project-tab-panel-photos"
+                tabindex="-1"
+                data-tab-id="photos"
+              >
+                <span class="project-tab-icon" aria-hidden="true">◉</span>
+                <span>Fotos</span>
+              </button>
+              <button
+                class="project-tab"
+                type="button"
+                id="project-tab-messages"
+                role="tab"
+                aria-selected="false"
+                aria-controls="project-tab-panel-messages"
+                tabindex="-1"
+                data-tab-id="messages"
+              >
+                <span class="project-tab-icon" aria-hidden="true">✉</span>
+                <span>Mensagens</span>
+              </button>
+            </div>
+            <div class="project-tabs-content">
+              <section
+                class="project-tab-panel"
+                id="project-tab-panel-drawings"
+                role="tabpanel"
+                aria-labelledby="project-tab-drawings"
+                tabindex="0"
+              >
+                <div class="project-tab-empty">
+                  <span class="project-tab-empty-icon" aria-hidden="true">⌗</span>
+                  <h3>Pranchas</h3>
+                  <p>Visualização e navegação das pranchas indexadas.</p>
+                </div>
+              </section>
+              <section
+                class="project-tab-panel"
+                id="project-tab-panel-documents"
+                role="tabpanel"
+                aria-labelledby="project-tab-documents"
+                tabindex="0"
+                hidden
+              >
+                <div class="project-tab-empty">
+                  <span class="project-tab-empty-icon" aria-hidden="true">▦</span>
+                  <h3>Documentos</h3>
+                  <p>Documentos técnicos e administrativos indexados.</p>
+                </div>
+              </section>
+              <section
+                class="project-tab-panel"
+                id="project-tab-panel-photos"
+                role="tabpanel"
+                aria-labelledby="project-tab-photos"
+                tabindex="0"
+                hidden
+              >
+                <div class="project-tab-empty">
+                  <span class="project-tab-empty-icon" aria-hidden="true">◉</span>
+                  <h3>Fotos</h3>
+                  <p>Registros fotográficos vinculados ao projeto.</p>
+                </div>
+              </section>
+              <section
+                class="project-tab-panel"
+                id="project-tab-panel-messages"
+                role="tabpanel"
+                aria-labelledby="project-tab-messages"
+                tabindex="0"
+                hidden
+              >
+                <div class="project-tab-empty">
+                  <span class="project-tab-empty-icon" aria-hidden="true">✉</span>
+                  <h3>Mensagens</h3>
+                  <p>Mensagens e comunicações catalogadas.</p>
+                </div>
+              </section>
+            </div>
+          </div>
+        </article>
+      </div>
     </section>
   </main>
 
@@ -320,6 +618,60 @@
         }
       } catch (error) {
         console.warn("Não foi possível obter a data local do usuário.", error);
+      }
+    }());
+  </script>
+  <script>
+    (function () {
+      const tabList = document.querySelector("[data-project-tablist]");
+      if (!tabList) {
+        return;
+      }
+
+      const tabs = Array.from(tabList.querySelectorAll('[role="tab"]'));
+      const panels = tabs.map((tab) => {
+        const panelId = tab.getAttribute("aria-controls");
+        return panelId ? document.getElementById(panelId) : null;
+      });
+
+      function activateTab(nextIndex, moveFocus) {
+        tabs.forEach((tab, index) => {
+          const isActive = index === nextIndex;
+          tab.setAttribute("aria-selected", String(isActive));
+          tab.setAttribute("tabindex", isActive ? "0" : "-1");
+          if (panels[index]) {
+            panels[index].hidden = !isActive;
+          }
+        });
+
+        if (moveFocus && tabs[nextIndex]) {
+          tabs[nextIndex].focus();
+        }
+      }
+
+      tabs.forEach((tab, index) => {
+        tab.addEventListener("click", () => activateTab(index, false));
+        tab.addEventListener("keydown", (event) => {
+          let nextIndex = index;
+          if (event.key === "ArrowRight") {
+            nextIndex = (index + 1) % tabs.length;
+          } else if (event.key === "ArrowLeft") {
+            nextIndex = (index - 1 + tabs.length) % tabs.length;
+          } else if (event.key === "Home") {
+            nextIndex = 0;
+          } else if (event.key === "End") {
+            nextIndex = tabs.length - 1;
+          } else {
+            return;
+          }
+
+          event.preventDefault();
+          activateTab(nextIndex, true);
+        });
+      });
+
+      if (tabs.length > 0) {
+        activateTab(0, false);
       }
     }());
   </script>
