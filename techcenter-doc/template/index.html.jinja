@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang }}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ site.title }}</title>
+  <link rel="stylesheet" href="./.__ontobdc__/asset/infobim-view/css/project_dashboard.css">
+</head>
+<body>
+  <main class="view-shell">
+    <section class="view-topbar">
+      <div class="view-topbar-primary">
+        <article class="view-hero-card" data-card="hero-card">
+          <div class="view-brand">
+            <img class="view-brand-logo" src="./.__ontobdc__/asset/infobim-view/logo.png" alt="{{ brand.logo_alt }}">
+            <div class="view-brand-copy">
+              <span class="view-eyebrow">{{ brand.label }}</span>
+              <span class="view-eyebrow-meta">{{ project.id }}</span>
+            </div>
+          </div>
+          <h1>{{ project.name }}</h1>
+        </article>
+        <article class="view-menubar-card" data-card="dynamic-menubar-card">
+          <div class="view-menubar-track">
+{% for item in menubar %}
+            <div class="menubar-item">
+              <span class="menubar-item-label">{{ item.label }}</span>
+              <span class="menubar-item-value">{{ item.value }}</span>
+            </div>
+{% endfor %}
+          </div>
+        </article>
+      </div>
+
+      <aside class="view-hero-meta" data-card="mini-card-grid">
+{% for badge in badges %}
+        <div class="view-badge">
+          <span class="view-badge-label">{{ badge.label }}</span>
+          <span class="view-badge-value">{{ badge.value }}</span>
+        </div>
+{% endfor %}
+      </aside>
+    </section>
+
+    <section class="view-grid">
+      <div class="view-column view-column-double">
+        <article class="view-panel" data-card="project-information-card">
+          <header class="view-panel-head">
+            <h2 class="view-panel-title">{{ project.information_title }}</h2>
+            <p class="view-panel-copy" id="project-current-date">
+              <span class="view-panel-copy-diamond">◆</span>{{ project.generated_fallback_prefix }} {{ generation.date }}.
+            </p>
+          </header>
+          <div class="view-panel-body">
+            <dl class="metadata-list">
+{% for field in project.fields %}
+              <div class="metadata-row">
+                <dt>{{ field.label }}</dt>
+                <dd>{{ field.value }}</dd>
+              </div>
+{% endfor %}
+            </dl>
+          </div>
+        </article>
+        <article class="view-panel" data-card="pyodide-runtime-card">
+          <header class="view-panel-head">
+            <h2 class="view-panel-title">{{ runtime.title }}</h2>
+            <p class="view-panel-copy">{{ runtime.description }}</p>
+          </header>
+          <div class="view-panel-body">
+            <div class="runtime-status">
+              <span class="runtime-dot" id="pyodide-status-dot"></span>
+              <strong id="pyodide-status-label">{{ runtime.initial_status }}</strong>
+            </div>
+            <pre class="runtime-console" id="pyodide-console">{{ runtime.initial_console }}</pre>
+          </div>
+        </article>
+      </div>
+
+      <div class="view-column"></div>
+
+      <div class="view-column"></div>
+    </section>
+  </main>
+
+  <script>
+    window.infoBimProjectDashboard = {
+      "projectId": {{ project.id | tojson }},
+      "name": {{ project.name | tojson }},
+      "path": {{ project.path | tojson }}
+    };
+  </script>
+  <script>
+    (function () {
+      const dateElement = document.getElementById("project-current-date");
+      if (!dateElement) {
+        return;
+      }
+
+      try {
+        const timeZone = Intl.DateTimeFormat().resolvedOptions().timeZone;
+        const formattedDate = new Intl.DateTimeFormat({{ site.locale | tojson }}, {
+          dateStyle: "full",
+          timeStyle: "short",
+          timeZone,
+        }).format(new Date());
+
+        dateElement.innerHTML = "";
+        const diamond = document.createElement("span");
+        diamond.className = "view-panel-copy-diamond";
+        diamond.textContent = "◆";
+        dateElement.appendChild(diamond);
+        dateElement.appendChild(document.createTextNode(formattedDate));
+        if (timeZone) {
+          dateElement.title = `Fuso horário: ${timeZone}`;
+        }
+      } catch (error) {
+        console.warn("Não foi possível obter a data local do usuário.", error);
+      }
+    }());
+  </script>
+  <script defer src="https://cdn.jsdelivr.net/pyodide/v0.27.2/full/pyodide.js"></script>
+  <script defer src="./.__ontobdc__/asset/infobim-view/js/pyodide_bootstrap.js"></script>
+</body>
+</html>
