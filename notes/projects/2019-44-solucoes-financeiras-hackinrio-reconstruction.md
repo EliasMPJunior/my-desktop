@@ -1,4 +1,4 @@
-# 44 Soluções Financeiras — reconstrução histórica do projeto apresentado no HackInRio 2019
+# 44 Soluções Financeiras - reconstrução histórica do projeto apresentado no HackInRio 2019
 
 **Data do registro:** 3 de agosto de 2026  
 **Origem:** reconstrução a partir da memória de Elias, complementada pela conversa registrada nesta data  
