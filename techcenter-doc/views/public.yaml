@@ -16,6 +16,30 @@ menu_buttons:
   - {label: "Documentos", icon: "▦", action: "documents"}
 numeric_data:
   - {label: "Documentos", value: 128}
+tabbed_card:
+  title: "Conteúdo do projeto"
+  description: "Navegue pelas categorias de informação disponíveis."
+  tabs:
+    - id: "drawings"
+      label: "Pranchas"
+      icon: "⌗"
+      title: "Pranchas"
+      description: "Visualização e navegação das pranchas indexadas."
+    - id: "documents"
+      label: "Documentos"
+      icon: "▦"
+      title: "Documentos"
+      description: "Documentos técnicos e administrativos indexados."
+    - id: "photos"
+      label: "Fotos"
+      icon: "◉"
+      title: "Fotos"
+      description: "Registros fotográficos vinculados ao projeto."
+    - id: "messages"
+      label: "Mensagens"
+      icon: "✉"
+      title: "Mensagens"
+      description: "Mensagens e comunicações catalogadas."
 runtime:
   title: "Pyodide Runtime"
   description: "Bootstrap do ambiente Python no browser para as proximas etapas do dashboard."
