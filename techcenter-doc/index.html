@@ -6,6 +6,52 @@
   <title>Real Estate Brazil (Official)-Obras - Exp LabSea2025</title>
   <link rel="stylesheet" href="./.__ontobdc__/asset/infobim-view/css/project_dashboard.css">
   <style>
+    .view-topbar,
+    .view-grid {
+      grid-template-columns: repeat(12, minmax(0, 1fr));
+    }
+
+    .view-topbar-primary {
+      grid-column: span 8;
+      min-width: 0;
+    }
+
+    .view-hero-meta {
+      grid-column: span 4;
+      align-self: stretch;
+      min-width: 0;
+    }
+
+    .view-column-third {
+      grid-column: span 4;
+    }
+
+    .view-topbar > *,
+    .view-grid > *,
+    .view-brand-copy,
+    .metadata-row > * {
+      min-width: 0;
+    }
+
+    .view-topbar h1,
+    .view-eyebrow-meta,
+    .metadata-row dd {
+      overflow-wrap: anywhere;
+    }
+
+    .view-menubar-track {
+      overflow-x: auto;
+      scrollbar-width: thin;
+    }
+
+    .menubar-item {
+      flex: 0 0 auto;
+      appearance: none;
+      color: inherit;
+      font: inherit;
+      cursor: pointer;
+    }
+
     .view-badge[data-card="numeric-data-card"] {
       grid-template-rows: auto auto 1fr;
       align-content: stretch;
@@ -20,11 +66,144 @@
       white-space: nowrap;
       word-break: normal;
       overflow-wrap: normal;
-      font-size: clamp(2.6rem, 3.4vw, 3.75rem);
+      font-size: clamp(2.5rem, 3.25vw, 3.75rem);
       font-weight: 900;
       font-variant-numeric: tabular-nums;
       line-height: 1;
       letter-spacing: -0.05em;
+    }
+
+    @media (max-width: 1200px) {
+      .view-hero-meta {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+
+      .view-column-third {
+        grid-column: span 6;
+      }
+
+      .view-topbar h1 {
+        font-size: clamp(2.45rem, 5vw, 4.2rem);
+      }
+    }
+
+    @media (max-width: 1050px) {
+      .view-topbar-primary,
+      .view-hero-meta {
+        grid-column: 1 / -1;
+      }
+
+      .view-hero-meta {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+      }
+
+      .metadata-row {
+        grid-template-columns: minmax(92px, 0.35fr) minmax(0, 1fr);
+      }
+    }
+
+    @media (max-width: 760px) {
+      .view-column-third {
+        grid-column: 1 / -1;
+      }
+
+      .view-hero-meta {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+
+      .view-brand {
+        align-items: flex-start;
+      }
+
+      .view-topbar h1 {
+        font-size: clamp(2.15rem, 10vw, 3.4rem);
+        line-height: 0.98;
+      }
+
+      .metadata-row {
+        grid-template-columns: 1fr;
+        gap: 7px;
+      }
+
+      .runtime-console {
+        max-width: 100%;
+        overflow-x: auto;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .view-shell {
+        padding: 12px;
+      }
+
+      .view-topbar,
+      .view-grid,
+      .view-column {
+        gap: 12px;
+      }
+
+      .view-hero-card,
+      .view-panel,
+      .view-hero-meta {
+        border-radius: 20px;
+      }
+
+      .view-hero-card {
+        padding: 18px;
+      }
+
+      .view-brand {
+        gap: 12px;
+      }
+
+      .view-brand-logo {
+        width: 64px;
+        height: 64px;
+        flex: 0 0 64px;
+      }
+
+      .view-eyebrow {
+        padding: 8px 10px;
+        font-size: 0.68rem;
+      }
+
+      .view-eyebrow-meta {
+        font-size: 0.68rem;
+      }
+
+      .view-topbar h1 {
+        margin-top: 14px;
+        font-size: clamp(1.9rem, 11vw, 2.7rem);
+      }
+
+      .view-menubar-card {
+        padding: 5px 8px;
+        border-radius: 18px;
+      }
+
+      .view-hero-meta {
+        grid-template-columns: 1fr;
+        padding: 14px;
+      }
+
+      .view-badge {
+        aspect-ratio: auto;
+        min-height: 128px;
+      }
+
+      .view-panel-head,
+      .view-panel-body {
+        padding-inline: 16px;
+      }
+
+      .runtime-status {
+        align-items: flex-start;
+      }
+
+      .runtime-console {
+        padding: 12px;
+        font-size: 0.76rem;
+      }
     }
   </style>
 </head>
@@ -49,7 +228,6 @@
               type="button"
               data-action="documents"
               aria-label="Documentos"
-              style="appearance: none; color: inherit; font: inherit; cursor: pointer;"
             >
               <span class="menubar-item-label" aria-hidden="true">▦</span>
               <span class="menubar-item-value">Documentos</span>
@@ -67,7 +245,7 @@
     </section>
 
     <section class="view-grid">
-      <div class="view-column view-column-double">
+      <div class="view-column view-column-third">
         <article class="view-panel" data-card="project-information-card">
           <header class="view-panel-head">
             <h2 class="view-panel-title">Project Information</h2>
@@ -102,10 +280,6 @@
           </div>
         </article>
       </div>
-
-      <div class="view-column"></div>
-
-      <div class="view-column"></div>
     </section>
   </main>
 
