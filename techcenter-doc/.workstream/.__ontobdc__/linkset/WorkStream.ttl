@@ -1,0 +1,226 @@
+@prefix ct: <https://standards.iso.org/iso/21597/-1/ed-1/en/Container#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ls: <https://standards.iso.org/iso/21597/-1/ed-1/en/Linkset#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<urn:infobim:icdd:workstream:link:description> a ls:DirectedBinaryLink ;
+    rdfs:label "Description" ;
+    ls:hasFromLinkElement <urn:infobim:icdd:workstream:element:workbook:description> ;
+    ls:hasToLinkElement <urn:infobim:icdd:workstream:element:facade:description> .
+
+<urn:infobim:icdd:workstream:link:globalid> a ls:DirectedBinaryLink ;
+    rdfs:label "GlobalId" ;
+    ls:hasFromLinkElement <urn:infobim:icdd:workstream:element:workbook:globalid> ;
+    ls:hasToLinkElement <urn:infobim:icdd:workstream:element:facade:globalid> .
+
+<urn:infobim:icdd:workstream:link:how> a ls:DirectedBinaryLink ;
+    rdfs:label "How" ;
+    ls:hasFromLinkElement <urn:infobim:icdd:workstream:element:workbook:how> ;
+    ls:hasToLinkElement <urn:infobim:icdd:workstream:element:facade:how> .
+
+<urn:infobim:icdd:workstream:link:howmuch> a ls:DirectedBinaryLink ;
+    rdfs:label "HowMuch" ;
+    ls:hasFromLinkElement <urn:infobim:icdd:workstream:element:workbook:howmuch> ;
+    ls:hasToLinkElement <urn:infobim:icdd:workstream:element:facade:howmuch> .
+
+<urn:infobim:icdd:workstream:link:name> a ls:DirectedBinaryLink ;
+    rdfs:label "Name" ;
+    ls:hasFromLinkElement <urn:infobim:icdd:workstream:element:workbook:name> ;
+    ls:hasToLinkElement <urn:infobim:icdd:workstream:element:facade:name> .
+
+<urn:infobim:icdd:workstream:link:what> a ls:DirectedBinaryLink ;
+    rdfs:label "What" ;
+    ls:hasFromLinkElement <urn:infobim:icdd:workstream:element:workbook:what> ;
+    ls:hasToLinkElement <urn:infobim:icdd:workstream:element:facade:what> .
+
+<urn:infobim:icdd:workstream:link:when> a ls:DirectedBinaryLink ;
+    rdfs:label "When" ;
+    ls:hasFromLinkElement <urn:infobim:icdd:workstream:element:workbook:when> ;
+    ls:hasToLinkElement <urn:infobim:icdd:workstream:element:facade:when> .
+
+<urn:infobim:icdd:workstream:link:where> a ls:DirectedBinaryLink ;
+    rdfs:label "Where" ;
+    ls:hasFromLinkElement <urn:infobim:icdd:workstream:element:workbook:where> ;
+    ls:hasToLinkElement <urn:infobim:icdd:workstream:element:facade:where> .
+
+<urn:infobim:icdd:workstream:link:who> a ls:DirectedBinaryLink ;
+    rdfs:label "Who" ;
+    ls:hasFromLinkElement <urn:infobim:icdd:workstream:element:workbook:who> ;
+    ls:hasToLinkElement <urn:infobim:icdd:workstream:element:facade:who> .
+
+<urn:infobim:icdd:workstream:link:why> a ls:DirectedBinaryLink ;
+    rdfs:label "Why" ;
+    ls:hasFromLinkElement <urn:infobim:icdd:workstream:element:workbook:why> ;
+    ls:hasToLinkElement <urn:infobim:icdd:workstream:element:facade:why> .
+
+<urn:infobim:icdd:workstream:linkset> a ct:Linkset ;
+    dcterms:title "WorkStream field linkset" ;
+    ct:filename ".__ontobdc__/linkset/WorkStream.ttl" ;
+    ct:filetype "ttl" ;
+    ct:name "WorkStream.ttl" .
+
+<urn:infobim:icdd:workstream:linkset-ontology> a owl:Ontology ;
+    owl:imports <https://standards.iso.org/iso/21597/-1/ed-1/en/Container>,
+        <https://standards.iso.org/iso/21597/-1/ed-1/en/Linkset> .
+
+<urn:infobim:icdd:workstream:element:facade:description> a ls:LinkElement ;
+    ls:hasDocument <urn:infobim:icdd:workstream:document:facade> ;
+    ls:hasIdentifier <urn:infobim:icdd:workstream:identifier:facade:description> .
+
+<urn:infobim:icdd:workstream:element:facade:globalid> a ls:LinkElement ;
+    ls:hasDocument <urn:infobim:icdd:workstream:document:facade> ;
+    ls:hasIdentifier <urn:infobim:icdd:workstream:identifier:facade:globalid> .
+
+<urn:infobim:icdd:workstream:element:facade:how> a ls:LinkElement ;
+    ls:hasDocument <urn:infobim:icdd:workstream:document:facade> ;
+    ls:hasIdentifier <urn:infobim:icdd:workstream:identifier:facade:how> .
+
+<urn:infobim:icdd:workstream:element:facade:howmuch> a ls:LinkElement ;
+    ls:hasDocument <urn:infobim:icdd:workstream:document:facade> ;
+    ls:hasIdentifier <urn:infobim:icdd:workstream:identifier:facade:howmuch> .
+
+<urn:infobim:icdd:workstream:element:facade:name> a ls:LinkElement ;
+    ls:hasDocument <urn:infobim:icdd:workstream:document:facade> ;
+    ls:hasIdentifier <urn:infobim:icdd:workstream:identifier:facade:name> .
+
+<urn:infobim:icdd:workstream:element:facade:what> a ls:LinkElement ;
+    ls:hasDocument <urn:infobim:icdd:workstream:document:facade> ;
+    ls:hasIdentifier <urn:infobim:icdd:workstream:identifier:facade:what> .
+
+<urn:infobim:icdd:workstream:element:facade:when> a ls:LinkElement ;
+    ls:hasDocument <urn:infobim:icdd:workstream:document:facade> ;
+    ls:hasIdentifier <urn:infobim:icdd:workstream:identifier:facade:when> .
+
+<urn:infobim:icdd:workstream:element:facade:where> a ls:LinkElement ;
+    ls:hasDocument <urn:infobim:icdd:workstream:document:facade> ;
+    ls:hasIdentifier <urn:infobim:icdd:workstream:identifier:facade:where> .
+
+<urn:infobim:icdd:workstream:element:facade:who> a ls:LinkElement ;
+    ls:hasDocument <urn:infobim:icdd:workstream:document:facade> ;
+    ls:hasIdentifier <urn:infobim:icdd:workstream:identifier:facade:who> .
+
+<urn:infobim:icdd:workstream:element:facade:why> a ls:LinkElement ;
+    ls:hasDocument <urn:infobim:icdd:workstream:document:facade> ;
+    ls:hasIdentifier <urn:infobim:icdd:workstream:identifier:facade:why> .
+
+<urn:infobim:icdd:workstream:element:workbook:description> a ls:LinkElement ;
+    ls:hasDocument <urn:infobim:icdd:workstream:document:workbook> ;
+    ls:hasIdentifier <urn:infobim:icdd:workstream:identifier:workbook:description> .
+
+<urn:infobim:icdd:workstream:element:workbook:globalid> a ls:LinkElement ;
+    ls:hasDocument <urn:infobim:icdd:workstream:document:workbook> ;
+    ls:hasIdentifier <urn:infobim:icdd:workstream:identifier:workbook:globalid> .
+
+<urn:infobim:icdd:workstream:element:workbook:how> a ls:LinkElement ;
+    ls:hasDocument <urn:infobim:icdd:workstream:document:workbook> ;
+    ls:hasIdentifier <urn:infobim:icdd:workstream:identifier:workbook:how> .
+
+<urn:infobim:icdd:workstream:element:workbook:howmuch> a ls:LinkElement ;
+    ls:hasDocument <urn:infobim:icdd:workstream:document:workbook> ;
+    ls:hasIdentifier <urn:infobim:icdd:workstream:identifier:workbook:howmuch> .
+
+<urn:infobim:icdd:workstream:element:workbook:name> a ls:LinkElement ;
+    ls:hasDocument <urn:infobim:icdd:workstream:document:workbook> ;
+    ls:hasIdentifier <urn:infobim:icdd:workstream:identifier:workbook:name> .
+
+<urn:infobim:icdd:workstream:element:workbook:what> a ls:LinkElement ;
+    ls:hasDocument <urn:infobim:icdd:workstream:document:workbook> ;
+    ls:hasIdentifier <urn:infobim:icdd:workstream:identifier:workbook:what> .
+
+<urn:infobim:icdd:workstream:element:workbook:when> a ls:LinkElement ;
+    ls:hasDocument <urn:infobim:icdd:workstream:document:workbook> ;
+    ls:hasIdentifier <urn:infobim:icdd:workstream:identifier:workbook:when> .
+
+<urn:infobim:icdd:workstream:element:workbook:where> a ls:LinkElement ;
+    ls:hasDocument <urn:infobim:icdd:workstream:document:workbook> ;
+    ls:hasIdentifier <urn:infobim:icdd:workstream:identifier:workbook:where> .
+
+<urn:infobim:icdd:workstream:element:workbook:who> a ls:LinkElement ;
+    ls:hasDocument <urn:infobim:icdd:workstream:document:workbook> ;
+    ls:hasIdentifier <urn:infobim:icdd:workstream:identifier:workbook:who> .
+
+<urn:infobim:icdd:workstream:element:workbook:why> a ls:LinkElement ;
+    ls:hasDocument <urn:infobim:icdd:workstream:document:workbook> ;
+    ls:hasIdentifier <urn:infobim:icdd:workstream:identifier:workbook:why> .
+
+<urn:infobim:icdd:workstream:identifier:facade:description> a ls:URIBasedIdentifier ;
+    ls:uri "http://datacenter.app.br/ontology/productivity/entity/work_stream/facade.ttl#DescriptionField"^^xsd:anyURI .
+
+<urn:infobim:icdd:workstream:identifier:facade:globalid> a ls:URIBasedIdentifier ;
+    ls:uri "http://datacenter.app.br/ontology/productivity/entity/work_stream/facade.ttl#GlobalIdField"^^xsd:anyURI .
+
+<urn:infobim:icdd:workstream:identifier:facade:how> a ls:URIBasedIdentifier ;
+    ls:uri "http://datacenter.app.br/ontology/productivity/entity/work_stream/facade.ttl#HowField"^^xsd:anyURI .
+
+<urn:infobim:icdd:workstream:identifier:facade:howmuch> a ls:URIBasedIdentifier ;
+    ls:uri "http://datacenter.app.br/ontology/productivity/entity/work_stream/facade.ttl#HowMuchField"^^xsd:anyURI .
+
+<urn:infobim:icdd:workstream:identifier:facade:name> a ls:URIBasedIdentifier ;
+    ls:uri "http://datacenter.app.br/ontology/productivity/entity/work_stream/facade.ttl#NameField"^^xsd:anyURI .
+
+<urn:infobim:icdd:workstream:identifier:facade:what> a ls:URIBasedIdentifier ;
+    ls:uri "http://datacenter.app.br/ontology/productivity/entity/work_stream/facade.ttl#WhatField"^^xsd:anyURI .
+
+<urn:infobim:icdd:workstream:identifier:facade:when> a ls:URIBasedIdentifier ;
+    ls:uri "http://datacenter.app.br/ontology/productivity/entity/work_stream/facade.ttl#WhenField"^^xsd:anyURI .
+
+<urn:infobim:icdd:workstream:identifier:facade:where> a ls:URIBasedIdentifier ;
+    ls:uri "http://datacenter.app.br/ontology/productivity/entity/work_stream/facade.ttl#WhereField"^^xsd:anyURI .
+
+<urn:infobim:icdd:workstream:identifier:facade:who> a ls:URIBasedIdentifier ;
+    ls:uri "http://datacenter.app.br/ontology/productivity/entity/work_stream/facade.ttl#WhoField"^^xsd:anyURI .
+
+<urn:infobim:icdd:workstream:identifier:facade:why> a ls:URIBasedIdentifier ;
+    ls:uri "http://datacenter.app.br/ontology/productivity/entity/work_stream/facade.ttl#WhyField"^^xsd:anyURI .
+
+<urn:infobim:icdd:workstream:identifier:workbook:description> a ls:StringBasedIdentifier ;
+    ls:identifier "Description" ;
+    ls:identifierField "WorkStream.header" .
+
+<urn:infobim:icdd:workstream:identifier:workbook:globalid> a ls:StringBasedIdentifier ;
+    ls:identifier "GlobalId" ;
+    ls:identifierField "WorkStream.header" .
+
+<urn:infobim:icdd:workstream:identifier:workbook:how> a ls:StringBasedIdentifier ;
+    ls:identifier "How" ;
+    ls:identifierField "WorkStream.header" .
+
+<urn:infobim:icdd:workstream:identifier:workbook:howmuch> a ls:StringBasedIdentifier ;
+    ls:identifier "HowMuch" ;
+    ls:identifierField "WorkStream.header" .
+
+<urn:infobim:icdd:workstream:identifier:workbook:name> a ls:StringBasedIdentifier ;
+    ls:identifier "Name" ;
+    ls:identifierField "WorkStream.header" .
+
+<urn:infobim:icdd:workstream:identifier:workbook:what> a ls:StringBasedIdentifier ;
+    ls:identifier "What" ;
+    ls:identifierField "WorkStream.header" .
+
+<urn:infobim:icdd:workstream:identifier:workbook:when> a ls:StringBasedIdentifier ;
+    ls:identifier "When" ;
+    ls:identifierField "WorkStream.header" .
+
+<urn:infobim:icdd:workstream:identifier:workbook:where> a ls:StringBasedIdentifier ;
+    ls:identifier "Where" ;
+    ls:identifierField "WorkStream.header" .
+
+<urn:infobim:icdd:workstream:identifier:workbook:who> a ls:StringBasedIdentifier ;
+    ls:identifier "Who" ;
+    ls:identifierField "WorkStream.header" .
+
+<urn:infobim:icdd:workstream:identifier:workbook:why> a ls:StringBasedIdentifier ;
+    ls:identifier "Why" ;
+    ls:identifierField "WorkStream.header" .
+
+<urn:infobim:icdd:workstream:document:facade> a ct:ExternalDocument ;
+    ct:name "WorkStream facade" ;
+    ct:url "http://datacenter.app.br/ontology/productivity/entity/work_stream/facade.ttl"^^xsd:anyURI .
+
+<urn:infobim:icdd:workstream:document:workbook> a ct:InternalDocument ;
+    ct:filename "payload/document/workstreams.xlsx" ;
+    ct:filetype "xlsx" ;
+    ct:name "workstreams.xlsx" .
+

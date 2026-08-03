@@ -1,0 +1,75 @@
+@prefix ea: <http://datacenter.app.br/ontology/productivity/entity/enrichment_annotation/type.ttl#> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<urn:ontobdc:annotation:4a307c28-c674-4c73-ba58-2a9644af751e> a ea:EnrichmentAnnotation ;
+    ea:logicalSource "1.%20Contrato/1.1%20Bid/4%20EQPTO/Guindaste%20Parede/2%20Requisitos/ID9047%20-%20Requisitos%20de%20projeto%20atualizados.jpg"^^xsd:anyURI ;
+    ea:representationSource "1.%20Contrato/1.1%20Bid/4%20EQPTO/Guindaste%20Parede/2%20Requisitos/ID9047%20-%20Requisitos%20de%20projeto%20atualizados.jpg"^^xsd:anyURI ;
+    ea:representationHash "c9549494078b22c261fb9452cfccb34b76c9c616c0613ed937bcd6b93be05c3d" ;
+    ea:relatedDimension "urn:infobim:workstream/7c7e9d91-046d-5bcb-ad09-a04c5821c6de/dimension/what"^^xsd:anyURI ;
+    ea:markerColor "#67e8f9" ;
+    dcterms:created "2026-07-30T19:41:08.980Z"^^xsd:dateTime ;
+    oa:hasBody [
+        a oa:TextualBody ;
+        rdf:value "Vou malhar"
+    ] ;
+    oa:hasTarget [
+        a oa:SpecificResource ;
+        oa:hasSource "1.%20Contrato/1.1%20Bid/4%20EQPTO/Guindaste%20Parede/2%20Requisitos/ID9047%20-%20Requisitos%20de%20projeto%20atualizados.jpg"^^xsd:anyURI ;
+        oa:hasSelector [
+            a ea:PointSelector ;
+            ea:sourceWidth 1416 ;
+            ea:sourceHeight 792 ;
+            ea:normalizedPoint "[{\"x\":0.3087686567164179,\"y\":0.6542881713704949}]"
+        ]
+    ] ;
+    ea:payload "{\"id\":\"urn:ontobdc:annotation:4a307c28-c674-4c73-ba58-2a9644af751e\",\"text\":\"Vou malhar\",\"color\":\"#67e8f9\",\"logicalSource\":\"1.%20Contrato/1.1%20Bid/4%20EQPTO/Guindaste%20Parede/2%20Requisitos/ID9047%20-%20Requisitos%20de%20projeto%20atualizados.jpg\",\"representationSource\":\"1.%20Contrato/1.1%20Bid/4%20EQPTO/Guindaste%20Parede/2%20Requisitos/ID9047%20-%20Requisitos%20de%20projeto%20atualizados.jpg\",\"representationHash\":\"c9549494078b22c261fb9452cfccb34b76c9c616c0613ed937bcd6b93be05c3d\",\"dimension\":\"urn:infobim:workstream/7c7e9d91-046d-5bcb-ad09-a04c5821c6de/dimension/what\",\"width\":1416,\"height\":792,\"points\":[{\"x\":0.3087686567164179,\"y\":0.6542881713704949}],\"created\":\"2026-07-30T19:41:08.980Z\"}" .
+
+<urn:ontobdc:annotation:2dd6e9cb-30f7-4c9f-bd8a-f3e3109c18e2> a ea:EnrichmentAnnotation ;
+    ea:logicalSource "2.%20Documentos/2.5%20Projetos/7%20CFTV%20e%20Dados/LBSEA-CAB-000001-rev02.dwg"^^xsd:anyURI ;
+    ea:representationSource "2.%20Documentos/2.5%20Projetos/7%20CFTV%20e%20Dados/LBSEA-CAB-000001-rev02.pdf"^^xsd:anyURI ;
+    ea:representationHash "ac6c91b9890d06c420c97c9dcd07425837e7368c5bc5f4fee4e5ec22296a3a75" ;
+    ea:relatedDimension "urn:infobim:workstream/7c7e9d91-046d-5bcb-ad09-a04c5821c6de/dimension/what"^^xsd:anyURI ;
+    ea:markerColor "#f9ed67" ;
+    dcterms:created "2026-07-31T12:22:44.912Z"^^xsd:dateTime ;
+    oa:hasBody [
+        a oa:TextualBody ;
+        rdf:value "Verificar onde que vai ficar a TV e se ela vai continuar."
+    ] ;
+    oa:hasTarget [
+        a oa:SpecificResource ;
+        oa:hasSource "2.%20Documentos/2.5%20Projetos/7%20CFTV%20e%20Dados/LBSEA-CAB-000001-rev02.pdf"^^xsd:anyURI ;
+        oa:hasSelector [
+            a ea:PointSelector ;
+            ea:sourceWidth 4768 ;
+            ea:sourceHeight 3368 ;
+            ea:normalizedPoint "[{\"x\":0.5269631031220435,\"y\":0.5906579608237067}]"
+        ]
+    ] ;
+    ea:payload "{\"id\":\"urn:ontobdc:annotation:2dd6e9cb-30f7-4c9f-bd8a-f3e3109c18e2\",\"text\":\"Verificar onde que vai ficar a TV e se ela vai continuar.\",\"color\":\"#f9ed67\",\"logicalSource\":\"2.%20Documentos/2.5%20Projetos/7%20CFTV%20e%20Dados/LBSEA-CAB-000001-rev02.dwg\",\"representationSource\":\"2.%20Documentos/2.5%20Projetos/7%20CFTV%20e%20Dados/LBSEA-CAB-000001-rev02.pdf\",\"representationHash\":\"ac6c91b9890d06c420c97c9dcd07425837e7368c5bc5f4fee4e5ec22296a3a75\",\"dimension\":\"urn:infobim:workstream/7c7e9d91-046d-5bcb-ad09-a04c5821c6de/dimension/what\",\"width\":4768,\"height\":3368,\"points\":[{\"x\":0.5269631031220435,\"y\":0.5906579608237067}],\"created\":\"2026-07-31T12:22:44.912Z\"}" .
+
+<urn:ontobdc:annotation:1f8b3f26-cae8-4203-84be-e040fc206413> a ea:EnrichmentAnnotation ;
+    ea:logicalSource "2.%20Documentos/2.5%20Projetos/7%20CFTV%20e%20Dados/LBSEA-CAB-000001-rev02.dwg"^^xsd:anyURI ;
+    ea:representationSource "2.%20Documentos/2.5%20Projetos/7%20CFTV%20e%20Dados/LBSEA-CAB-000001-rev02.pdf"^^xsd:anyURI ;
+    ea:representationHash "ac6c91b9890d06c420c97c9dcd07425837e7368c5bc5f4fee4e5ec22296a3a75" ;
+    ea:relatedDimension "urn:infobim:workstream/7c7e9d91-046d-5bcb-ad09-a04c5821c6de/dimension/what"^^xsd:anyURI ;
+    ea:markerColor "#d9f967" ;
+    dcterms:created "2026-07-31T17:30:34.697Z"^^xsd:dateTime ;
+    oa:hasBody [
+        a oa:TextualBody ;
+        rdf:value "Tem que ter eletroímã?"
+    ] ;
+    oa:hasTarget [
+        a oa:SpecificResource ;
+        oa:hasSource "2.%20Documentos/2.5%20Projetos/7%20CFTV%20e%20Dados/LBSEA-CAB-000001-rev02.pdf"^^xsd:anyURI ;
+        oa:hasSelector [
+            a ea:PointSelector ;
+            ea:sourceWidth 4768 ;
+            ea:sourceHeight 3368 ;
+            ea:normalizedPoint "[{\"x\":0.23178807947019867,\"y\":0.6629834254143646}]"
+        ]
+    ] ;
+    ea:payload "{\"id\":\"urn:ontobdc:annotation:1f8b3f26-cae8-4203-84be-e040fc206413\",\"text\":\"Tem que ter eletroímã?\",\"color\":\"#d9f967\",\"logicalSource\":\"2.%20Documentos/2.5%20Projetos/7%20CFTV%20e%20Dados/LBSEA-CAB-000001-rev02.dwg\",\"representationSource\":\"2.%20Documentos/2.5%20Projetos/7%20CFTV%20e%20Dados/LBSEA-CAB-000001-rev02.pdf\",\"representationHash\":\"ac6c91b9890d06c420c97c9dcd07425837e7368c5bc5f4fee4e5ec22296a3a75\",\"dimension\":\"urn:infobim:workstream/7c7e9d91-046d-5bcb-ad09-a04c5821c6de/dimension/what\",\"width\":4768,\"height\":3368,\"points\":[{\"x\":0.23178807947019867,\"y\":0.6629834254143646}],\"created\":\"2026-07-31T17:30:34.697Z\"}" .
+

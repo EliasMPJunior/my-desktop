@@ -1,0 +1,8 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ifcowl: <http://ifcowl.openbimstandards.org/IFC4#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+
+<urn:infobim:project:Real%20Estate%20Brazil%20%28Official%29-Obras%20-%20Exp%20LabSea2025> a ifcowl:IfcProject ;
+    dcterms:isPartOf <urn:ontobdc:storage/local/OneDrive%20-%20Digicorner/Real%20Estate%20Brazil%20%28Official%29-Obras%20-%20Exp%20LabSea2025> ;
+    prov:atLocation <file:///C:/Users/epaixao/OneDrive%20-%20Digicorner/Real%20Estate%20Brazil%20%28Official%29-Obras%20-%20Exp%20LabSea2025> .
+
