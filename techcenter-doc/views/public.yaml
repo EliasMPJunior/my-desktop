@@ -14,15 +14,10 @@ project:
   fields:
     - {label: "Name", value: "Real Estate Brazil (Official)-Obras - Exp LabSea2025"}
     - {label: "Path", value: "./"}
-menubar:
-  - {label: "", value: ""}
-badges:
-  - {label: "-", value: ""}
-  - {label: "-", value: ""}
-  - {label: "-", value: ""}
-  - {label: "-", value: ""}
-  - {label: "-", value: ""}
-  - {label: "-", value: ""}
+menu_buttons:
+  - {label: "Documentos", icon: "▦", action: "documents"}
+numeric_data:
+  - {label: "Documentos", value: 128}
 runtime:
   title: "Pyodide Runtime"
   description: "Bootstrap do ambiente Python no browser para as proximas etapas do dashboard."
