@@ -22,21 +22,27 @@
         </article>
         <article class="view-menubar-card" data-card="dynamic-menubar-card">
           <div class="view-menubar-track">
-{% for item in menubar %}
-            <div class="menubar-item">
-              <span class="menubar-item-label">{{ item.label }}</span>
-              <span class="menubar-item-value">{{ item.value }}</span>
-            </div>
+{% for button in menu_buttons %}
+            <button
+              class="menubar-item"
+              type="button"
+              data-action="{{ button.action }}"
+              aria-label="{{ button.label }}"
+              style="appearance: none; color: inherit; font: inherit; cursor: pointer;"
+            >
+              <span class="menubar-item-label" aria-hidden="true">{{ button.icon }}</span>
+              <span class="menubar-item-value">{{ button.label }}</span>
+            </button>
 {% endfor %}
           </div>
         </article>
       </div>
 
-      <aside class="view-hero-meta" data-card="mini-card-grid">
-{% for badge in badges %}
-        <div class="view-badge">
-          <span class="view-badge-label">{{ badge.label }}</span>
-          <span class="view-badge-value">{{ badge.value }}</span>
+      <aside class="view-hero-meta" data-card="numeric-data-grid">
+{% for item in numeric_data %}
+        <div class="view-badge" data-card="numeric-data-card">
+          <span class="view-badge-label">{{ item.label }}</span>
+          <span class="view-badge-value">{{ item.value }}</span>
         </div>
 {% endfor %}
       </aside>
