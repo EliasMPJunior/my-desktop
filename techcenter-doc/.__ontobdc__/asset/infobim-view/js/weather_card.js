@@ -37,11 +37,23 @@
     return document.querySelector('[data-card="numeric-data-grid"]');
   }
 
+  function collapseGridToContent(grid) {
+    const topbar = grid.closest(".view-topbar");
+    if (topbar) {
+      topbar.style.alignItems = "start";
+    }
+    grid.style.setProperty("align-self", "start", "important");
+    grid.style.height = "max-content";
+    grid.style.minHeight = "0";
+  }
+
   function createCard() {
     const grid = numericDataGrid();
     if (!grid) {
       return null;
     }
+
+    collapseGridToContent(grid);
 
     const existing = document.getElementById(cardId);
     if (existing) {
