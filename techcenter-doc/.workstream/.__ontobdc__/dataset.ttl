@@ -1,0 +1,17 @@
+@prefix ct: <http://standards.iso.org/iso/21597/-1/ed-1/en/Container#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix obdc: <http://ontobdc.org/ontology/domain/ns.ttl#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<urn:ontobdc:ontology:dataset:techcenter-doc:work_stream> a owl:Ontology .
+
+<urn:ontobdc:storage/dataset/techcenter-doc/work_stream> a obdc:EntityDataset ;
+    obdc:belongsToDataContainer <urn:ontobdc:storage/local/techcenter-doc> ;
+    obdc:hasDataEntity <urn:infobim:workstream/7c7e9d91-046d-5bcb-ad09-a04c5821c6de> ;
+    dcterms:description "Dataset WorkStream do projeto de expansão do LabSea."@pt-BR ;
+    dcterms:identifier "urn:ontobdc:storage/dataset/techcenter-doc/work_stream" ;
+    dcterms:title "WorkStream — Expansão do LabSea"@pt-BR ;
+    ct:creationDate "2026-08-04T00:16:00Z"^^xsd:dateTime ;
+    prov:atLocation <../> .
