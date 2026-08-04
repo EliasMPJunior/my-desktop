@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>InfoBIM — Gantt</title>
+  <link
+    rel="stylesheet"
+    href="../../.__ontobdc__/asset/infobim-view/css/project_dashboard.css"
+  >
+  <style>
+    .gantt-hero {
+      padding: clamp(24px, 3.5vw, 42px);
+    }
+
+    .gantt-hero h1 {
+      margin: 24px 0 0;
+      font-size: clamp(2.8rem, 6vw, 5.4rem);
+      line-height: 0.96;
+      letter-spacing: -0.05em;
+    }
+
+    .gantt-toolbar {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      min-height: 70px;
+      margin-top: 16px;
+      padding: 12px 16px;
+    }
+
+    .gantt-back-link {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 46px;
+      padding: 10px 22px;
+      border: 1px solid rgba(103, 232, 249, 0.34);
+      border-radius: 999px;
+      color: var(--text);
+      background: rgba(103, 232, 249, 0.08);
+      font-weight: 800;
+      text-decoration: none;
+    }
+
+    .gantt-panel {
+      margin-top: 16px;
+      overflow: hidden;
+    }
+
+    .gantt-canvas {
+      position: relative;
+      min-height: 560px;
+      border-top: 1px solid var(--line);
+      background:
+        linear-gradient(to right, rgba(159, 176, 200, 0.08) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(159, 176, 200, 0.08) 1px, transparent 1px),
+        rgba(255, 255, 255, 0.012);
+      background-size: 48px 100%, 100% 48px;
+    }
+
+    .gantt-empty {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: min(480px, calc(100% - 40px));
+      margin: 0;
+      color: var(--text-soft);
+      line-height: 1.7;
+      text-align: center;
+      transform: translate(-50%, -50%);
+    }
+
+    @media (max-width: 620px) {
+      .gantt-toolbar,
+      .gantt-back-link {
+        width: 100%;
+      }
+
+      .gantt-canvas {
+        min-height: 420px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="view-shell">
+    <section class="view-hero-card gantt-hero">
+      <div class="view-brand">
+        <img
+          class="view-brand-logo"
+          src="../../.__ontobdc__/asset/infobim-view/logo.png"
+          alt="InfoBIM"
+        >
+        <div class="view-brand-copy">
+          <span class="view-eyebrow">InfoBIM Cronograma</span>
+          <span class="view-eyebrow-meta">
+            Real Estate Brazil (Official)-Obras - Exp LabSea2025
+          </span>
+        </div>
+      </div>
+      <h1>Gantt</h1>
+    </section>
+
+    <nav class="view-panel gantt-toolbar" aria-label="Navegação do cronograma">
+      <a class="gantt-back-link" href="./index.html">Voltar ao Cronograma Geral</a>
+    </nav>
+
+    <section
+      class="view-panel gantt-panel"
+      data-dataset="cronograma"
+      data-dataset-uri="urn:ontobdc:storage/dataset/techcenter-doc/cronograma"
+      aria-label="Gantt do Cronograma Geral"
+    >
+      <header class="view-panel-head">
+        <h2 class="view-panel-title">Cronograma Geral</h2>
+      </header>
+      <div class="gantt-canvas" id="gantt-chart">
+        <p class="gantt-empty">
+          Os dados do cronograma ainda não estão definidos nesta visualização.
+        </p>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
