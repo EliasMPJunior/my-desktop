@@ -1,0 +1,197 @@
+{
+  "profile": "data-package",
+  "name": "techcenter_labsea_cronograma",
+  "title": "Cronograma — Expansão do LabSea",
+  "description": "Dataset da entidade IfcWorkSchedule do projeto de expansão do LabSea. A entidade está criada e as projeções de tarefas estão inicialmente vazias.",
+  "created": "2026-08-04T15:13:00-03:00",
+  "dataEntity": {
+    "id": "urn:infobim:ifc-work-schedule/69240f56-8e7a-401a-93cc-c43e12d9c72e",
+    "identifier": "69240f56-8e7a-401a-93cc-c43e12d9c72e",
+    "type": "http://ifcowl.openbimstandards.org/IFC4#IfcWorkSchedule",
+    "vocabulary": "http://datacenter.app.br/ontology/bsi/element/ifc_work_schedule/type.ttl#IfcWorkScheduleHeaderVocabulary",
+    "facades": [
+      "http://datacenter.app.br/ontology/bsi/element/ifc_work_schedule/facade.ttl#IfcTaskFacade",
+      "http://datacenter.app.br/ontology/bsi/element/ifc_work_schedule/facade.ttl#IfcTaskTimeFacade",
+      "http://datacenter.app.br/ontology/bsi/element/ifc_work_schedule/facade.ttl#IfcRelSequencePredecessorFacade",
+      "http://datacenter.app.br/ontology/bsi/element/ifc_work_schedule/facade.ttl#IfcRelSequenceSuccessorFacade"
+    ]
+  },
+  "workbooks": [
+    {
+      "path": "../LABSEA_IfcWorkSchedule.xlsx",
+      "role": "source_schedule_data",
+      "rowCount": {
+        "task": 101,
+        "task_time": 101,
+        "predecessor_relation": 104,
+        "successor_relation": 109
+      }
+    },
+    {
+      "path": "../payload/document/ifc_work_schedule.xlsx",
+      "role": "entity_workbook",
+      "bytes": 18035,
+      "hash": "sha256:137a9cbf73e32b369765dfe90baf2b10471bfc4b3ec0be77dc1fc317ca3c6263",
+      "rowCount": {
+        "task": 0,
+        "task_time": 0,
+        "predecessor_relation": 0,
+        "successor_relation": 0
+      }
+    }
+  ],
+  "resources": [
+    {
+      "profile": "data-resource",
+      "name": "task",
+      "title": "IfcTask",
+      "path": "../payload/document/ifc_work_schedule.xlsx",
+      "format": "xlsx",
+      "mediatype": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+      "bytes": 18035,
+      "hash": "sha256:137a9cbf73e32b369765dfe90baf2b10471bfc4b3ec0be77dc1fc317ca3c6263",
+      "excel": {
+        "sheet": "task",
+        "headerRow": 1
+      },
+      "schema": {
+        "fields": [
+          {
+            "name": "document_identifier",
+            "type": "string"
+          },
+          {
+            "name": "work_breakdown_structure",
+            "type": "string"
+          },
+          {
+            "name": "name",
+            "type": "string"
+          }
+        ]
+      },
+      "rowCount": 0,
+      "dataEntity": {
+        "id": "urn:infobim:ifc-work-schedule/69240f56-8e7a-401a-93cc-c43e12d9c72e",
+        "identifier": "69240f56-8e7a-401a-93cc-c43e12d9c72e",
+        "facade": "http://datacenter.app.br/ontology/bsi/element/ifc_work_schedule/facade.ttl#IfcTaskFacade"
+      }
+    },
+    {
+      "profile": "data-resource",
+      "name": "task_time",
+      "title": "IfcTaskTime",
+      "path": "../payload/document/ifc_work_schedule.xlsx",
+      "format": "xlsx",
+      "mediatype": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+      "bytes": 18035,
+      "hash": "sha256:137a9cbf73e32b369765dfe90baf2b10471bfc4b3ec0be77dc1fc317ca3c6263",
+      "excel": {
+        "sheet": "task_time",
+        "headerRow": 1
+      },
+      "schema": {
+        "fields": [
+          {
+            "name": "schedule_duration",
+            "type": "string"
+          },
+          {
+            "name": "schedule_start",
+            "type": "string"
+          },
+          {
+            "name": "schedule_finish",
+            "type": "string"
+          },
+          {
+            "name": "planned_progress_percent",
+            "type": "string"
+          },
+          {
+            "name": "executed_progress_percent",
+            "type": "string"
+          },
+          {
+            "name": "deviation_percent",
+            "type": "string"
+          },
+          {
+            "name": "completion_percent",
+            "type": "string"
+          }
+        ]
+      },
+      "rowCount": 0,
+      "dataEntity": {
+        "id": "urn:infobim:ifc-work-schedule/69240f56-8e7a-401a-93cc-c43e12d9c72e",
+        "identifier": "69240f56-8e7a-401a-93cc-c43e12d9c72e",
+        "facade": "http://datacenter.app.br/ontology/bsi/element/ifc_work_schedule/facade.ttl#IfcTaskTimeFacade"
+      }
+    },
+    {
+      "profile": "data-resource",
+      "name": "predecessor_relation",
+      "title": "IfcRelSequence — predecessors",
+      "path": "../payload/document/ifc_work_schedule.xlsx",
+      "format": "xlsx",
+      "mediatype": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+      "bytes": 18035,
+      "hash": "sha256:137a9cbf73e32b369765dfe90baf2b10471bfc4b3ec0be77dc1fc317ca3c6263",
+      "excel": {
+        "sheet": "predecessor_relation",
+        "headerRow": 1
+      },
+      "schema": {
+        "fields": [
+          {
+            "name": "related_process",
+            "type": "string"
+          },
+          {
+            "name": "relating_process",
+            "type": "string"
+          }
+        ]
+      },
+      "rowCount": 0,
+      "dataEntity": {
+        "id": "urn:infobim:ifc-work-schedule/69240f56-8e7a-401a-93cc-c43e12d9c72e",
+        "identifier": "69240f56-8e7a-401a-93cc-c43e12d9c72e",
+        "facade": "http://datacenter.app.br/ontology/bsi/element/ifc_work_schedule/facade.ttl#IfcRelSequencePredecessorFacade"
+      }
+    },
+    {
+      "profile": "data-resource",
+      "name": "successor_relation",
+      "title": "IfcRelSequence — successors",
+      "path": "../payload/document/ifc_work_schedule.xlsx",
+      "format": "xlsx",
+      "mediatype": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+      "bytes": 18035,
+      "hash": "sha256:137a9cbf73e32b369765dfe90baf2b10471bfc4b3ec0be77dc1fc317ca3c6263",
+      "excel": {
+        "sheet": "successor_relation",
+        "headerRow": 1
+      },
+      "schema": {
+        "fields": [
+          {
+            "name": "relating_process",
+            "type": "string"
+          },
+          {
+            "name": "related_process",
+            "type": "string"
+          }
+        ]
+      },
+      "rowCount": 0,
+      "dataEntity": {
+        "id": "urn:infobim:ifc-work-schedule/69240f56-8e7a-401a-93cc-c43e12d9c72e",
+        "identifier": "69240f56-8e7a-401a-93cc-c43e12d9c72e",
+        "facade": "http://datacenter.app.br/ontology/bsi/element/ifc_work_schedule/facade.ttl#IfcRelSequenceSuccessorFacade"
+      }
+    }
+  ]
+}
