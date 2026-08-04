@@ -22,6 +22,9 @@
           "@id": ".__ontobdc__/datapackage.json"
         },
         {
+          "@id": ".__ontobdc__/linkset/facade.ttl"
+        },
+        {
           "@id": ".__ontobdc__/linkset/IfcWorkSchedule.ttl"
         },
         {
@@ -77,6 +80,15 @@
       },
       "conformsTo": {
         "@id": "https://specs.frictionlessdata.io/data-package/"
+      }
+    },
+    {
+      "@id": ".__ontobdc__/linkset/facade.ttl",
+      "@type": "File",
+      "name": "IfcWorkSchedule dataset facade",
+      "encodingFormat": "text/turtle",
+      "about": {
+        "@id": "http://datacenter.app.br/ontology/bsi/element/ifc_work_schedule/type.ttl#IfcWorkScheduleHeaderVocabulary"
       }
     },
     {
