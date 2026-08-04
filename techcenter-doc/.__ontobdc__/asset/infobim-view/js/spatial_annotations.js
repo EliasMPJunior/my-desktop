@@ -15,11 +15,11 @@
   }
 
   async function datasetFileHandle(containerHandle) {
-    const metadata = await containerHandle.getDirectoryHandle(".__ontobdc__");
-    const dataset = await metadata.getDirectoryHandle("dataset", {
+    const payload = await containerHandle.getDirectoryHandle("payload");
+    const triple = await payload.getDirectoryHandle("triple", {
       create: true,
     });
-    return dataset.getFileHandle("EnrichmentAnnotation.ttl", {
+    return triple.getFileHandle("EnrichmentAnnotation.ttl", {
       create: true,
     });
   }
@@ -761,7 +761,7 @@
       });
       const annotation = {
         id: session.selectedId
-          || "urn:ontobdc:annotation:" + crypto.randomUUID(),
+          || "urn:ontobdc:annotation:" + makeUuid(),
         text: text,
         color: color.value,
         logicalSource: context.resource.id,
