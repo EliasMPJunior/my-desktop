@@ -22,6 +22,9 @@
           "@id": ".workstream/"
         },
         {
+          "@id": "desmobilizacao/"
+        },
+        {
           "@id": "view/work_stream/7c7e9d91-046d-5bcb-ad09-a04c5821c6de.html"
         }
       ]
@@ -64,6 +67,16 @@
       "identifier": "urn:ontobdc:storage/dataset/techcenter-doc/work_stream",
       "name": "WorkStream — Expansão do LabSea",
       "description": "Dataset WorkStream do projeto de expansão do LabSea."
+    },
+    {
+      "@id": "desmobilizacao/",
+      "@type": "Dataset",
+      "identifier": "urn:ontobdc:storage/dataset/techcenter-doc/desmobilizacao",
+      "name": "WorkStream — Desmobilização da obra",
+      "description": "Dataset WorkStream da desmobilização da obra de expansão do Novo LABSEA.",
+      "mainEntity": {
+        "@id": "urn:infobim:workstream/f834661b-b230-5bc4-ab62-7bfa0338df8f"
+      }
     },
     {
       "@id": "view/work_stream/7c7e9d91-046d-5bcb-ad09-a04c5821c6de.html",
