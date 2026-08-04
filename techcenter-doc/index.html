@@ -43,6 +43,17 @@
   line-height: 1;
   letter-spacing: -.05em;
 }
+@media (min-width: 761px) {
+  .view-hero-meta {
+    grid-auto-rows: minmax(0, 1fr);
+    align-content: stretch;
+  }
+  .view-hero-meta > .view-badge {
+    height: 100%;
+    min-height: 0;
+    aspect-ratio: auto;
+  }
+}
 .project-tabs-card { min-height: 720px; }
 .project-tabs-shell {
   display: grid;
@@ -273,11 +284,37 @@
               <button
                 class="project-tab"
                 type="button"
-                id="project-tab-drawings"
+                id="project-tab-timeline"
                 role="tab"
                 aria-selected="true"
-                aria-controls="project-tab-panel-drawings"
+                aria-controls="project-tab-panel-timeline"
                 tabindex="0"
+                data-tab-id="timeline"
+              >
+                <span class="project-tab-icon" aria-hidden="true">◷</span>
+                <span>Timeline</span>
+              </button>
+              <button
+                class="project-tab"
+                type="button"
+                id="project-tab-workstreams"
+                role="tab"
+                aria-selected="false"
+                aria-controls="project-tab-panel-workstreams"
+                tabindex="-1"
+                data-tab-id="workstreams"
+              >
+                <span class="project-tab-icon" aria-hidden="true">≋</span>
+                <span>Frentes de Trabalho</span>
+              </button>
+              <button
+                class="project-tab"
+                type="button"
+                id="project-tab-drawings"
+                role="tab"
+                aria-selected="false"
+                aria-controls="project-tab-panel-drawings"
+                tabindex="-1"
                 data-tab-id="drawings"
               >
                 <span class="project-tab-icon" aria-hidden="true">⌗</span>
@@ -326,10 +363,36 @@
             <div class="project-tabs-content">
               <section
                 class="project-tab-panel"
+                id="project-tab-panel-timeline"
+                role="tabpanel"
+                aria-labelledby="project-tab-timeline"
+                tabindex="0"
+              >
+                <div class="project-tab-empty">
+                  <span class="project-tab-empty-icon" aria-hidden="true">◷</span>
+                  <h3>Timeline</h3>
+                  <p>Linha do tempo cronológica dos eventos, atividades e registros do projeto.</p>
+                </div>
+              </section>
+              <section
+                class="project-tab-panel"
+                id="project-tab-panel-workstreams"
+                role="tabpanel"
+                aria-labelledby="project-tab-workstreams"
+                tabindex="0" hidden
+              >
+                <div class="project-tab-empty">
+                  <span class="project-tab-empty-icon" aria-hidden="true">≋</span>
+                  <h3>Frentes de Trabalho</h3>
+                  <p>Frentes de trabalho e respectivos estados de execução.</p>
+                </div>
+              </section>
+              <section
+                class="project-tab-panel"
                 id="project-tab-panel-drawings"
                 role="tabpanel"
                 aria-labelledby="project-tab-drawings"
-                tabindex="0"
+                tabindex="0" hidden
               >
                 <div class="project-tab-empty">
                   <span class="project-tab-empty-icon" aria-hidden="true">⌗</span>
