@@ -7,12 +7,6 @@
       "datePublished": "2026-08-03T22:43:02+00:00",
       "hasPart": [
         {
-          "@id": "generate.py"
-        },
-        {
-          "@id": "godfile.py"
-        },
-        {
           "@id": "index.html"
         },
         {
@@ -41,14 +35,6 @@
       "conformsTo": {
         "@id": "https://w3id.org/ro/crate/1.2"
       }
-    },
-    {
-      "@id": "generate.py",
-      "@type": "File"
-    },
-    {
-      "@id": "godfile.py",
-      "@type": "File"
     },
     {
       "@id": "index.html",
