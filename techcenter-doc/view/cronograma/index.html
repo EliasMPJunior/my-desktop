@@ -61,6 +61,34 @@
       outline-offset: 3px;
     }
 
+    .gantt-panel {
+      margin-top: 16px;
+      overflow: hidden;
+    }
+
+    .gantt-canvas {
+      position: relative;
+      min-height: 560px;
+      border-top: 1px solid var(--line);
+      background:
+        linear-gradient(to right, rgba(159, 176, 200, 0.08) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(159, 176, 200, 0.08) 1px, transparent 1px),
+        rgba(255, 255, 255, 0.012);
+      background-size: 48px 100%, 100% 48px;
+    }
+
+    .gantt-empty {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: min(480px, calc(100% - 40px));
+      margin: 0;
+      color: var(--text-soft);
+      line-height: 1.7;
+      text-align: center;
+      transform: translate(-50%, -50%);
+    }
+
     @media (max-width: 620px) {
       .schedule-hero h1 {
         font-size: clamp(2.6rem, 16vw, 4.4rem);
@@ -69,6 +97,10 @@
       .schedule-tabs,
       .schedule-tab {
         width: 100%;
+      }
+
+      .gantt-canvas {
+        min-height: 420px;
       }
     }
   </style>
@@ -92,13 +124,38 @@
       <h1>Cronograma Geral</h1>
     </section>
 
-    <nav class="schedule-tabs" aria-label="Visualizações do cronograma">
-      <a
+    <nav
+      class="schedule-tabs"
+      role="tablist"
+      aria-label="Visualizações do cronograma"
+    >
+      <button
         class="schedule-tab"
-        href="./gantt.html"
-        aria-current="page"
-      >Gantt</a>
+        id="schedule-tab-gantt"
+        type="button"
+        role="tab"
+        aria-selected="true"
+        aria-controls="schedule-panel-gantt"
+      >Gantt</button>
     </nav>
+
+    <section
+      class="view-panel gantt-panel"
+      id="schedule-panel-gantt"
+      role="tabpanel"
+      aria-labelledby="schedule-tab-gantt"
+      data-dataset="cronograma"
+      data-dataset-uri="urn:ontobdc:storage/dataset/techcenter-doc/cronograma"
+    >
+      <header class="view-panel-head">
+        <h2 class="view-panel-title">Cronograma Geral</h2>
+      </header>
+      <div class="gantt-canvas" id="gantt-chart">
+        <p class="gantt-empty">
+          Os dados do cronograma ainda não estão definidos nesta visualização.
+        </p>
+      </div>
+    </section>
   </main>
 </body>
 </html>
