@@ -17,6 +17,7 @@ project:
   generated_fallback_prefix: "Página gerada em"
   fields:
     - {label: "Name", value: "Real Estate Brazil (Official)-Obras - Exp LabSea2025"}
+    - {label: "Geolocalização", value: "não definida"}
 menu_buttons:
   - {label: "Cronograma Geral", icon: "◷", action: "view/ifc_work_schedule/69240f56-8e7a-401a-93cc-c43e12d9c72e.html"}
 numeric_data: []
