@@ -1,0 +1,95 @@
+# AGENTS — TECHCENTER LABSEA
+
+Este arquivo estabelece as regras obrigatórias para qualquer agente, automação ou pessoa que altere o diretório `techcenter-doc` na branch `techcenter-labsea`.
+
+## 1. Escopo exato
+
+- Repositório: `EliasMPJunior/my-desktop`.
+- Branch obrigatória: `techcenter-labsea`.
+- Diretório obrigatório: `techcenter-doc`.
+- O caminho `techcenter-doco` não existe e não deve ser usado.
+- Não alterar `master`, outra branch ou outro diretório para executar instruções referentes a este trabalho.
+
+## 2. Hierarquia das instruções
+
+A ordem de autoridade é:
+
+1. instrução explícita mais recente do usuário;
+2. este arquivo;
+3. dados e arquivos existentes na branch e no diretório corretos;
+4. comportamento já implementado que não conflite com os itens anteriores.
+
+Convenções genéricas, preferências do agente, padrões presumidos e soluções “normalmente usadas” não têm autoridade para substituir essa ordem.
+
+## 3. Proibição de invenção
+
+- Não preencher lacunas por inferência.
+- Não criar dados exemplificativos, métricas, nomes, estados, caminhos, entidades ou conteúdos não existentes.
+- Quando um dado necessário não estiver definido, registrar literalmente `não definido` ou deixar a ausência explícita.
+- Não renomear elementos, containers, entidades ou arquivos sem instrução expressa.
+- Não criar nomenclaturas não padronizadas, incluindo nomes como `transformation_to_`.
+
+## 4. Fontes reais e estado atual
+
+- Ler o arquivo atual antes de modificá-lo.
+- Usar o estado atual da branch remota, sem cache de outra branch ou de versões anteriores.
+- Preservar tudo que não tenha sido explicitamente mandado alterar.
+- Não transformar este trabalho em protótipo, exemplo ou mock genérico: o projeto é real.
+
+## 5. Identidade e nomenclatura
+
+- Manter `INFOBIM` até que haja instrução explícita em contrário.
+- O nome original do container é `Real Estate Brazil (Official)-Obras - Exp LabSea2025`.
+- Não substituir esse nome por `Storage Container: techcenter-doc` como título do projeto.
+
+## 6. Caminhos e portabilidade
+
+- Todos os caminhos usados pela página devem ser relativos ao `index.html`.
+- Não expor nem depender de caminhos absolutos da máquina da TechnipFMC ou de qualquer outra máquina.
+- O `index.html` deve poder ser aberto localmente sem exigir adaptação de caminhos locais.
+
+## 7. Fidelidade da view
+
+- `ontobdc view` deve reproduzir a página aprovada de forma idêntica.
+- Não remover, acrescentar, reorganizar ou reinterpretar elementos da página aprovada por iniciativa própria.
+- Alterações no gerador, template ou runtime devem preservar a identidade visual e a estrutura aprovadas.
+
+## 8. Estrutura da `.workstream`
+
+Na etapa da `.workstream/.__ontobdc__`, criar somente:
+
+- `dataset.ttl`;
+- `datapackage.json`;
+- `ro-crate-metadata.json`.
+
+Não inventar uma nova estrutura de `view` dentro dessa etapa.
+
+## 9. Navegação e conteúdo
+
+- Remover `Pranchas`, `Documentos`, `Fotos` e `Mensagens` da navegação principal.
+- A primeira seção de conteúdo deve ser `Frentes de Trabalho`.
+- Conteúdo exibido deve vir dos dados reais disponíveis no projeto.
+
+## 10. Layout atual aprovado para desenvolvimento
+
+- O `index.html` deve ter estética de terminal.
+- A página deve usar uma grade de 12 colunas horizontais.
+- O hero deve ocupar as 12 colunas e ter exatamente 2 linhas da grade de altura.
+- O conteúdo da esquerda deve ocupar 4 das 12 colunas.
+- O conteúdo principal deve ocupar as 8 colunas restantes.
+- Todos os boxes devem possuir nome visível.
+- Os nomes dos boxes devem descrever o conteúdo real de cada box, sem categorias inventadas.
+
+## 11. Procedimento obrigatório antes de concluir uma alteração
+
+1. confirmar branch e caminho;
+2. ler os arquivos afetados;
+3. conferir os dados reais usados pela interface;
+4. alterar apenas o escopo solicitado;
+5. validar sintaxe e caminhos relativos;
+6. verificar que nenhuma regra deste arquivo foi violada;
+7. informar objetivamente os arquivos alterados e o que foi validado.
+
+## 12. Regra final
+
+Na dúvida, não improvisar. Verificar os arquivos existentes. Caso a informação continue ausente, declarar a ausência em vez de inventar uma resposta ou implementação.
