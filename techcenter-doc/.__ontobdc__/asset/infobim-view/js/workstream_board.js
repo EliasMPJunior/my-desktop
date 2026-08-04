@@ -299,6 +299,47 @@
     });
   }
 
+  function createGeneralScheduleLabel() {
+    const cell = createCell("general-schedule-label");
+    const title = document.createElement("strong");
+    title.textContent = "Cronograma Geral";
+    const subtitle = document.createElement("span");
+    subtitle.textContent = "3 linhas simuladas";
+    cell.append(title, subtitle);
+    return cell;
+  }
+
+  function createMockScheduleBar(row, start, span) {
+    const bar = document.createElement("span");
+    bar.className = "general-schedule-mock-bar";
+    bar.dataset.mock = "true";
+    bar.setAttribute("aria-hidden", "true");
+    bar.style.gridRow = String(row);
+    bar.style.gridColumn = `${start} / span ${span}`;
+    return bar;
+  }
+
+  function createGeneralScheduleTimeline() {
+    const timeline = createCell("general-schedule-timeline");
+    timeline.setAttribute(
+      "aria-label",
+      "Cronograma Geral com três linhas de barras simuladas",
+    );
+    timeline.append(
+      createMockScheduleBar(1, 1, 4),
+      createMockScheduleBar(2, 4, 5),
+      createMockScheduleBar(3, 8, 3),
+    );
+    return timeline;
+  }
+
+  function renderGeneralScheduleRow(board) {
+    board.append(
+      createGeneralScheduleLabel(),
+      createGeneralScheduleTimeline(),
+    );
+  }
+
   function renderEmptyState(board, message) {
     const state = document.createElement("div");
     state.className = "workstream-board-state";
@@ -332,6 +373,7 @@
     workstreams.forEach((item) => {
       renderWorkstreamRow(board, item, dates);
     });
+    renderGeneralScheduleRow(board);
   }
 
   function initialize() {
