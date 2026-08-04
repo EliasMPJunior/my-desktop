@@ -38,6 +38,15 @@ PROJECT_RUNTIME_DATA_FILE = (
     / "js"
     / "project_runtime_data.js"
 )
+WORKSTREAM_JSONLD_FILE = ROOT / "payload" / "triple" / "work_stream.jsonld"
+WORKSTREAM_RUNTIME_DATA_FILE = (
+    ROOT
+    / ".__ontobdc__"
+    / "asset"
+    / "infobim-view"
+    / "js"
+    / "work_stream_runtime_data.js"
+)
 INLINE_STRONG_PATTERN = re.compile(r"(\*\*|__)(.+?)\1")
 LOCAL_VIEW_ACTION_PREFIXES = ("view/", "./view/")
 MONTHS_PT_BR = (
@@ -175,18 +184,54 @@ def inject_local_view_navigation(html: str) -> str:
     )
 
 
+def serialize_runtime_script(variable_name: str, payload: Any) -> str:
+    return (
+        f"window.{variable_name} = "
+        + json.dumps(payload, ensure_ascii=False, indent=2)
+        + ";\n"
+    )
+
+
+def write_runtime_script(path: Path, variable_name: str, payload: Any) -> None:
+    path.parent.mkdir(parents=True, exist_ok=True)
+    path.write_text(
+        serialize_runtime_script(variable_name, payload),
+        encoding="utf-8",
+    )
+
+
 def write_project_runtime_data(location: dict[str, float] | None) -> None:
     payload = {
         "location": location,
         "locationSource": "IfcSite.RefLatitude/RefLongitude",
     }
-    PROJECT_RUNTIME_DATA_FILE.parent.mkdir(parents=True, exist_ok=True)
-    script = (
-        "window.infoBimProjectRuntimeData = "
-        + json.dumps(payload, ensure_ascii=False, indent=2)
-        + ";\n"
+    write_runtime_script(
+        PROJECT_RUNTIME_DATA_FILE,
+        "infoBimProjectRuntimeData",
+        payload,
     )
-    PROJECT_RUNTIME_DATA_FILE.write_text(script, encoding="utf-8")
+
+
+def load_workstream_jsonld() -> dict[str, Any] | None:
+    if not WORKSTREAM_JSONLD_FILE.is_file():
+        print(
+            f"Warning: workstream JSON-LD not found: {WORKSTREAM_JSONLD_FILE}",
+            file=sys.stderr,
+        )
+        return None
+
+    raw_value = json.loads(WORKSTREAM_JSONLD_FILE.read_text(encoding="utf-8"))
+    if not isinstance(raw_value, dict):
+        raise TypeError("work_stream.jsonld must contain a JSON object")
+    return cast(dict[str, Any], raw_value)
+
+
+def write_workstream_runtime_data(payload: dict[str, Any] | None) -> None:
+    write_runtime_script(
+        WORKSTREAM_RUNTIME_DATA_FILE,
+        "infoBimWorkStreamData",
+        payload,
+    )
 
 
 def main() -> int:
@@ -211,9 +256,14 @@ def main() -> int:
     html = env.get_template("index.html.jinja").render(**data)
     html = inject_local_view_navigation(html)
     OUTPUT_FILE.write_text(html.rstrip() + "\n", encoding="utf-8")
+
+    workstream_payload = load_workstream_jsonld()
     write_project_runtime_data(raw_data["project"].get("location"))
+    write_workstream_runtime_data(workstream_payload)
+
     print(f"Generated {OUTPUT_FILE.relative_to(ROOT)} from {VIEW_FILE.relative_to(ROOT)}")
     print(f"Generated {PROJECT_RUNTIME_DATA_FILE.relative_to(ROOT)}")
+    print(f"Generated {WORKSTREAM_RUNTIME_DATA_FILE.relative_to(ROOT)}")
     return 0
 
 
