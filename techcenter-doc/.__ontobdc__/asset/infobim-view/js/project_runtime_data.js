@@ -1,5 +1,8 @@
 window.infoBimProjectRuntimeData = window.infoBimProjectRuntimeData || {
-  "location": null
+  "location": {
+    "latitude": -22.868585,
+    "longitude": -43.214664
+  }
 };
 
 (function () {
