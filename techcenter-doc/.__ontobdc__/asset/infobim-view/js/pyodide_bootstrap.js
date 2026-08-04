@@ -51,6 +51,12 @@
     document.head.appendChild(link);
   }
 
+  async function loadWeatherModule() {
+    loadStyle("../css/weather_card.css");
+    await loadScript("project_runtime_data.js");
+    await loadScript("weather_card.js");
+  }
+
   function hasEmbeddedWorkstreamJsonLd() {
     return Boolean(document.getElementById("work-stream-jsonld"));
   }
@@ -65,6 +71,11 @@
     loadStyle("../css/workstream_board.css");
     await loadLegacyWorkstreamDataWhenNeeded();
     await loadScript("workstream_board.js");
+  }
+
+  async function loadDashboardModules() {
+    await loadWeatherModule();
+    await loadWorkstreamBoardModule();
   }
 
   function writeStatus(message, cssClass) {
@@ -86,7 +97,7 @@
   }
 
   try {
-    await loadWorkstreamBoardModule();
+    await loadDashboardModules();
   } catch (error) {
     console.error("Dashboard module initialization failed.", error);
   }
