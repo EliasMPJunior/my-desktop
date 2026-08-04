@@ -1,9 +1,25 @@
 (function () {
   "use strict";
 
-  const cardId = "project-weather-card";
   const forecastEndpoint = "https://api.open-meteo.com/v1/forecast";
   const runtimeData = window.infoBimProjectRuntimeData || {};
+  const cardDefinitions = [
+    {
+      key: "current",
+      id: "project-weather-current-card",
+      label: "Tempo na obra",
+    },
+    {
+      key: "rain",
+      id: "project-weather-rain-card",
+      label: "Chuva 6h",
+    },
+    {
+      key: "gust",
+      id: "project-weather-gust-card",
+      label: "Rajada 6h",
+    },
+  ];
 
   function createElement(tagName, className, text) {
     const element = document.createElement(tagName);
@@ -16,67 +32,65 @@
     return element;
   }
 
-  function createMetric(label, id) {
-    const metric = createElement("span", "weather-card-metric");
-    metric.append(
-      createElement("span", "weather-card-metric-label", label),
-      createElement("strong", "weather-card-metric-value", "—"),
-    );
-    metric.lastElementChild.id = id;
-    return metric;
+  function numericDataGrid() {
+    return document.querySelector('[data-card="numeric-data-grid"]');
   }
 
-  function createCard() {
-    const grid = document.querySelector('[data-card="numeric-data-grid"]');
+  function removeLegacyDocumentMock(grid) {
+    grid.querySelectorAll(':scope > [data-card="numeric-data-card"]').forEach((card) => {
+      const label = card.querySelector(".view-badge-label");
+      const value = card.querySelector(".view-badge-value");
+      if (
+        String(label && label.textContent || "").trim() === "Documentos"
+        && String(value && value.textContent || "").trim() === "128"
+      ) {
+        card.remove();
+      }
+    });
+  }
+
+  function createWeatherCard(definition) {
+    const card = createElement("div", "view-badge weather-card is-loading");
+    card.id = definition.id;
+    card.dataset.card = "weather-card";
+    card.dataset.weatherMetric = definition.key;
+    card.setAttribute("aria-live", "polite");
+
+    const label = createElement("span", "view-badge-label", definition.label);
+    const value = createElement("strong", "weather-card-value", "—");
+    value.dataset.weatherValue = definition.key;
+    const detail = createElement("span", "weather-card-detail", "Carregando...");
+    detail.dataset.weatherDetail = definition.key;
+    const footer = createElement("span", "weather-card-footer", "");
+    footer.dataset.weatherFooter = definition.key;
+
+    card.append(label, value, detail, footer);
+    return card;
+  }
+
+  function ensureWeatherCards() {
+    const grid = numericDataGrid();
     if (!grid) {
       return null;
     }
 
-    const existing = document.getElementById(cardId);
-    if (existing) {
-      return existing;
-    }
+    removeLegacyDocumentMock(grid);
 
-    const card = createElement("div", "view-badge weather-card is-loading");
-    card.id = cardId;
-    card.dataset.card = "weather-card";
-    card.setAttribute("aria-live", "polite");
-
-    const label = createElement("span", "view-badge-label", "Tempo na obra");
-    const main = createElement("div", "weather-card-main");
-    const temperature = createElement("strong", "weather-card-temperature", "—");
-    temperature.id = "weather-temperature";
-    const condition = createElement(
-      "span",
-      "weather-card-condition",
-      "Verificando localização IFC...",
-    );
-    condition.id = "weather-condition";
-    main.append(temperature, condition);
-
-    const metrics = createElement("div", "weather-card-metrics");
-    metrics.append(
-      createMetric("Chuva 6h", "weather-rain"),
-      createMetric("Rajada 6h", "weather-gust"),
-    );
-
-    const footer = createElement("span", "weather-card-footer", "");
-    footer.id = "weather-footer";
-
-    card.append(label, main, metrics, footer);
-    grid.appendChild(card);
-    return card;
-  }
-
-  function cardElements(card) {
-    return {
-      card,
-      temperature: card.querySelector("#weather-temperature"),
-      condition: card.querySelector("#weather-condition"),
-      rain: card.querySelector("#weather-rain"),
-      gust: card.querySelector("#weather-gust"),
-      footer: card.querySelector("#weather-footer"),
-    };
+    const cards = {};
+    cardDefinitions.forEach((definition) => {
+      let card = document.getElementById(definition.id);
+      if (!card) {
+        card = createWeatherCard(definition);
+        grid.appendChild(card);
+      }
+      cards[definition.key] = {
+        card,
+        value: card.querySelector(`[data-weather-value="${definition.key}"]`),
+        detail: card.querySelector(`[data-weather-detail="${definition.key}"]`),
+        footer: card.querySelector(`[data-weather-footer="${definition.key}"]`),
+      };
+    });
+    return cards;
   }
 
   function setCardState(elements, state) {
@@ -87,6 +101,13 @@
       "is-error",
     );
     elements.card.classList.add(state);
+  }
+
+  function setCardContent(elements, state, value, detail, footer) {
+    setCardState(elements, state);
+    elements.value.textContent = value;
+    elements.detail.textContent = detail;
+    elements.footer.textContent = footer;
   }
 
   function validLocation(value) {
@@ -105,25 +126,52 @@
     );
   }
 
-  function renderMissing(elements) {
-    setCardState(elements, "is-missing");
-    elements.temperature.textContent = "—";
-    elements.condition.textContent = "Localização IFC não definida";
-    elements.rain.textContent = "—";
-    elements.gust.textContent = "—";
-    elements.footer.textContent = runtimeData.locationSource
-      || "IfcSite.RefLatitude/RefLongitude";
+  function renderMissing(cards) {
+    setCardContent(
+      cards.current,
+      "is-missing",
+      "—",
+      "Localização não definida",
+      "Origem: IFC",
+    );
+    setCardContent(
+      cards.rain,
+      "is-missing",
+      "—",
+      "Sem previsão",
+      "Próximas 6 horas",
+    );
+    setCardContent(
+      cards.gust,
+      "is-missing",
+      "—",
+      "Sem previsão",
+      "Próximas 6 horas",
+    );
   }
 
-  function renderError(elements, error) {
-    setCardState(elements, "is-error");
-    elements.temperature.textContent = "—";
-    elements.condition.textContent = "Previsão indisponível";
-    elements.rain.textContent = "—";
-    elements.gust.textContent = "—";
-    elements.footer.textContent = error instanceof Error
-      ? error.message
-      : String(error || "Erro ao consultar o serviço meteorológico.");
+  function renderError(cards) {
+    setCardContent(
+      cards.current,
+      "is-error",
+      "—",
+      "Previsão indisponível",
+      "Verifique a conexão",
+    );
+    setCardContent(
+      cards.rain,
+      "is-error",
+      "—",
+      "Sem previsão",
+      "Serviço indisponível",
+    );
+    setCardContent(
+      cards.gust,
+      "is-error",
+      "—",
+      "Sem previsão",
+      "Serviço indisponível",
+    );
   }
 
   function buildForecastUrl(location) {
@@ -212,7 +260,7 @@
       : "—";
   }
 
-  function forecastFooter(data) {
+  function temperatureRange(data) {
     const maximumTemperature = Number(
       data.daily
       && data.daily.temperature_2m_max
@@ -223,41 +271,46 @@
       && data.daily.temperature_2m_min
       && data.daily.temperature_2m_min[0],
     );
-    const currentTime = String(data.current && data.current.time || "");
-    const timeLabel = currentTime.includes("T")
-      ? currentTime.split("T")[1].slice(0, 5)
-      : "";
-    const timeZone = data.timezone_abbreviation || data.timezone || "";
-    const range = (
-      Number.isFinite(maximumTemperature)
-      && Number.isFinite(minimumTemperature)
-    )
-      ? `Máx. ${Math.round(maximumTemperature)}° · Mín. ${Math.round(minimumTemperature)}°`
-      : "";
-    const update = timeLabel
-      ? `Atualizado ${timeLabel}${timeZone ? ` ${timeZone}` : ""}`
-      : "";
-    return [range, update].filter(Boolean).join(" · ");
+    if (
+      !Number.isFinite(maximumTemperature)
+      || !Number.isFinite(minimumTemperature)
+    ) {
+      return "Hoje";
+    }
+    return `Máx. ${Math.round(maximumTemperature)}° · Mín. ${Math.round(minimumTemperature)}°`;
   }
 
-  function renderForecast(elements, data) {
+  function renderForecast(cards, data) {
     const temperature = Number(data.current && data.current.temperature_2m);
     const rainProbability = maximum(
       nextHours(data, "precipitation_probability", 6),
     );
     const windGust = maximum(nextHours(data, "wind_gusts_10m", 6));
 
-    setCardState(elements, "is-ready");
-    elements.temperature.textContent = formatNumber(temperature, "°");
-    elements.condition.textContent = weatherDescription(
-      data.current && data.current.weather_code,
+    setCardContent(
+      cards.current,
+      "is-ready",
+      formatNumber(temperature, "°"),
+      weatherDescription(data.current && data.current.weather_code),
+      temperatureRange(data),
     );
-    elements.rain.textContent = formatNumber(rainProbability, "%");
-    elements.gust.textContent = formatNumber(windGust, " km/h");
-    elements.footer.textContent = forecastFooter(data);
+    setCardContent(
+      cards.rain,
+      "is-ready",
+      formatNumber(rainProbability, "%"),
+      "Probabilidade máxima",
+      "Próximas 6 horas",
+    );
+    setCardContent(
+      cards.gust,
+      "is-ready",
+      formatNumber(windGust, " km/h"),
+      "Máxima prevista",
+      "Próximas 6 horas",
+    );
   }
 
-  async function loadForecast(elements, location) {
+  async function loadForecast(cards, location) {
     const response = await fetch(buildForecastUrl(location), {
       headers: { Accept: "application/json" },
     });
@@ -268,21 +321,21 @@
     if (!data || !data.current) {
       throw new Error("Resposta meteorológica sem condições atuais.");
     }
-    renderForecast(elements, data);
+    renderForecast(cards, data);
   }
 
-  const card = createCard();
-  if (!card) {
+  const cards = ensureWeatherCards();
+  if (!cards) {
     return;
   }
-  const elements = cardElements(card);
+
   if (!validLocation(runtimeData.location)) {
-    renderMissing(elements);
+    renderMissing(cards);
     return;
   }
 
-  loadForecast(elements, runtimeData.location).catch((error) => {
+  loadForecast(cards, runtimeData.location).catch((error) => {
     console.error(error);
-    renderError(elements, error);
+    renderError(cards);
   });
 }());
