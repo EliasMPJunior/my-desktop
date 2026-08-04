@@ -299,44 +299,184 @@
     });
   }
 
-  function createGeneralScheduleLabel() {
+  function localName(value) {
+    const parts = String(value).split(/[#:]/);
+    return parts[parts.length - 1];
+  }
+
+  function valueByLocalName(item, names) {
+    if (!item || typeof item !== "object") {
+      return null;
+    }
+    const accepted = new Set(names.map((name) => name.toLowerCase()));
+    for (const [key, value] of Object.entries(item)) {
+      if (accepted.has(localName(key).toLowerCase())) {
+        if (Array.isArray(value)) {
+          return value.length ? value[0] : null;
+        }
+        if (value && typeof value === "object" && "@value" in value) {
+          return value["@value"];
+        }
+        return value;
+      }
+    }
+    return null;
+  }
+
+  function parseScheduleDate(value) {
+    if (value instanceof Date && !Number.isNaN(value.getTime())) {
+      return normalizeDate(value);
+    }
+    if (typeof value !== "string") {
+      return null;
+    }
+    const source = value.trim();
+    const brazilian = source.match(/(?:^|\s)(\d{2})\/(\d{2})\/(\d{2}|\d{4})$/);
+    if (brazilian) {
+      const year = Number(brazilian[3]);
+      return new Date(year < 100 ? 2000 + year : year, Number(brazilian[2]) - 1, Number(brazilian[1]));
+    }
+    const iso = source.match(/^(\d{4})-(\d{2})-(\d{2})/);
+    return iso
+      ? new Date(Number(iso[1]), Number(iso[2]) - 1, Number(iso[3]))
+      : null;
+  }
+
+  function jsonLdNodes() {
+    const nodes = [];
+    document.querySelectorAll('script[type="application/ld+json"]').forEach((script) => {
+      try {
+        const payload = JSON.parse(script.textContent);
+        const documents = Array.isArray(payload) ? payload : [payload];
+        documents.forEach((document) => {
+          if (Array.isArray(document["@graph"])) {
+            nodes.push(...document["@graph"]);
+          } else {
+            nodes.push(document);
+          }
+        });
+      } catch (error) {
+        console.warn("INFOBIM: JSON-LD inválido ignorado no cronograma.", error);
+      }
+    });
+    return nodes;
+  }
+
+  function nestedRecords(nodes) {
+    const records = [];
+    const visit = (value) => {
+      if (!value || typeof value !== "object") {
+        return;
+      }
+      if (Array.isArray(value)) {
+        value.forEach(visit);
+        return;
+      }
+      records.push(value);
+      Object.values(value).forEach(visit);
+    };
+    nodes.forEach(visit);
+    return records;
+  }
+
+  function scheduleTasks() {
+    const records = nestedRecords(jsonLdNodes());
+    const tasks = records.filter((item) => {
+      const start = valueByLocalName(item, ["schedule_start", "ScheduleStart"]);
+      const finish = valueByLocalName(item, ["schedule_finish", "ScheduleFinish"]);
+      return parseScheduleDate(start) && parseScheduleDate(finish);
+    });
+
+    return tasks.map((item, index) => ({
+      id: String(valueByLocalName(item, ["@id", "document_identifier", "identifier"]) || index),
+      name: String(valueByLocalName(item, ["name", "Name"]) || "Tarefa sem nome"),
+      wbs: String(valueByLocalName(item, ["work_breakdown_structure", "Identification"]) || ""),
+      start: parseScheduleDate(valueByLocalName(item, ["schedule_start", "ScheduleStart"])),
+      finish: parseScheduleDate(valueByLocalName(item, ["schedule_finish", "ScheduleFinish"])),
+    }));
+  }
+
+  function tasksInWindow(tasks, dates) {
+    const first = dates[0];
+    const last = dates[dates.length - 1];
+    return tasks
+      .filter((task) => task.start <= last && task.finish >= first)
+      .sort((firstTask, secondTask) => (
+        firstTask.start - secondTask.start
+        || firstTask.finish - secondTask.finish
+        || firstTask.name.localeCompare(secondTask.name, locale)
+      ));
+  }
+
+  function taskGridRange(task, dates) {
+    const visible = dates
+      .map((date, index) => ({ date, index }))
+      .filter(({ date }) => date >= task.start && date <= task.finish);
+    if (!visible.length) {
+      return null;
+    }
+    return {
+      start: visible[0].index + 1,
+      span: visible[visible.length - 1].index - visible[0].index + 1,
+    };
+  }
+
+  function createGeneralScheduleLabel(taskCount) {
     const cell = createCell("general-schedule-label");
     const title = document.createElement("strong");
     title.textContent = "Cronograma Geral";
     const subtitle = document.createElement("span");
-    subtitle.textContent = "3 linhas simuladas";
+    subtitle.textContent = taskCount === 1
+      ? "1 tarefa no período"
+      : `${taskCount} tarefas no período`;
     cell.append(title, subtitle);
     return cell;
   }
 
-  function createMockScheduleBar(row, start, span) {
+  function createScheduleTaskBar(task, row, range) {
     const bar = document.createElement("span");
-    bar.className = "general-schedule-mock-bar";
-    bar.dataset.mock = "true";
-    bar.setAttribute("aria-hidden", "true");
+    bar.className = "general-schedule-task-bar";
+    bar.dataset.taskId = task.id;
     bar.style.gridRow = String(row);
-    bar.style.gridColumn = `${start} / span ${span}`;
+    bar.style.gridColumn = `${range.start} / span ${range.span}`;
+
+    const label = document.createElement("span");
+    label.textContent = task.name;
+    bar.appendChild(label);
+
+    const interval = `${dayLabel(task.start)}–${dayLabel(task.finish)}`;
+    bar.title = task.wbs
+      ? `${task.wbs} · ${task.name} · ${interval}`
+      : `${task.name} · ${interval}`;
+    bar.setAttribute("aria-label", bar.title);
     return bar;
   }
 
-  function createGeneralScheduleTimeline() {
+  function createGeneralScheduleTimeline(tasks, dates) {
     const timeline = createCell("general-schedule-timeline");
+    const rowCount = Math.max(tasks.length, 1);
+    timeline.style.setProperty("--general-schedule-row-count", String(rowCount));
     timeline.setAttribute(
       "aria-label",
-      "Cronograma Geral com três linhas de barras simuladas",
+      tasks.length
+        ? `Cronograma Geral com ${tasks.length} tarefas no período`
+        : "Cronograma Geral sem tarefas no período",
     );
-    timeline.append(
-      createMockScheduleBar(1, 1, 4),
-      createMockScheduleBar(2, 4, 5),
-      createMockScheduleBar(3, 8, 3),
-    );
+
+    tasks.forEach((task, index) => {
+      const range = taskGridRange(task, dates);
+      if (range) {
+        timeline.appendChild(createScheduleTaskBar(task, index + 1, range));
+      }
+    });
     return timeline;
   }
 
-  function renderGeneralScheduleRow(board) {
+  function renderGeneralScheduleRow(board, dates) {
+    const tasks = tasksInWindow(scheduleTasks(), dates);
     board.append(
-      createGeneralScheduleLabel(),
-      createGeneralScheduleTimeline(),
+      createGeneralScheduleLabel(tasks.length),
+      createGeneralScheduleTimeline(tasks, dates),
     );
   }
 
@@ -373,7 +513,7 @@
     workstreams.forEach((item) => {
       renderWorkstreamRow(board, item, dates);
     });
-    renderGeneralScheduleRow(board);
+    renderGeneralScheduleRow(board, dates);
   }
 
   function initialize() {
