@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 from __future__ import annotations
 
+import json
 import re
 import sys
 from datetime import datetime
@@ -15,12 +16,13 @@ except ImportError as exc:
     missing = exc.name or "dependency"
     raise SystemExit(
         f"Missing {missing}. Install dependencies with: "
-        "python -m pip install jinja2 pyyaml"
+        "python -m pip install jinja2 pyyaml rdflib"
     ) from exc
 
 from godfile import (
     ProjectInformationError,
     count_indexed_files,
+    project_coordinates_from_ifc,
     project_path_from_ontology,
 )
 
@@ -28,6 +30,14 @@ ROOT = Path(__file__).resolve().parent
 TEMPLATE_DIR = ROOT / "template"
 VIEW_FILE = ROOT / "views" / "public.yaml"
 OUTPUT_FILE = ROOT / "index.html"
+PROJECT_RUNTIME_DATA_FILE = (
+    ROOT
+    / ".__ontobdc__"
+    / "asset"
+    / "infobim-view"
+    / "js"
+    / "project_runtime_data.js"
+)
 INLINE_STRONG_PATTERN = re.compile(r"(\*\*|__)(.+?)\1")
 LOCAL_VIEW_ACTION_PREFIXES = ("view/", "./view/")
 MONTHS_PT_BR = (
@@ -92,6 +102,14 @@ def generated_project_value(
         return "Não disponível"
 
 
+def generated_project_coordinates() -> dict[str, float] | None:
+    try:
+        return project_coordinates_from_ifc(ROOT)
+    except ProjectInformationError as exc:
+        print(f"Warning: project coordinates: {exc}", file=sys.stderr)
+        return None
+
+
 def enrich_project_information(raw_data: Dict[str, Any]) -> None:
     project = raw_data.setdefault("project", {})
     raw_fields = project.setdefault("fields", [])
@@ -125,6 +143,7 @@ def enrich_project_information(raw_data: Dict[str, Any]) -> None:
     )
     project["fields"] = fields
     project["path"] = project_path
+    project["location"] = generated_project_coordinates()
 
 
 def local_view_navigation_script() -> str:
@@ -156,6 +175,20 @@ def inject_local_view_navigation(html: str) -> str:
     )
 
 
+def write_project_runtime_data(location: dict[str, float] | None) -> None:
+    payload = {
+        "location": location,
+        "locationSource": "IfcSite.RefLatitude/RefLongitude",
+    }
+    PROJECT_RUNTIME_DATA_FILE.parent.mkdir(parents=True, exist_ok=True)
+    script = (
+        "window.infoBimProjectRuntimeData = "
+        + json.dumps(payload, ensure_ascii=False, indent=2)
+        + ";\n"
+    )
+    PROJECT_RUNTIME_DATA_FILE.write_text(script, encoding="utf-8")
+
+
 def main() -> int:
     if not VIEW_FILE.is_file():
         print(f"View not found: {VIEW_FILE}", file=sys.stderr)
@@ -178,7 +211,9 @@ def main() -> int:
     html = env.get_template("index.html.jinja").render(**data)
     html = inject_local_view_navigation(html)
     OUTPUT_FILE.write_text(html.rstrip() + "\n", encoding="utf-8")
+    write_project_runtime_data(raw_data["project"].get("location"))
     print(f"Generated {OUTPUT_FILE.relative_to(ROOT)} from {VIEW_FILE.relative_to(ROOT)}")
+    print(f"Generated {PROJECT_RUNTIME_DATA_FILE.relative_to(ROOT)}")
     return 0
 
 
