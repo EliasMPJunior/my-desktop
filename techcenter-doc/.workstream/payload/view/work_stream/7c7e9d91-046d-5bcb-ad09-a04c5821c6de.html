@@ -12,6 +12,9 @@
       window.infoBimWorkStreamAssetRoot = sourceView
         ? "../../../../.__ontobdc__/asset/infobim-view"
         : "../../.__ontobdc__/asset/infobim-view";
+      window.infoBimWorkStreamMainPage = sourceView
+        ? "../../../../index.html"
+        : "../../index.html";
       document.write(
         '<link rel="stylesheet" href="'
         + window.infoBimWorkStreamAssetRoot
@@ -19,6 +22,35 @@
       );
     }());
   </script>
+  <style>
+    .workstream-main-link {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 46px;
+      padding: 10px 22px;
+      border: 1px solid rgba(103, 232, 249, 0.34);
+      border-radius: 999px;
+      color: var(--text);
+      background: rgba(103, 232, 249, 0.08);
+      font-weight: 800;
+      text-decoration: none;
+      white-space: nowrap;
+      transition:
+        border-color 160ms ease,
+        background 160ms ease;
+    }
+
+    .workstream-main-link:hover {
+      border-color: var(--accent);
+      background: rgba(103, 232, 249, 0.14);
+    }
+
+    .workstream-main-link:focus-visible {
+      outline: 2px solid var(--accent);
+      outline-offset: 3px;
+    }
+  </style>
 </head>
 <body>
   <main class="view-shell">
@@ -54,7 +86,12 @@
           </svg>
           <span>Atualizar</span>
         </button>
-        <button class="container-open-button" id="open-container" type="button">Abrir projeto</button>
+        <button class="container-open-button" id="open-container" type="button">Carregar</button>
+        <a
+          class="workstream-main-link"
+          id="workstream-main-link"
+          href="#"
+        >Voltar à página principal</a>
       </div>
     </section>
 
@@ -65,6 +102,8 @@
     (function () {
       document.getElementById("workstream-logo").src =
         window.infoBimWorkStreamAssetRoot + "/logo.png";
+      document.getElementById("workstream-main-link").href =
+        window.infoBimWorkStreamMainPage;
 
       const dimensions = [
         {id: "what", dimension: "what", field: "What", symbol: "W", label: "What", question: "O que será executado?"},
