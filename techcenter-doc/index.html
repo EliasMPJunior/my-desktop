@@ -6,206 +6,158 @@
   <meta name="ontobdc-source-fingerprint" content="60ca1659c2239b39782b4e93982fbeda4efb08988af89db6d31bd82735673024">
   <meta name="ontobdc-options-fingerprint" content="06892644d82b292f7203cd251e7cf6ec2a9f420f9b29d9ca12980e357ee0bd3f">
   <meta name="ontobdc-view-template" content="infobim-project-dashboard">
-  <title>Storage Container: techcenter-doc</title>
+  <title>Real Estate Brazil (Official)-Obras - Exp LabSea2025</title>
   <link rel="stylesheet" href="./.__ontobdc__/asset/infobim-view/css/project_dashboard.css">
   <style>
-.view-topbar, .view-grid { grid-template-columns: repeat(12, minmax(0, 1fr)); }
-.view-topbar-primary { grid-column: span 8; min-width: 0; }
-.view-hero-meta { grid-column: span 4; align-self: stretch; min-width: 0; }
-.view-column-third { grid-column: span 4; }
-.view-column-main { grid-column: span 8; }
-.view-topbar > *, .view-grid > *, .view-brand-copy, .metadata-row > * { min-width: 0; }
-.view-topbar h1, .view-eyebrow-meta, .metadata-row dd { overflow-wrap: anywhere; }
-.view-menubar-track { overflow-x: auto; scrollbar-width: thin; }
-.menubar-item {
-  flex: 0 0 auto;
-  appearance: none;
-  color: inherit;
-  font: inherit;
-  cursor: pointer;
-}
-.view-badge[data-card="numeric-data-card"] {
-  grid-template-rows: auto auto 1fr;
-  align-content: stretch;
-}
-.view-badge[data-card="numeric-data-card"] .view-badge-value {
-  align-self: start;
-  justify-self: center;
-  max-width: 100%;
-  margin: 14px 0 0;
-  text-align: center;
-  white-space: nowrap;
-  word-break: normal;
-  overflow-wrap: normal;
-  font-size: clamp(2.5rem, 3.25vw, 3.75rem);
-  font-weight: 900;
-  font-variant-numeric: tabular-nums;
-  line-height: 1;
-  letter-spacing: -.05em;
-}
-.project-tabs-card { min-height: 720px; }
-.project-tabs-shell {
-  display: grid;
-  grid-template-rows: auto minmax(0, 1fr);
-  min-height: 620px;
-}
-.project-tabs-nav {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  min-width: 0;
-  padding: 12px 18px 0;
-  overflow-x: auto;
-  overflow-y: hidden;
-  border-bottom: 1px solid var(--line);
-  scrollbar-width: thin;
-}
-.project-tab {
-  position: relative;
-  display: inline-flex;
-  align-items: center;
-  gap: 9px;
-  flex: 0 0 auto;
-  appearance: none;
-  min-height: 48px;
-  padding: 10px 14px 13px;
-  border: 0;
-  border-radius: 14px 14px 0 0;
-  color: var(--text-soft);
-  background: transparent;
-  font: inherit;
-  font-size: .88rem;
-  font-weight: 800;
-  cursor: pointer;
-  transition: color 160ms ease, background 160ms ease;
-}
-.project-tab::after {
-  content: "";
-  position: absolute;
-  right: 10px;
-  bottom: -1px;
-  left: 10px;
-  height: 2px;
-  border-radius: 999px;
-  background: transparent;
-}
-.project-tab:hover { color: var(--text); background: rgba(255,255,255,.03); }
-.project-tab:focus-visible {
-  outline: 2px solid var(--accent-strong);
-  outline-offset: -2px;
-}
-.project-tab[aria-selected="true"] {
-  color: var(--accent);
-  background: rgba(103,232,249,.08);
-}
-.project-tab[aria-selected="true"]::after {
-  background: linear-gradient(90deg, var(--accent), var(--accent-strong));
-}
-.project-tab-icon { font-size: 1rem; line-height: 1; }
-.project-tabs-content { min-width: 0; min-height: 0; }
-.project-tab-panel { min-height: 540px; padding: 28px; }
-.project-tab-panel[hidden] { display: none; }
-.project-tab-empty {
-  display: grid;
-  align-content: center;
-  justify-items: center;
-  min-height: 470px;
-  padding: 36px;
-  border: 1px dashed rgba(103,232,249,.22);
-  border-radius: 22px;
-  background:
-    radial-gradient(circle at center, rgba(103,232,249,.07), transparent 62%),
-    rgba(255,255,255,.018);
-  text-align: center;
-}
-.project-tab-empty-icon {
-  display: grid;
-  place-items: center;
-  width: 68px;
-  height: 68px;
-  margin-bottom: 18px;
-  border: 1px solid rgba(103,232,249,.22);
-  border-radius: 20px;
-  color: var(--accent);
-  background: rgba(103,232,249,.08);
-  font-size: 1.8rem;
-}
-.project-tab-empty h3 {
-  margin: 0;
-  color: var(--text);
-  font-size: clamp(1.35rem,2vw,1.8rem);
-}
-.project-tab-empty p {
-  max-width: 58ch;
-  margin: 10px 0 0;
-  color: var(--text-soft);
-  line-height: 1.7;
-}
-@media (max-width: 1200px) {
-  .view-hero-meta { grid-template-columns: repeat(2,minmax(0,1fr)); }
-  .view-column-third, .view-column-main { grid-column: span 6; }
-  .view-topbar h1 { font-size: clamp(2.45rem,5vw,4.2rem); }
-}
-@media (max-width: 1050px) {
-  .view-topbar-primary, .view-hero-meta, .view-column-third, .view-column-main {
-    grid-column: 1 / -1;
-  }
-  .view-hero-meta { grid-template-columns: repeat(3,minmax(0,1fr)); }
-  .metadata-row { grid-template-columns: minmax(92px,.35fr) minmax(0,1fr); }
-}
-@media (max-width: 760px) {
-  .view-hero-meta { grid-template-columns: repeat(2,minmax(0,1fr)); }
-  .view-brand { align-items: flex-start; }
-  .view-topbar h1 { font-size: clamp(2.15rem,10vw,3.4rem); line-height: .98; }
-  .metadata-row { grid-template-columns: 1fr; gap: 7px; }
-  .project-tabs-card, .project-tabs-shell { min-height: 0; }
-  .project-tab-panel { min-height: 430px; padding: 18px; }
-  .project-tab-empty { min-height: 390px; padding: 24px; }
-}
-@media (max-width: 480px) {
-  .view-shell { padding: 12px; }
-  .view-topbar, .view-grid, .view-column { gap: 12px; }
-  .view-hero-card, .view-panel, .view-hero-meta { border-radius: 20px; }
-  .view-hero-card { padding: 18px; }
-  .view-brand { gap: 12px; }
-  .view-brand-logo { width: 64px; height: 64px; flex: 0 0 64px; }
-  .view-eyebrow { padding: 8px 10px; font-size: .68rem; }
-  .view-eyebrow-meta { font-size: .68rem; }
-  .view-topbar h1 { margin-top: 14px; font-size: clamp(1.9rem,11vw,2.7rem); }
-  .view-menubar-card { padding: 5px 8px; border-radius: 18px; }
-  .view-hero-meta { grid-template-columns: 1fr; padding: 14px; }
-  .view-badge { aspect-ratio: auto; min-height: 128px; }
-  .view-panel-head, .view-panel-body { padding-inline: 16px; }
-  .project-tabs-nav { padding-inline: 10px; }
-  .project-tab { min-height: 44px; padding-inline: 11px; font-size: .8rem; }
-  .project-tab-panel { min-height: 360px; padding: 12px; }
-  .project-tab-empty { min-height: 336px; padding: 20px; border-radius: 18px; }
-}
+    .view-topbar,
+    .view-grid {
+      grid-template-columns: repeat(12, minmax(0, 1fr));
+    }
 
-@media (min-width: 761px) {
-  .view-hero-meta {
-    align-self: start;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-    grid-template-rows: repeat(2, auto);
-    align-content: start;
-  }
-  .view-hero-meta::after {
-    content: "";
-    grid-column: 3;
-    grid-row: 2;
-    width: 100%;
-    aspect-ratio: 1 / 1;
-    visibility: hidden;
-    pointer-events: none;
-  }
-  .view-hero-meta > .view-badge {
-    width: 100%;
-    height: auto;
-    min-height: 0;
-    aspect-ratio: 1 / 1;
-  }
-}
-</style>
+    .view-topbar {
+      align-items: stretch;
+    }
+
+    .view-topbar-primary {
+      grid-column: span 8;
+      grid-template-rows: minmax(0, 1fr) auto;
+      min-width: 0;
+      height: 100%;
+    }
+
+    .view-hero-card {
+      height: 100%;
+    }
+
+    .view-hero-meta {
+      grid-column: span 4;
+      align-self: stretch;
+      min-width: 0;
+      height: 100%;
+    }
+
+    .view-column-third {
+      grid-column: span 4;
+    }
+
+    .view-column-main {
+      grid-column: span 8;
+    }
+
+    .view-topbar > *,
+    .view-grid > *,
+    .view-brand-copy,
+    .metadata-row > * {
+      min-width: 0;
+    }
+
+    .view-topbar h1,
+    .view-eyebrow-meta,
+    .metadata-row dd {
+      overflow-wrap: anywhere;
+    }
+
+    .view-menubar-track {
+      overflow-x: auto;
+      scrollbar-width: thin;
+    }
+
+    .menubar-item {
+      flex: 0 0 auto;
+      appearance: none;
+      color: inherit;
+      font: inherit;
+      cursor: pointer;
+    }
+
+    .project-tabs-card {
+      min-height: 720px;
+    }
+
+    .project-tabs-shell {
+      min-height: 620px;
+    }
+
+    .project-tab-panel {
+      min-height: 540px;
+      padding: 28px;
+    }
+
+    .project-tab-empty {
+      display: grid;
+      align-content: center;
+      justify-items: center;
+      min-height: 470px;
+      padding: 36px;
+      border: 1px dashed rgba(103, 232, 249, 0.22);
+      border-radius: 22px;
+      background:
+        radial-gradient(circle at center, rgba(103, 232, 249, 0.07), transparent 62%),
+        rgba(255, 255, 255, 0.018);
+      text-align: center;
+    }
+
+    .project-tab-empty-icon {
+      display: grid;
+      place-items: center;
+      width: 68px;
+      height: 68px;
+      margin-bottom: 18px;
+      border: 1px solid rgba(103, 232, 249, 0.22);
+      border-radius: 20px;
+      color: var(--accent);
+      background: rgba(103, 232, 249, 0.08);
+      font-size: 1.8rem;
+    }
+
+    .project-tab-empty h3 {
+      margin: 0;
+      color: var(--text);
+      font-size: clamp(1.35rem, 2vw, 1.8rem);
+    }
+
+    .project-tab-empty p {
+      max-width: 58ch;
+      margin: 10px 0 0;
+      color: var(--text-soft);
+      line-height: 1.7;
+    }
+
+    @media (max-width: 1050px) {
+      .view-topbar-primary,
+      .view-hero-meta,
+      .view-column-third,
+      .view-column-main {
+        grid-column: 1 / -1;
+      }
+
+      .view-hero-meta {
+        min-height: 180px;
+      }
+    }
+
+    @media (max-width: 760px) {
+      .metadata-row {
+        grid-template-columns: 1fr;
+        gap: 7px;
+      }
+
+      .project-tabs-card,
+      .project-tabs-shell {
+        min-height: 0;
+      }
+
+      .project-tab-panel {
+        min-height: 430px;
+        padding: 18px;
+      }
+
+      .project-tab-empty {
+        min-height: 390px;
+        padding: 24px;
+      }
+    }
+  </style>
 </head>
 <body>
   <main class="view-shell">
@@ -224,24 +176,29 @@
               <span class="view-eyebrow-meta">urn:infobim:project:Real%20Estate%20Brazil%20%28Official%29-Obras%20-%20Exp%20LabSea2025</span>
             </div>
           </div>
-          <h1>Storage Container: techcenter-doc</h1>
+          <h1>Real Estate Brazil (Official)-Obras - Exp LabSea2025</h1>
         </article>
+
         <article class="view-menubar-card" data-card="dynamic-menubar-card">
           <div class="view-menubar-track">
-            <button class="menubar-item" type="button" data-action="documents" aria-label="Documentos">
-              <span class="menubar-item-label" aria-hidden="true">▦</span>
-              <span class="menubar-item-value">Documentos</span>
+            <button
+              class="menubar-item"
+              type="button"
+              data-action="view/work_stream/7c7e9d91-046d-5bcb-ad09-a04c5821c6de.html"
+              aria-label="WorkStream"
+            >
+              <span class="menubar-item-label" aria-hidden="true">5W2H</span>
+              <span class="menubar-item-value">WorkStream</span>
             </button>
           </div>
         </article>
       </div>
 
-      <aside class="view-hero-meta" data-card="numeric-data-grid">
-        <div class="view-badge" data-card="numeric-data-card">
-          <span class="view-badge-label">Documentos</span>
-          <span class="view-badge-value">128</span>
-        </div>
-      </aside>
+      <aside
+        class="view-hero-meta"
+        data-card="numeric-data-grid"
+        aria-label="Indicadores"
+      ></aside>
     </section>
 
     <section class="view-grid">
@@ -250,18 +207,18 @@
           <header class="view-panel-head">
             <h2 class="view-panel-title">Project Information</h2>
             <p class="view-panel-copy" id="project-current-date">
-              <span class="view-panel-copy-diamond">◆</span>terça-feira, 4 de agosto de 2026 às 10:06
+              <span class="view-panel-copy-diamond">◆</span>carregando data...
             </p>
           </header>
           <div class="view-panel-body">
             <dl class="metadata-list">
               <div class="metadata-row">
                 <dt>Name</dt>
-                <dd>Storage Container: techcenter-doc</dd>
+                <dd>Real Estate Brazil (Official)-Obras - Exp LabSea2025</dd>
               </div>
               <div class="metadata-row">
                 <dt>Path</dt>
-                <dd>C:\Users\EliasMagalhães\Documents\Brasidata\06_Projetos\01_Projetos_Ativos\my-desktop\techcenter-doc</dd>
+                <dd>./</dd>
               </div>
               <div class="metadata-row">
                 <dt>Arquivos indexados</dt>
@@ -289,170 +246,22 @@
       <div class="view-column view-column-main">
         <article class="view-panel project-tabs-card" data-card="project-tabs-card">
           <header class="view-panel-head">
-            <h2 class="view-panel-title">Conteúdo do projeto</h2>
-            <p class="view-panel-copy">Navegue pelas categorias de informação disponíveis.</p>
+            <h2 class="view-panel-title">Frentes de Trabalho</h2>
+            <p class="view-panel-copy">Acompanhe as frentes do projeto em uma janela móvel de duas semanas.</p>
           </header>
           <div class="project-tabs-shell">
-            <div class="project-tabs-nav" role="tablist" aria-label="Conteúdo do projeto" data-project-tablist>
-              <button
-                class="project-tab"
-                type="button"
-                id="project-tab-timeline"
-                role="tab"
-                aria-selected="true"
-                aria-controls="project-tab-panel-timeline"
-                tabindex="0"
-                data-tab-id="timeline"
-              >
-                <span class="project-tab-icon" aria-hidden="true">◷</span>
-                <span>Timeline</span>
-              </button>
-              <button
-                class="project-tab"
-                type="button"
-                id="project-tab-workstreams"
-                role="tab"
-                aria-selected="false"
-                aria-controls="project-tab-panel-workstreams"
-                tabindex="-1"
-                data-tab-id="workstreams"
-              >
-                <span class="project-tab-icon" aria-hidden="true">≋</span>
-                <span>Frentes de Trabalho</span>
-              </button>
-              <button
-                class="project-tab"
-                type="button"
-                id="project-tab-drawings"
-                role="tab"
-                aria-selected="false"
-                aria-controls="project-tab-panel-drawings"
-                tabindex="-1"
-                data-tab-id="drawings"
-              >
-                <span class="project-tab-icon" aria-hidden="true">⌗</span>
-                <span>Pranchas</span>
-              </button>
-              <button
-                class="project-tab"
-                type="button"
-                id="project-tab-documents"
-                role="tab"
-                aria-selected="false"
-                aria-controls="project-tab-panel-documents"
-                tabindex="-1"
-                data-tab-id="documents"
-              >
-                <span class="project-tab-icon" aria-hidden="true">▦</span>
-                <span>Documentos</span>
-              </button>
-              <button
-                class="project-tab"
-                type="button"
-                id="project-tab-photos"
-                role="tab"
-                aria-selected="false"
-                aria-controls="project-tab-panel-photos"
-                tabindex="-1"
-                data-tab-id="photos"
-              >
-                <span class="project-tab-icon" aria-hidden="true">◉</span>
-                <span>Fotos</span>
-              </button>
-              <button
-                class="project-tab"
-                type="button"
-                id="project-tab-messages"
-                role="tab"
-                aria-selected="false"
-                aria-controls="project-tab-panel-messages"
-                tabindex="-1"
-                data-tab-id="messages"
-              >
-                <span class="project-tab-icon" aria-hidden="true">✉</span>
-                <span>Mensagens</span>
-              </button>
-            </div>
-            <div class="project-tabs-content">
-              <section
-                class="project-tab-panel"
-                id="project-tab-panel-timeline"
-                role="tabpanel"
-                aria-labelledby="project-tab-timeline"
-                tabindex="0"
-              >
-                <div class="project-tab-empty">
-                  <span class="project-tab-empty-icon" aria-hidden="true">◷</span>
-                  <h3>Timeline</h3>
-                  <p>Linha do tempo cronológica dos eventos, atividades e registros do projeto.</p>
-                </div>
-              </section>
-              <section
-                class="project-tab-panel"
-                id="project-tab-panel-workstreams"
-                role="tabpanel"
-                aria-labelledby="project-tab-workstreams"
-                tabindex="0" hidden
-              >
-                <div class="project-tab-empty">
-                  <span class="project-tab-empty-icon" aria-hidden="true">≋</span>
-                  <h3>Frentes de Trabalho</h3>
-                  <p>Frentes de trabalho e respectivos estados de execução.</p>
-                </div>
-              </section>
-              <section
-                class="project-tab-panel"
-                id="project-tab-panel-drawings"
-                role="tabpanel"
-                aria-labelledby="project-tab-drawings"
-                tabindex="0" hidden
-              >
-                <div class="project-tab-empty">
-                  <span class="project-tab-empty-icon" aria-hidden="true">⌗</span>
-                  <h3>Pranchas</h3>
-                  <p>Visualização e navegação das pranchas indexadas.</p>
-                </div>
-              </section>
-              <section
-                class="project-tab-panel"
-                id="project-tab-panel-documents"
-                role="tabpanel"
-                aria-labelledby="project-tab-documents"
-                tabindex="0" hidden
-              >
-                <div class="project-tab-empty">
-                  <span class="project-tab-empty-icon" aria-hidden="true">▦</span>
-                  <h3>Documentos</h3>
-                  <p>Documentos técnicos e demais arquivos disponíveis.</p>
-                </div>
-              </section>
-              <section
-                class="project-tab-panel"
-                id="project-tab-panel-photos"
-                role="tabpanel"
-                aria-labelledby="project-tab-photos"
-                tabindex="0" hidden
-              >
-                <div class="project-tab-empty">
-                  <span class="project-tab-empty-icon" aria-hidden="true">◉</span>
-                  <h3>Fotos</h3>
-                  <p>Registros fotográficos vinculados ao projeto.</p>
-                </div>
-              </section>
-              <section
-                class="project-tab-panel"
-                id="project-tab-panel-messages"
-                role="tabpanel"
-                aria-labelledby="project-tab-messages"
-                tabindex="0" hidden
-              >
-                <div class="project-tab-empty">
-                  <span class="project-tab-empty-icon" aria-hidden="true">✉</span>
-                  <h3>Mensagens</h3>
-                  <p>Mensagens e registros de comunicação do projeto.</p>
-                </div>
-              </section>
-            </div>
+            <section
+              class="project-tab-panel"
+              id="project-tab-panel-workstreams"
+              aria-labelledby="project-tab-workstreams"
+              tabindex="0"
+            >
+              <div class="project-tab-empty">
+                <span class="project-tab-empty-icon" aria-hidden="true">≋</span>
+                <h3>Frentes de Trabalho</h3>
+                <p>Frentes publicadas no grafo JSON-LD do projeto.</p>
+              </div>
+            </section>
           </div>
         </article>
       </div>
@@ -461,33 +270,26 @@
 
   <script>
     window.infoBimProjectDashboard = {
-  "projectId": "urn:infobim:project:Real%20Estate%20Brazil%20%28Official%29-Obras%20-%20Exp%20LabSea2025",
-  "name": "Storage Container: techcenter-doc",
-  "path": "C:\\Users\\EliasMagalhães\\Documents\\Brasidata\\06_Projetos\\01_Projetos_Ativos\\my-desktop\\techcenter-doc"
-};
+      projectId: "urn:infobim:project:Real%20Estate%20Brazil%20%28Official%29-Obras%20-%20Exp%20LabSea2025",
+      name: "Real Estate Brazil (Official)-Obras - Exp LabSea2025",
+      path: "./"
+    };
+
     (() => {
-      const tabs = Array.from(document.querySelectorAll('[role="tab"]'));
-      const panels = Array.from(document.querySelectorAll('[role="tabpanel"]'));
-      function selectTab(tab) {
-        tabs.forEach((item) => {
-          const active = item === tab;
-          item.setAttribute('aria-selected', active ? 'true' : 'false');
-          item.tabIndex = active ? 0 : -1;
-        });
-        panels.forEach((panel) => {
-          panel.hidden = panel.id !== tab.getAttribute('aria-controls');
-        });
+      const dateElement = document.getElementById("project-current-date");
+      if (dateElement) {
+        const value = new Intl.DateTimeFormat("pt-BR", {
+          dateStyle: "full",
+          timeStyle: "short"
+        }).format(new Date());
+        dateElement.innerHTML = '<span class="view-panel-copy-diamond">◆</span>' + value;
       }
-      tabs.forEach((tab) => {
-        tab.addEventListener('click', () => selectTab(tab));
-        tab.addEventListener('keydown', (event) => {
-          const index = tabs.indexOf(tab);
-          if (event.key === 'ArrowRight' || event.key === 'ArrowLeft') {
-            event.preventDefault();
-            const delta = event.key === 'ArrowRight' ? 1 : -1;
-            const next = tabs[(index + delta + tabs.length) % tabs.length];
-            selectTab(next);
-            next.focus();
+
+      document.querySelectorAll('.menubar-item[data-action]').forEach((button) => {
+        button.addEventListener('click', () => {
+          const action = String(button.dataset.action || '').trim();
+          if (action.startsWith('view/') || action.startsWith('./view/')) {
+            window.location.href = action;
           }
         });
       });
