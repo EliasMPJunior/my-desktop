@@ -1,0 +1,197 @@
+.project-tabs-card[data-workstream-board-ready="true"] {
+  min-height: 0;
+}
+
+.project-tabs-card[data-workstream-board-ready="true"] .project-tabs-shell {
+  min-height: 0;
+}
+
+.project-tabs-card[data-workstream-board-ready="true"] .project-tab-panel {
+  min-height: 0;
+  padding: 0;
+}
+
+.project-tabs-card[data-workstream-board-ready="true"] .project-tabs-nav {
+  overflow-y: hidden;
+}
+
+.workstream-board-scroll {
+  width: 100%;
+  overflow-x: auto;
+  scrollbar-width: thin;
+}
+
+.workstream-board {
+  --workstream-column-width: minmax(230px, 1.65fr);
+  --calendar-column-width: minmax(58px, 1fr);
+  display: grid;
+  grid-template-columns:
+    var(--workstream-column-width)
+    repeat(11, var(--calendar-column-width));
+  min-width: 930px;
+  background: rgba(6, 13, 25, 0.28);
+}
+
+.workstream-board-cell {
+  min-width: 0;
+  border-right: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+}
+
+.workstream-board-cell:nth-child(12n) {
+  border-right: 0;
+}
+
+.workstream-board-heading {
+  display: grid;
+  align-content: center;
+  min-height: 82px;
+  padding: 14px 18px;
+  background: rgba(255, 255, 255, 0.025);
+}
+
+.workstream-board-heading strong {
+  color: var(--text);
+  font-size: 0.82rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.workstream-board-heading span {
+  margin-top: 5px;
+  color: var(--text-soft);
+  font-size: 0.72rem;
+  line-height: 1.35;
+}
+
+.workstream-calendar-day {
+  display: grid;
+  align-content: center;
+  justify-items: center;
+  min-height: 82px;
+  padding: 10px 6px;
+  background: rgba(255, 255, 255, 0.018);
+  text-align: center;
+}
+
+.workstream-calendar-day abbr {
+  color: var(--text-soft);
+  font-size: 0.64rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.workstream-calendar-day strong {
+  margin-top: 6px;
+  color: var(--text);
+  font-size: 1.1rem;
+  font-variant-numeric: tabular-nums;
+  line-height: 1;
+}
+
+.workstream-calendar-day span {
+  margin-top: 4px;
+  color: rgba(151, 167, 191, 0.7);
+  font-size: 0.58rem;
+  text-transform: uppercase;
+}
+
+.workstream-calendar-day.is-today,
+.workstream-calendar-slot.is-today {
+  background: rgba(103, 232, 249, 0.075);
+  box-shadow: inset 2px 0 0 rgba(103, 232, 249, 0.45),
+    inset -2px 0 0 rgba(103, 232, 249, 0.22);
+}
+
+.workstream-calendar-day.is-today strong,
+.workstream-calendar-day.is-today span {
+  color: var(--accent);
+}
+
+.workstream-board-link {
+  display: grid;
+  align-content: center;
+  min-height: 112px;
+  padding: 18px;
+  color: inherit;
+  background: rgba(255, 255, 255, 0.018);
+  text-decoration: none;
+  transition:
+    background 160ms ease,
+    box-shadow 160ms ease;
+}
+
+.workstream-board-link:hover {
+  background: rgba(103, 232, 249, 0.06);
+  box-shadow: inset 3px 0 0 var(--accent);
+}
+
+.workstream-board-link:focus-visible {
+  outline: 2px solid var(--accent-strong);
+  outline-offset: -3px;
+}
+
+.workstream-board-link strong {
+  color: var(--text);
+  font-size: 0.94rem;
+  line-height: 1.3;
+}
+
+.workstream-board-link p {
+  margin: 7px 0 0;
+  color: var(--text-soft);
+  font-size: 0.72rem;
+  line-height: 1.45;
+}
+
+.workstream-board-link span {
+  margin-top: 9px;
+  color: rgba(103, 232, 249, 0.82);
+  font-size: 0.62rem;
+  font-weight: 800;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.workstream-calendar-slot {
+  min-height: 112px;
+  background: rgba(255, 255, 255, 0.008);
+}
+
+.workstream-calendar-slot:nth-child(even) {
+  background-color: rgba(255, 255, 255, 0.012);
+}
+
+.workstream-board-state {
+  grid-column: 1 / -1;
+  display: grid;
+  place-items: center;
+  min-height: 220px;
+  padding: 36px;
+  color: var(--text-soft);
+  text-align: center;
+}
+
+.workstream-board-state strong {
+  color: var(--text);
+}
+
+@media (max-width: 760px) {
+  .workstream-board {
+    --workstream-column-width: minmax(210px, 1.5fr);
+    --calendar-column-width: minmax(54px, 1fr);
+    min-width: 860px;
+  }
+
+  .workstream-board-heading,
+  .workstream-calendar-day {
+    min-height: 74px;
+  }
+
+  .workstream-board-link,
+  .workstream-calendar-slot {
+    min-height: 104px;
+  }
+}
