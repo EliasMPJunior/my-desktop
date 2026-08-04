@@ -1,18 +1,37 @@
 @prefix ct: <http://standards.iso.org/iso/21597/-1/ed-1/en/Container#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ifcws: <http://datacenter.app.br/ontology/bsi/element/ifc_work_schedule/type.ttl#> .
+@prefix ifcwsf: <http://datacenter.app.br/ontology/bsi/element/ifc_work_schedule/facade.ttl#> .
 @prefix obdc: <http://ontobdc.org/ontology/domain/ns.ttl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix wst: <http://datacenter.app.br/ontology/productivity/entity/work_stream/type.ttl#> .
+@prefix wsf: <http://datacenter.app.br/ontology/productivity/entity/work_stream/facade.ttl#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 <file:///C:/Users/EliasMagalh%C3%A3es/Documents/Brasidata/06_Projetos/01_Projetos_Ativos/my-desktop/techcenter-doc/.workstream/.__ontobdc__/dataset.ttl> a owl:Ontology .
 
 <urn:ontobdc:storage/dataset/techcenter-doc/.workstream> a obdc:EntityDataset ;
     obdc:belongsToDataContainer <urn:ontobdc:storage/local/techcenter-doc> ;
-    obdc:hasDataEntity <urn:ontobdc:storage/dataset/techcenter-doc/.workstream/f54b20cc0ddea739fadf16f185c754dc3fe349b5d54f3a75742a80e53955f9d9> ;
+    obdc:hasDataEntity <urn:ontobdc:storage/dataset/techcenter-doc/.workstream/f54b20cc0ddea739fadf16f185c754dc3fe349b5d54f3a75742a80e53955f9d9> ,
+        <urn:ontobdc:storage/dataset/techcenter-doc/.workstream/ifc_work_schedule_header_vocabulary> ;
     dcterms:description "Dataset WorkStream do projeto de expansão do LabSea."@pt-BR ;
     dcterms:identifier "urn:ontobdc:storage/dataset/techcenter-doc/.workstream" ;
     dcterms:title "WorkStream — Expansão do LabSea"@pt-BR ;
     ct:creationDate "2026-08-04T00:16:00+00:00"^^xsd:dateTime ;
     prov:atLocation <file:///C:/Users/EliasMagalh%C3%A3es/Documents/Brasidata/06_Projetos/01_Projetos_Ativos/my-desktop/techcenter-doc/.workstream> .
 
+<urn:ontobdc:storage/dataset/techcenter-doc/.workstream/f54b20cc0ddea739fadf16f185c754dc3fe349b5d54f3a75742a80e53955f9d9> a obdc:DataEntity ,
+        wst:WorkStream ;
+    dcterms:conformsTo wsf:WorkStreamFacade ;
+    dcterms:identifier "work_stream" ;
+    dcterms:title "WorkStream"@en .
+
+<urn:ontobdc:storage/dataset/techcenter-doc/.workstream/ifc_work_schedule_header_vocabulary> a obdc:DataEntity ;
+    dcterms:conformsTo ifcwsf:IfcTaskFacade ,
+        ifcwsf:IfcTaskTimeFacade ,
+        ifcwsf:IfcRelSequencePredecessorFacade ,
+        ifcwsf:IfcRelSequenceSuccessorFacade ;
+    dcterms:identifier "ifc_work_schedule_header_vocabulary" ;
+    dcterms:relation ifcws:IfcWorkScheduleHeaderVocabulary ;
+    dcterms:title "IfcWorkSchedule Header Vocabulary"@en .
