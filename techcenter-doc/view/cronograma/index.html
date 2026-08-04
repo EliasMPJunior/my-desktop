@@ -20,40 +20,43 @@
       letter-spacing: -0.055em;
     }
 
-    .schedule-actions {
-      display: flex;
-      align-items: center;
-      justify-content: flex-end;
-      min-height: 70px;
+    .schedule-tabs {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr);
+      min-height: 64px;
       margin-top: 16px;
-      padding: 12px 16px;
+      padding: 5px;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      background: rgba(15, 26, 44, 0.88);
     }
 
-    .schedule-view-link {
+    .schedule-tab {
       display: inline-flex;
       align-items: center;
       justify-content: center;
-      min-height: 46px;
+      min-height: 52px;
       padding: 10px 24px;
-      border: 1px solid rgba(103, 232, 249, 0.34);
+      border: 1px solid rgba(103, 232, 249, 0.5);
       border-radius: 999px;
-      color: var(--text);
-      background: rgba(103, 232, 249, 0.08);
-      font-weight: 800;
+      color: var(--accent);
+      background: rgba(103, 232, 249, 0.12);
+      box-shadow:
+        0 0 0 1px rgba(255, 255, 255, 0.8),
+        inset 0 0 24px rgba(103, 232, 249, 0.04);
+      font-weight: 900;
       text-decoration: none;
       transition:
         border-color 160ms ease,
-        background 160ms ease,
-        transform 160ms ease;
+        background 160ms ease;
     }
 
-    .schedule-view-link:hover {
+    .schedule-tab:hover {
       border-color: var(--accent);
-      background: rgba(103, 232, 249, 0.14);
-      transform: translateY(-1px);
+      background: rgba(103, 232, 249, 0.17);
     }
 
-    .schedule-view-link:focus-visible {
+    .schedule-tab:focus-visible {
       outline: 2px solid var(--accent);
       outline-offset: 3px;
     }
@@ -63,8 +66,8 @@
         font-size: clamp(2.6rem, 16vw, 4.4rem);
       }
 
-      .schedule-actions,
-      .schedule-view-link {
+      .schedule-tabs,
+      .schedule-tab {
         width: 100%;
       }
     }
@@ -89,8 +92,12 @@
       <h1>Cronograma Geral</h1>
     </section>
 
-    <nav class="view-panel schedule-actions" aria-label="Visualizações do cronograma">
-      <a class="schedule-view-link" href="./gantt.html">Gantt</a>
+    <nav class="schedule-tabs" aria-label="Visualizações do cronograma">
+      <a
+        class="schedule-tab"
+        href="./gantt.html"
+        aria-current="page"
+      >Gantt</a>
     </nav>
   </main>
 </body>
