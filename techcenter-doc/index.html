@@ -43,17 +43,6 @@
   line-height: 1;
   letter-spacing: -.05em;
 }
-@media (min-width: 761px) {
-  .view-hero-meta {
-    grid-auto-rows: minmax(0, 1fr);
-    align-content: stretch;
-  }
-  .view-hero-meta > .view-badge {
-    height: 100%;
-    min-height: 0;
-    aspect-ratio: auto;
-  }
-}
 .project-tabs-card { min-height: 720px; }
 .project-tabs-shell {
   display: grid;
@@ -191,6 +180,30 @@
   .project-tab { min-height: 44px; padding-inline: 11px; font-size: .8rem; }
   .project-tab-panel { min-height: 360px; padding: 12px; }
   .project-tab-empty { min-height: 336px; padding: 20px; border-radius: 18px; }
+}
+
+@media (min-width: 761px) {
+  .view-hero-meta {
+    align-self: start;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-template-rows: repeat(2, auto);
+    align-content: start;
+  }
+  .view-hero-meta::after {
+    content: "";
+    grid-column: 3;
+    grid-row: 2;
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    visibility: hidden;
+    pointer-events: none;
+  }
+  .view-hero-meta > .view-badge {
+    width: 100%;
+    height: auto;
+    min-height: 0;
+    aspect-ratio: 1 / 1;
+  }
 }
 </style>
 </head>
