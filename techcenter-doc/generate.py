@@ -29,6 +29,7 @@ TEMPLATE_DIR = ROOT / "template"
 VIEW_FILE = ROOT / "views" / "public.yaml"
 OUTPUT_FILE = ROOT / "index.html"
 INLINE_STRONG_PATTERN = re.compile(r"(\*\*|__)(.+?)\1")
+LOCAL_VIEW_ACTION_PREFIXES = ("view/", "./view/")
 MONTHS_PT_BR = (
     "",
     "janeiro",
@@ -126,6 +127,35 @@ def enrich_project_information(raw_data: Dict[str, Any]) -> None:
     project["path"] = project_path
 
 
+def local_view_navigation_script() -> str:
+    prefixes = ", ".join(repr(prefix) for prefix in LOCAL_VIEW_ACTION_PREFIXES)
+    return f"""  <script>
+    (function () {{
+      const prefixes = [{prefixes}];
+      document.querySelectorAll('.menubar-item[data-action]').forEach((button) => {{
+        button.addEventListener('click', () => {{
+          const action = String(button.dataset.action || '').trim();
+          if (prefixes.some((prefix) => action.startsWith(prefix))) {{
+            window.location.href = action;
+          }}
+        }});
+      }});
+    }}());
+  </script>
+"""
+
+
+def inject_local_view_navigation(html: str) -> str:
+    closing_body = "</body>"
+    if closing_body not in html:
+        raise ValueError("Rendered dashboard does not contain a closing body tag.")
+    return html.replace(
+        closing_body,
+        local_view_navigation_script() + closing_body,
+        1,
+    )
+
+
 def main() -> int:
     if not VIEW_FILE.is_file():
         print(f"View not found: {VIEW_FILE}", file=sys.stderr)
@@ -146,6 +176,7 @@ def main() -> int:
         lstrip_blocks=True,
     )
     html = env.get_template("index.html.jinja").render(**data)
+    html = inject_local_view_navigation(html)
     OUTPUT_FILE.write_text(html.rstrip() + "\n", encoding="utf-8")
     print(f"Generated {OUTPUT_FILE.relative_to(ROOT)} from {VIEW_FILE.relative_to(ROOT)}")
     return 0
