@@ -3,21 +3,57 @@ window.infoBimProjectRuntimeData = window.infoBimProjectRuntimeData || {};
 (function () {
   "use strict";
 
-  const runtimeData = window.infoBimProjectRuntimeData || {};
-  const card = document.querySelector('[data-card="project-information-card"]');
+  const runtimeData = window.infoBimProjectRuntimeData;
 
-  if (!card) {
-    return;
+  // Projeção estática desta visualização dos valores mantidos no project.ttl
+  // e do caminho absoluto exigido exclusivamente pelo card Project Information.
+  const projectProjection = {
+    absolutePath: "C:\\Users\\EliasMagalhães\\Documents\\Brasidata\\06_Projetos\\01_Projetos_Ativos\\my-desktop\\techcenter-doc",
+    location: {
+      latitude: -22.868585,
+      longitude: -43.214664,
+    },
+  };
+
+  function validLocation(value) {
+    if (!value || typeof value !== "object") {
+      return false;
+    }
+
+    const latitude = Number(value.latitude);
+    const longitude = Number(value.longitude);
+    return Number.isFinite(latitude)
+      && Number.isFinite(longitude)
+      && latitude >= -90
+      && latitude <= 90
+      && longitude >= -180
+      && longitude <= 180;
   }
 
+  if (!validLocation(runtimeData.location)) {
+    runtimeData.location = projectProjection.location;
+  }
+
+  if (!String(runtimeData.absolutePath || "").trim()) {
+    runtimeData.absolutePath = projectProjection.absolutePath;
+  }
+
+  const card = document.querySelector('[data-card="project-information-card"]');
+
   function metadataList() {
-    return card.querySelector(".metadata-list");
+    return card ? card.querySelector(".metadata-list") : null;
   }
 
   function metadataRowByLabel(label) {
+    if (!card) {
+      return null;
+    }
+
     return Array.from(card.querySelectorAll(".metadata-row")).find((row) => {
       const term = row.querySelector("dt");
-      return term && term.textContent.trim().toLocaleLowerCase("pt-BR") === label.toLocaleLowerCase("pt-BR");
+      return term
+        && term.textContent.trim().toLocaleLowerCase("pt-BR")
+          === label.toLocaleLowerCase("pt-BR");
     }) || null;
   }
 
@@ -38,11 +74,6 @@ window.infoBimProjectRuntimeData = window.infoBimProjectRuntimeData || {};
     }
 
     return pathname || "/";
-  }
-
-  function configuredAbsolutePath() {
-    const value = String(runtimeData.absolutePath || "").trim();
-    return value;
   }
 
   function dashboardAbsolutePath() {
@@ -66,7 +97,7 @@ window.infoBimProjectRuntimeData = window.infoBimProjectRuntimeData || {};
     }
 
     value.textContent = localAbsolutePath()
-      || configuredAbsolutePath()
+      || String(runtimeData.absolutePath || "").trim()
       || dashboardAbsolutePath()
       || "não definido";
   }
@@ -125,35 +156,27 @@ window.infoBimProjectRuntimeData = window.infoBimProjectRuntimeData || {};
     }
 
     let row = metadataRowByLabel("Geolocalização");
-    if (row) {
-      return row;
+    if (!row) {
+      row = document.createElement("div");
+      row.className = "metadata-row";
+      row.dataset.projectGeolocationRow = "";
+
+      const term = document.createElement("dt");
+      term.textContent = "Geolocalização";
+      const description = document.createElement("dd");
+      description.className = "project-geolocation-value";
+
+      row.append(term, description);
     }
 
-    row = document.createElement("div");
-    row.className = "metadata-row";
+    const nameRow = metadataRowByLabel("Name");
+    if (nameRow) {
+      nameRow.insertAdjacentElement("afterend", row);
+    } else if (!row.isConnected) {
+      list.prepend(row);
+    }
 
-    const term = document.createElement("dt");
-    term.textContent = "Geolocalização";
-    const description = document.createElement("dd");
-
-    row.append(term, description);
-    list.appendChild(row);
     return row;
-  }
-
-  function validLocation(value) {
-    if (!value || typeof value !== "object") {
-      return false;
-    }
-
-    const latitude = Number(value.latitude);
-    const longitude = Number(value.longitude);
-    return Number.isFinite(latitude)
-      && Number.isFinite(longitude)
-      && latitude >= -90
-      && latitude <= 90
-      && longitude >= -180
-      && longitude <= 180;
   }
 
   function renderGeolocation() {
@@ -197,6 +220,24 @@ window.infoBimProjectRuntimeData = window.infoBimProjectRuntimeData || {};
     value.append(coordinates, pin);
   }
 
+  function bindMenuActions() {
+    document.querySelectorAll(".menubar-item[data-action]").forEach((button) => {
+      if (button.dataset.navigationBound === "true") {
+        return;
+      }
+
+      button.dataset.navigationBound = "true";
+      button.addEventListener("click", () => {
+        const action = String(button.dataset.action || "").trim();
+        if (!action) {
+          return;
+        }
+        window.location.assign(new URL(action, document.baseURI).href);
+      });
+    });
+  }
+
   renderAbsolutePath();
   renderGeolocation();
+  bindMenuActions();
 }());
