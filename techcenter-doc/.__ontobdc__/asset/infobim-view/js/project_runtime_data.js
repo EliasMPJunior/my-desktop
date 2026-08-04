@@ -1,16 +1,5 @@
 window.infoBimProjectRuntimeData = window.infoBimProjectRuntimeData || {};
 
-if (!window.infoBimProjectRuntimeData.location) {
-  window.infoBimProjectRuntimeData.location = {
-    "latitude": -22.868585,
-    "longitude": -43.214664
-  };
-}
-
-if (!window.infoBimProjectRuntimeData.absolutePath) {
-  window.infoBimProjectRuntimeData.absolutePath = "C:\\Users\\EliasMagalhães\\Documents\\Brasidata\\06_Projetos\\01_Projetos_Ativos\\my-desktop\\techcenter-doc";
-}
-
 (function () {
   "use strict";
 
