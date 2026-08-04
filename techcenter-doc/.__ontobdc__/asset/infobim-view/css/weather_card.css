@@ -5,90 +5,56 @@
 .view-hero-meta {
   align-self: start !important;
   align-content: start;
+  grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
   grid-auto-rows: max-content;
   height: max-content;
   min-height: 0;
 }
 
 .weather-card {
-  grid-column: 1 / -1;
+  display: grid;
   grid-template-rows: auto auto auto auto;
   align-content: start;
-  gap: 14px;
+  gap: 8px;
   width: 100%;
   min-width: 0;
-  min-height: 190px;
+  min-height: 148px;
+  padding: 14px 15px;
   aspect-ratio: auto;
 }
 
-.weather-card-main {
-  display: grid;
-  grid-template-columns: auto minmax(0, 1fr);
-  align-items: center;
-  gap: 16px;
+.weather-card-value {
   min-width: 0;
-}
-
-.weather-card-temperature {
   color: var(--text);
-  font-size: clamp(2.25rem, 3.2vw, 3.5rem);
+  font-size: clamp(1.55rem, 2vw, 2.25rem);
   font-weight: 900;
   font-variant-numeric: tabular-nums;
   line-height: 1;
-  letter-spacing: -0.05em;
+  letter-spacing: -0.04em;
   white-space: nowrap;
 }
 
-.weather-card-condition {
+.weather-card-detail {
   min-width: 0;
   color: var(--text-soft);
-  font-size: 0.82rem;
+  font-size: 0.68rem;
   font-weight: 700;
-  line-height: 1.35;
+  line-height: 1.25;
   overflow-wrap: normal;
   word-break: normal;
 }
 
-.weather-card-metrics {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 14px;
-}
-
-.weather-card-metric {
-  display: grid;
-  gap: 4px;
-  min-width: 0;
-  padding-top: 10px;
-  border-top: 1px solid var(--line);
-}
-
-.weather-card-metric-label {
-  color: rgba(151, 167, 191, 0.82);
-  font-size: 0.66rem;
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
-}
-
-.weather-card-metric-value {
-  color: var(--text);
-  font-size: 0.9rem;
-  font-weight: 800;
-  font-variant-numeric: tabular-nums;
-  white-space: nowrap;
-}
-
 .weather-card-footer {
   min-width: 0;
-  color: rgba(151, 167, 191, 0.78);
-  font-size: 0.68rem;
-  line-height: 1.35;
-  overflow-wrap: break-word;
+  color: rgba(151, 167, 191, 0.72);
+  font-size: 0.58rem;
+  line-height: 1.25;
+  overflow-wrap: normal;
   word-break: normal;
 }
 
-.weather-card.is-missing .weather-card-temperature,
-.weather-card.is-error .weather-card-temperature {
+.weather-card.is-missing .weather-card-value,
+.weather-card.is-error .weather-card-value {
   color: var(--text-soft);
 }
 
@@ -96,17 +62,18 @@
   border-color: rgba(248, 113, 113, 0.32);
 }
 
-@media (max-width: 480px) {
+@media (max-width: 1050px) {
+  .view-hero-meta {
+    grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+  }
+}
+
+@media (max-width: 700px) {
+  .view-hero-meta {
+    grid-template-columns: 1fr !important;
+  }
+
   .weather-card {
-    min-height: 168px;
-  }
-
-  .weather-card-main {
-    grid-template-columns: 1fr;
-    gap: 8px;
-  }
-
-  .weather-card-temperature {
-    font-size: 2.5rem;
+    min-height: 126px;
   }
 }
