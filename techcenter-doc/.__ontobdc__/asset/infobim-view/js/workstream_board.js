@@ -381,19 +381,28 @@
 
   function scheduleTasks() {
     const records = nestedRecords(jsonLdNodes());
-    const tasks = records.filter((item) => {
+    const datedRecords = records.filter((item) => {
       const start = valueByLocalName(item, ["schedule_start", "ScheduleStart"]);
       const finish = valueByLocalName(item, ["schedule_finish", "ScheduleFinish"]);
       return parseScheduleDate(start) && parseScheduleDate(finish);
     });
+    const taskRecords = records.filter((item) => (
+      valueByLocalName(item, ["work_breakdown_structure", "Identification"])
+      && valueByLocalName(item, ["name", "Name"])
+    ));
 
-    return tasks.map((item, index) => ({
-      id: String(valueByLocalName(item, ["@id", "document_identifier", "identifier"]) || index),
-      name: String(valueByLocalName(item, ["name", "Name"]) || "Tarefa sem nome"),
-      wbs: String(valueByLocalName(item, ["work_breakdown_structure", "Identification"]) || ""),
-      start: parseScheduleDate(valueByLocalName(item, ["schedule_start", "ScheduleStart"])),
-      finish: parseScheduleDate(valueByLocalName(item, ["schedule_finish", "ScheduleFinish"])),
-    }));
+    return datedRecords.map((timeRecord, index) => {
+      const taskRecord = valueByLocalName(timeRecord, ["name", "Name"])
+        ? timeRecord
+        : taskRecords[index] || timeRecord;
+      return {
+        id: String(valueByLocalName(taskRecord, ["@id", "document_identifier", "identifier"]) || index),
+        name: String(valueByLocalName(taskRecord, ["name", "Name"]) || "Tarefa sem nome"),
+        wbs: String(valueByLocalName(taskRecord, ["work_breakdown_structure", "Identification"]) || ""),
+        start: parseScheduleDate(valueByLocalName(timeRecord, ["schedule_start", "ScheduleStart"])),
+        finish: parseScheduleDate(valueByLocalName(timeRecord, ["schedule_finish", "ScheduleFinish"])),
+      };
+    });
   }
 
   function tasksInWindow(tasks, dates) {
