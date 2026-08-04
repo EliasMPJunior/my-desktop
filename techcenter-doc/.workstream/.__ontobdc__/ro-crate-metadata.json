@@ -25,6 +25,9 @@
           "@id": ".__ontobdc__/__infobim__/project.ttl"
         },
         {
+          "@id": ".__ontobdc__/linkset/facade.ttl"
+        },
+        {
           "@id": ".__ontobdc__/linkset/WorkStream.ttl"
         },
         {
@@ -37,7 +40,7 @@
           "@id": "payload/document/workstream.xlsx"
         },
         {
-          "@id": "payload/view/7c7e9d91-046d-5bcb-ad09-a04c5821c6de.html"
+          "@id": "payload/view/work_stream/7c7e9d91-046d-5bcb-ad09-a04c5821c6de.html"
         }
       ]
     },
@@ -91,6 +94,15 @@
       }
     },
     {
+      "@id": ".__ontobdc__/linkset/facade.ttl",
+      "@type": "File",
+      "name": "WorkStream dataset facade",
+      "encodingFormat": "text/turtle",
+      "about": {
+        "@id": "http://datacenter.app.br/ontology/productivity/entity/work_stream/type.ttl#WorkStream"
+      }
+    },
+    {
       "@id": ".__ontobdc__/linkset/WorkStream.ttl",
       "@type": "File",
       "name": "WorkStream field linkset",
@@ -127,7 +139,7 @@
       }
     },
     {
-      "@id": "payload/view/7c7e9d91-046d-5bcb-ad09-a04c5821c6de.html",
+      "@id": "payload/view/work_stream/7c7e9d91-046d-5bcb-ad09-a04c5821c6de.html",
       "@type": "File",
       "name": "WorkStream HTML view",
       "encodingFormat": "text/html",
