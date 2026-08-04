@@ -102,6 +102,9 @@ Regras da grade:
 - grid de indicadores ocupando as colunas 9 a 12 e as linhas 1 a 3, com a mesma altura total do conjunto formado pelo hero e pela barra;
 - conteúdo da esquerda ocupando as colunas 1 a 4 a partir da linha 4;
 - conteúdo principal ocupando as colunas 5 a 12 a partir da linha 4;
+- o `PYODIDE RUNTIME` deve funcionar como rodapé da página, ocupando as 12 colunas abaixo da grade principal;
+- o rodapé do `PYODIDE RUNTIME` deve ser largo e fino, com altura compacta e conteúdo distribuído horizontalmente em telas largas;
+- o `PYODIDE RUNTIME` não deve permanecer na coluna esquerda nem aumentar verticalmente a área de `PROJECT INFORMATION`;
 - todos os boxes devem possuir nome visível;
 - os nomes devem descrever conteúdo real, sem categorias inventadas;
 - quantidade, nomes, distribuição interna e valores dos indicadores não devem ser inventados quando ainda não estiverem definidos.
@@ -120,11 +123,13 @@ L03  │ BARRA DE NAVEGAÇÃO / AÇÕES                    │                  
 L04  │ PROJECT INFORMATION   │                                                │
 L05  │                       │                                                │
 L06  │                       │             BOARD DE CONTEÚDO                  │
-     ├───────────────────────┤                                                │
-L07  │ PYODIDE RUNTIME       │                                                │
+L07  │                       │                                                │
 L08  │                       │                                                │
 L09  │                       │                                                │
      └───────────────────────┴────────────────────────────────────────────────┘
+     ┌────────────────────────────────────────────────────────────────────────┐
+L10  │ PYODIDE RUNTIME — RODAPÉ LARGO E FINO                                 │
+     └────────────────────────────────────────────────────────────────────────┘
         4 colunas                              8 colunas
 ```
 
@@ -134,6 +139,7 @@ Distribuição do topo:
 HERO / PROJECT HEADER:       colunas 01–08, linhas 01–02
 BARRA DE NAVEGAÇÃO / AÇÕES:  colunas 01–08, linha 03
 GRID DE INDICADORES:         colunas 09–12, linhas 01–03
+PYODIDE RUNTIME:              colunas 01–12, rodapé abaixo da grade principal
 ```
 
 ## 9. Proibições operacionais
