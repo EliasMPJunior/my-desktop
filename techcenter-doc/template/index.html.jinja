@@ -43,6 +43,42 @@
       overflow-wrap: anywhere;
     }
 
+    .project-geolocation-value {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      max-width: 100%;
+    }
+
+    .project-geolocation-coordinates {
+      overflow-wrap: anywhere;
+      font-variant-numeric: tabular-nums;
+    }
+
+    .project-map-pin {
+      display: inline-grid;
+      place-items: center;
+      flex: 0 0 auto;
+      width: 32px;
+      height: 32px;
+      border: 1px solid rgba(103, 232, 249, 0.34);
+      border-radius: 999px;
+      color: inherit;
+      background: rgba(103, 232, 249, 0.08);
+      text-decoration: none;
+      line-height: 1;
+    }
+
+    .project-map-pin:hover {
+      border-color: var(--accent);
+      background: rgba(103, 232, 249, 0.14);
+    }
+
+    .project-map-pin:focus-visible {
+      outline: 2px solid var(--accent-strong);
+      outline-offset: 2px;
+    }
+
     .view-menubar-track {
       overflow-x: auto;
       scrollbar-width: thin;
@@ -469,6 +505,10 @@
                 <dd>{{ field.value }}</dd>
               </div>
 {% endfor %}
+              <div class="metadata-row" data-project-geolocation-row>
+                <dt>Geolocalização</dt>
+                <dd class="project-geolocation-value">não definida</dd>
+              </div>
             </dl>
           </div>
         </article>
@@ -541,6 +581,32 @@
     </footer>
   </main>
 
+  <script>
+    window.infoBimProjectRuntimeData = window.infoBimProjectRuntimeData || {};
+    (function () {
+      const generatedLocation = {{ project.location | default(none) | tojson }};
+      const generatedGeolocation = {{ project.geolocation | default(none) | tojson }};
+      const generatedLatitude = {{ project.latitude | default(none) | tojson }};
+      const generatedLongitude = {{ project.longitude | default(none) | tojson }};
+      const candidate = generatedLocation || generatedGeolocation;
+
+      if (candidate && typeof candidate === "object") {
+        window.infoBimProjectRuntimeData.location = candidate;
+        return;
+      }
+
+      if (generatedLatitude !== null && generatedLongitude !== null) {
+        window.infoBimProjectRuntimeData.location = {
+          latitude: generatedLatitude,
+          longitude: generatedLongitude,
+        };
+        return;
+      }
+
+      window.infoBimProjectRuntimeData.location =
+        window.infoBimProjectRuntimeData.location || null;
+    }());
+  </script>
   <script>
     window.infoBimProjectDashboard = {
       "projectId": {{ project.id | tojson }},
