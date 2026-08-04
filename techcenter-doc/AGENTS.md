@@ -111,7 +111,7 @@ Desenho-base:
 ```text
        01    02    03    04    05    06    07    08    09    10    11    12
      ┌───────────────────────────────────────────────┬────────────────────────┐
-L01  │ HERO / PROJECT HEADER                         │ GRID DE INDICADORES     │
+L01  │ HERO / PROJECT HEADER                         │ GRID DE INDICADORES    │
 L02  │                                               │                        │
      ├───────────────────────────────────────────────┤                        │
 L03  │ BARRA DE NAVEGAÇÃO / AÇÕES                    │                        │
