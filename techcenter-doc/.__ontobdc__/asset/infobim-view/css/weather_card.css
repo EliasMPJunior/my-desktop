@@ -1,6 +1,13 @@
+.view-topbar {
+  align-items: start;
+}
+
 .view-hero-meta {
+  align-self: start !important;
   align-content: start;
   grid-auto-rows: max-content;
+  height: max-content;
+  min-height: 0;
 }
 
 .weather-card {
