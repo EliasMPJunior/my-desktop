@@ -21,6 +21,25 @@
 .view-column-third { grid-column: span 4; }
 .view-column-main { grid-column: span 8; }
 .view-topbar > *, .view-grid > *, .metadata-row > * { min-width: 0; }
+.runtime-footer {
+  display: grid;
+  grid-template-columns: minmax(240px,.8fr) minmax(0,1.2fr);
+  align-items: center;
+  margin-top: 24px;
+}
+.runtime-footer .view-panel-head,
+.runtime-footer .view-panel-body { padding-block: 14px; }
+.runtime-footer .view-panel-body {
+  display: grid;
+  grid-template-columns: auto minmax(0,1fr);
+  align-items: center;
+  gap: 18px;
+}
+.runtime-footer .runtime-console {
+  min-height: 0;
+  margin: 0;
+  padding: 10px 12px;
+}
 .project-tabs-card { min-height: 720px; }
 .project-tabs-shell {
   display: grid;
@@ -112,12 +131,14 @@
     grid-column: 1 / -1;
   }
   .metadata-row { grid-template-columns: minmax(92px,.35fr) minmax(0,1fr); }
+  .runtime-footer { grid-template-columns: 1fr; }
 }
 @media (max-width: 760px) {
   .view-hero-meta { grid-template-columns: 1fr; }
   .view-brand { align-items: flex-start; }
   .view-topbar h1 { font-size: clamp(2.15rem,10vw,3.4rem); line-height: .98; }
   .metadata-row { grid-template-columns: 1fr; gap: 7px; }
+  .runtime-footer .view-panel-body { grid-template-columns: 1fr; }
   .project-tabs-card, .project-tabs-shell { min-height: 0; }
   .project-tab-panel { min-height: 430px; padding: 18px; }
   .project-tab-empty { min-height: 390px; padding: 24px; }
@@ -201,19 +222,6 @@
           </div>
         </article>
 
-        <article class="view-panel" data-card="pyodide-runtime-card">
-          <header class="view-panel-head">
-            <h2 class="view-panel-title">Pyodide Runtime</h2>
-            <p class="view-panel-copy">Bootstrap do ambiente Python no browser para as proximas etapas do dashboard.</p>
-          </header>
-          <div class="view-panel-body">
-            <div class="runtime-status">
-              <span class="runtime-dot" id="pyodide-status-dot"></span>
-              <strong id="pyodide-status-label">Initializing Pyodide...</strong>
-            </div>
-            <pre class="runtime-console" id="pyodide-console">Waiting for runtime...</pre>
-          </div>
-        </article>
       </div>
 
       <div class="view-column view-column-main">
@@ -335,6 +343,20 @@
         </article>
       </div>
     </section>
+
+    <footer class="view-panel runtime-footer" data-card="pyodide-runtime-card">
+      <header class="view-panel-head">
+        <h2 class="view-panel-title">Pyodide Runtime</h2>
+        <p class="view-panel-copy">Bootstrap do ambiente Python no browser para as proximas etapas do dashboard.</p>
+      </header>
+      <div class="view-panel-body">
+        <div class="runtime-status">
+          <span class="runtime-dot" id="pyodide-status-dot"></span>
+          <strong id="pyodide-status-label">Initializing Pyodide...</strong>
+        </div>
+        <pre class="runtime-console" id="pyodide-console">Waiting for runtime...</pre>
+      </div>
+    </footer>
   </main>
 
   <script>
