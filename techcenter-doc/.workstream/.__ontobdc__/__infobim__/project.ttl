@@ -1,8 +1,12 @@
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix geo: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
 @prefix ifcowl: <http://ifcowl.openbimstandards.org/IFC4#> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 <urn:infobim:project:Real%20Estate%20Brazil%20%28Official%29-Obras%20-%20Exp%20LabSea2025> a ifcowl:IfcProject ;
     dcterms:isPartOf <urn:ontobdc:storage/local/OneDrive%20-%20Digicorner/Real%20Estate%20Brazil%20%28Official%29-Obras%20-%20Exp%20LabSea2025> ;
+    geo:lat "-22.868585"^^xsd:decimal ;
+    geo:long "-43.214664"^^xsd:decimal ;
     prov:atLocation <file:///C:/Users/epaixao/OneDrive%20-%20Digicorner/Real%20Estate%20Brazil%20%28Official%29-Obras%20-%20Exp%20LabSea2025> .
 
