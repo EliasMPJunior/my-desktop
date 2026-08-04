@@ -13,7 +13,7 @@ project:
   fields:
     - {label: "Name", value: "Real Estate Brazil (Official)-Obras - Exp LabSea2025"}
 menu_buttons:
-  - {label: "WorkStream", icon: "5W2H", action: "view/work_stream/7c7e9d91-046d-5bcb-ad09-a04c5821c6de.html"}
+  - {label: "Cronograma Geral", icon: "", action: "view/cronograma/index.html"}
 numeric_data: []
 tabbed_card:
   title: "Frentes de Trabalho"
