@@ -1,57 +1,79 @@
 {
-    "@context": "https://w3id.org/ro/crate/1.2/context",
-    "@graph": [
+  "@context": "https://w3id.org/ro/crate/1.2/context",
+  "@graph": [
+    {
+      "@id": "./",
+      "@type": "Dataset",
+      "datePublished": "2026-08-03T22:43:02+00:00",
+      "hasPart": [
         {
-            "@id": "./",
-            "@type": "Dataset",
-            "datePublished": "2026-08-03T22:43:02+00:00",
-            "hasPart": [
-                {
-                    "@id": "generate.py"
-                },
-                {
-                    "@id": "godfile.py"
-                },
-                {
-                    "@id": "index.html"
-                },
-                {
-                    "@id": "template/index.html.jinja"
-                },
-                {
-                    "@id": "views/public.yaml"
-                }
-            ]
+          "@id": "generate.py"
         },
         {
-            "@id": "ro-crate-metadata.json",
-            "@type": "CreativeWork",
-            "about": {
-                "@id": "./"
-            },
-            "conformsTo": {
-                "@id": "https://w3id.org/ro/crate/1.2"
-            }
+          "@id": "godfile.py"
         },
         {
-            "@id": "generate.py",
-            "@type": "File"
+          "@id": "index.html"
         },
         {
-            "@id": "godfile.py",
-            "@type": "File"
+          "@id": "template/index.html.jinja"
         },
         {
-            "@id": "index.html",
-            "@type": "File"
+          "@id": "views/public.yaml"
         },
         {
-            "@id": "template/index.html.jinja",
-            "@type": "File"
+          "@id": ".workstream/"
         },
         {
-            "@id": "views/public.yaml",
-            "@type": "File"
+          "@id": "view/work_stream/7c7e9d91-046d-5bcb-ad09-a04c5821c6de.html"
         }
-    ]
+      ]
+    },
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "about": {
+        "@id": "./"
+      },
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      }
+    },
+    {
+      "@id": "generate.py",
+      "@type": "File"
+    },
+    {
+      "@id": "godfile.py",
+      "@type": "File"
+    },
+    {
+      "@id": "index.html",
+      "@type": "File"
+    },
+    {
+      "@id": "template/index.html.jinja",
+      "@type": "File"
+    },
+    {
+      "@id": "views/public.yaml",
+      "@type": "File"
+    },
+    {
+      "@id": ".workstream/",
+      "@type": "Dataset",
+      "identifier": "urn:ontobdc:storage/dataset/techcenter-doc/work_stream",
+      "name": "WorkStream — Expansão do LabSea",
+      "description": "Dataset WorkStream do projeto de expansão do LabSea."
+    },
+    {
+      "@id": "view/work_stream/7c7e9d91-046d-5bcb-ad09-a04c5821c6de.html",
+      "@type": "File",
+      "name": "Published WorkStream view",
+      "encodingFormat": "text/html",
+      "about": {
+        "@id": "urn:infobim:workstream/7c7e9d91-046d-5bcb-ad09-a04c5821c6de"
+      }
+    }
+  ]
 }
