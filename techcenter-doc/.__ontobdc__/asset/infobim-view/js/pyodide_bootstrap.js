@@ -51,10 +51,21 @@
     document.head.appendChild(link);
   }
 
-  async function loadDashboardModules() {
+  async function loadWeatherModule() {
     loadStyle("../css/weather_card.css");
     await loadScript("project_runtime_data.js");
     await loadScript("weather_card.js");
+  }
+
+  async function loadWorkstreamBoardModule() {
+    loadStyle("../css/workstream_board.css");
+    await loadScript("work_stream_runtime_data.js");
+    await loadScript("workstream_board.js");
+  }
+
+  async function loadDashboardModules() {
+    await loadWeatherModule();
+    await loadWorkstreamBoardModule();
   }
 
   function writeStatus(message, cssClass) {
