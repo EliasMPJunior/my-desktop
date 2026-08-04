@@ -234,6 +234,8 @@ window.infoBimProjectRuntimeData = window.infoBimProjectRuntimeData || {};
 
   function bindMenuActions() {
     document.querySelectorAll(".menubar-item[data-action]").forEach((button) => {
+      button.style.cursor = "pointer";
+
       if (button.dataset.navigationBound === "true") {
         return;
       }
