@@ -7,9 +7,9 @@
         owl:NamedIndividual ;
     obdc:containerAttachCompleted true ;
     obdc:containerId "urn:ontobdc:storage/local/techcenter-doc" ;
-    obdc:containerPath "C:\\Users\\EliasMagalhães\\Documents\\Brasidata\\06_Projetos\\01_Projetos_Ativos\\my-desktop\\techcenter-doc" ;
     obdc:contextLanguage "en" ;
-    obdc:create "." ;
+    obdc:create "cronograma" ;
+    obdc:datasetPath "C:\\Users\\EliasMagalhães\\Documents\\Brasidata\\06_Projetos\\01_Projetos_Ativos\\my-desktop\\techcenter-doc\\cronograma" ;
     obdc:entity "WorkStream" ;
     obdc:language "en" ;
     obdc:projectRootLocation <file:///workspace/scratch/308983dca508/my-desktop> ;

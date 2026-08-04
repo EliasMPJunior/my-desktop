@@ -2,32 +2,45 @@
   "name": "ontobdc_container",
   "resources": [
     {
-      "bytes": 8895,
+      "bytes": 10318,
+      "format": "md",
+      "mediatype": "text/markdown",
+      "name": "agents_a54ff182c7e8",
+      "path": "../AGENTS.md"
+    },
+    {
+      "bytes": 16609,
       "format": "pyc",
       "mediatype": "application/x-python-code",
       "name": "pycache_godfile_cpython_312_d89cac1a2a06",
       "path": "../__pycache__/godfile.cpython-312.pyc"
     },
     {
-      "bytes": 5514,
+      "bytes": 8397,
       "format": "py",
       "mediatype": "text/x-python",
       "name": "generate_801d46835a8a",
       "path": "../generate.py"
     },
     {
-      "bytes": 6279,
+      "bytes": 12851,
       "format": "py",
       "mediatype": "text/x-python",
       "name": "godfile_02ddc6ab9470",
       "path": "../godfile.py"
     },
     {
-      "bytes": 16293,
+      "bytes": 15221,
       "format": "html",
       "mediatype": "text/html",
       "name": "index_0eb547304658",
       "path": "../index.html"
+    },
+    {
+      "bytes": 1400,
+      "format": "jsonld",
+      "name": "payload_triple_work_stream_ac66c6c2278c",
+      "path": "../payload/triple/work_stream.jsonld"
     },
     {
       "bytes": 16317,
@@ -43,7 +56,7 @@
       "path": "../view/work_stream/7c7e9d91-046d-5bcb-ad09-a04c5821c6de.html"
     },
     {
-      "bytes": 1768,
+      "bytes": 1230,
       "format": "yaml",
       "name": "views_public_aa64d1d5fc76",
       "path": "../views/public.yaml"

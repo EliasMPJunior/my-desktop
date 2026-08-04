@@ -1,13 +1,13 @@
 {
   "container": {
-    "description": "Local storage container at Storage Container: techcenter-doc",
+    "description": "Local storage container at Real Estate Brazil (Official)-Obras - Exp LabSea2025",
     "id": "urn:ontobdc:storage/local/techcenter-doc",
     "location": "file:///C:/Users/EliasMagalh%C3%A3es/Documents/Brasidata/06_Projetos/01_Projetos_Ativos/my-desktop/techcenter-doc",
-    "name": "Storage Container: techcenter-doc",
+    "name": "Real Estate Brazil (Official)-Obras - Exp LabSea2025",
     "path": "C:\\Users\\EliasMagalhães\\Documents\\Brasidata\\06_Projetos\\01_Projetos_Ativos\\my-desktop\\techcenter-doc",
     "uri": "urn:ontobdc:storage/local/techcenter-doc"
   },
-  "generated_at": "2026-08-04T13:06:58.843828+00:00",
+  "generated_at": "2026-08-04T15:47:19.028882+00:00",
   "options": {
     "language": "en",
     "representation": "html",
@@ -16,25 +16,39 @@
   "options_fingerprint": "06892644d82b292f7203cd251e7cf6ec2a9f420f9b29d9ca12980e357ee0bd3f",
   "resources": [
     {
-      "bytes": 8895,
+      "bytes": 10318,
+      "extension": ".md",
+      "media_type": "text/markdown",
+      "name": "AGENTS.md",
+      "path": "AGENTS.md"
+    },
+    {
+      "bytes": 16609,
       "extension": ".pyc",
       "media_type": "application/x-python-code",
       "name": "godfile.cpython-312.pyc",
       "path": "__pycache__/godfile.cpython-312.pyc"
     },
     {
-      "bytes": 5514,
+      "bytes": 8397,
       "extension": ".py",
       "media_type": "text/x-python",
       "name": "generate.py",
       "path": "generate.py"
     },
     {
-      "bytes": 6279,
+      "bytes": 12851,
       "extension": ".py",
       "media_type": "text/x-python",
       "name": "godfile.py",
       "path": "godfile.py"
+    },
+    {
+      "bytes": 1400,
+      "extension": ".jsonld",
+      "media_type": "application/octet-stream",
+      "name": "work_stream.jsonld",
+      "path": "payload/triple/work_stream.jsonld"
     },
     {
       "bytes": 16317,
@@ -51,7 +65,7 @@
       "path": "view/work_stream/7c7e9d91-046d-5bcb-ad09-a04c5821c6de.html"
     },
     {
-      "bytes": 1768,
+      "bytes": 1230,
       "extension": ".yaml",
       "media_type": "application/octet-stream",
       "name": "public.yaml",
@@ -59,9 +73,9 @@
     }
   ],
   "schema_version": 1,
-  "source_fingerprint": "60ca1659c2239b39782b4e93982fbeda4efb08988af89db6d31bd82735673024",
+  "source_fingerprint": "ec463ec73c49998af9703d83c4813c413002e114eeec39de1fc5e407b17ee60a",
   "summary": {
-    "indexed_files": 6,
-    "total_bytes": 49972
+    "indexed_files": 8,
+    "total_bytes": 78321
   }
 }

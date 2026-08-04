@@ -1,0 +1,18 @@
+@prefix ct: <http://standards.iso.org/iso/21597/-1/ed-1/en/Container#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix obdc: <http://ontobdc.org/ontology/domain/ns.ttl#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<file:///C:/Users/EliasMagalh%C3%A3es/Documents/Brasidata/06_Projetos/01_Projetos_Ativos/my-desktop/techcenter-doc/cronograma/.__ontobdc__/dataset.ttl> a owl:Ontology .
+
+<urn:ontobdc:storage/dataset/techcenter-doc/cronograma> a obdc:EntityDataset ;
+    obdc:belongsToDataContainer <urn:ontobdc:storage/local/techcenter-doc> ;
+    obdc:hasDataEntity <urn:ontobdc:storage/dataset/techcenter-doc/cronograma/661f4daa7abff86ee0ebf62135859aab9d16d21b90a0abe3f808513437cfd9f1> ;
+    dcterms:description "Storage dataset located at file:///C:/Users/EliasMagalh%C3%A3es/Documents/Brasidata/06_Projetos/01_Projetos_Ativos/my-desktop/techcenter-doc/cronograma" ;
+    dcterms:identifier "urn:ontobdc:storage/dataset/techcenter-doc/cronograma" ;
+    dcterms:title "Storage Dataset: cronograma" ;
+    ct:creationDate "2026-08-04T13:07:11"^^xsd:dateTime ;
+    prov:atLocation <file:///C:/Users/EliasMagalh%C3%A3es/Documents/Brasidata/06_Projetos/01_Projetos_Ativos/my-desktop/techcenter-doc/cronograma> .
+
