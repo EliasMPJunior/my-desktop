@@ -6,7 +6,7 @@ import re
 import sys
 from datetime import datetime
 from pathlib import Path
-from typing import Any, Callable, Dict, List, cast
+from typing import Any, Callable, Dict, cast
 
 try:
     import yaml
@@ -68,16 +68,13 @@ def render_inline_markup(raw_text: str) -> Markup:
 def transform_view_value(raw_value: Any) -> Any:
     if isinstance(raw_value, str):
         return render_inline_markup(raw_value)
-
     if isinstance(raw_value, list):
         return [transform_view_value(item) for item in raw_value]
-
     if isinstance(raw_value, dict):
         return {
             key: transform_view_value(value)
             for key, value in raw_value.items()
         }
-
     return raw_value
 
 
@@ -226,6 +223,11 @@ def workstream_jsonld_fragment(payload: dict[str, Any] | None) -> str:
         '  <script id="work-stream-jsonld" type="application/ld+json">\n'
         + serialize_embedded_jsonld(payload)
         + "\n  </script>\n"
+        + "  <script>\n"
+        + "    window.infoBimWorkStreamData = JSON.parse(\n"
+        + "      document.getElementById('work-stream-jsonld').textContent\n"
+        + "    );\n"
+        + "  </script>\n"
     )
 
 
