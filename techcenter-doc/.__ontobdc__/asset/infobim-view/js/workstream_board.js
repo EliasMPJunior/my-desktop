@@ -5,7 +5,6 @@
   const previousBusinessDays = 5;
   const nextBusinessDays = 5;
   const locale = "pt-BR";
-  const runtimeData = window.infoBimWorkStreamData || null;
 
   function projectTabsCard() {
     return document.querySelector('[data-card="project-tabs-card"]');
@@ -208,17 +207,36 @@
     return cell;
   }
 
-  function workstreamList(payload) {
-    if (!payload || typeof payload !== "object") {
-      return [];
-    }
-    if (Array.isArray(payload.workstreams)) {
-      return payload.workstreams;
-    }
-    if (Array.isArray(payload["schema:hasPart"])) {
-      return payload["schema:hasPart"];
-    }
-    return [];
+  function workstreamList() {
+    const workstreams = new Map();
+    nestedRecords(jsonLdNodes()).forEach((item) => {
+      const facade = valueByLocalName(item, ["conformsTo"]);
+      if (!String(facade || "").endsWith("WorkStreamFacade")) {
+        return;
+      }
+
+      const identifier = String(
+        valueByLocalName(item, ["identifier", "GlobalId"]) || ""
+      ).trim();
+      if (!identifier) {
+        return;
+      }
+      const id = String(valueByLocalName(item, ["@id"]) || identifier);
+      workstreams.set(id, {
+        "@id": id,
+        identifier,
+        name: String(
+          valueByLocalName(item, ["title", "name", "Name"])
+          || "WorkStream"
+        ),
+        description: String(
+          valueByLocalName(item, ["description", "Description"])
+          || "Sem descrição publicada."
+        ),
+        view: `view/work_stream/${encodeURIComponent(identifier)}.html`,
+      });
+    });
+    return Array.from(workstreams.values());
   }
 
   function textValue(item, keys, fallback) {
@@ -320,6 +338,13 @@
           && "@value" in candidate
         ) {
           return candidate["@value"];
+        }
+        if (
+          candidate
+          && typeof candidate === "object"
+          && "@id" in candidate
+        ) {
+          return candidate["@id"];
         }
         return candidate;
       }
@@ -502,9 +527,9 @@
     board.appendChild(state);
   }
 
-  function renderBoard(board, payload) {
+  function renderBoard(board) {
     const dates = calendarWindow();
-    const workstreams = workstreamList(payload);
+    const workstreams = workstreamList();
 
     if (dates.length !== calendarDayCount) {
       throw new Error("A janela do calendário deve conter 11 dias úteis.");
@@ -512,11 +537,6 @@
 
     board.replaceChildren();
     renderHeader(board, dates, workstreams.length);
-
-    if (!payload) {
-      renderEmptyState(board, "Frentes de trabalho ainda não publicadas.");
-      return;
-    }
 
     if (!workstreams.length) {
       renderEmptyState(board, "Nenhuma frente de trabalho cadastrada.");
@@ -543,7 +563,7 @@
     }
 
     card.dataset.workstreamBoardReady = "true";
-    renderBoard(board, runtimeData);
+    renderBoard(board);
   }
 
   initialize();
