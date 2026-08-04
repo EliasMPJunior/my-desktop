@@ -4,7 +4,7 @@
   const forecastEndpoint = "https://api.open-meteo.com/v1/forecast";
   const runtimeData = window.infoBimProjectRuntimeData || {};
   const cardDefinitions = [
-    { key: "current", id: "project-weather-current-card", label: "Tempo na obra" },
+    { key: "current", id: "project-weather-current-card", label: "Clima" },
     { key: "rain", id: "project-weather-rain-card", label: "Chuva 6h" },
     { key: "gust", id: "project-weather-gust-card", label: "Rajada 6h" },
   ];
