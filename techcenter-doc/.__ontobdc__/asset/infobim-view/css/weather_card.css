@@ -1,19 +1,25 @@
 .weather-card {
-  grid-template-rows: auto auto 1fr auto;
-  align-content: stretch;
-  gap: 8px;
+  grid-column: 1 / -1;
+  grid-template-rows: auto auto auto auto;
+  align-content: start;
+  gap: 14px;
+  width: 100%;
+  min-width: 0;
+  min-height: 190px;
+  aspect-ratio: auto;
 }
 
 .weather-card-main {
-  display: flex;
-  align-items: baseline;
-  gap: 8px;
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr);
+  align-items: center;
+  gap: 16px;
   min-width: 0;
 }
 
 .weather-card-temperature {
   color: var(--text);
-  font-size: clamp(2rem, 2.8vw, 3.2rem);
+  font-size: clamp(2.25rem, 3.2vw, 3.5rem);
   font-weight: 900;
   font-variant-numeric: tabular-nums;
   line-height: 1;
@@ -24,46 +30,49 @@
 .weather-card-condition {
   min-width: 0;
   color: var(--text-soft);
-  font-size: 0.76rem;
+  font-size: 0.82rem;
   font-weight: 700;
-  line-height: 1.25;
-  overflow-wrap: anywhere;
+  line-height: 1.35;
+  overflow-wrap: normal;
+  word-break: normal;
 }
 
 .weather-card-metrics {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 8px;
-  align-self: end;
+  gap: 14px;
 }
 
 .weather-card-metric {
   display: grid;
-  gap: 2px;
+  gap: 4px;
   min-width: 0;
+  padding-top: 10px;
+  border-top: 1px solid var(--line);
 }
 
 .weather-card-metric-label {
   color: rgba(151, 167, 191, 0.82);
-  font-size: 0.62rem;
+  font-size: 0.66rem;
   letter-spacing: 0.04em;
   text-transform: uppercase;
 }
 
 .weather-card-metric-value {
   color: var(--text);
-  font-size: 0.82rem;
+  font-size: 0.9rem;
   font-weight: 800;
   font-variant-numeric: tabular-nums;
-  overflow-wrap: anywhere;
+  white-space: nowrap;
 }
 
 .weather-card-footer {
   min-width: 0;
   color: rgba(151, 167, 191, 0.78);
-  font-size: 0.64rem;
-  line-height: 1.25;
-  overflow-wrap: anywhere;
+  font-size: 0.68rem;
+  line-height: 1.35;
+  overflow-wrap: break-word;
+  word-break: normal;
 }
 
 .weather-card.is-missing .weather-card-temperature,
@@ -77,7 +86,12 @@
 
 @media (max-width: 480px) {
   .weather-card {
-    min-height: 148px;
+    min-height: 168px;
+  }
+
+  .weather-card-main {
+    grid-template-columns: 1fr;
+    gap: 8px;
   }
 
   .weather-card-temperature {
