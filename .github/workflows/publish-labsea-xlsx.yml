@@ -1,0 +1,58 @@
+name: Publish LABSEA XLSX
+
+on:
+  push:
+    branches:
+      - techcenter-labsea
+    paths:
+      - .github/workflows/publish-labsea-xlsx.yml
+      - techcenter-doc/.generated/LABSEA_IfcWorkSchedule.part*
+
+permissions:
+  contents: write
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout branch
+        uses: actions/checkout@v4
+        with:
+          ref: techcenter-labsea
+          fetch-depth: 0
+
+      - name: Reconstruct workbook when all parts exist
+        shell: bash
+        run: |
+          set -euo pipefail
+          parts_dir="techcenter-doc/.generated"
+          output="techcenter-doc/LABSEA_IfcWorkSchedule.xlsx"
+          for part in 01 02 03 04; do
+            test -f "$parts_dir/LABSEA_IfcWorkSchedule.part$part" || exit 0
+          done
+          cat "$parts_dir"/LABSEA_IfcWorkSchedule.part{01,02,03,04} | base64 --decode > "$output"
+          python - <<'PY'
+          from pathlib import Path
+          from zipfile import ZipFile
+          path = Path("techcenter-doc/LABSEA_IfcWorkSchedule.xlsx")
+          with ZipFile(path) as archive:
+              bad = archive.testzip()
+              if bad is not None:
+                  raise SystemExit(f"Invalid XLSX entry: {bad}")
+          print(f"Validated {path} ({path.stat().st_size} bytes)")
+          PY
+          rm -f "$parts_dir"/LABSEA_IfcWorkSchedule.part{01,02,03,04}
+          rmdir "$parts_dir" 2>/dev/null || true
+
+      - name: Commit workbook
+        shell: bash
+        run: |
+          set -euo pipefail
+          git add techcenter-doc/LABSEA_IfcWorkSchedule.xlsx techcenter-doc/.generated || true
+          if git diff --cached --quiet; then
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -m "feat(labsea): add IfcWorkSchedule workbook"
+          git push origin HEAD:techcenter-labsea

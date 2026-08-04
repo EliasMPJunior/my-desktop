@@ -95,11 +95,13 @@ O layout solicitado deve ser primeiro representado e validado como desenho em te
 Regras da grade:
 
 - grade horizontal de 12 colunas;
-- hero ocupando as colunas 1 a 8;
-- hero com 2 linhas de altura;
-- grid de indicadores ocupando as colunas 9 a 12 e as mesmas 2 linhas do hero;
-- conteúdo da esquerda ocupando as colunas 1 a 4 a partir da linha 3;
-- conteúdo principal ocupando as colunas 5 a 12 a partir da linha 3;
+- hero ocupando as colunas 1 a 8 e as linhas 1 e 2;
+- barra de navegação e ações ocupando as colunas 1 a 8 na linha 3, imediatamente abaixo do hero;
+- a barra abaixo do hero é parte da estrutura aprovada e não deve ser removida sem instrução explícita;
+- a barra deve conter somente ações aprovadas e não deve receber itens inventados;
+- grid de indicadores ocupando as colunas 9 a 12 e as linhas 1 a 3, com a mesma altura total do conjunto formado pelo hero e pela barra;
+- conteúdo da esquerda ocupando as colunas 1 a 4 a partir da linha 4;
+- conteúdo principal ocupando as colunas 5 a 12 a partir da linha 4;
 - todos os boxes devem possuir nome visível;
 - os nomes devem descrever conteúdo real, sem categorias inventadas;
 - quantidade, nomes, distribuição interna e valores dos indicadores não devem ser inventados quando ainda não estiverem definidos.
@@ -111,15 +113,17 @@ Desenho-base:
      ┌───────────────────────────────────────────────┬────────────────────────┐
 L01  │ HERO / PROJECT HEADER                         │ GRID DE INDICADORES    │
 L02  │                                               │                        │
+     ├───────────────────────────────────────────────┤                        │
+L03  │ BARRA DE NAVEGAÇÃO / AÇÕES                    │                        │
      └───────────────────────────────────────────────┴────────────────────────┘
      ┌───────────────────────┬────────────────────────────────────────────────┐
-L03  │ PROJECT INFORMATION   │                                                │
-L04  │                       │                                                │
-L05  │                       │             BOARD DE CONTEÚDO                  │
+L04  │ PROJECT INFORMATION   │                                                │
+L05  │                       │                                                │
+L06  │                       │             BOARD DE CONTEÚDO                  │
      ├───────────────────────┤                                                │
-L06  │ PYODIDE RUNTIME       │                                                │
-L07  │                       │                                                │
+L07  │ PYODIDE RUNTIME       │                                                │
 L08  │                       │                                                │
+L09  │                       │                                                │
      └───────────────────────┴────────────────────────────────────────────────┘
         4 colunas                              8 colunas
 ```
@@ -127,8 +131,9 @@ L08  │                       │                                              
 Distribuição do topo:
 
 ```text
-HERO / PROJECT HEADER: colunas 01–08, linhas 01–02
-GRID DE INDICADORES:   colunas 09–12, linhas 01–02
+HERO / PROJECT HEADER:       colunas 01–08, linhas 01–02
+BARRA DE NAVEGAÇÃO / AÇÕES:  colunas 01–08, linha 03
+GRID DE INDICADORES:         colunas 09–12, linhas 01–03
 ```
 
 ## 9. Proibições operacionais
