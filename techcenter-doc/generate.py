@@ -25,6 +25,14 @@ ROOT = Path(__file__).resolve().parent
 TEMPLATE_DIR = ROOT / "template"
 VIEW_FILE = ROOT / "views" / "public.yaml"
 OUTPUT_FILE = ROOT / "index.html"
+PROJECT_RUNTIME_DATA_FILE = (
+    ROOT
+    / ".__ontobdc__"
+    / "asset"
+    / "infobim-view"
+    / "js"
+    / "project_runtime_data.js"
+)
 WORKSTREAM_JSONLD_FILE = ROOT / "payload" / "triple" / "work_stream.jsonld"
 INLINE_STRONG_PATTERN = re.compile(r"(\*\*|__)(.+?)\1")
 LOCAL_VIEW_ACTION_PREFIXES = ("view/", "./view/")
@@ -146,6 +154,30 @@ def inject_local_view_navigation(html: str) -> str:
     return inject_before_closing_body(html, local_view_navigation_script())
 
 
+def serialize_runtime_script(variable_name: str, payload: Any) -> str:
+    return (
+        f"window.{variable_name} = "
+        + json.dumps(payload, ensure_ascii=False, indent=2)
+        + ";\n"
+    )
+
+
+def write_runtime_script(path: Path, variable_name: str, payload: Any) -> None:
+    path.parent.mkdir(parents=True, exist_ok=True)
+    path.write_text(
+        serialize_runtime_script(variable_name, payload),
+        encoding="utf-8",
+    )
+
+
+def write_project_runtime_data() -> None:
+    write_runtime_script(
+        PROJECT_RUNTIME_DATA_FILE,
+        "infoBimProjectRuntimeData",
+        {"location": None},
+    )
+
+
 def load_workstream_jsonld() -> dict[str, Any] | None:
     if not WORKSTREAM_JSONLD_FILE.is_file():
         print(
@@ -213,12 +245,14 @@ def main() -> int:
     html = inject_workstream_jsonld(html, workstream_payload)
     html = inject_local_view_navigation(html)
     OUTPUT_FILE.write_text(html.rstrip() + "\n", encoding="utf-8")
+    write_project_runtime_data()
 
     print(f"Generated {OUTPUT_FILE.relative_to(ROOT)} from {VIEW_FILE.relative_to(ROOT)}")
     print(
         "Embedded "
         f"{WORKSTREAM_JSONLD_FILE.relative_to(ROOT)} in {OUTPUT_FILE.relative_to(ROOT)}"
     )
+    print(f"Generated {PROJECT_RUNTIME_DATA_FILE.relative_to(ROOT)}")
     return 0
 
 
