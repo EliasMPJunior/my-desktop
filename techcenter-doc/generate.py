@@ -39,14 +39,6 @@ PROJECT_RUNTIME_DATA_FILE = (
     / "project_runtime_data.js"
 )
 WORKSTREAM_JSONLD_FILE = ROOT / "payload" / "triple" / "work_stream.jsonld"
-WORKSTREAM_RUNTIME_DATA_FILE = (
-    ROOT
-    / ".__ontobdc__"
-    / "asset"
-    / "infobim-view"
-    / "js"
-    / "work_stream_runtime_data.js"
-)
 INLINE_STRONG_PATTERN = re.compile(r"(\*\*|__)(.+?)\1")
 LOCAL_VIEW_ACTION_PREFIXES = ("view/", "./view/")
 MONTHS_PT_BR = (
@@ -78,15 +70,13 @@ def transform_view_value(raw_value: Any) -> Any:
         return render_inline_markup(raw_value)
 
     if isinstance(raw_value, list):
-        transformed_list: List[Any] = [transform_view_value(item) for item in raw_value]
-        return transformed_list
+        return [transform_view_value(item) for item in raw_value]
 
     if isinstance(raw_value, dict):
-        transformed_dict: Dict[str, Any] = {
+        return {
             key: transform_view_value(value)
             for key, value in raw_value.items()
         }
-        return transformed_dict
 
     return raw_value
 
@@ -173,15 +163,15 @@ def local_view_navigation_script() -> str:
 """
 
 
-def inject_local_view_navigation(html: str) -> str:
+def inject_before_closing_body(html: str, fragment: str) -> str:
     closing_body = "</body>"
     if closing_body not in html:
         raise ValueError("Rendered dashboard does not contain a closing body tag.")
-    return html.replace(
-        closing_body,
-        local_view_navigation_script() + closing_body,
-        1,
-    )
+    return html.replace(closing_body, fragment + closing_body, 1)
+
+
+def inject_local_view_navigation(html: str) -> str:
+    return inject_before_closing_body(html, local_view_navigation_script())
 
 
 def serialize_runtime_script(variable_name: str, payload: Any) -> str:
@@ -226,11 +216,26 @@ def load_workstream_jsonld() -> dict[str, Any] | None:
     return cast(dict[str, Any], raw_value)
 
 
-def write_workstream_runtime_data(payload: dict[str, Any] | None) -> None:
-    write_runtime_script(
-        WORKSTREAM_RUNTIME_DATA_FILE,
-        "infoBimWorkStreamData",
-        payload,
+def serialize_embedded_jsonld(payload: dict[str, Any] | None) -> str:
+    serialized = json.dumps(payload, ensure_ascii=False, indent=2)
+    return serialized.replace("</", "<\\/")
+
+
+def workstream_jsonld_fragment(payload: dict[str, Any] | None) -> str:
+    return (
+        '  <script id="work-stream-jsonld" type="application/ld+json">\n'
+        + serialize_embedded_jsonld(payload)
+        + "\n  </script>\n"
+    )
+
+
+def inject_workstream_jsonld(
+    html: str,
+    payload: dict[str, Any] | None,
+) -> str:
+    return inject_before_closing_body(
+        html,
+        workstream_jsonld_fragment(payload),
     )
 
 
@@ -246,6 +251,7 @@ def main() -> int:
     enrich_project_information(raw_data)
     raw_data["generation"] = {"date": generation_date()}
     data: Dict[str, Any] = prepare_view_data(raw_data)
+
     env = Environment(
         loader=FileSystemLoader(TEMPLATE_DIR),
         autoescape=select_autoescape(("html", "xml")),
@@ -254,16 +260,19 @@ def main() -> int:
         lstrip_blocks=True,
     )
     html = env.get_template("index.html.jinja").render(**data)
+    workstream_payload = load_workstream_jsonld()
+    html = inject_workstream_jsonld(html, workstream_payload)
     html = inject_local_view_navigation(html)
     OUTPUT_FILE.write_text(html.rstrip() + "\n", encoding="utf-8")
 
-    workstream_payload = load_workstream_jsonld()
     write_project_runtime_data(raw_data["project"].get("location"))
-    write_workstream_runtime_data(workstream_payload)
 
     print(f"Generated {OUTPUT_FILE.relative_to(ROOT)} from {VIEW_FILE.relative_to(ROOT)}")
+    print(
+        "Embedded "
+        f"{WORKSTREAM_JSONLD_FILE.relative_to(ROOT)} in {OUTPUT_FILE.relative_to(ROOT)}"
+    )
     print(f"Generated {PROJECT_RUNTIME_DATA_FILE.relative_to(ROOT)}")
-    print(f"Generated {WORKSTREAM_RUNTIME_DATA_FILE.relative_to(ROOT)}")
     return 0
 
 
