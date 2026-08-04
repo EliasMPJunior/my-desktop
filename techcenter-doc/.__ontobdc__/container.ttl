@@ -4,10 +4,31 @@
 @prefix prov: <http://www.w3.org/ns/prov#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
+<urn:ontobdc:storage/dataset/techcenter-doc/.workstream> a obdc:EntityDataset ;
+    obdc:belongsToDataContainer <urn:ontobdc:storage/local/techcenter-doc> ;
+    dcterms:description "Dataset WorkStream do projeto de expansão do LabSea."@pt-BR ;
+    dcterms:title "WorkStream — Expansão do LabSea"@pt-BR ;
+    prov:atLocation <file:///C:/Users/EliasMagalh%C3%A3es/Documents/Brasidata/06_Projetos/01_Projetos_Ativos/my-desktop/techcenter-doc/.workstream> .
+
+<urn:ontobdc:storage/dataset/techcenter-doc/cronograma> a obdc:EntityDataset ;
+    obdc:belongsToDataContainer <urn:ontobdc:storage/local/techcenter-doc> ;
+    dcterms:description "Storage dataset located at file:///C:/Users/EliasMagalh%C3%A3es/Documents/Brasidata/06_Projetos/01_Projetos_Ativos/my-desktop/techcenter-doc/cronograma" ;
+    dcterms:title "Storage Dataset: cronograma" ;
+    prov:atLocation <file:///C:/Users/EliasMagalh%C3%A3es/Documents/Brasidata/06_Projetos/01_Projetos_Ativos/my-desktop/techcenter-doc/cronograma> .
+
+<urn:ontobdc:storage/dataset/techcenter-doc/desmobilizacao> a obdc:EntityDataset ;
+    obdc:belongsToDataContainer <urn:ontobdc:storage/local/techcenter-doc> ;
+    dcterms:description "Dataset WorkStream da desmobilização da obra de expansão do Novo LABSEA."@pt-BR ;
+    dcterms:title "WorkStream — Desmobilização da obra"@pt-BR ;
+    prov:atLocation <../desmobilizacao> .
+
 <urn:ontobdc:storage/local/techcenter-doc> a obdc:DataContainer ;
+    obdc:hasEntityDataset <urn:ontobdc:storage/dataset/techcenter-doc/.workstream>,
+        <urn:ontobdc:storage/dataset/techcenter-doc/cronograma>,
+        <urn:ontobdc:storage/dataset/techcenter-doc/desmobilizacao> ;
     dcterms:identifier "urn:ontobdc:storage/local/techcenter-doc" ;
-    dcterms:title "Storage Container: techcenter-doc"@en ;
+    dcterms:title "Real Estate Brazil (Official)-Obras - Exp LabSea2025"@en ;
     ct:creationDate "2026-08-03T22:43:02.762347+00:00"^^xsd:dateTime ;
-    ct:description "Local storage container at Storage Container: techcenter-doc"@en ;
+    ct:description "Local storage container at Real Estate Brazil (Official)-Obras - Exp LabSea2025"@en ;
     prov:atLocation <file:///C:/Users/EliasMagalh%C3%A3es/Documents/Brasidata/06_Projetos/01_Projetos_Ativos/my-desktop/techcenter-doc> .
 

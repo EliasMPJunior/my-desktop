@@ -1,57 +1,91 @@
 {
-    "@context": "https://w3id.org/ro/crate/1.2/context",
-    "@graph": [
+  "@context": "https://w3id.org/ro/crate/1.2/context",
+  "@graph": [
+    {
+      "@id": "./",
+      "@type": "Dataset",
+      "datePublished": "2026-08-03T22:43:02+00:00",
+      "hasPart": [
         {
-            "@id": "./",
-            "@type": "Dataset",
-            "datePublished": "2026-08-03T22:43:02+00:00",
-            "hasPart": [
-                {
-                    "@id": "generate.py"
-                },
-                {
-                    "@id": "godfile.py"
-                },
-                {
-                    "@id": "index.html"
-                },
-                {
-                    "@id": "template/index.html.jinja"
-                },
-                {
-                    "@id": "views/public.yaml"
-                }
-            ]
+          "@id": "index.html"
         },
         {
-            "@id": "ro-crate-metadata.json",
-            "@type": "CreativeWork",
-            "about": {
-                "@id": "./"
-            },
-            "conformsTo": {
-                "@id": "https://w3id.org/ro/crate/1.2"
-            }
+          "@id": "template/index.html.jinja"
         },
         {
-            "@id": "generate.py",
-            "@type": "File"
+          "@id": "views/public.yaml"
         },
         {
-            "@id": "godfile.py",
-            "@type": "File"
+          "@id": "payload/triple/work_stream.jsonld"
         },
         {
-            "@id": "index.html",
-            "@type": "File"
+          "@id": ".workstream/"
         },
         {
-            "@id": "template/index.html.jinja",
-            "@type": "File"
+          "@id": "desmobilizacao/"
         },
         {
-            "@id": "views/public.yaml",
-            "@type": "File"
+          "@id": "view/work_stream/7c7e9d91-046d-5bcb-ad09-a04c5821c6de.html"
         }
-    ]
+      ]
+    },
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "about": {
+        "@id": "./"
+      },
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      }
+    },
+    {
+      "@id": "index.html",
+      "@type": "File"
+    },
+    {
+      "@id": "template/index.html.jinja",
+      "@type": "File"
+    },
+    {
+      "@id": "views/public.yaml",
+      "@type": "File"
+    },
+    {
+      "@id": "payload/triple/work_stream.jsonld",
+      "@type": "File",
+      "name": "Published WorkStream collection",
+      "description": "JSON-LD consumed by the project dashboard to list published WorkStreams.",
+      "encodingFormat": "application/ld+json",
+      "about": {
+        "@id": "urn:infobim:project:Real%20Estate%20Brazil%20%28Official%29-Obras%20-%20Exp%20LabSea2025/workstreams"
+      }
+    },
+    {
+      "@id": ".workstream/",
+      "@type": "Dataset",
+      "identifier": "urn:ontobdc:storage/dataset/techcenter-doc/work_stream",
+      "name": "WorkStream — Expansão do LabSea",
+      "description": "Dataset WorkStream do projeto de expansão do LabSea."
+    },
+    {
+      "@id": "desmobilizacao/",
+      "@type": "Dataset",
+      "identifier": "urn:ontobdc:storage/dataset/techcenter-doc/desmobilizacao",
+      "name": "WorkStream — Desmobilização da obra",
+      "description": "Dataset WorkStream da desmobilização da obra de expansão do Novo LABSEA.",
+      "mainEntity": {
+        "@id": "urn:infobim:workstream/f834661b-b230-5bc4-ab62-7bfa0338df8f"
+      }
+    },
+    {
+      "@id": "view/work_stream/7c7e9d91-046d-5bcb-ad09-a04c5821c6de.html",
+      "@type": "File",
+      "name": "Published WorkStream view",
+      "encodingFormat": "text/html",
+      "about": {
+        "@id": "urn:infobim:workstream/7c7e9d91-046d-5bcb-ad09-a04c5821c6de"
+      }
+    }
+  ]
 }

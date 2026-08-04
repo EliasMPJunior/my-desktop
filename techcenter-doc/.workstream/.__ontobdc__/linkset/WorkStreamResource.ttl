@@ -1,0 +1,179 @@
+@prefix ls: <https://standards.iso.org/iso/21597/-1/ed-1/en/Linkset#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<urn:infobim:linkset:workstream-resource:101fc2e1fe54cfc5f2b8e4a1> a ls:DirectedBinaryLink ;
+    ls:hasFromLinkElement <urn:infobim:linkset:workstream-resource:101fc2e1fe54cfc5f2b8e4a1:dimension> ;
+    ls:hasToLinkElement <urn:infobim:linkset:workstream-resource:101fc2e1fe54cfc5f2b8e4a1:resource> .
+
+<urn:infobim:linkset:workstream-resource:13aaafa83402dd7e630f6477> a ls:DirectedBinaryLink ;
+    ls:hasFromLinkElement <urn:infobim:linkset:workstream-resource:13aaafa83402dd7e630f6477:dimension> ;
+    ls:hasToLinkElement <urn:infobim:linkset:workstream-resource:13aaafa83402dd7e630f6477:resource> .
+
+<urn:infobim:linkset:workstream-resource:1ab14cd26d0e62cb50a6244b> a ls:DirectedBinaryLink ;
+    ls:hasFromLinkElement <urn:infobim:linkset:workstream-resource:1ab14cd26d0e62cb50a6244b:dimension> ;
+    ls:hasToLinkElement <urn:infobim:linkset:workstream-resource:1ab14cd26d0e62cb50a6244b:resource> .
+
+<urn:infobim:linkset:workstream-resource:343d8d0aeebc5ec5dc82201c> a ls:DirectedBinaryLink ;
+    ls:hasFromLinkElement <urn:infobim:linkset:workstream-resource:343d8d0aeebc5ec5dc82201c:dimension> ;
+    ls:hasToLinkElement <urn:infobim:linkset:workstream-resource:343d8d0aeebc5ec5dc82201c:resource> .
+
+<urn:infobim:linkset:workstream-resource:74d66bf3f3c90de120016aa2> a ls:DirectedBinaryLink ;
+    ls:hasFromLinkElement <urn:infobim:linkset:workstream-resource:74d66bf3f3c90de120016aa2:dimension> ;
+    ls:hasToLinkElement <urn:infobim:linkset:workstream-resource:74d66bf3f3c90de120016aa2:resource> .
+
+<urn:infobim:linkset:workstream-resource:9c1b00b0ef8666226760efa5> a ls:DirectedBinaryLink ;
+    ls:hasFromLinkElement <urn:infobim:linkset:workstream-resource:9c1b00b0ef8666226760efa5:dimension> ;
+    ls:hasToLinkElement <urn:infobim:linkset:workstream-resource:9c1b00b0ef8666226760efa5:resource> .
+
+<urn:infobim:linkset:workstream-resource:a49a1b929f50a8e6340862bf> a ls:DirectedBinaryLink ;
+    ls:hasFromLinkElement <urn:infobim:linkset:workstream-resource:a49a1b929f50a8e6340862bf:dimension> ;
+    ls:hasToLinkElement <urn:infobim:linkset:workstream-resource:a49a1b929f50a8e6340862bf:resource> .
+
+<urn:infobim:linkset:workstream-resource:a958ba941a2853a961c5c064> a ls:DirectedBinaryLink ;
+    ls:hasFromLinkElement <urn:infobim:linkset:workstream-resource:a958ba941a2853a961c5c064:dimension> ;
+    ls:hasToLinkElement <urn:infobim:linkset:workstream-resource:a958ba941a2853a961c5c064:resource> .
+
+<urn:infobim:linkset:workstream-resource:b010d2cd4f2a65e06a7cdc6b> a ls:DirectedBinaryLink ;
+    ls:hasFromLinkElement <urn:infobim:linkset:workstream-resource:b010d2cd4f2a65e06a7cdc6b:dimension> ;
+    ls:hasToLinkElement <urn:infobim:linkset:workstream-resource:b010d2cd4f2a65e06a7cdc6b:resource> .
+
+<urn:infobim:linkset:workstream-resource:b8c271e4f0f08b00986cdc88> a ls:DirectedBinaryLink ;
+    ls:hasFromLinkElement <urn:infobim:linkset:workstream-resource:b8c271e4f0f08b00986cdc88:dimension> ;
+    ls:hasToLinkElement <urn:infobim:linkset:workstream-resource:b8c271e4f0f08b00986cdc88:resource> .
+
+<urn:infobim:linkset:workstream-resource:d9d4f90056d932cd2a5494d4> a ls:DirectedBinaryLink ;
+    ls:hasFromLinkElement <urn:infobim:linkset:workstream-resource:d9d4f90056d932cd2a5494d4:dimension> ;
+    ls:hasToLinkElement <urn:infobim:linkset:workstream-resource:d9d4f90056d932cd2a5494d4:resource> .
+
+<urn:infobim:linkset:workstream-resource:101fc2e1fe54cfc5f2b8e4a1:dimension> a ls:LinkElement ;
+    ls:hasIdentifier <urn:infobim:linkset:workstream-resource:101fc2e1fe54cfc5f2b8e4a1:dimension-identifier> .
+
+<urn:infobim:linkset:workstream-resource:101fc2e1fe54cfc5f2b8e4a1:dimension-identifier> a ls:URIBasedIdentifier ;
+    ls:uri "urn:infobim:workstream/7c7e9d91-046d-5bcb-ad09-a04c5821c6de/dimension/what"^^xsd:anyURI .
+
+<urn:infobim:linkset:workstream-resource:101fc2e1fe54cfc5f2b8e4a1:resource> a ls:LinkElement ;
+    ls:hasIdentifier <urn:infobim:linkset:workstream-resource:101fc2e1fe54cfc5f2b8e4a1:resource-identifier> .
+
+<urn:infobim:linkset:workstream-resource:101fc2e1fe54cfc5f2b8e4a1:resource-identifier> a ls:StringBasedIdentifier ;
+    ls:identifier "2.%20Documentos/2.5%20Projetos/7%20CFTV%20e%20Dados/1%20Premissas/1%20Operacao/Layout%20camera%20operacao.dwg" .
+
+<urn:infobim:linkset:workstream-resource:13aaafa83402dd7e630f6477:dimension> a ls:LinkElement ;
+    ls:hasIdentifier <urn:infobim:linkset:workstream-resource:13aaafa83402dd7e630f6477:dimension-identifier> .
+
+<urn:infobim:linkset:workstream-resource:13aaafa83402dd7e630f6477:dimension-identifier> a ls:URIBasedIdentifier ;
+    ls:uri "urn:infobim:workstream/7c7e9d91-046d-5bcb-ad09-a04c5821c6de/dimension/what"^^xsd:anyURI .
+
+<urn:infobim:linkset:workstream-resource:13aaafa83402dd7e630f6477:resource> a ls:LinkElement ;
+    ls:hasIdentifier <urn:infobim:linkset:workstream-resource:13aaafa83402dd7e630f6477:resource-identifier> .
+
+<urn:infobim:linkset:workstream-resource:13aaafa83402dd7e630f6477:resource-identifier> a ls:StringBasedIdentifier ;
+    ls:identifier "3.%20Planejamento/Projetos%20enviados%20para%20o%20cliente/SPDA/LBSEA-SPDA-000001-rev03.dwg" .
+
+<urn:infobim:linkset:workstream-resource:1ab14cd26d0e62cb50a6244b:dimension> a ls:LinkElement ;
+    ls:hasIdentifier <urn:infobim:linkset:workstream-resource:1ab14cd26d0e62cb50a6244b:dimension-identifier> .
+
+<urn:infobim:linkset:workstream-resource:1ab14cd26d0e62cb50a6244b:dimension-identifier> a ls:URIBasedIdentifier ;
+    ls:uri "urn:infobim:workstream/7c7e9d91-046d-5bcb-ad09-a04c5821c6de/dimension/what"^^xsd:anyURI .
+
+<urn:infobim:linkset:workstream-resource:1ab14cd26d0e62cb50a6244b:resource> a ls:LinkElement ;
+    ls:hasIdentifier <urn:infobim:linkset:workstream-resource:1ab14cd26d0e62cb50a6244b:resource-identifier> .
+
+<urn:infobim:linkset:workstream-resource:1ab14cd26d0e62cb50a6244b:resource-identifier> a ls:StringBasedIdentifier ;
+    ls:identifier "2.%20Documentos/2.5%20Projetos/7%20CFTV%20e%20Dados/1%20Premissas/2%20Security/RES_%20Tech%20Center%20-%20Expans%C3%A3o%20do%20LabSea_%20Sistema%20de%20CFTV.msg" .
+
+<urn:infobim:linkset:workstream-resource:343d8d0aeebc5ec5dc82201c:dimension> a ls:LinkElement ;
+    ls:hasIdentifier <urn:infobim:linkset:workstream-resource:343d8d0aeebc5ec5dc82201c:dimension-identifier> .
+
+<urn:infobim:linkset:workstream-resource:343d8d0aeebc5ec5dc82201c:dimension-identifier> a ls:URIBasedIdentifier ;
+    ls:uri "urn:infobim:workstream/7c7e9d91-046d-5bcb-ad09-a04c5821c6de/dimension/what"^^xsd:anyURI .
+
+<urn:infobim:linkset:workstream-resource:343d8d0aeebc5ec5dc82201c:resource> a ls:LinkElement ;
+    ls:hasIdentifier <urn:infobim:linkset:workstream-resource:343d8d0aeebc5ec5dc82201c:resource-identifier> .
+
+<urn:infobim:linkset:workstream-resource:343d8d0aeebc5ec5dc82201c:resource-identifier> a ls:StringBasedIdentifier ;
+    ls:identifier "3.%20Planejamento/Cronograma/APRESENTA%C3%87%C3%83O%20PLANO%20DE%20INFRA%20LABSEA%20X%20NOVO%20LABSEA%20(TFMC_LABSEA)%20-%20REV%2000.pdf" .
+
+<urn:infobim:linkset:workstream-resource:74d66bf3f3c90de120016aa2:dimension> a ls:LinkElement ;
+    ls:hasIdentifier <urn:infobim:linkset:workstream-resource:74d66bf3f3c90de120016aa2:dimension-identifier> .
+
+<urn:infobim:linkset:workstream-resource:74d66bf3f3c90de120016aa2:dimension-identifier> a ls:URIBasedIdentifier ;
+    ls:uri "urn:infobim:workstream/7c7e9d91-046d-5bcb-ad09-a04c5821c6de/dimension/what"^^xsd:anyURI .
+
+<urn:infobim:linkset:workstream-resource:74d66bf3f3c90de120016aa2:resource> a ls:LinkElement ;
+    ls:hasIdentifier <urn:infobim:linkset:workstream-resource:74d66bf3f3c90de120016aa2:resource-identifier> .
+
+<urn:infobim:linkset:workstream-resource:74d66bf3f3c90de120016aa2:resource-identifier> a ls:StringBasedIdentifier ;
+    ls:identifier "2.%20Documentos/2.5%20Projetos/7%20CFTV%20e%20Dados/LBSEA-CAB-000001-rev02.dwg" .
+
+<urn:infobim:linkset:workstream-resource:9c1b00b0ef8666226760efa5:dimension> a ls:LinkElement ;
+    ls:hasIdentifier <urn:infobim:linkset:workstream-resource:9c1b00b0ef8666226760efa5:dimension-identifier> .
+
+<urn:infobim:linkset:workstream-resource:9c1b00b0ef8666226760efa5:dimension-identifier> a ls:URIBasedIdentifier ;
+    ls:uri "urn:infobim:workstream/7c7e9d91-046d-5bcb-ad09-a04c5821c6de/dimension/what"^^xsd:anyURI .
+
+<urn:infobim:linkset:workstream-resource:9c1b00b0ef8666226760efa5:resource> a ls:LinkElement ;
+    ls:hasIdentifier <urn:infobim:linkset:workstream-resource:9c1b00b0ef8666226760efa5:resource-identifier> .
+
+<urn:infobim:linkset:workstream-resource:9c1b00b0ef8666226760efa5:resource-identifier> a ls:StringBasedIdentifier ;
+    ls:identifier "5.%20Fiscaliza%C3%A7%C3%A3o/1%20Bid%20e%20projetos/1%20Emitidos/25.08.11%20-%20Complemento%20BID/complementares/2.3%20Infra%20de%20dados/DEGR-CAB-000001%20Rev00.dwg" .
+
+<urn:infobim:linkset:workstream-resource:a49a1b929f50a8e6340862bf:dimension> a ls:LinkElement ;
+    ls:hasIdentifier <urn:infobim:linkset:workstream-resource:a49a1b929f50a8e6340862bf:dimension-identifier> .
+
+<urn:infobim:linkset:workstream-resource:a49a1b929f50a8e6340862bf:dimension-identifier> a ls:URIBasedIdentifier ;
+    ls:uri "urn:infobim:workstream/7c7e9d91-046d-5bcb-ad09-a04c5821c6de/dimension/what"^^xsd:anyURI .
+
+<urn:infobim:linkset:workstream-resource:a49a1b929f50a8e6340862bf:resource> a ls:LinkElement ;
+    ls:hasIdentifier <urn:infobim:linkset:workstream-resource:a49a1b929f50a8e6340862bf:resource-identifier> .
+
+<urn:infobim:linkset:workstream-resource:a49a1b929f50a8e6340862bf:resource-identifier> a ls:StringBasedIdentifier ;
+    ls:identifier "3.%20Planejamento/Projetos%20enviados%20para%20o%20cliente/Dados/LBSEA-CAB-000001-rev03.dwg" .
+
+<urn:infobim:linkset:workstream-resource:a958ba941a2853a961c5c064:dimension> a ls:LinkElement ;
+    ls:hasIdentifier <urn:infobim:linkset:workstream-resource:a958ba941a2853a961c5c064:dimension-identifier> .
+
+<urn:infobim:linkset:workstream-resource:a958ba941a2853a961c5c064:dimension-identifier> a ls:URIBasedIdentifier ;
+    ls:uri "urn:infobim:workstream/7c7e9d91-046d-5bcb-ad09-a04c5821c6de/dimension/what"^^xsd:anyURI .
+
+<urn:infobim:linkset:workstream-resource:a958ba941a2853a961c5c064:resource> a ls:LinkElement ;
+    ls:hasIdentifier <urn:infobim:linkset:workstream-resource:a958ba941a2853a961c5c064:resource-identifier> .
+
+<urn:infobim:linkset:workstream-resource:a958ba941a2853a961c5c064:resource-identifier> a ls:StringBasedIdentifier ;
+    ls:identifier "5.%20Fiscaliza%C3%A7%C3%A3o/1%20Bid%20e%20projetos/1%20Emitidos/25.08.11%20-%20Complemento%20BID/2.3%20Infra%20de%20dados/DEGR-CAB-000001%20Rev00.dwg" .
+
+<urn:infobim:linkset:workstream-resource:b010d2cd4f2a65e06a7cdc6b:dimension> a ls:LinkElement ;
+    ls:hasIdentifier <urn:infobim:linkset:workstream-resource:b010d2cd4f2a65e06a7cdc6b:dimension-identifier> .
+
+<urn:infobim:linkset:workstream-resource:b010d2cd4f2a65e06a7cdc6b:dimension-identifier> a ls:URIBasedIdentifier ;
+    ls:uri "urn:infobim:workstream/7c7e9d91-046d-5bcb-ad09-a04c5821c6de/dimension/why"^^xsd:anyURI .
+
+<urn:infobim:linkset:workstream-resource:b010d2cd4f2a65e06a7cdc6b:resource> a ls:LinkElement ;
+    ls:hasIdentifier <urn:infobim:linkset:workstream-resource:b010d2cd4f2a65e06a7cdc6b:resource-identifier> .
+
+<urn:infobim:linkset:workstream-resource:b010d2cd4f2a65e06a7cdc6b:resource-identifier> a ls:StringBasedIdentifier ;
+    ls:identifier "2.%20Documentos/2.5%20Projetos/6%20SPDA/LBSEA-SPDA-000001-rev03.dwg" .
+
+<urn:infobim:linkset:workstream-resource:b8c271e4f0f08b00986cdc88:dimension> a ls:LinkElement ;
+    ls:hasIdentifier <urn:infobim:linkset:workstream-resource:b8c271e4f0f08b00986cdc88:dimension-identifier> .
+
+<urn:infobim:linkset:workstream-resource:b8c271e4f0f08b00986cdc88:dimension-identifier> a ls:URIBasedIdentifier ;
+    ls:uri "urn:infobim:workstream/7c7e9d91-046d-5bcb-ad09-a04c5821c6de/dimension/what"^^xsd:anyURI .
+
+<urn:infobim:linkset:workstream-resource:b8c271e4f0f08b00986cdc88:resource> a ls:LinkElement ;
+    ls:hasIdentifier <urn:infobim:linkset:workstream-resource:b8c271e4f0f08b00986cdc88:resource-identifier> .
+
+<urn:infobim:linkset:workstream-resource:b8c271e4f0f08b00986cdc88:resource-identifier> a ls:StringBasedIdentifier ;
+    ls:identifier "2.%20Documentos/2.5%20Projetos/7%20CFTV%20e%20Dados/1%20Premissas/1%20Operacao/fibra%20caminhamento%20proposto.dwg" .
+
+<urn:infobim:linkset:workstream-resource:d9d4f90056d932cd2a5494d4:dimension> a ls:LinkElement ;
+    ls:hasIdentifier <urn:infobim:linkset:workstream-resource:d9d4f90056d932cd2a5494d4:dimension-identifier> .
+
+<urn:infobim:linkset:workstream-resource:d9d4f90056d932cd2a5494d4:dimension-identifier> a ls:URIBasedIdentifier ;
+    ls:uri "urn:infobim:workstream/7c7e9d91-046d-5bcb-ad09-a04c5821c6de/dimension/what"^^xsd:anyURI .
+
+<urn:infobim:linkset:workstream-resource:d9d4f90056d932cd2a5494d4:resource> a ls:LinkElement ;
+    ls:hasIdentifier <urn:infobim:linkset:workstream-resource:d9d4f90056d932cd2a5494d4:resource-identifier> .
+
+<urn:infobim:linkset:workstream-resource:d9d4f90056d932cd2a5494d4:resource-identifier> a ls:StringBasedIdentifier ;
+    ls:identifier "2.%20Documentos/2.5%20Projetos/6%20SPDA/LBSEA-SPDA-000001-rev03.dwg" .
+

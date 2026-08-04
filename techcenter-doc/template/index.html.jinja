@@ -43,6 +43,42 @@
       overflow-wrap: anywhere;
     }
 
+    .project-geolocation-value {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      max-width: 100%;
+    }
+
+    .project-geolocation-coordinates {
+      overflow-wrap: anywhere;
+      font-variant-numeric: tabular-nums;
+    }
+
+    .project-map-pin {
+      display: inline-grid;
+      place-items: center;
+      flex: 0 0 auto;
+      width: 32px;
+      height: 32px;
+      border: 1px solid rgba(103, 232, 249, 0.34);
+      border-radius: 999px;
+      color: inherit;
+      background: rgba(103, 232, 249, 0.08);
+      text-decoration: none;
+      line-height: 1;
+    }
+
+    .project-map-pin:hover {
+      border-color: var(--accent);
+      background: rgba(103, 232, 249, 0.14);
+    }
+
+    .project-map-pin:focus-visible {
+      outline: 2px solid var(--accent-strong);
+      outline-offset: 2px;
+    }
+
     .view-menubar-track {
       overflow-x: auto;
       scrollbar-width: thin;
@@ -75,6 +111,31 @@
       font-variant-numeric: tabular-nums;
       line-height: 1;
       letter-spacing: -0.05em;
+    }
+
+    .runtime-footer {
+      display: grid;
+      grid-template-columns: minmax(240px, 0.8fr) minmax(0, 1.2fr);
+      align-items: center;
+      margin-top: 24px;
+    }
+
+    .runtime-footer .view-panel-head,
+    .runtime-footer .view-panel-body {
+      padding-block: 14px;
+    }
+
+    .runtime-footer .view-panel-body {
+      display: grid;
+      grid-template-columns: auto minmax(0, 1fr);
+      align-items: center;
+      gap: 18px;
+    }
+
+    .runtime-footer .runtime-console {
+      min-height: 0;
+      margin: 0;
+      padding: 10px 12px;
     }
 
     .project-tabs-card {
@@ -239,6 +300,10 @@
       .metadata-row {
         grid-template-columns: minmax(92px, 0.35fr) minmax(0, 1fr);
       }
+
+      .runtime-footer {
+        grid-template-columns: 1fr;
+      }
     }
 
     @media (max-width: 760px) {
@@ -346,6 +411,10 @@
         padding-inline: 16px;
       }
 
+      .runtime-footer .view-panel-body {
+        grid-template-columns: 1fr;
+      }
+
       .runtime-status {
         align-items: flex-start;
       }
@@ -436,20 +505,11 @@
                 <dd>{{ field.value }}</dd>
               </div>
 {% endfor %}
+              <div class="metadata-row" data-project-geolocation-row>
+                <dt>Geolocalização</dt>
+                <dd class="project-geolocation-value">não definida</dd>
+              </div>
             </dl>
-          </div>
-        </article>
-        <article class="view-panel" data-card="pyodide-runtime-card">
-          <header class="view-panel-head">
-            <h2 class="view-panel-title">{{ runtime.title }}</h2>
-            <p class="view-panel-copy">{{ runtime.description }}</p>
-          </header>
-          <div class="view-panel-body">
-            <div class="runtime-status">
-              <span class="runtime-dot" id="pyodide-status-dot"></span>
-              <strong id="pyodide-status-label">{{ runtime.initial_status }}</strong>
-            </div>
-            <pre class="runtime-console" id="pyodide-console">{{ runtime.initial_console }}</pre>
           </div>
         </article>
       </div>
@@ -505,8 +565,48 @@
         </article>
       </div>
     </section>
+
+    <footer class="view-panel runtime-footer" data-card="pyodide-runtime-card">
+      <header class="view-panel-head">
+        <h2 class="view-panel-title">{{ runtime.title }}</h2>
+        <p class="view-panel-copy">{{ runtime.description }}</p>
+      </header>
+      <div class="view-panel-body">
+        <div class="runtime-status">
+          <span class="runtime-dot" id="pyodide-status-dot"></span>
+          <strong id="pyodide-status-label">{{ runtime.initial_status }}</strong>
+        </div>
+        <pre class="runtime-console" id="pyodide-console">{{ runtime.initial_console }}</pre>
+      </div>
+    </footer>
   </main>
 
+  <script>
+    window.infoBimProjectRuntimeData = window.infoBimProjectRuntimeData || {};
+    (function () {
+      const generatedLocation = {{ project.location | default(none) | tojson }};
+      const generatedGeolocation = {{ project.geolocation | default(none) | tojson }};
+      const generatedLatitude = {{ project.latitude | default(none) | tojson }};
+      const generatedLongitude = {{ project.longitude | default(none) | tojson }};
+      const candidate = generatedLocation || generatedGeolocation;
+
+      if (candidate && typeof candidate === "object") {
+        window.infoBimProjectRuntimeData.location = candidate;
+        return;
+      }
+
+      if (generatedLatitude !== null && generatedLongitude !== null) {
+        window.infoBimProjectRuntimeData.location = {
+          latitude: generatedLatitude,
+          longitude: generatedLongitude,
+        };
+        return;
+      }
+
+      window.infoBimProjectRuntimeData.location =
+        window.infoBimProjectRuntimeData.location || null;
+    }());
+  </script>
   <script>
     window.infoBimProjectDashboard = {
       "projectId": {{ project.id | tojson }},

@@ -1,0 +1,43 @@
+{
+  "profile": "tabular-data-package",
+  "name": "techcenter_labsea_work_stream",
+  "title": "WorkStream — Expansão do LabSea",
+  "description": "Dataset WorkStream do projeto de expansão do LabSea.",
+  "dataEntity": {
+    "id": "urn:infobim:workstream/7c7e9d91-046d-5bcb-ad09-a04c5821c6de",
+    "identifier": "7c7e9d91-046d-5bcb-ad09-a04c5821c6de",
+    "type": "http://datacenter.app.br/ontology/productivity/entity/work_stream/type.ttl#WorkStream",
+    "facade": "http://datacenter.app.br/ontology/productivity/entity/work_stream/facade.ttl#WorkStreamFacade"
+  },
+  "resources": [
+    {
+      "profile": "tabular-data-resource",
+      "name": "work_stream",
+      "title": "WorkStream",
+      "path": "../payload/document/workstream.xlsx",
+      "scheme": "file",
+      "type": "table",
+      "format": "xlsx",
+      "mediatype": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+      "entityUri": "http://datacenter.app.br/ontology/productivity/entity/work_stream/type.ttl#WorkStream",
+      "entityIdentifier": "work_stream",
+      "entityId": "7c7e9d91-046d-5bcb-ad09-a04c5821c6de",
+      "dialect": {"excel": {"sheet": "WorkStream"}},
+      "schema": {
+        "fields": [
+          {"name": "GlobalId", "type": "string"},
+          {"name": "Description", "type": "string"},
+          {"name": "Name", "type": "string"},
+          {"name": "What", "type": "string"},
+          {"name": "Why", "type": "string"},
+          {"name": "Who", "type": "string"},
+          {"name": "Where", "type": "string"},
+          {"name": "When", "type": "string"},
+          {"name": "How", "type": "string"},
+          {"name": "HowMuch", "type": "string"}
+        ],
+        "primaryKey": ["GlobalId"]
+      }
+    }
+  ]
+}

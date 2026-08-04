@@ -1,0 +1,113 @@
+{
+  "@context": "https://w3id.org/ro/crate/1.2/context",
+  "@graph": [
+    {
+      "@id": "./",
+      "@type": "Dataset",
+      "identifier": "urn:ontobdc:storage/dataset/techcenter-doc/cronograma",
+      "name": "Cronograma — Expansão do LabSea",
+      "description": "Dataset da entidade IfcWorkSchedule do projeto de expansão do LabSea.",
+      "datePublished": "2026-08-04T15:13:00-03:00",
+      "isPartOf": {
+        "@id": "urn:infobim:project:Real%20Estate%20Brazil%20%28Official%29-Obras%20-%20Exp%20LabSea2025"
+      },
+      "mainEntity": {
+        "@id": "urn:infobim:ifc-work-schedule/69240f56-8e7a-401a-93cc-c43e12d9c72e"
+      },
+      "hasPart": [
+        {
+          "@id": ".__ontobdc__/dataset.ttl"
+        },
+        {
+          "@id": ".__ontobdc__/datapackage.json"
+        },
+        {
+          "@id": ".__ontobdc__/linkset/facade.ttl"
+        },
+        {
+          "@id": ".__ontobdc__/linkset/IfcWorkSchedule.ttl"
+        },
+        {
+          "@id": "payload/document/LABSEA_IfcWorkSchedule.xlsx"
+        }
+      ]
+    },
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "about": {
+        "@id": "./"
+      },
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      }
+    },
+    {
+      "@id": "urn:infobim:project:Real%20Estate%20Brazil%20%28Official%29-Obras%20-%20Exp%20LabSea2025",
+      "@type": "Thing",
+      "name": "Real Estate Brazil (Official)-Obras - Exp LabSea2025",
+      "additionalType": "http://ifcowl.openbimstandards.org/IFC4#IfcProject"
+    },
+    {
+      "@id": "urn:infobim:ifc-work-schedule/69240f56-8e7a-401a-93cc-c43e12d9c72e",
+      "@type": "Thing",
+      "identifier": "69240f56-8e7a-401a-93cc-c43e12d9c72e",
+      "name": "IfcWorkSchedule",
+      "additionalType": "http://ifcowl.openbimstandards.org/IFC4#IfcWorkSchedule",
+      "isPartOf": {
+        "@id": "urn:infobim:project:Real%20Estate%20Brazil%20%28Official%29-Obras%20-%20Exp%20LabSea2025"
+      }
+    },
+    {
+      "@id": ".__ontobdc__/dataset.ttl",
+      "@type": "File",
+      "name": "Dataset ontology",
+      "encodingFormat": "text/turtle",
+      "about": {
+        "@id": "urn:infobim:ifc-work-schedule/69240f56-8e7a-401a-93cc-c43e12d9c72e"
+      }
+    },
+    {
+      "@id": ".__ontobdc__/datapackage.json",
+      "@type": "File",
+      "name": "Frictionless Data Package",
+      "encodingFormat": "application/json",
+      "about": {
+        "@id": "urn:infobim:ifc-work-schedule/69240f56-8e7a-401a-93cc-c43e12d9c72e"
+      },
+      "conformsTo": {
+        "@id": "https://specs.frictionlessdata.io/data-package/"
+      }
+    },
+    {
+      "@id": ".__ontobdc__/linkset/facade.ttl",
+      "@type": "File",
+      "name": "IfcWorkSchedule dataset facade",
+      "encodingFormat": "text/turtle",
+      "about": {
+        "@id": "http://datacenter.app.br/ontology/bsi/element/ifc_work_schedule/type.ttl#IfcWorkScheduleHeaderVocabulary"
+      }
+    },
+    {
+      "@id": ".__ontobdc__/linkset/IfcWorkSchedule.ttl",
+      "@type": "File",
+      "name": "IfcWorkSchedule field linkset",
+      "encodingFormat": "text/turtle",
+      "about": {
+        "@id": "urn:infobim:ifc-work-schedule/69240f56-8e7a-401a-93cc-c43e12d9c72e"
+      },
+      "conformsTo": {
+        "@id": "http://datacenter.app.br/ontology/bsi/element/ifc_work_schedule/facade.ttl"
+      }
+    },
+    {
+      "@id": "payload/document/LABSEA_IfcWorkSchedule.xlsx",
+      "@type": "File",
+      "name": "LABSEA IfcWorkSchedule workbook",
+      "encodingFormat": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+      "about": {
+        "@id": "urn:infobim:ifc-work-schedule/69240f56-8e7a-401a-93cc-c43e12d9c72e"
+      }
+    }
+  ]
+}

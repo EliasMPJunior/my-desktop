@@ -1,0 +1,88 @@
+{
+  "profile": "tabular-data-package",
+  "name": "techcenter_labsea_desmobilizacao_work_stream",
+  "title": "WorkStream — Desmobilização da obra",
+  "description": "Dataset WorkStream da desmobilização da obra de expansão do Novo LABSEA.",
+  "created": "2026-08-04T16:11:00-03:00",
+  "dataEntity": {
+    "id": "urn:infobim:workstream/f834661b-b230-5bc4-ab62-7bfa0338df8f",
+    "identifier": "f834661b-b230-5bc4-ab62-7bfa0338df8f",
+    "type": "http://datacenter.app.br/ontology/productivity/entity/work_stream/type.ttl#WorkStream",
+    "facade": "http://datacenter.app.br/ontology/productivity/entity/work_stream/facade.ttl#WorkStreamFacade"
+  },
+  "resources": [
+    {
+      "profile": "tabular-data-resource",
+      "name": "work_stream",
+      "title": "WorkStream",
+      "path": "../payload/document/workstream.xlsx",
+      "scheme": "file",
+      "type": "table",
+      "format": "xlsx",
+      "mediatype": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+      "bytes": 5210,
+      "hash": "sha256:51a318870865f964bb43198aba55cc2a7f5f5d7aba4d197569162a7db156ee70",
+      "entityUri": "http://datacenter.app.br/ontology/productivity/entity/work_stream/type.ttl#WorkStream",
+      "entityIdentifier": "work_stream",
+      "entityId": "f834661b-b230-5bc4-ab62-7bfa0338df8f",
+      "dialect": {
+        "excel": {
+          "sheet": "WorkStream"
+        }
+      },
+      "schema": {
+        "fields": [
+          {
+            "name": "GlobalId",
+            "type": "string"
+          },
+          {
+            "name": "Description",
+            "type": "string"
+          },
+          {
+            "name": "Name",
+            "type": "string"
+          },
+          {
+            "name": "What",
+            "type": "string"
+          },
+          {
+            "name": "Why",
+            "type": "string"
+          },
+          {
+            "name": "Who",
+            "type": "string"
+          },
+          {
+            "name": "Where",
+            "type": "string"
+          },
+          {
+            "name": "When",
+            "type": "string"
+          },
+          {
+            "name": "How",
+            "type": "string"
+          },
+          {
+            "name": "HowMuch",
+            "type": "string"
+          }
+        ],
+        "primaryKey": [
+          "GlobalId"
+        ]
+      },
+      "rowCount": 1,
+      "dataEntity": {
+        "id": "urn:infobim:workstream/f834661b-b230-5bc4-ab62-7bfa0338df8f",
+        "identifier": "f834661b-b230-5bc4-ab62-7bfa0338df8f",
+        "facade": "http://datacenter.app.br/ontology/productivity/entity/work_stream/facade.ttl#WorkStreamFacade"
+      }
+    }
+  ]
+}

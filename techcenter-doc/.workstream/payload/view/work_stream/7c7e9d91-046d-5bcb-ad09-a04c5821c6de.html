@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>InfoBIM WorkStream 5W2H</title>
+  <script>
+    (function () {
+      const sourceView = /\/\.workstream\/payload\/view\/work_stream\//i.test(
+        decodeURIComponent(window.location.pathname),
+      );
+      window.infoBimWorkStreamAssetRoot = sourceView
+        ? "../../../../.__ontobdc__/asset/infobim-view"
+        : "../../.__ontobdc__/asset/infobim-view";
+      window.infoBimWorkStreamMainPage = sourceView
+        ? "../../../../index.html"
+        : "../../index.html";
+      document.write(
+        '<link rel="stylesheet" href="'
+        + window.infoBimWorkStreamAssetRoot
+        + '/css/project_dashboard.css?v=20260804-dataset-view">',
+      );
+    }());
+  </script>
+  <style>
+    .workstream-main-link {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 46px;
+      padding: 10px 22px;
+      border: 1px solid rgba(103, 232, 249, 0.34);
+      border-radius: 999px;
+      color: var(--text);
+      background: rgba(103, 232, 249, 0.08);
+      font-weight: 800;
+      text-decoration: none;
+      white-space: nowrap;
+      transition:
+        border-color 160ms ease,
+        background 160ms ease;
+    }
+
+    .workstream-main-link:hover {
+      border-color: var(--accent);
+      background: rgba(103, 232, 249, 0.14);
+    }
+
+    .workstream-main-link:focus-visible {
+      outline: 2px solid var(--accent);
+      outline-offset: 3px;
+    }
+  </style>
+</head>
+<body>
+  <main class="view-shell">
+    <section class="view-hero-card five-w-two-h-hero">
+      <div class="view-brand">
+        <img class="view-brand-logo" id="workstream-logo" alt="InfoBIM">
+        <div class="view-brand-copy">
+          <span class="view-eyebrow">InfoBIM WorkStream</span>
+          <span class="view-eyebrow-meta" id="project-title">Real Estate Brazil (Official)-Obras - Exp LabSea2025</span>
+        </div>
+      </div>
+      <h1 id="workstream-name">5W2H</h1>
+      <p id="workstream-description">Abra o projeto para carregar os dados vivos desta frente de trabalho.</p>
+    </section>
+
+    <section class="workstream-status-bar" aria-live="polite">
+      <div class="container-access-actions">
+        <div class="workstream-status">
+          <span class="runtime-dot" id="container-status-dot" aria-hidden="true"></span>
+          <span id="container-status">Não carregado</span>
+        </div>
+        <button
+          class="project-update-button"
+          id="update-project"
+          type="button"
+          aria-label="Atualizar arquivos do projeto"
+          title="Atualizar arquivos do projeto"
+          disabled
+        >
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M20 11a8.1 8.1 0 0 0-15.5-2M4 4v5h5"></path>
+            <path d="M4 13a8.1 8.1 0 0 0 15.5 2M20 20v-5h-5"></path>
+          </svg>
+          <span>Atualizar</span>
+        </button>
+        <button class="container-open-button" id="open-container" type="button">Carregar</button>
+        <a
+          class="workstream-main-link"
+          id="workstream-main-link"
+          href="#"
+        >Voltarao projeto</a>
+      </div>
+    </section>
+
+    <section class="five-w-two-h-layout" id="five-w-two-h-layout" aria-label="5W2H"></section>
+  </main>
+
+  <script>
+    (function () {
+      document.getElementById("workstream-logo").src =
+        window.infoBimWorkStreamAssetRoot + "/logo.png";
+      document.getElementById("workstream-main-link").href =
+        window.infoBimWorkStreamMainPage;
+
+      const dimensions = [
+        {id: "what", dimension: "what", field: "What", symbol: "W", label: "What", question: "O que será executado?"},
+        {id: "why", dimension: "why", field: "Why", symbol: "W", label: "Why", question: "Por que será executado?"},
+        {id: "where", dimension: "where", field: "Where", symbol: "W", label: "Where", question: "Onde será executado?"},
+        {id: "when", dimension: "when", field: "When", symbol: "W", label: "When", question: "Quando será executado?"},
+        {id: "who", dimension: "who", field: "Who", symbol: "W", label: "Who", question: "Quem está envolvido?"},
+        {id: "how", dimension: "how", field: "How", symbol: "H", label: "How", question: "Como será executado?"},
+        {id: "howmuch", dimension: "how-much", field: "HowMuch", symbol: "H", label: "How much", question: "Quanto será necessário?"},
+      ];
+      const resourceLinks = [
+        {id: "drawings", label: "Pranchas"},
+        {id: "documents", label: "Documentos"},
+        {id: "messages", label: "Comunicação"},
+        {id: "photos", label: "Fotos"},
+      ];
+      const resourceViews = [
+        {id: "related", label: "Relacionadas"},
+        {id: "suggested", label: "Sugeridas"},
+        {id: "found", label: "Encontradas"},
+      ];
+
+      function resourceButtons(item) {
+        return resourceLinks.map((resource) => `
+          <button
+            class="workstream-resource-link"
+            type="button"
+            data-resource-toggle="${resource.id}"
+            aria-expanded="false"
+            aria-controls="${item.id}-resource-panel"
+          >${resource.label}</button>
+        `).join("");
+      }
+
+      function resourceTabs(item) {
+        return resourceViews.map((view, index) => `
+          <button
+            class="workstream-resource-tab${index === 0 ? " is-active" : ""}"
+            id="${item.id}-${view.id}-tab"
+            type="button"
+            role="tab"
+            data-resource-view="${view.id}"
+            aria-selected="${index === 0}"
+            aria-controls="${item.id}-tree"
+            tabindex="${index === 0 ? "0" : "-1"}"
+          >${view.label}</button>
+        `).join("");
+      }
+
+      function resourcePanel(item) {
+        return `
+          <section
+            class="view-panel workstream-resource-panel"
+            id="${item.id}-resource-panel"
+            data-resource-panel
+            hidden
+          >
+            <div class="workstream-resource-tree">
+              <div class="workstream-resource-section-head">
+                <span>Árvore</span>
+                <div class="workstream-tree-heading">
+                  <strong data-resource-title>Recursos</strong>
+                  <div class="workstream-tree-toolbar" aria-label="Controles da árvore">
+                    <button class="workstream-tree-action" type="button" data-tree-action="collapse" aria-label="Recolher tudo" title="Recolher tudo">
+                      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m7 10 5 5 5-5"></path><path d="M5 6h14"></path></svg>
+                    </button>
+                    <button class="workstream-tree-action" type="button" data-tree-action="expand" aria-label="Expandir tudo" title="Expandir tudo">
+                      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m7 14 5-5 5 5"></path><path d="M5 18h14"></path></svg>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="workstream-resource-tabs" role="tablist" aria-label="Visões de recursos de ${item.label}">
+                ${resourceTabs(item)}
+              </div>
+              <div
+                class="workstream-file-tree"
+                id="${item.id}-tree"
+                role="tabpanel"
+                aria-labelledby="${item.id}-related-tab"
+                data-file-tree
+              >
+                <p class="workstream-resource-empty">Nenhum arquivo relacionado.</p>
+              </div>
+            </div>
+            <div class="workstream-resource-preview">
+              <div class="workstream-resource-section-head">
+                <span>Visualização</span>
+                <div class="workstream-resource-preview-heading">
+                  <strong data-resource-preview-title>Selecione um arquivo</strong>
+                  <button class="workstream-relation-action" type="button" data-relation-action aria-label="Relacionar arquivo" title="Relacionar arquivo" hidden></button>
+                </div>
+              </div>
+              <nav class="workstream-preview-toolbar" data-preview-toolbar aria-label="Comandos da visualização" hidden>
+                <button class="workstream-preview-toolbar-action" type="button" data-fullscreen-action aria-label="Abrir em tela cheia" title="Abrir em tela cheia">Tela cheia</button>
+                <button class="workstream-preview-toolbar-action is-active" type="button" data-document-mode-action aria-label="Voltar à visualização inicial" title="Voltar à visualização inicial" aria-pressed="true">Início</button>
+                <button class="workstream-preview-toolbar-action" type="button" data-annotations-mode-action aria-label="Exibir anotações" title="Exibir anotações" aria-pressed="false" disabled>Anotações</button>
+                <button class="workstream-preview-toolbar-action" type="button" data-annotation-action aria-label="Anotar arquivo" title="Anotar arquivo" disabled>Anotar</button>
+                <button class="workstream-preview-toolbar-action" type="button" data-propagate-action aria-label="Relacionar à próxima dimensão" title="Selecione um arquivo." disabled>Relacionar à próxima</button>
+              </nav>
+              <div class="workstream-file-preview" data-file-preview>
+                <p class="workstream-resource-empty">Selecione um arquivo.</p>
+              </div>
+            </div>
+          </section>
+        `;
+      }
+
+      function dimensionRow(item) {
+        return `
+          <article class="five-w-two-h-row" id="${item.id}" data-dimension="${item.dimension}">
+            <header class="view-badge five-w-two-h-marker" aria-label="${item.label}">
+              <span class="five-w-two-h-symbol">${item.symbol}</span>
+              <span class="five-w-two-h-label">${item.label}</span>
+            </header>
+            <div class="view-panel five-w-two-h-content">
+              <div class="view-panel-head"><h2 class="view-panel-title">${item.question}</h2></div>
+              <div class="view-panel-body five-w-two-h-body"><div class="five-w-two-h-value" data-field="${item.field}">—</div></div>
+            </div>
+            <nav class="view-badge workstream-resource-links" aria-label="Recursos de ${item.label}">
+              ${resourceButtons(item)}
+            </nav>
+            ${resourcePanel(item)}
+          </article>
+        `;
+      }
+
+      document.getElementById("five-w-two-h-layout").innerHTML =
+        dimensions.map(dimensionRow).join("");
+    }());
+  </script>
+
+  <script>
+    window.infoBimWorkStreamView = {
+      "projectId": "urn:infobim:project:Real%20Estate%20Brazil%20%28Official%29-Obras%20-%20Exp%20LabSea2025",
+      "projectName": "Real Estate Brazil (Official)-Obras - Exp LabSea2025",
+      "elementId": "7c7e9d91-046d-5bcb-ad09-a04c5821c6de",
+      "entity": "WorkStream",
+      "workstreamUri": "urn:infobim:workstream/7c7e9d91-046d-5bcb-ad09-a04c5821c6de",
+      "dimensionBaseUri": "urn:infobim:workstream/7c7e9d91-046d-5bcb-ad09-a04c5821c6de/dimension",
+      "datapackagePath": ".__ontobdc__/datapackage.json",
+      "linksetPath": ".__ontobdc__/linkset/WorkStream.ttl",
+      "resourceLinksetPath": ".__ontobdc__/linkset/WorkStreamResource.ttl",
+      "roCratePath": ".__ontobdc__/ro-crate-metadata.json",
+      "fileDisplayOntologyPath": ".__ontobdc__/ontology/file_display.ttl"
+    };
+  </script>
+  <script>
+    (function () {
+      const root = window.infoBimWorkStreamAssetRoot;
+      document.write('<script defer src="https://cdn.jsdelivr.net/pyodide/v0.27.2/full/pyodide.js"><\/script>');
+      document.write('<script defer src="' + root + '/js/email_reader.js"><\/script>');
+      document.write('<script defer src="' + root + '/js/spatial_annotations.js?v=20260804-dataset-view"><\/script>');
+      document.write('<script defer src="' + root + '/js/workstream_5w2h.js?v=20260804-dataset-view"><\/script>');
+    }());
+  </script>
+</body>
+</html>
