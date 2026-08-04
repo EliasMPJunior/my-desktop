@@ -48,7 +48,8 @@
 
 <urn:ontobdc:storage/local/techcenter-doc> a obdc:DataContainer ;
     dcterms:identifier "urn:ontobdc:storage/local/techcenter-doc" ;
-    dcterms:title "Real Estate Brazil (Official)-Obras - Exp LabSea2025"@en ;
+    dcterms:title "Storage Container: techcenter-doc"@en ;
     ct:creationDate "2026-08-03T22:43:02.762347+00:00"^^xsd:dateTime ;
-    ct:description "Local storage container at Real Estate Brazil (Official)-Obras - Exp LabSea2025"@en ;
+    ct:description "Local storage container at Storage Container: techcenter-doc"@en ;
     prov:atLocation <file:///C:/Users/EliasMagalh%C3%A3es/Documents/Brasidata/06_Projetos/01_Projetos_Ativos/my-desktop/techcenter-doc> .
+
