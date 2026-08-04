@@ -30,7 +30,6 @@ Isso significa:
 ## 3. Contexto fixo do projeto
 
 - O diretório correto é `techcenter-doc`.
-- O link anteriormente fornecido com `techcenter-doco` contém erro de digitação e não representa um diretório válido.
 - O nome original do container é `Real Estate Brazil (Official)-Obras - Exp LabSea2025`.
 - Não renomear esse container sem instrução explícita.
 - Manter a identificação `INFOBIM` por enquanto.
