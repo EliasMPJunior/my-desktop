@@ -77,9 +77,17 @@
     elements.card.classList.add(state);
   }
 
-  function setCardContent(elements, state, value, detail, footer) {
+  function setCardValue(element, value, unit) {
+    element.textContent = "";
+    element.appendChild(document.createTextNode(value));
+    if (unit) {
+      element.appendChild(createElement("span", "weather-card-unit", unit));
+    }
+  }
+
+  function setCardContent(elements, state, value, detail, footer, unit) {
     setCardState(elements, state);
-    elements.value.textContent = value;
+    setCardValue(elements.value, value, unit);
     elements.detail.textContent = detail;
     elements.footer.textContent = footer;
   }
@@ -226,9 +234,10 @@
     setCardContent(
       cards.gust,
       "is-ready",
-      formatNumber(windGust, " km/h"),
+      formatNumber(windGust, ""),
       "Máxima prevista",
       "Próximas 6 horas",
+      "km/h",
     );
   }
 
