@@ -59,7 +59,6 @@
 
   async function loadWorkstreamBoardModule() {
     loadStyle("../css/workstream_board.css");
-    await loadScript("work_stream_runtime_data.js");
     await loadScript("workstream_board.js");
   }
 
