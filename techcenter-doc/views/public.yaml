@@ -8,6 +8,11 @@ brand:
 project:
   id: "urn:infobim:project:Real%20Estate%20Brazil%20%28Official%29-Obras%20-%20Exp%20LabSea2025"
   name: "Real Estate Brazil (Official)-Obras - Exp LabSea2025"
+  path: 'C:\Users\EliasMagalhães\Documents\Brasidata\06_Projetos\01_Projetos_Ativos\my-desktop\techcenter-doc'
+  # Projeção para a visualização estática dos valores mantidos no project.ttl.
+  location:
+    latitude: -22.868585
+    longitude: -43.214664
   information_title: "Project Information"
   generated_fallback_prefix: "Página gerada em"
   fields:
