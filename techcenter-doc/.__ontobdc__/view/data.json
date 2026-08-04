@@ -1,0 +1,67 @@
+{
+  "container": {
+    "description": "Local storage container at Storage Container: techcenter-doc",
+    "id": "urn:ontobdc:storage/local/techcenter-doc",
+    "location": "file:///C:/Users/EliasMagalh%C3%A3es/Documents/Brasidata/06_Projetos/01_Projetos_Ativos/my-desktop/techcenter-doc",
+    "name": "Storage Container: techcenter-doc",
+    "path": "C:\\Users\\EliasMagalhães\\Documents\\Brasidata\\06_Projetos\\01_Projetos_Ativos\\my-desktop\\techcenter-doc",
+    "uri": "urn:ontobdc:storage/local/techcenter-doc"
+  },
+  "generated_at": "2026-08-04T13:06:58.843828+00:00",
+  "options": {
+    "language": "en",
+    "representation": "html",
+    "view_type": "standard"
+  },
+  "options_fingerprint": "06892644d82b292f7203cd251e7cf6ec2a9f420f9b29d9ca12980e357ee0bd3f",
+  "resources": [
+    {
+      "bytes": 8895,
+      "extension": ".pyc",
+      "media_type": "application/x-python-code",
+      "name": "godfile.cpython-312.pyc",
+      "path": "__pycache__/godfile.cpython-312.pyc"
+    },
+    {
+      "bytes": 5514,
+      "extension": ".py",
+      "media_type": "text/x-python",
+      "name": "generate.py",
+      "path": "generate.py"
+    },
+    {
+      "bytes": 6279,
+      "extension": ".py",
+      "media_type": "text/x-python",
+      "name": "godfile.py",
+      "path": "godfile.py"
+    },
+    {
+      "bytes": 16317,
+      "extension": ".jinja",
+      "media_type": "application/octet-stream",
+      "name": "index.html.jinja",
+      "path": "template/index.html.jinja"
+    },
+    {
+      "bytes": 11199,
+      "extension": ".html",
+      "media_type": "text/html",
+      "name": "7c7e9d91-046d-5bcb-ad09-a04c5821c6de.html",
+      "path": "view/work_stream/7c7e9d91-046d-5bcb-ad09-a04c5821c6de.html"
+    },
+    {
+      "bytes": 1768,
+      "extension": ".yaml",
+      "media_type": "application/octet-stream",
+      "name": "public.yaml",
+      "path": "views/public.yaml"
+    }
+  ],
+  "schema_version": 1,
+  "source_fingerprint": "60ca1659c2239b39782b4e93982fbeda4efb08988af89db6d31bd82735673024",
+  "summary": {
+    "indexed_files": 6,
+    "total_bytes": 49972
+  }
+}
