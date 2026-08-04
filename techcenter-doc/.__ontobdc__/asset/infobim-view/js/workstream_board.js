@@ -1,9 +1,9 @@
 (function () {
   "use strict";
 
-  const calendarDayCount = 11;
-  const previousBusinessDays = 5;
-  const nextBusinessDays = 5;
+  const calendarDayCount = 15;
+  const previousCalendarDays = 7;
+  const nextCalendarDays = 7;
   const locale = "pt-BR";
 
   function projectTabsCard() {
@@ -104,24 +104,11 @@
     return new Date(value.getFullYear(), value.getMonth(), value.getDate());
   }
 
-  function isBusinessDay(value) {
-    const weekday = value.getDay();
-    return weekday !== 0 && weekday !== 6;
-  }
-
-  function moveBusinessDay(value, direction) {
-    const next = new Date(value);
-    do {
-      next.setDate(next.getDate() + direction);
-    } while (!isBusinessDay(next));
-    return next;
-  }
-
   function previousDays(today) {
     const values = [];
-    let cursor = new Date(today);
-    for (let index = 0; index < previousBusinessDays; index += 1) {
-      cursor = moveBusinessDay(cursor, -1);
+    const cursor = new Date(today);
+    for (let index = 0; index < previousCalendarDays; index += 1) {
+      cursor.setDate(cursor.getDate() - 1);
       values.unshift(new Date(cursor));
     }
     return values;
@@ -129,9 +116,9 @@
 
   function followingDays(today) {
     const values = [];
-    let cursor = new Date(today);
-    for (let index = 0; index < nextBusinessDays; index += 1) {
-      cursor = moveBusinessDay(cursor, 1);
+    const cursor = new Date(today);
+    for (let index = 0; index < nextCalendarDays; index += 1) {
+      cursor.setDate(cursor.getDate() + 1);
       values.push(new Date(cursor));
     }
     return values;
@@ -532,7 +519,7 @@
     const workstreams = workstreamList();
 
     if (dates.length !== calendarDayCount) {
-      throw new Error("A janela do calendário deve conter 11 dias úteis.");
+      throw new Error("A janela do calendário deve conter 15 dias corridos.");
     }
 
     board.replaceChildren();
