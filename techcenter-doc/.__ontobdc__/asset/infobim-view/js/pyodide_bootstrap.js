@@ -57,8 +57,19 @@
     await loadScript("weather_card.js");
   }
 
+  function hasEmbeddedWorkstreamJsonLd() {
+    return Boolean(document.getElementById("work-stream-jsonld"));
+  }
+
+  async function loadLegacyWorkstreamDataWhenNeeded() {
+    if (!hasEmbeddedWorkstreamJsonLd()) {
+      await loadScript("work_stream_runtime_data.js");
+    }
+  }
+
   async function loadWorkstreamBoardModule() {
     loadStyle("../css/workstream_board.css");
+    await loadLegacyWorkstreamDataWhenNeeded();
     await loadScript("workstream_board.js");
   }
 
