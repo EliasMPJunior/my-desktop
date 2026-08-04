@@ -193,7 +193,7 @@
   grid-column: span 11;
   display: grid;
   grid-template-columns: repeat(11, minmax(0, 1fr));
-  grid-template-rows: repeat(3, 26px);
+  grid-template-rows: repeat(var(--general-schedule-row-count, 1), 26px);
   gap: 8px 0;
   align-content: center;
   min-height: 132px;
@@ -223,12 +223,13 @@
     inset -2px 0 0 rgba(103, 232, 249, 0.22);
 }
 
-.general-schedule-mock-bar {
+.general-schedule-task-bar {
   z-index: 1;
   align-self: center;
   min-width: 0;
-  height: 16px;
-  margin: 0 6px;
+  height: 22px;
+  margin: 0 4px;
+  overflow: hidden;
   border: 1px solid rgba(157, 243, 255, 0.78);
   border-radius: 6px;
   background: linear-gradient(
@@ -239,12 +240,16 @@
   box-shadow: 0 4px 12px rgba(34, 211, 238, 0.14);
 }
 
-.general-schedule-mock-bar:nth-child(2) {
-  opacity: 0.82;
-}
-
-.general-schedule-mock-bar:nth-child(3) {
-  opacity: 0.66;
+.general-schedule-task-bar > span {
+  display: block;
+  overflow: hidden;
+  padding: 2px 7px;
+  color: rgba(6, 13, 25, 0.92);
+  font-size: 0.66rem;
+  font-weight: 800;
+  line-height: 16px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .workstream-board-state {
