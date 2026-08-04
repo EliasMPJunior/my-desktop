@@ -300,7 +300,7 @@
   }
 
   function localName(value) {
-    const parts = String(value).split(/[#:]/);
+    const parts = String(value).split(/[\/#:]/);
     return parts[parts.length - 1];
   }
 
@@ -311,13 +311,17 @@
     const accepted = new Set(names.map((name) => name.toLowerCase()));
     for (const [key, value] of Object.entries(item)) {
       if (accepted.has(localName(key).toLowerCase())) {
-        if (Array.isArray(value)) {
-          return value.length ? value[0] : null;
+        const candidate = Array.isArray(value)
+          ? (value.length ? value[0] : null)
+          : value;
+        if (
+          candidate
+          && typeof candidate === "object"
+          && "@value" in candidate
+        ) {
+          return candidate["@value"];
         }
-        if (value && typeof value === "object" && "@value" in value) {
-          return value["@value"];
-        }
-        return value;
+        return candidate;
       }
     }
     return null;
@@ -382,12 +386,12 @@
   function scheduleTasks() {
     const records = nestedRecords(jsonLdNodes());
     const datedRecords = records.filter((item) => {
-      const start = valueByLocalName(item, ["schedule_start", "ScheduleStart"]);
-      const finish = valueByLocalName(item, ["schedule_finish", "ScheduleFinish"]);
+      const start = valueByLocalName(item, ["schedule_start", "ScheduleStart", "StartDateField"]);
+      const finish = valueByLocalName(item, ["schedule_finish", "ScheduleFinish", "FinishDateField"]);
       return parseScheduleDate(start) && parseScheduleDate(finish);
     });
     const taskRecords = records.filter((item) => (
-      valueByLocalName(item, ["work_breakdown_structure", "Identification"])
+      valueByLocalName(item, ["work_breakdown_structure", "Identification", "WorkBreakdownStructureField"])
       && valueByLocalName(item, ["name", "Name"])
     ));
 
@@ -396,11 +400,11 @@
         ? timeRecord
         : taskRecords[index] || timeRecord;
       return {
-        id: String(valueByLocalName(taskRecord, ["@id", "document_identifier", "identifier"]) || index),
+        id: String(valueByLocalName(taskRecord, ["@id", "document_identifier", "identifier", "IdentifierField"]) || index),
         name: String(valueByLocalName(taskRecord, ["name", "Name"]) || "Tarefa sem nome"),
-        wbs: String(valueByLocalName(taskRecord, ["work_breakdown_structure", "Identification"]) || ""),
-        start: parseScheduleDate(valueByLocalName(timeRecord, ["schedule_start", "ScheduleStart"])),
-        finish: parseScheduleDate(valueByLocalName(timeRecord, ["schedule_finish", "ScheduleFinish"])),
+        wbs: String(valueByLocalName(taskRecord, ["work_breakdown_structure", "Identification", "WorkBreakdownStructureField"]) || ""),
+        start: parseScheduleDate(valueByLocalName(timeRecord, ["schedule_start", "ScheduleStart", "StartDateField"])),
+        finish: parseScheduleDate(valueByLocalName(timeRecord, ["schedule_finish", "ScheduleFinish", "FinishDateField"])),
       };
     });
   }
