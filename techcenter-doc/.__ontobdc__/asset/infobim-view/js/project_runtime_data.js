@@ -1,20 +1,11 @@
-window.infoBimProjectRuntimeData = {
-  "location": null,
-  "projectInformation": {
-    "absolutePath": "C:\\Users\\EliasMagalhães\\Documents\\Brasidata\\06_Projetos\\01_Projetos_Ativos\\my-desktop\\techcenter-doc",
-    "geolocation": {
-      "latitude": -22.868319,
-      "longitude": -43.216233,
-      "mapUrl": "https://www.openstreetmap.org/?mlat=-22.868319&mlon=-43.216233#map=18/-22.868319/-43.216233"
-    }
-  }
+window.infoBimProjectRuntimeData = window.infoBimProjectRuntimeData || {
+  "location": null
 };
 
 (function () {
   "use strict";
 
   const runtimeData = window.infoBimProjectRuntimeData || {};
-  const projectInformation = runtimeData.projectInformation || {};
   const card = document.querySelector('[data-card="project-information-card"]');
 
   if (!card) {
@@ -51,11 +42,6 @@ window.infoBimProjectRuntimeData = {
     return pathname || "/";
   }
 
-  function configuredAbsolutePath() {
-    const value = String(projectInformation.absolutePath || "").trim();
-    return value;
-  }
-
   function dashboardAbsolutePath() {
     const dashboard = window.infoBimProjectDashboard || {};
     const value = String(dashboard.path || "").trim();
@@ -77,7 +63,6 @@ window.infoBimProjectRuntimeData = {
     }
 
     value.textContent = localAbsolutePath()
-      || configuredAbsolutePath()
       || dashboardAbsolutePath()
       || "não definido";
   }
@@ -129,28 +114,48 @@ window.infoBimProjectRuntimeData = {
     document.head.appendChild(style);
   }
 
-  function renderGeolocation() {
+  function ensureGeolocationRow() {
     const list = metadataList();
-    const geolocation = projectInformation.geolocation || {};
-    const latitude = Number(geolocation.latitude);
-    const longitude = Number(geolocation.longitude);
-    const mapUrl = String(geolocation.mapUrl || "").trim();
-
-    if (!list || !Number.isFinite(latitude) || !Number.isFinite(longitude) || !mapUrl) {
-      return;
+    if (!list) {
+      return null;
     }
 
     let row = metadataRowByLabel("Geolocalização");
+    if (row) {
+      return row;
+    }
+
+    row = document.createElement("div");
+    row.className = "metadata-row";
+
+    const term = document.createElement("dt");
+    term.textContent = "Geolocalização";
+    const description = document.createElement("dd");
+
+    row.append(term, description);
+    list.appendChild(row);
+    return row;
+  }
+
+  function validLocation(value) {
+    if (!value || typeof value !== "object") {
+      return false;
+    }
+
+    const latitude = Number(value.latitude);
+    const longitude = Number(value.longitude);
+    return Number.isFinite(latitude)
+      && Number.isFinite(longitude)
+      && latitude >= -90
+      && latitude <= 90
+      && longitude >= -180
+      && longitude <= 180;
+  }
+
+  function renderGeolocation() {
+    const row = ensureGeolocationRow();
     if (!row) {
-      row = document.createElement("div");
-      row.className = "metadata-row";
-
-      const term = document.createElement("dt");
-      term.textContent = "Geolocalização";
-      const description = document.createElement("dd");
-
-      row.append(term, description);
-      list.appendChild(row);
+      return;
     }
 
     const value = row.querySelector("dd");
@@ -158,9 +163,19 @@ window.infoBimProjectRuntimeData = {
       return;
     }
 
-    ensureGeolocationStyles();
     value.textContent = "";
     value.classList.add("project-geolocation-value");
+
+    if (!validLocation(runtimeData.location)) {
+      value.textContent = "não definida";
+      return;
+    }
+
+    const latitude = Number(runtimeData.location.latitude);
+    const longitude = Number(runtimeData.location.longitude);
+    const mapUrl = `https://www.openstreetmap.org/?mlat=${encodeURIComponent(latitude)}&mlon=${encodeURIComponent(longitude)}#map=18/${encodeURIComponent(latitude)}/${encodeURIComponent(longitude)}`;
+
+    ensureGeolocationStyles();
 
     const coordinates = document.createElement("span");
     coordinates.className = "project-geolocation-coordinates";
