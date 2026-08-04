@@ -404,6 +404,15 @@
               <span class="menubar-item-label" aria-hidden="true">▦</span>
               <span class="menubar-item-value">Documentos</span>
             </button>
+            <button
+              class="menubar-item"
+              type="button"
+              data-action="view/work_stream/7c7e9d91-046d-5bcb-ad09-a04c5821c6de.html"
+              aria-label="WorkStream"
+            >
+              <span class="menubar-item-label" aria-hidden="true">5W2H</span>
+              <span class="menubar-item-value">WorkStream</span>
+            </button>
           </div>
         </article>
       </div>
@@ -674,6 +683,19 @@
       if (tabs.length > 0) {
         activateTab(0, false);
       }
+    }());
+  </script>
+  <script>
+    (function () {
+      const prefixes = ['view/', './view/'];
+      document.querySelectorAll('.menubar-item[data-action]').forEach((button) => {
+        button.addEventListener('click', () => {
+          const action = String(button.dataset.action || '').trim();
+          if (prefixes.some((prefix) => action.startsWith(prefix))) {
+            window.location.href = action;
+          }
+        });
+      });
     }());
   </script>
   <script defer src="https://cdn.jsdelivr.net/pyodide/v0.27.2/full/pyodide.js"></script>
