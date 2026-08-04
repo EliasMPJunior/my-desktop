@@ -1,26 +1,9 @@
 (function () {
   "use strict";
 
+  const cardId = "project-weather-card";
   const forecastEndpoint = "https://api.open-meteo.com/v1/forecast";
   const runtimeData = window.infoBimProjectRuntimeData || {};
-  const styleId = "weather-grid-card-style";
-  const cardDefinitions = [
-    {
-      key: "current",
-      id: "project-weather-current-card",
-      label: "Tempo na obra",
-    },
-    {
-      key: "rain",
-      id: "project-weather-rain-card",
-      label: "Chuva 6h",
-    },
-    {
-      key: "gust",
-      id: "project-weather-gust-card",
-      label: "Rajada 6h",
-    },
-  ];
 
   function createElement(tagName, className, text) {
     const element = document.createElement(tagName);
@@ -33,142 +16,86 @@
     return element;
   }
 
-  function injectStyles() {
-    if (document.getElementById(styleId)) {
-      return;
-    }
-    const style = document.createElement("style");
-    style.id = styleId;
-    style.textContent = `
-      .view-hero-meta {
-        grid-auto-rows: 1fr;
-        align-items: stretch;
-      }
-
-      .view-hero-meta > .weather-card {
-        width: 100%;
-        height: 100%;
-      }
-
-      .weather-card {
-        grid-template-rows: auto 1fr auto auto;
-        align-content: stretch;
-        gap: 8px;
-        min-width: 0;
-        aspect-ratio: 1 / 1;
-      }
-
-      .weather-card-value {
-        align-self: center;
-        min-width: 0;
-        color: var(--text);
-        font-size: clamp(1.4rem, 2vw, 2.45rem);
-        font-weight: 900;
-        font-variant-numeric: tabular-nums;
-        line-height: 1;
-        letter-spacing: -0.05em;
-        white-space: nowrap;
-      }
-
-      .weather-card-detail {
-        min-width: 0;
-        color: var(--text-soft);
-        font-size: 0.7rem;
-        font-weight: 700;
-        line-height: 1.25;
-        overflow-wrap: anywhere;
-      }
-
-      .weather-card-footer {
-        min-width: 0;
-        color: rgba(151, 167, 191, 0.72);
-        font-size: 0.6rem;
-        line-height: 1.25;
-        overflow-wrap: anywhere;
-      }
-
-      .weather-card.is-missing .weather-card-value,
-      .weather-card.is-error .weather-card-value {
-        color: var(--text-soft);
-      }
-
-      .weather-card.is-error {
-        border-color: rgba(248, 113, 113, 0.32);
-      }
-
-      @media (max-width: 480px) {
-        .weather-card {
-          aspect-ratio: auto;
-          min-height: 150px;
-        }
-
-        .weather-card-value {
-          font-size: 2.35rem;
-        }
-      }
-    `;
-    document.head.appendChild(style);
+  function createMetric(label, id) {
+    const metric = createElement("span", "weather-card-metric");
+    const metricLabel = createElement(
+      "span",
+      "weather-card-metric-label",
+      label,
+    );
+    const metricValue = createElement(
+      "strong",
+      "weather-card-metric-value",
+      "—",
+    );
+    metricValue.id = id;
+    metric.append(metricLabel, metricValue);
+    return metric;
   }
 
   function numericDataGrid() {
     return document.querySelector('[data-card="numeric-data-grid"]');
   }
 
-  function removeLegacyDocumentMock(grid) {
-    grid.querySelectorAll(':scope > [data-card="numeric-data-card"]').forEach((card) => {
-      const label = card.querySelector(".view-badge-label");
-      const value = card.querySelector(".view-badge-value");
-      if (
-        String(label && label.textContent || "").trim() === "Documentos"
-        && String(value && value.textContent || "").trim() === "128"
-      ) {
-        card.remove();
-      }
-    });
-  }
-
-  function createWeatherCard(definition) {
-    const card = createElement("div", "view-badge weather-card is-loading");
-    card.id = definition.id;
-    card.dataset.card = "weather-card";
-    card.dataset.weatherMetric = definition.key;
-    card.setAttribute("aria-live", "polite");
-
-    const label = createElement("span", "view-badge-label", definition.label);
-    const value = createElement("strong", "weather-card-value", "—");
-    value.dataset.weatherValue = definition.key;
-    const detail = createElement("span", "weather-card-detail", "Carregando...");
-    detail.dataset.weatherDetail = definition.key;
-    const footer = createElement("span", "weather-card-footer", "");
-    footer.dataset.weatherFooter = definition.key;
-
-    card.append(label, value, detail, footer);
-    return card;
-  }
-
-  function ensureWeatherCards() {
+  function createCard() {
     const grid = numericDataGrid();
     if (!grid) {
       return null;
     }
 
-    removeLegacyDocumentMock(grid);
+    const existing = document.getElementById(cardId);
+    if (existing) {
+      return existing;
+    }
 
-    const cards = {};
-    cardDefinitions.forEach((definition) => {
-      let card = document.getElementById(definition.id);
-      if (!card) {
-        card = createWeatherCard(definition);
-        grid.appendChild(card);
-      }
-      cards[definition.key] = {
-        card,
-        value: card.querySelector(`[data-weather-value="${definition.key}"]`),
-        detail: card.querySelector(`[data-weather-detail="${definition.key}"]`),
-        footer: card.querySelector(`[data-weather-footer="${definition.key}"]`),
-      };
+    grid.querySelectorAll('[data-card="weather-card"]').forEach((card) => {
+      card.remove();
     });
-    return cards;
+
+    const card = createElement("div", "view-badge weather-card is-loading");
+    card.id = cardId;
+    card.dataset.card = "weather-card";
+    card.setAttribute("aria-live", "polite");
+
+    const label = createElement("span", "view-badge-label", "Tempo na obra");
+    const main = createElement("div", "weather-card-main");
+    const temperature = createElement(
+      "strong",
+      "weather-card-temperature",
+      "—",
+    );
+    temperature.id = "weather-temperature";
+    const condition = createElement(
+      "span",
+      "weather-card-condition",
+      "Verificando localização IFC...",
+    );
+    condition.id = "weather-condition";
+    main.append(temperature, condition);
+
+    const metrics = createElement("div", "weather-card-metrics");
+    metrics.append(
+      createMetric("Chuva 6h", "weather-rain"),
+      createMetric("Rajada 6h", "weather-gust"),
+    );
+
+    const footer = createElement("span", "weather-card-footer", "");
+    footer.id = "weather-footer";
+
+    card.append(label, main, metrics, footer);
+    grid.appendChild(card);
+    return card;
+  }
+
+  function cardElements(card) {
+    return {
+      card,
+      temperature: card.querySelector("#weather-temperature"),
+      condition: card.querySelector("#weather-condition"),
+      rain: card.querySelector("#weather-rain"),
+      gust: card.querySelector("#weather-gust"),
+      footer: card.querySelector("#weather-footer"),
+    };
   }
 
   function setCardState(elements, state) {
@@ -179,13 +106,6 @@
       "is-error",
     );
     elements.card.classList.add(state);
-  }
-
-  function setCardContent(elements, state, value, detail, footer) {
-    setCardState(elements, state);
-    elements.value.textContent = value;
-    elements.detail.textContent = detail;
-    elements.footer.textContent = footer;
   }
 
   function validLocation(value) {
@@ -204,52 +124,25 @@
     );
   }
 
-  function renderMissing(cards) {
-    setCardContent(
-      cards.current,
-      "is-missing",
-      "—",
-      "Localização não definida",
-      "Origem: IFC",
-    );
-    setCardContent(
-      cards.rain,
-      "is-missing",
-      "—",
-      "Sem previsão",
-      "Próximas 6 horas",
-    );
-    setCardContent(
-      cards.gust,
-      "is-missing",
-      "—",
-      "Sem previsão",
-      "Próximas 6 horas",
-    );
+  function renderMissing(elements) {
+    setCardState(elements, "is-missing");
+    elements.temperature.textContent = "—";
+    elements.condition.textContent = "Localização IFC não definida";
+    elements.rain.textContent = "—";
+    elements.gust.textContent = "—";
+    elements.footer.textContent = runtimeData.locationSource
+      || "IfcSite.RefLatitude / RefLongitude";
   }
 
-  function renderError(cards) {
-    setCardContent(
-      cards.current,
-      "is-error",
-      "—",
-      "Previsão indisponível",
-      "Verifique a conexão",
-    );
-    setCardContent(
-      cards.rain,
-      "is-error",
-      "—",
-      "Sem previsão",
-      "Serviço indisponível",
-    );
-    setCardContent(
-      cards.gust,
-      "is-error",
-      "—",
-      "Sem previsão",
-      "Serviço indisponível",
-    );
+  function renderError(elements, error) {
+    setCardState(elements, "is-error");
+    elements.temperature.textContent = "—";
+    elements.condition.textContent = "Previsão indisponível";
+    elements.rain.textContent = "—";
+    elements.gust.textContent = "—";
+    elements.footer.textContent = error instanceof Error
+      ? error.message
+      : String(error || "Erro ao consultar o serviço meteorológico.");
   }
 
   function buildForecastUrl(location) {
@@ -338,7 +231,7 @@
       : "—";
   }
 
-  function temperatureRange(data) {
+  function forecastFooter(data) {
     const maximumTemperature = Number(
       data.daily
       && data.daily.temperature_2m_max
@@ -353,42 +246,29 @@
       !Number.isFinite(maximumTemperature)
       || !Number.isFinite(minimumTemperature)
     ) {
-      return "Hoje";
+      return "";
     }
     return `Máx. ${Math.round(maximumTemperature)}° · Mín. ${Math.round(minimumTemperature)}°`;
   }
 
-  function renderForecast(cards, data) {
+  function renderForecast(elements, data) {
     const temperature = Number(data.current && data.current.temperature_2m);
     const rainProbability = maximum(
       nextHours(data, "precipitation_probability", 6),
     );
     const windGust = maximum(nextHours(data, "wind_gusts_10m", 6));
 
-    setCardContent(
-      cards.current,
-      "is-ready",
-      formatNumber(temperature, "°"),
-      weatherDescription(data.current && data.current.weather_code),
-      temperatureRange(data),
+    setCardState(elements, "is-ready");
+    elements.temperature.textContent = formatNumber(temperature, "°");
+    elements.condition.textContent = weatherDescription(
+      data.current && data.current.weather_code,
     );
-    setCardContent(
-      cards.rain,
-      "is-ready",
-      formatNumber(rainProbability, "%"),
-      "Probabilidade máxima",
-      "Próximas 6 horas",
-    );
-    setCardContent(
-      cards.gust,
-      "is-ready",
-      formatNumber(windGust, " km/h"),
-      "Máxima prevista",
-      "Próximas 6 horas",
-    );
+    elements.rain.textContent = formatNumber(rainProbability, "%");
+    elements.gust.textContent = formatNumber(windGust, " km/h");
+    elements.footer.textContent = forecastFooter(data);
   }
 
-  async function loadForecast(cards, location) {
+  async function loadForecast(elements, location) {
     const response = await fetch(buildForecastUrl(location), {
       headers: { Accept: "application/json" },
     });
@@ -399,22 +279,21 @@
     if (!data || !data.current) {
       throw new Error("Resposta meteorológica sem condições atuais.");
     }
-    renderForecast(cards, data);
+    renderForecast(elements, data);
   }
 
-  injectStyles();
-  const cards = ensureWeatherCards();
-  if (!cards) {
+  const card = createCard();
+  if (!card) {
     return;
   }
-
+  const elements = cardElements(card);
   if (!validLocation(runtimeData.location)) {
-    renderMissing(cards);
+    renderMissing(elements);
     return;
   }
 
-  loadForecast(cards, runtimeData.location).catch((error) => {
+  loadForecast(elements, runtimeData.location).catch((error) => {
     console.error(error);
-    renderError(cards);
+    renderError(elements, error);
   });
 }());
