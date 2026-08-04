@@ -28,10 +28,7 @@
           "@id": ".__ontobdc__/linkset/IfcWorkSchedule.ttl"
         },
         {
-          "@id": "LABSEA_IfcWorkSchedule.xlsx"
-        },
-        {
-          "@id": "payload/document/ifc_work_schedule.xlsx"
+          "@id": "payload/document/LABSEA_IfcWorkSchedule.xlsx"
         }
       ]
     },
@@ -104,18 +101,9 @@
       }
     },
     {
-      "@id": "LABSEA_IfcWorkSchedule.xlsx",
+      "@id": "payload/document/LABSEA_IfcWorkSchedule.xlsx",
       "@type": "File",
-      "name": "LABSEA source schedule workbook",
-      "encodingFormat": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
-      "about": {
-        "@id": "urn:infobim:ifc-work-schedule/69240f56-8e7a-401a-93cc-c43e12d9c72e"
-      }
-    },
-    {
-      "@id": "payload/document/ifc_work_schedule.xlsx",
-      "@type": "File",
-      "name": "IfcWorkSchedule entity workbook",
+      "name": "LABSEA IfcWorkSchedule workbook",
       "encodingFormat": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
       "about": {
         "@id": "urn:infobim:ifc-work-schedule/69240f56-8e7a-401a-93cc-c43e12d9c72e"
