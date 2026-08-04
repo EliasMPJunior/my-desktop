@@ -19,25 +19,12 @@ except ImportError as exc:
         "python -m pip install jinja2 pyyaml rdflib"
     ) from exc
 
-from godfile import (
-    ProjectInformationError,
-    count_indexed_files,
-    project_coordinates_from_ifc,
-    project_path_from_ontology,
-)
+from godfile import ProjectInformationError, count_indexed_files
 
 ROOT = Path(__file__).resolve().parent
 TEMPLATE_DIR = ROOT / "template"
 VIEW_FILE = ROOT / "views" / "public.yaml"
 OUTPUT_FILE = ROOT / "index.html"
-PROJECT_RUNTIME_DATA_FILE = (
-    ROOT
-    / ".__ontobdc__"
-    / "asset"
-    / "infobim-view"
-    / "js"
-    / "project_runtime_data.js"
-)
 WORKSTREAM_JSONLD_FILE = ROOT / "payload" / "triple" / "work_stream.jsonld"
 INLINE_STRONG_PATTERN = re.compile(r"(\*\*|__)(.+?)\1")
 LOCAL_VIEW_ACTION_PREFIXES = ("view/", "./view/")
@@ -98,14 +85,6 @@ def generated_project_value(
         return "Não disponível"
 
 
-def generated_project_coordinates() -> dict[str, float] | None:
-    try:
-        return project_coordinates_from_ifc(ROOT)
-    except ProjectInformationError as exc:
-        print(f"Warning: project coordinates: {exc}", file=sys.stderr)
-        return None
-
-
 def enrich_project_information(raw_data: Dict[str, Any]) -> None:
     project = raw_data.setdefault("project", {})
     raw_fields = project.setdefault("fields", [])
@@ -122,10 +101,7 @@ def enrich_project_information(raw_data: Dict[str, Any]) -> None:
         )
     ]
 
-    project_path = generated_project_value(
-        "project path",
-        project_path_from_ontology,
-    )
+    project_path = "./"
     indexed_files = generated_project_value(
         "indexed files",
         count_indexed_files,
@@ -139,7 +115,6 @@ def enrich_project_information(raw_data: Dict[str, Any]) -> None:
     )
     project["fields"] = fields
     project["path"] = project_path
-    project["location"] = generated_project_coordinates()
 
 
 def local_view_navigation_script() -> str:
@@ -169,34 +144,6 @@ def inject_before_closing_body(html: str, fragment: str) -> str:
 
 def inject_local_view_navigation(html: str) -> str:
     return inject_before_closing_body(html, local_view_navigation_script())
-
-
-def serialize_runtime_script(variable_name: str, payload: Any) -> str:
-    return (
-        f"window.{variable_name} = "
-        + json.dumps(payload, ensure_ascii=False, indent=2)
-        + ";\n"
-    )
-
-
-def write_runtime_script(path: Path, variable_name: str, payload: Any) -> None:
-    path.parent.mkdir(parents=True, exist_ok=True)
-    path.write_text(
-        serialize_runtime_script(variable_name, payload),
-        encoding="utf-8",
-    )
-
-
-def write_project_runtime_data(location: dict[str, float] | None) -> None:
-    payload = {
-        "location": location,
-        "locationSource": "IfcSite.RefLatitude/RefLongitude",
-    }
-    write_runtime_script(
-        PROJECT_RUNTIME_DATA_FILE,
-        "infoBimProjectRuntimeData",
-        payload,
-    )
 
 
 def load_workstream_jsonld() -> dict[str, Any] | None:
@@ -267,14 +214,11 @@ def main() -> int:
     html = inject_local_view_navigation(html)
     OUTPUT_FILE.write_text(html.rstrip() + "\n", encoding="utf-8")
 
-    write_project_runtime_data(raw_data["project"].get("location"))
-
     print(f"Generated {OUTPUT_FILE.relative_to(ROOT)} from {VIEW_FILE.relative_to(ROOT)}")
     print(
         "Embedded "
         f"{WORKSTREAM_JSONLD_FILE.relative_to(ROOT)} in {OUTPUT_FILE.relative_to(ROOT)}"
     )
-    print(f"Generated {PROJECT_RUNTIME_DATA_FILE.relative_to(ROOT)}")
     return 0
 
 
