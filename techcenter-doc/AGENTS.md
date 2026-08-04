@@ -65,20 +65,61 @@ Isso significa:
   - `Mensagens`.
 - O conteúdo exibido deve vir dos dados reais disponíveis no projeto.
 
-## 6. Estrutura de `.workstream/.__ontobdc__`
+## 6. Estrutura obrigatória dos datasets `WorkStream`
 
-Na etapa definida para `.workstream/.__ontobdc__`, criar somente:
+Esta seção se aplica a **todo dataset cuja entidade seja `WorkStream`**, independentemente:
 
-- `dataset.ttl`;
-- `datapackage.json`;
-- `ro-crate-metadata.json`.
+- do nome da pasta do dataset;
+- de o dataset estar em `.workstream`, `desmobilizacao` ou qualquer outro diretório dentro de `techcenter-doc`;
+- de ter sido criado manualmente, por comando, por gerador ou por automação;
+- de o usuário ter pedido ou não, separadamente, a criação da fachada.
 
-Regras adicionais:
+### 6.1 Estrutura mínima obrigatória
 
-- não inventar uma nova estrutura de `view`;
-- não criar arquivos adicionais nessa etapa sem instrução explícita;
-- não replicar estruturas de outros containers por analogia;
-- não assumir que um arquivo é necessário apenas porque aparece em outra implementação.
+Todo dataset `WorkStream` deve conter, obrigatoriamente:
+
+- `.__ontobdc__/dataset.ttl`;
+- `.__ontobdc__/datapackage.json`;
+- `.__ontobdc__/ro-crate-metadata.json`;
+- `.__ontobdc__/linkset/facade.ttl`;
+- o workbook real da entidade dentro de `payload/document/`.
+
+Para o modelo atual de `WorkStream`, o workbook é `payload/document/workstream.xlsx`, salvo quando o usuário determinar explicitamente outro nome.
+
+### 6.2 Regra absoluta sobre `linkset/facade.ttl`
+
+O arquivo `.__ontobdc__/linkset/facade.ttl` é **obrigatório** em todo dataset `WorkStream`.
+
+Isso significa:
+
+- não é opcional;
+- não depende de solicitação explícita adicional do usuário;
+- não é uma melhoria, um arquivo auxiliar, uma precaução ou uma extensão de escopo;
+- não pode ser omitido sob a justificativa de que somente `dataset.ttl`, `datapackage.json` e `ro-crate-metadata.json` foram mencionados;
+- não pode ser omitido porque uma etapa anterior ou uma lista resumida não o citou;
+- a ausência de `linkset/facade.ttl` torna o dataset `WorkStream` incompleto e a tarefa não pode ser declarada concluída.
+
+A antiga interpretação de que `.workstream/.__ontobdc__` deveria conter somente três arquivos está expressamente revogada. Nenhuma regra deste arquivo pode ser interpretada como autorização para omitir `linkset/facade.ttl` de um dataset `WorkStream`.
+
+### 6.3 Fonte e consistência da fachada
+
+- Usar a fachada canônica de `WorkStream` já adotada no projeto.
+- Não inventar uma fachada nova nem alterar seus campos silenciosamente.
+- `dataset.ttl` deve declarar conformidade com `WorkStreamFacade`.
+- `datapackage.json` deve apontar a entidade e o recurso para a mesma `WorkStreamFacade`.
+- `ro-crate-metadata.json` deve incluir `.__ontobdc__/linkset/facade.ttl` em `hasPart` e descrevê-lo como arquivo do dataset.
+- O workbook deve ser compatível com os campos declarados pela fachada canônica.
+
+### 6.4 Limite desta obrigação
+
+A obrigatoriedade de `linkset/facade.ttl` não autoriza criar silenciosamente outros linksets, views, ontologias, anotações, arquivos ou diretórios.
+
+Para qualquer outro artefato:
+
+- verificar o estado atual do dataset;
+- verificar o contrato do gerador ou comando aplicável;
+- verificar a instrução explícita do usuário;
+- não copiar estruturas adicionais de outro dataset apenas por analogia.
 
 ## 7. Nomenclatura e modelagem
 
@@ -170,11 +211,12 @@ PYODIDE RUNTIME:              colunas 01–12, rodapé abaixo da grade principal
 5. Ler os arquivos diretamente afetados.
 6. Identificar exatamente o que foi solicitado.
 7. Separar fatos existentes de lacunas não definidas.
-8. Conferir os dados reais usados pela interface.
-9. Alterar somente o necessário para cumprir a instrução.
-10. Validar sintaxe e caminhos relativos.
-11. Verificar o diff final contra a solicitação e contra este arquivo.
-12. Informar objetivamente o que foi alterado e qualquer ponto que permaneça não definido.
+8. Conferir os dados reais usados pela interface ou pelo dataset.
+9. Quando a entidade for `WorkStream`, confirmar a existência de `.__ontobdc__/linkset/facade.ttl` e sua referência consistente em `dataset.ttl`, `datapackage.json` e `ro-crate-metadata.json`.
+10. Alterar somente o necessário para cumprir a instrução e os contratos obrigatórios expressamente definidos neste arquivo.
+11. Validar sintaxe e caminhos relativos.
+12. Verificar o diff final contra a solicitação e contra este arquivo.
+13. Informar objetivamente o que foi alterado e qualquer ponto que permaneça não definido.
 
 ## 11. Critério de decisão em caso de dúvida
 
@@ -187,6 +229,8 @@ Quando houver ambiguidade:
 - executar apenas a parte inequivocamente definida;
 - registrar o restante como não definido, salvo quando o usuário já tiver fornecido a resposta em conversa anterior ou em arquivo aplicável.
 
+A regra sobre `.__ontobdc__/linkset/facade.ttl` em datasets `WorkStream` não é ambígua: o arquivo é obrigatório e deve ser criado ou preservado.
+
 ## 12. Critério de conclusão
 
 Uma tarefa só está concluída quando:
@@ -198,7 +242,8 @@ Uma tarefa só está concluída quando:
 - preservou nomes e estruturas obrigatórios;
 - produziu exatamente o comportamento solicitado;
 - o diff foi revisado em relação à instrução original;
-- nenhuma regra deste arquivo foi violada.
+- nenhuma regra deste arquivo foi violada;
+- quando envolver um dataset `WorkStream`, `.__ontobdc__/linkset/facade.ttl` existe e está corretamente referenciado nos metadados do dataset.
 
 Na dúvida, não improvisar. Verificar os arquivos existentes. Caso a informação continue ausente, declarar a ausência em vez de inventar uma resposta ou implementação.
 
