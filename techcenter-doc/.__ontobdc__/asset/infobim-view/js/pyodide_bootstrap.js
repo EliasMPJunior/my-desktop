@@ -1,8 +1,61 @@
 (async function () {
+  const bootstrapScript = document.currentScript;
   const statusDot = document.getElementById("pyodide-status-dot");
   const statusLabel = document.getElementById("pyodide-status-label");
   const consoleElement = document.getElementById("pyodide-console");
   const projectPayload = window.infoBimProjectDashboard || {};
+
+  function moduleUrl(relativePath) {
+    if (!bootstrapScript || !bootstrapScript.src) {
+      throw new Error("Dashboard bootstrap URL unavailable.");
+    }
+    return new URL(relativePath, bootstrapScript.src).href;
+  }
+
+  function loadScript(relativePath) {
+    return new Promise((resolve, reject) => {
+      const url = moduleUrl(relativePath);
+      const existing = document.querySelector(`script[src="${url}"]`);
+      if (existing) {
+        if (existing.dataset.loaded === "true") {
+          resolve();
+          return;
+        }
+        existing.addEventListener("load", resolve, { once: true });
+        existing.addEventListener("error", reject, { once: true });
+        return;
+      }
+
+      const script = document.createElement("script");
+      script.src = url;
+      script.async = false;
+      script.addEventListener("load", () => {
+        script.dataset.loaded = "true";
+        resolve();
+      }, { once: true });
+      script.addEventListener("error", () => {
+        reject(new Error(`Não foi possível carregar ${relativePath}.`));
+      }, { once: true });
+      document.head.appendChild(script);
+    });
+  }
+
+  function loadStyle(relativePath) {
+    const url = moduleUrl(relativePath);
+    if (document.querySelector(`link[href="${url}"]`)) {
+      return;
+    }
+    const link = document.createElement("link");
+    link.rel = "stylesheet";
+    link.href = url;
+    document.head.appendChild(link);
+  }
+
+  async function loadDashboardModules() {
+    loadStyle("../css/weather_card.css");
+    await loadScript("project_runtime_data.js");
+    await loadScript("weather_card.js");
+  }
 
   function writeStatus(message, cssClass) {
     if (statusLabel) {
@@ -20,6 +73,12 @@
     if (consoleElement) {
       consoleElement.textContent = message;
     }
+  }
+
+  try {
+    await loadDashboardModules();
+  } catch (error) {
+    console.error("Dashboard module initialization failed.", error);
   }
 
   writeStatus("Loading Pyodide runtime...", "");
