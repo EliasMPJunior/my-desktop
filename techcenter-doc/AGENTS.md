@@ -95,31 +95,40 @@ O layout solicitado deve ser primeiro representado e validado como desenho em te
 Regras da grade:
 
 - grade horizontal de 12 colunas;
-- hero ocupando as 12 colunas;
+- hero ocupando as colunas 1 a 8;
 - hero com 2 linhas de altura;
-- conteúdo da esquerda ocupando 4 colunas;
-- conteúdo principal ocupando as 8 colunas restantes;
+- grid de indicadores ocupando as colunas 9 a 12 e as mesmas 2 linhas do hero;
+- conteúdo da esquerda ocupando as colunas 1 a 4 a partir da linha 3;
+- conteúdo principal ocupando as colunas 5 a 12 a partir da linha 3;
 - todos os boxes devem possuir nome visível;
-- os nomes devem descrever conteúdo real, sem categorias inventadas.
+- os nomes devem descrever conteúdo real, sem categorias inventadas;
+- quantidade, nomes, distribuição interna e valores dos indicadores não devem ser inventados quando ainda não estiverem definidos.
 
 Desenho-base:
 
 ```text
-      01   02   03   04   05   06   07   08   09   10   11   12
-    ┌──────────────────────────────────────────────────────────────┐
-L01 │                    HERO / PROJECT HEADER                     │
-L02 │                                                              │
-    └──────────────────────────────────────────────────────────────┘
-    ┌──────────────────────┬───────────────────────────────────────┐
-L03 │ PROJECT INFORMATION  │                                       │
-L04 │                      │                                       │
-L05 │                      │        FRENTES DE TRABALHO             │
-    ├──────────────────────┤                                       │
-L06 │ PYODIDE RUNTIME      │                                       │
-L07 │                      │                                       │
-L08 │                      │                                       │
-    └──────────────────────┴───────────────────────────────────────┘
-       4 colunas                         8 colunas
+       01    02    03    04    05    06    07    08    09    10    11    12
+     ┌───────────────────────────────────────────────┬────────────────────────┐
+L01  │ HERO / PROJECT HEADER                         │ GRID DE INDICADORES     │
+L02  │                                               │                        │
+     └───────────────────────────────────────────────┴────────────────────────┘
+     ┌───────────────────────┬────────────────────────────────────────────────┐
+L03  │ PROJECT INFORMATION   │                                                │
+L04  │                       │                                                │
+L05  │                       │             FRENTES DE TRABALHO                 │
+     ├───────────────────────┤                                                │
+L06  │ PYODIDE RUNTIME       │                                                │
+L07  │                       │                                                │
+L08  │                       │                                                │
+     └───────────────────────┴────────────────────────────────────────────────┘
+        4 colunas                              8 colunas
+```
+
+Distribuição do topo:
+
+```text
+HERO / PROJECT HEADER: colunas 01–08, linhas 01–02
+GRID DE INDICADORES:   colunas 09–12, linhas 01–02
 ```
 
 ## 9. Proibições operacionais
