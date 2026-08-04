@@ -1,9 +1,15 @@
-window.infoBimProjectRuntimeData = window.infoBimProjectRuntimeData || {
-  "location": {
+window.infoBimProjectRuntimeData = window.infoBimProjectRuntimeData || {};
+
+if (!window.infoBimProjectRuntimeData.location) {
+  window.infoBimProjectRuntimeData.location = {
     "latitude": -22.868585,
     "longitude": -43.214664
-  }
-};
+  };
+}
+
+if (!window.infoBimProjectRuntimeData.absolutePath) {
+  window.infoBimProjectRuntimeData.absolutePath = "C:\\Users\\EliasMagalhães\\Documents\\Brasidata\\06_Projetos\\01_Projetos_Ativos\\my-desktop\\techcenter-doc";
+}
 
 (function () {
   "use strict";
@@ -45,6 +51,11 @@ window.infoBimProjectRuntimeData = window.infoBimProjectRuntimeData || {
     return pathname || "/";
   }
 
+  function configuredAbsolutePath() {
+    const value = String(runtimeData.absolutePath || "").trim();
+    return value;
+  }
+
   function dashboardAbsolutePath() {
     const dashboard = window.infoBimProjectDashboard || {};
     const value = String(dashboard.path || "").trim();
@@ -66,6 +77,7 @@ window.infoBimProjectRuntimeData = window.infoBimProjectRuntimeData || {
     }
 
     value.textContent = localAbsolutePath()
+      || configuredAbsolutePath()
       || dashboardAbsolutePath()
       || "não definido";
   }
