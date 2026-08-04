@@ -19,7 +19,11 @@ except ImportError as exc:
         "python -m pip install jinja2 pyyaml rdflib"
     ) from exc
 
-from godfile import ProjectInformationError, count_indexed_files
+from godfile import (
+    ProjectInformationError,
+    count_indexed_files,
+    project_coordinates_from_ifc,
+)
 
 ROOT = Path(__file__).resolve().parent
 TEMPLATE_DIR = ROOT / "template"
@@ -93,6 +97,14 @@ def generated_project_value(
         return "Não disponível"
 
 
+def generated_project_coordinates() -> dict[str, float] | None:
+    try:
+        return project_coordinates_from_ifc(ROOT)
+    except ProjectInformationError as exc:
+        print(f"Warning: project coordinates: {exc}", file=sys.stderr)
+        return None
+
+
 def enrich_project_information(raw_data: Dict[str, Any]) -> None:
     project = raw_data.setdefault("project", {})
     raw_fields = project.setdefault("fields", [])
@@ -123,6 +135,7 @@ def enrich_project_information(raw_data: Dict[str, Any]) -> None:
     )
     project["fields"] = fields
     project["path"] = project_path
+    project["location"] = generated_project_coordinates()
 
 
 def local_view_navigation_script() -> str:
@@ -170,11 +183,11 @@ def write_runtime_script(path: Path, variable_name: str, payload: Any) -> None:
     )
 
 
-def write_project_runtime_data() -> None:
+def write_project_runtime_data(location: dict[str, float] | None) -> None:
     write_runtime_script(
         PROJECT_RUNTIME_DATA_FILE,
         "infoBimProjectRuntimeData",
-        {"location": None},
+        {"location": location},
     )
 
 
@@ -245,7 +258,7 @@ def main() -> int:
     html = inject_workstream_jsonld(html, workstream_payload)
     html = inject_local_view_navigation(html)
     OUTPUT_FILE.write_text(html.rstrip() + "\n", encoding="utf-8")
-    write_project_runtime_data()
+    write_project_runtime_data(raw_data["project"].get("location"))
 
     print(f"Generated {OUTPUT_FILE.relative_to(ROOT)} from {VIEW_FILE.relative_to(ROOT)}")
     print(
