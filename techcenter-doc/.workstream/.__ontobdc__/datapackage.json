@@ -1,0 +1,70 @@
+{
+  "profile": "tabular-data-package",
+  "name": "techcenter_labsea_work_stream",
+  "title": "WorkStream — Expansão do LabSea",
+  "description": "Dataset WorkStream do projeto de expansão do LabSea.",
+  "resources": [
+    {
+      "profile": "tabular-data-resource",
+      "name": "work_stream",
+      "title": "WorkStream",
+      "path": "../payload/document/workstream.xlsx",
+      "scheme": "file",
+      "type": "table",
+      "format": "xlsx",
+      "mediatype": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+      "dialect": {
+        "excel": {
+          "sheet": "WorkStream"
+        }
+      },
+      "schema": {
+        "fields": [
+          {
+            "name": "GlobalId",
+            "type": "string"
+          },
+          {
+            "name": "Description",
+            "type": "string"
+          },
+          {
+            "name": "Name",
+            "type": "string"
+          },
+          {
+            "name": "What",
+            "type": "string"
+          },
+          {
+            "name": "Why",
+            "type": "string"
+          },
+          {
+            "name": "Who",
+            "type": "string"
+          },
+          {
+            "name": "Where",
+            "type": "string"
+          },
+          {
+            "name": "When",
+            "type": "string"
+          },
+          {
+            "name": "How",
+            "type": "string"
+          },
+          {
+            "name": "HowMuch",
+            "type": "string"
+          }
+        ],
+        "primaryKey": [
+          "GlobalId"
+        ]
+      }
+    }
+  ]
+}
