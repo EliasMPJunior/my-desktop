@@ -3,6 +3,7 @@
 
   const forecastEndpoint = "https://api.open-meteo.com/v1/forecast";
   const runtimeData = window.infoBimProjectRuntimeData || {};
+  const styleId = "weather-grid-card-style";
   const cardDefinitions = [
     {
       key: "current",
@@ -30,6 +31,83 @@
       element.textContent = text;
     }
     return element;
+  }
+
+  function injectStyles() {
+    if (document.getElementById(styleId)) {
+      return;
+    }
+    const style = document.createElement("style");
+    style.id = styleId;
+    style.textContent = `
+      .view-hero-meta {
+        grid-auto-rows: 1fr;
+        align-items: stretch;
+      }
+
+      .view-hero-meta > .weather-card {
+        width: 100%;
+        height: 100%;
+      }
+
+      .weather-card {
+        grid-template-rows: auto 1fr auto auto;
+        align-content: stretch;
+        gap: 8px;
+        min-width: 0;
+        aspect-ratio: 1 / 1;
+      }
+
+      .weather-card-value {
+        align-self: center;
+        min-width: 0;
+        color: var(--text);
+        font-size: clamp(1.4rem, 2vw, 2.45rem);
+        font-weight: 900;
+        font-variant-numeric: tabular-nums;
+        line-height: 1;
+        letter-spacing: -0.05em;
+        white-space: nowrap;
+      }
+
+      .weather-card-detail {
+        min-width: 0;
+        color: var(--text-soft);
+        font-size: 0.7rem;
+        font-weight: 700;
+        line-height: 1.25;
+        overflow-wrap: anywhere;
+      }
+
+      .weather-card-footer {
+        min-width: 0;
+        color: rgba(151, 167, 191, 0.72);
+        font-size: 0.6rem;
+        line-height: 1.25;
+        overflow-wrap: anywhere;
+      }
+
+      .weather-card.is-missing .weather-card-value,
+      .weather-card.is-error .weather-card-value {
+        color: var(--text-soft);
+      }
+
+      .weather-card.is-error {
+        border-color: rgba(248, 113, 113, 0.32);
+      }
+
+      @media (max-width: 480px) {
+        .weather-card {
+          aspect-ratio: auto;
+          min-height: 150px;
+        }
+
+        .weather-card-value {
+          font-size: 2.35rem;
+        }
+      }
+    `;
+    document.head.appendChild(style);
   }
 
   function numericDataGrid() {
@@ -324,6 +402,7 @@
     renderForecast(cards, data);
   }
 
+  injectStyles();
   const cards = ensureWeatherCards();
   if (!cards) {
     return;
