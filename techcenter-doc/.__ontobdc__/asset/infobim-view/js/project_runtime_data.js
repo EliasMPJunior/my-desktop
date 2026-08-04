@@ -1,0 +1,3 @@
+window.infoBimProjectRuntimeData = {
+  "location": null
+};
