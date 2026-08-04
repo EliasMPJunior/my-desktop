@@ -13,6 +13,8 @@
       "type": "table",
       "format": "xlsx",
       "mediatype": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+      "entityUri": "http://datacenter.app.br/ontology/productivity/entity/work_stream/type.ttl#WorkStream",
+      "entityIdentifier": "work_stream",
       "dialect": {
         "excel": {
           "sheet": "WorkStream"
