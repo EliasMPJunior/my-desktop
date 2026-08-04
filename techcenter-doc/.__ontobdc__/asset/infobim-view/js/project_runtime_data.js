@@ -44,17 +44,26 @@ window.infoBimProjectRuntimeData = window.infoBimProjectRuntimeData || {};
     return card ? card.querySelector(".metadata-list") : null;
   }
 
-  function metadataRowByLabel(label) {
+  function normalizedLabel(row) {
+    const term = row ? row.querySelector("dt") : null;
+    return term
+      ? term.textContent.trim().toLocaleLowerCase("pt-BR")
+      : "";
+  }
+
+  function metadataRowsByLabel(label) {
     if (!card) {
-      return null;
+      return [];
     }
 
-    return Array.from(card.querySelectorAll(".metadata-row")).find((row) => {
-      const term = row.querySelector("dt");
-      return term
-        && term.textContent.trim().toLocaleLowerCase("pt-BR")
-          === label.toLocaleLowerCase("pt-BR");
-    }) || null;
+    const expected = label.toLocaleLowerCase("pt-BR");
+    return Array.from(card.querySelectorAll(".metadata-row")).filter(
+      (row) => normalizedLabel(row) === expected,
+    );
+  }
+
+  function metadataRowByLabel(label) {
+    return metadataRowsByLabel(label)[0] || null;
   }
 
   function localAbsolutePath() {
@@ -155,7 +164,10 @@ window.infoBimProjectRuntimeData = window.infoBimProjectRuntimeData || {};
       return null;
     }
 
-    let row = metadataRowByLabel("Geolocalização");
+    const geolocationRows = metadataRowsByLabel("Geolocalização");
+    let row = geolocationRows.shift() || null;
+    geolocationRows.forEach((duplicate) => duplicate.remove());
+
     if (!row) {
       row = document.createElement("div");
       row.className = "metadata-row";
