@@ -336,6 +336,70 @@
     });
   }
 
+  function jsonLdPropertyValue(node, localName) {
+    const property = Object.entries(node || {}).find(([key]) => {
+      const normalized = key.split("#").at(-1).split("/").at(-1);
+      return normalized.toLowerCase() === localName.toLowerCase();
+    });
+    if (!property) {
+      return "";
+    }
+    const values = Array.isArray(property[1]) ? property[1] : [property[1]];
+    const first = values[0];
+    if (first && typeof first === "object") {
+      return first["@value"] ?? first["@id"] ?? "";
+    }
+    return first ?? "";
+  }
+
+  function embeddedWorkStreamRecord() {
+    const script = document.getElementById("facades-jsonld");
+    if (!script) {
+      return null;
+    }
+    const documentData = JSON.parse(script.textContent || "{}");
+    const graph = Array.isArray(documentData["@graph"])
+      ? documentData["@graph"]
+      : [];
+    const node = graph.find((item) =>
+      item && item["@id"] === payload.workstreamUri
+    );
+    if (!node) {
+      throw new Error(
+        "A instância WorkStream não foi encontrada no JSON-LD incorporado.",
+      );
+    }
+    return {
+      GlobalId: jsonLdPropertyValue(node, "identifier") || payload.elementId,
+      Name: jsonLdPropertyValue(node, "title"),
+      Description: jsonLdPropertyValue(node, "description"),
+      What: jsonLdPropertyValue(node, "what"),
+      Why: jsonLdPropertyValue(node, "why"),
+      Who: jsonLdPropertyValue(node, "who"),
+      Where: jsonLdPropertyValue(node, "where"),
+      When: jsonLdPropertyValue(node, "when"),
+      How: jsonLdPropertyValue(node, "how"),
+      HowMuch: jsonLdPropertyValue(node, "howMuch"),
+    };
+  }
+
+  function loadEmbeddedWorkStream() {
+    try {
+      const record = embeddedWorkStreamRecord();
+      if (!record) {
+        return false;
+      }
+      renderWorkStream(record);
+      setStatus("Dados incorporados à página.", "is-ready");
+      openButton.textContent = "Carregar arquivos";
+      return true;
+    } catch (error) {
+      const message = error instanceof Error ? error.message : String(error);
+      setStatus(message, "is-error");
+      return false;
+    }
+  }
+
   function categoryMatches(resource, category) {
     return resource.category === category;
   }
