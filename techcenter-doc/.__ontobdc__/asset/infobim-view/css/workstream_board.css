@@ -27,7 +27,7 @@
   display: grid;
   grid-template-columns:
     var(--workstream-column-width)
-    repeat(15, var(--calendar-column-width));
+    repeat(11, var(--calendar-column-width));
   width: 100%;
   min-width: 0;
   background: rgba(6, 13, 25, 0.28);
@@ -39,7 +39,7 @@
   border-bottom: 1px solid var(--line);
 }
 
-.workstream-board-cell:nth-child(16n) {
+.workstream-board-cell.is-last-column {
   border-right: 0;
 }
 
@@ -193,9 +193,9 @@
 
 .general-schedule-timeline {
   position: relative;
-  grid-column: span 15;
+  grid-column: 2 / -1;
   display: grid;
-  grid-template-columns: repeat(15, minmax(0, 1fr));
+  grid-template-columns: repeat(11, minmax(0, 1fr));
   grid-template-rows: repeat(var(--general-schedule-row-count, 1), 26px);
   gap: 8px 0;
   align-content: center;
@@ -211,7 +211,7 @@
       var(--line) calc(100% - 1px)
     ),
     rgba(103, 232, 249, 0.018);
-  background-size: calc(100% / 15) 100%;
+  background-size: calc(100% / 11) 100%;
 }
 
 .general-schedule-timeline::before {
@@ -219,8 +219,8 @@
   position: absolute;
   top: 0;
   bottom: 0;
-  left: calc((100% / 15) * 7);
-  width: calc(100% / 15);
+  left: calc((100% / 11) * 5);
+  width: calc(100% / 11);
   background: rgba(103, 232, 249, 0.07);
   box-shadow:
     inset 2px 0 0 rgba(103, 232, 249, 0.45),
