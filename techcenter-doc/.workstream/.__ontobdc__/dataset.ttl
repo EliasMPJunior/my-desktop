@@ -19,6 +19,14 @@
     prov:atLocation <file:///C:/Users/EliasMagalh%C3%A3es/Documents/Brasidata/06_Projetos/01_Projetos_Ativos/my-desktop/techcenter-doc/.workstream> .
 
 <urn:infobim:workstream/7c7e9d91-046d-5bcb-ad09-a04c5821c6de> a obdc:DataEntity, wst:WorkStream ;
+    wst:hasDimension <urn:infobim:workstream/7c7e9d91-046d-5bcb-ad09-a04c5821c6de/dimension/when> ;
     dcterms:conformsTo wsf:WorkStreamFacade ;
     dcterms:identifier "7c7e9d91-046d-5bcb-ad09-a04c5821c6de" ;
     dcterms:title "WorkStream"@en .
+
+<urn:infobim:workstream/7c7e9d91-046d-5bcb-ad09-a04c5821c6de/dimension/when>
+    a obdc:DataEntity, wst:WorkStreamDimension ;
+    wst:dimensionKind wst:When ;
+    wst:dimensionOf <urn:infobim:workstream/7c7e9d91-046d-5bcb-ad09-a04c5821c6de> ;
+    dcterms:identifier "when" ;
+    dcterms:title "When"@en .
