@@ -62,7 +62,7 @@
       "path": "../views/public.yaml"
     },
     {
-      "bytes": 12094,
+      "bytes": 12309,
       "format": "jinja",
       "mediatype": "text/plain",
       "name": "template_work_stream_html_jinja",
