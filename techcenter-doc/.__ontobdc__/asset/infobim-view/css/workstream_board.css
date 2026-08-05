@@ -17,18 +17,19 @@
 
 .workstream-board-scroll {
   width: 100%;
-  overflow-x: auto;
-  scrollbar-width: thin;
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
 .workstream-board {
-  --workstream-column-width: minmax(230px, 1.65fr);
-  --calendar-column-width: minmax(58px, 1fr);
+  --workstream-column-width: minmax(210px, 1.65fr);
+  --calendar-column-width: minmax(0, 1fr);
   display: grid;
   grid-template-columns:
     var(--workstream-column-width)
     repeat(15, var(--calendar-column-width));
-  min-width: 1120px;
+  width: 100%;
+  min-width: 0;
   background: rgba(6, 13, 25, 0.28);
 }
 
@@ -68,17 +69,18 @@
   display: grid;
   align-content: center;
   justify-items: center;
+  min-width: 0;
   min-height: 82px;
-  padding: 10px 6px;
+  padding: 10px 2px;
   background: rgba(255, 255, 255, 0.018);
   text-align: center;
 }
 
 .workstream-calendar-day abbr {
   color: var(--text-soft);
-  font-size: 0.64rem;
+  font-size: clamp(0.5rem, 0.7vw, 0.64rem);
   font-weight: 800;
-  letter-spacing: 0.08em;
+  letter-spacing: 0.05em;
   text-decoration: none;
   text-transform: uppercase;
 }
@@ -86,7 +88,7 @@
 .workstream-calendar-day strong {
   margin-top: 6px;
   color: var(--text);
-  font-size: 1.1rem;
+  font-size: clamp(0.78rem, 1.4vw, 1.1rem);
   font-variant-numeric: tabular-nums;
   line-height: 1;
 }
@@ -94,7 +96,7 @@
 .workstream-calendar-day span {
   margin-top: 4px;
   color: rgba(151, 167, 191, 0.7);
-  font-size: 0.58rem;
+  font-size: clamp(0.48rem, 0.6vw, 0.58rem);
   text-transform: uppercase;
 }
 
@@ -156,6 +158,7 @@
 }
 
 .workstream-calendar-slot {
+  min-width: 0;
   min-height: 112px;
   background: rgba(255, 255, 255, 0.008);
 }
@@ -196,6 +199,7 @@
   grid-template-rows: repeat(var(--general-schedule-row-count, 1), 26px);
   gap: 8px 0;
   align-content: center;
+  min-width: 0;
   min-height: 132px;
   padding: 14px 0;
   overflow: hidden;
@@ -268,9 +272,10 @@
 
 @media (max-width: 760px) {
   .workstream-board {
-    --workstream-column-width: minmax(210px, 1.5fr);
-    --calendar-column-width: minmax(54px, 1fr);
-    min-width: 1040px;
+    --workstream-column-width: minmax(180px, 1.5fr);
+    --calendar-column-width: minmax(0, 1fr);
+    width: 100%;
+    min-width: 0;
   }
 
   .workstream-board-heading,
