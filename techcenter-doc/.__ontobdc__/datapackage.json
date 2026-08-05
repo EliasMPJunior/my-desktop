@@ -60,6 +60,20 @@
       "format": "yaml",
       "name": "views_public_aa64d1d5fc76",
       "path": "../views/public.yaml"
+    },
+    {
+      "bytes": 11984,
+      "format": "jinja",
+      "mediatype": "text/plain",
+      "name": "template_work_stream_html_jinja",
+      "path": "../template/work_stream.html.jinja"
+    },
+    {
+      "bytes": 5303,
+      "format": "jinja",
+      "mediatype": "text/plain",
+      "name": "template_ifc_work_schedule_html_jinja",
+      "path": "../template/ifc_work_schedule.html.jinja"
     }
   ]
 }
