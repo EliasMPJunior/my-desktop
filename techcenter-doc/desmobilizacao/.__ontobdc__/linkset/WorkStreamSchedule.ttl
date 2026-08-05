@@ -1,0 +1,23 @@
+@prefix ls: <https://standards.iso.org/iso/21597/-1/ed-1/en/Linkset#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<urn:infobim:linkset:workstream-when-schedule:f834661b-b230-5bc4-ab62-7bfa0338df8f>
+    a ls:DirectedBinaryLink ;
+    ls:hasFromLinkElement <urn:infobim:linkset:workstream-when-schedule:f834661b-b230-5bc4-ab62-7bfa0338df8f:when> ;
+    ls:hasToLinkElement <urn:infobim:linkset:workstream-when-schedule:f834661b-b230-5bc4-ab62-7bfa0338df8f:schedule> .
+
+<urn:infobim:linkset:workstream-when-schedule:f834661b-b230-5bc4-ab62-7bfa0338df8f:when>
+    a ls:LinkElement ;
+    ls:hasIdentifier <urn:infobim:linkset:workstream-when-schedule:f834661b-b230-5bc4-ab62-7bfa0338df8f:when-id> .
+
+<urn:infobim:linkset:workstream-when-schedule:f834661b-b230-5bc4-ab62-7bfa0338df8f:when-id>
+    a ls:URIBasedIdentifier ;
+    ls:uri "urn:infobim:workstream/f834661b-b230-5bc4-ab62-7bfa0338df8f/dimension/when"^^xsd:anyURI .
+
+<urn:infobim:linkset:workstream-when-schedule:f834661b-b230-5bc4-ab62-7bfa0338df8f:schedule>
+    a ls:LinkElement ;
+    ls:hasIdentifier <urn:infobim:linkset:workstream-when-schedule:f834661b-b230-5bc4-ab62-7bfa0338df8f:schedule-id> .
+
+<urn:infobim:linkset:workstream-when-schedule:f834661b-b230-5bc4-ab62-7bfa0338df8f:schedule-id>
+    a ls:URIBasedIdentifier ;
+    ls:uri "urn:infobim:ifc-work-schedule/69240f56-8e7a-401a-93cc-c43e12d9c72e"^^xsd:anyURI .
