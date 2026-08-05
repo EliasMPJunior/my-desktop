@@ -245,11 +245,12 @@
       "entity": "WorkStream",
       "workstreamUri": {{ entity_id | tojson }},
       "dimensionBaseUri": {{ (entity_id ~ "/dimension") | tojson }},
-      "datapackagePath": ".__ontobdc__/datapackage.json",
-      "linksetPath": ".__ontobdc__/linkset/WorkStream.ttl",
-      "resourceLinksetPath": ".__ontobdc__/linkset/WorkStreamResource.ttl",
-      "roCratePath": ".__ontobdc__/ro-crate-metadata.json",
-      "fileDisplayOntologyPath": ".__ontobdc__/ontology/file_display.ttl"
+      "datasetPath": {{ dataset_name | tojson }},
+      "datapackagePath": {{ (dataset_name ~ "/.__ontobdc__/datapackage.json") | tojson }},
+      "linksetPath": {{ (dataset_name ~ "/.__ontobdc__/linkset/WorkStream.ttl") | tojson }},
+      "resourceLinksetPath": {{ (dataset_name ~ "/.__ontobdc__/linkset/WorkStreamResource.ttl") | tojson }},
+      "roCratePath": {{ (dataset_name ~ "/.__ontobdc__/ro-crate-metadata.json") | tojson }},
+      "fileDisplayOntologyPath": {{ (dataset_name ~ "/.__ontobdc__/ontology/file_display.ttl") | tojson }}
     };
   </script>
   <script>
