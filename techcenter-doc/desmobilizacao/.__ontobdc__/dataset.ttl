@@ -19,6 +19,14 @@
     prov:atLocation <../> .
 
 <urn:infobim:workstream/f834661b-b230-5bc4-ab62-7bfa0338df8f> a obdc:DataEntity, wst:WorkStream ;
+    wst:hasDimension <urn:infobim:workstream/f834661b-b230-5bc4-ab62-7bfa0338df8f/dimension/when> ;
     dcterms:conformsTo wsf:WorkStreamFacade ;
     dcterms:identifier "f834661b-b230-5bc4-ab62-7bfa0338df8f" ;
     dcterms:title "Desmobilização da obra"@pt-BR .
+
+<urn:infobim:workstream/f834661b-b230-5bc4-ab62-7bfa0338df8f/dimension/when>
+    a obdc:DataEntity, wst:WorkStreamDimension ;
+    wst:dimensionKind wst:When ;
+    wst:dimensionOf <urn:infobim:workstream/f834661b-b230-5bc4-ab62-7bfa0338df8f> ;
+    dcterms:identifier "when" ;
+    dcterms:title "When"@en .

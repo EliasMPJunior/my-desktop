@@ -26,6 +26,9 @@
         },
         {
           "@id": "payload/document/workstream.xlsx"
+        },
+        {
+          "@id": ".__ontobdc__/linkset/WorkStreamSchedule.ttl"
         }
       ]
     },
@@ -95,6 +98,15 @@
       "sha256": "51a318870865f964bb43198aba55cc2a7f5f5d7aba4d197569162a7db156ee70",
       "about": {
         "@id": "urn:infobim:workstream/f834661b-b230-5bc4-ab62-7bfa0338df8f"
+      }
+    },
+    {
+      "@id": ".__ontobdc__/linkset/WorkStreamSchedule.ttl",
+      "@type": "File",
+      "name": "WorkStream When schedule linkset",
+      "encodingFormat": "text/turtle",
+      "about": {
+        "@id": "urn:infobim:workstream/f834661b-b230-5bc4-ab62-7bfa0338df8f/dimension/when"
       }
     }
   ]
