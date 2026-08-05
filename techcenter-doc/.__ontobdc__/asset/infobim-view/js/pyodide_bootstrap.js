@@ -72,7 +72,6 @@
     await loadLegacyWorkstreamDataWhenNeeded();
     await loadScript("workstream_schedule_relations.js");
     await loadScript("workstream_board.js");
-    await loadScript("workstream_schedule_board.js");
   }
 
   async function loadDashboardModules() {
