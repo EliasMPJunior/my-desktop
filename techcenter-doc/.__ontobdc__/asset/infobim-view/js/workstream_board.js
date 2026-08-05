@@ -1,12 +1,10 @@
 (function () {
   "use strict";
 
-  const calendarDayCount = 11;
-  const previousBusinessDays = 5;
-  const nextBusinessDays = 5;
+  const calendarDayCount = 15;
+  const previousCalendarDays = 7;
+  const nextCalendarDays = 7;
   const locale = "pt-BR";
-  const schedulePrefix = "urn:infobim:ifc-work-schedule/";
-  const relationMap = window.infoBimWorkStreamScheduleRelations || {};
 
   function projectTabsCard() {
     return document.querySelector('[data-card="project-tabs-card"]');
@@ -106,24 +104,11 @@
     return new Date(value.getFullYear(), value.getMonth(), value.getDate());
   }
 
-  function isBusinessDay(value) {
-    const weekday = value.getDay();
-    return weekday !== 0 && weekday !== 6;
-  }
-
-  function moveBusinessDay(value, direction) {
-    const next = new Date(value);
-    do {
-      next.setDate(next.getDate() + direction);
-    } while (!isBusinessDay(next));
-    return next;
-  }
-
   function previousDays(today) {
     const values = [];
-    let cursor = new Date(today);
-    for (let index = 0; index < previousBusinessDays; index += 1) {
-      cursor = moveBusinessDay(cursor, -1);
+    const cursor = new Date(today);
+    for (let index = 0; index < previousCalendarDays; index += 1) {
+      cursor.setDate(cursor.getDate() - 1);
       values.unshift(new Date(cursor));
     }
     return values;
@@ -131,9 +116,9 @@
 
   function followingDays(today) {
     const values = [];
-    let cursor = new Date(today);
-    for (let index = 0; index < nextBusinessDays; index += 1) {
-      cursor = moveBusinessDay(cursor, 1);
+    const cursor = new Date(today);
+    for (let index = 0; index < nextCalendarDays; index += 1) {
+      cursor.setDate(cursor.getDate() + 1);
       values.push(new Date(cursor));
     }
     return values;
@@ -171,20 +156,14 @@
       .replace(".", "");
   }
 
-  function createCell(className, row, column) {
+  function createCell(className) {
     const cell = document.createElement("div");
     cell.className = `workstream-board-cell ${className}`;
-    if (row) {
-      cell.style.gridRow = String(row);
-    }
-    if (column) {
-      cell.style.gridColumn = String(column);
-    }
     return cell;
   }
 
   function createBoardHeading(workstreamCount) {
-    const heading = createCell("workstream-board-heading", 1, 1);
+    const heading = createCell("workstream-board-heading");
     const title = document.createElement("strong");
     title.textContent = "Frentes de trabalho";
     const subtitle = document.createElement("span");
@@ -195,16 +174,15 @@
     return heading;
   }
 
-  function createCalendarHeading(date, today, column) {
-    const cell = createCell("workstream-calendar-day", 1, column);
+  function createCalendarHeading(date, today) {
+    const cell = createCell("workstream-calendar-day");
     if (sameDate(date, today)) {
       cell.classList.add("is-today");
     }
 
     const weekday = document.createElement("abbr");
     weekday.textContent = weekdayLabel(date);
-    weekday.title = new Intl.DateTimeFormat(locale, { weekday: "long" })
-      .format(date);
+    weekday.title = new Intl.DateTimeFormat(locale, { weekday: "long" }).format(date);
 
     const day = document.createElement("strong");
     day.textContent = dayLabel(date);
@@ -216,78 +194,9 @@
     return cell;
   }
 
-  function localName(value) {
-    const parts = String(value).split(/[\/#:]/);
-    return parts[parts.length - 1];
-  }
-
-  function valueByLocalName(item, names) {
-    if (!item || typeof item !== "object") {
-      return null;
-    }
-    const accepted = new Set(names.map((name) => name.toLowerCase()));
-    for (const [key, value] of Object.entries(item)) {
-      if (!accepted.has(localName(key).toLowerCase())) {
-        continue;
-      }
-      const candidate = Array.isArray(value)
-        ? (value.length ? value[0] : null)
-        : value;
-      if (candidate && typeof candidate === "object" && "@value" in candidate) {
-        return candidate["@value"];
-      }
-      if (candidate && typeof candidate === "object" && "@id" in candidate) {
-        return candidate["@id"];
-      }
-      return candidate;
-    }
-    return null;
-  }
-
-  function jsonLdNodes() {
-    const nodes = [];
-    document.querySelectorAll('script[type="application/ld+json"]').forEach((script) => {
-      try {
-        const payload = JSON.parse(script.textContent || "{}");
-        const documents = Array.isArray(payload) ? payload : [payload];
-        documents.forEach((document) => {
-          if (Array.isArray(document["@graph"])) {
-            nodes.push(...document["@graph"]);
-          } else {
-            nodes.push(document);
-          }
-        });
-      } catch (error) {
-        console.warn("INFOBIM: JSON-LD inválido ignorado no cronograma.", error);
-      }
-    });
-    return nodes;
-  }
-
-  function nestedRecords(nodes) {
-    const records = [];
-    const visit = (value) => {
-      if (!value || typeof value !== "object") {
-        return;
-      }
-      if (Array.isArray(value)) {
-        value.forEach(visit);
-        return;
-      }
-      records.push(value);
-      Object.values(value).forEach(visit);
-    };
-    nodes.forEach(visit);
-    return records;
-  }
-
-  function allRecords() {
-    return nestedRecords(jsonLdNodes());
-  }
-
-  function workstreamList(records) {
+  function workstreamList() {
     const workstreams = new Map();
-    records.forEach((item) => {
+    nestedRecords(jsonLdNodes()).forEach((item) => {
       const facade = valueByLocalName(item, ["conformsTo"]);
       if (!String(facade || "").endsWith("WorkStreamFacade")) {
         return;
@@ -339,20 +248,16 @@
     );
   }
 
+  function workstreamStatus(item) {
+    return textValue(item, ["status", "schema:status"], "Abrir frente");
+  }
+
   function workstreamView(item) {
     return textValue(item, ["view", "schema:url"], "");
   }
 
-  function relatedScheduleUris(workstreamUri) {
-    const value = relationMap[workstreamUri];
-    if (Array.isArray(value)) {
-      return value.map(String).map((item) => item.trim()).filter(Boolean);
-    }
-    return value ? [String(value).trim()].filter(Boolean) : [];
-  }
-
-  function createWorkstreamCell(item, taskCount, row) {
-    const cell = createCell("workstream-board-workstream", row, 1);
+  function createWorkstreamCell(item) {
+    const cell = createCell("workstream-board-workstream");
     const view = workstreamView(item);
     const link = document.createElement(view ? "a" : "div");
     link.className = "workstream-board-link";
@@ -367,26 +272,71 @@
     description.textContent = workstreamDescription(item);
 
     const status = document.createElement("span");
-    if (taskCount === null) {
-      status.textContent = "Abrir frente";
-    } else if (taskCount === 1) {
-      status.textContent = "1 tarefa no período";
-    } else {
-      status.textContent = `${taskCount} tarefas no período`;
-    }
+    status.textContent = workstreamStatus(item);
 
     link.append(name, description, status);
     cell.appendChild(link);
     return cell;
   }
 
-  function createCalendarSlot(date, today, row, column) {
-    const slot = createCell("workstream-calendar-slot", row, column);
+  function createCalendarSlot(date, today) {
+    const slot = createCell("workstream-calendar-slot");
     if (sameDate(date, today)) {
       slot.classList.add("is-today");
     }
     slot.dataset.date = date.toISOString().slice(0, 10);
     return slot;
+  }
+
+  function renderHeader(board, dates, workstreamCount) {
+    const today = normalizeDate(new Date());
+    board.appendChild(createBoardHeading(workstreamCount));
+    dates.forEach((date) => {
+      board.appendChild(createCalendarHeading(date, today));
+    });
+  }
+
+  function renderWorkstreamRow(board, item, dates) {
+    const today = normalizeDate(new Date());
+    board.appendChild(createWorkstreamCell(item));
+    dates.forEach((date) => {
+      board.appendChild(createCalendarSlot(date, today));
+    });
+  }
+
+  function localName(value) {
+    const parts = String(value).split(/[\/#:]/);
+    return parts[parts.length - 1];
+  }
+
+  function valueByLocalName(item, names) {
+    if (!item || typeof item !== "object") {
+      return null;
+    }
+    const accepted = new Set(names.map((name) => name.toLowerCase()));
+    for (const [key, value] of Object.entries(item)) {
+      if (accepted.has(localName(key).toLowerCase())) {
+        const candidate = Array.isArray(value)
+          ? (value.length ? value[0] : null)
+          : value;
+        if (
+          candidate
+          && typeof candidate === "object"
+          && "@value" in candidate
+        ) {
+          return candidate["@value"];
+        }
+        if (
+          candidate
+          && typeof candidate === "object"
+          && "@id" in candidate
+        ) {
+          return candidate["@id"];
+        }
+        return candidate;
+      }
+    }
+    return null;
   }
 
   function parseScheduleDate(value) {
@@ -400,11 +350,7 @@
     const brazilian = source.match(/(?:^|\s)(\d{2})\/(\d{2})\/(\d{2}|\d{4})$/);
     if (brazilian) {
       const year = Number(brazilian[3]);
-      return new Date(
-        year < 100 ? 2000 + year : year,
-        Number(brazilian[2]) - 1,
-        Number(brazilian[1]),
-      );
+      return new Date(year < 100 ? 2000 + year : year, Number(brazilian[2]) - 1, Number(brazilian[1]));
     }
     const iso = source.match(/^(\d{4})-(\d{2})-(\d{2})/);
     return iso
@@ -412,93 +358,67 @@
       : null;
   }
 
-  function recordId(item) {
-    return String(valueByLocalName(item, ["@id"]) || "").trim();
-  }
-
-  function scheduleRootUri(value) {
-    const id = String(value || "").trim();
-    if (!id.startsWith(schedulePrefix)) {
-      return "";
-    }
-    const rowMarker = id.indexOf("/row/");
-    return rowMarker >= 0 ? id.slice(0, rowMarker) : id;
-  }
-
-  function scheduleUris(records) {
-    const values = new Set();
-    records.forEach((item) => {
-      const root = scheduleRootUri(recordId(item));
-      if (root) {
-        values.add(root);
+  function jsonLdNodes() {
+    const nodes = [];
+    document.querySelectorAll('script[type="application/ld+json"]').forEach((script) => {
+      try {
+        const payload = JSON.parse(script.textContent);
+        const documents = Array.isArray(payload) ? payload : [payload];
+        documents.forEach((document) => {
+          if (Array.isArray(document["@graph"])) {
+            nodes.push(...document["@graph"]);
+          } else {
+            nodes.push(document);
+          }
+        });
+      } catch (error) {
+        console.warn("INFOBIM: JSON-LD inválido ignorado no cronograma.", error);
       }
     });
-    return Array.from(values).sort();
+    return nodes;
   }
 
-  function taskRowKey(item) {
-    const id = recordId(item);
-    const match = id.match(/^(.*\/row\/\d+)(?:\/|$)/);
-    return match ? match[1] : "";
-  }
-
-  function scheduleTasks(records, scheduleUri) {
-    const scheduleRecords = records.filter((item) => {
-      const id = recordId(item);
-      return id === scheduleUri || id.startsWith(`${scheduleUri}/`);
-    });
-    const taskRecords = scheduleRecords.filter((item) => (
-      valueByLocalName(item, [
-        "work_breakdown_structure", "Identification", "WorkBreakdownStructureField",
-      ])
-      && valueByLocalName(item, ["name", "Name"])
-    ));
-    const tasksByRow = new Map();
-    taskRecords.forEach((item) => {
-      const key = taskRowKey(item);
-      if (key) {
-        tasksByRow.set(key, item);
+  function nestedRecords(nodes) {
+    const records = [];
+    const visit = (value) => {
+      if (!value || typeof value !== "object") {
+        return;
       }
-    });
+      if (Array.isArray(value)) {
+        value.forEach(visit);
+        return;
+      }
+      records.push(value);
+      Object.values(value).forEach(visit);
+    };
+    nodes.forEach(visit);
+    return records;
+  }
 
-    const datedRecords = scheduleRecords.filter((item) => {
-      const start = valueByLocalName(item, [
-        "schedule_start", "ScheduleStart", "StartDateField",
-      ]);
-      const finish = valueByLocalName(item, [
-        "schedule_finish", "ScheduleFinish", "FinishDateField",
-      ]);
+  function scheduleTasks() {
+    const records = nestedRecords(jsonLdNodes());
+    const datedRecords = records.filter((item) => {
+      const start = valueByLocalName(item, ["schedule_start", "ScheduleStart", "StartDateField"]);
+      const finish = valueByLocalName(item, ["schedule_finish", "ScheduleFinish", "FinishDateField"]);
       return parseScheduleDate(start) && parseScheduleDate(finish);
     });
+    const taskRecords = records.filter((item) => (
+      valueByLocalName(item, ["work_breakdown_structure", "Identification", "WorkBreakdownStructureField"])
+      && valueByLocalName(item, ["name", "Name"])
+    ));
 
     return datedRecords.map((timeRecord, index) => {
-      const taskRecord = tasksByRow.get(taskRowKey(timeRecord))
-        || (valueByLocalName(timeRecord, ["name", "Name"])
-          ? timeRecord
-          : taskRecords[index] || timeRecord);
+      const taskRecord = valueByLocalName(timeRecord, ["name", "Name"])
+        ? timeRecord
+        : taskRecords[index] || timeRecord;
       return {
-        id: recordId(taskRecord) || `${scheduleUri}/task/${index}`,
-        name: String(
-          valueByLocalName(taskRecord, ["name", "Name"])
-          || "Tarefa sem nome"
-        ),
-        wbs: String(valueByLocalName(taskRecord, [
-          "work_breakdown_structure", "Identification", "WorkBreakdownStructureField",
-        ]) || ""),
-        start: parseScheduleDate(valueByLocalName(timeRecord, [
-          "schedule_start", "ScheduleStart", "StartDateField",
-        ])),
-        finish: parseScheduleDate(valueByLocalName(timeRecord, [
-          "schedule_finish", "ScheduleFinish", "FinishDateField",
-        ])),
+        id: String(valueByLocalName(taskRecord, ["@id", "document_identifier", "identifier", "IdentifierField"]) || index),
+        name: String(valueByLocalName(taskRecord, ["name", "Name"]) || "Tarefa sem nome"),
+        wbs: String(valueByLocalName(taskRecord, ["work_breakdown_structure", "Identification", "WorkBreakdownStructureField"]) || ""),
+        start: parseScheduleDate(valueByLocalName(timeRecord, ["schedule_start", "ScheduleStart", "StartDateField"])),
+        finish: parseScheduleDate(valueByLocalName(timeRecord, ["schedule_finish", "ScheduleFinish", "FinishDateField"])),
       };
     });
-  }
-
-  function tasksForSchedules(records, scheduleValues) {
-    return scheduleValues.flatMap((scheduleUri) => (
-      scheduleTasks(records, scheduleUri)
-    ));
   }
 
   function tasksInWindow(tasks, dates) {
@@ -506,10 +426,10 @@
     const last = dates[dates.length - 1];
     return tasks
       .filter((task) => task.start <= last && task.finish >= first)
-      .sort((left, right) => (
-        left.start - right.start
-        || left.finish - right.finish
-        || left.name.localeCompare(right.name, locale)
+      .sort((firstTask, secondTask) => (
+        firstTask.start - secondTask.start
+        || firstTask.finish - secondTask.finish
+        || firstTask.name.localeCompare(secondTask.name, locale)
       ));
   }
 
@@ -526,58 +446,8 @@
     };
   }
 
-  function createScheduleTaskBar(task, row, range, includeWbs) {
-    const bar = document.createElement("span");
-    bar.className = "general-schedule-task-bar";
-    bar.dataset.taskId = task.id;
-    bar.style.gridRow = String(row);
-    bar.style.gridColumn = `${range.start} / span ${range.span}`;
-
-    const label = document.createElement("span");
-    label.textContent = includeWbs && task.wbs
-      ? `${task.wbs} — ${task.name}`
-      : task.name;
-    bar.appendChild(label);
-
-    const interval = `${dayLabel(task.start)}–${dayLabel(task.finish)}`;
-    bar.title = task.wbs
-      ? `${task.wbs} · ${task.name} · ${interval}`
-      : `${task.name} · ${interval}`;
-    bar.setAttribute("aria-label", bar.title);
-    return bar;
-  }
-
-  function createScheduleTimeline(tasks, dates, row, className, includeWbs) {
-    const timeline = createCell(
-      `general-schedule-timeline ${className || ""}`.trim(),
-      row,
-      "2 / -1",
-    );
-    const rowCount = Math.max(tasks.length, 1);
-    timeline.style.setProperty("--general-schedule-row-count", String(rowCount));
-    if (className) {
-      timeline.style.minHeight = "112px";
-    }
-    timeline.setAttribute(
-      "aria-label",
-      tasks.length
-        ? `${tasks.length} tarefas no período`
-        : "Sem tarefas no período",
-    );
-
-    tasks.forEach((task, index) => {
-      const range = taskGridRange(task, dates);
-      if (range) {
-        timeline.appendChild(
-          createScheduleTaskBar(task, index + 1, range, includeWbs)
-        );
-      }
-    });
-    return timeline;
-  }
-
-  function createGeneralScheduleLabel(taskCount, row) {
-    const cell = createCell("general-schedule-label", row, 1);
+  function createGeneralScheduleLabel(taskCount) {
+    const cell = createCell("general-schedule-label");
     const title = document.createElement("strong");
     title.textContent = "Cronograma Geral";
     const subtitle = document.createElement("span");
@@ -588,81 +458,56 @@
     return cell;
   }
 
-  function renderHeader(board, dates, workstreamCount) {
-    const today = normalizeDate(new Date());
-    board.appendChild(createBoardHeading(workstreamCount));
-    dates.forEach((date, index) => {
-      board.appendChild(createCalendarHeading(date, today, index + 2));
-    });
+  function createScheduleTaskBar(task, row, range) {
+    const bar = document.createElement("span");
+    bar.className = "general-schedule-task-bar";
+    bar.dataset.taskId = task.id;
+    bar.style.gridRow = String(row);
+    bar.style.gridColumn = `${range.start} / span ${range.span}`;
+
+    const label = document.createElement("span");
+    label.textContent = task.name;
+    bar.appendChild(label);
+
+    const interval = `${dayLabel(task.start)}–${dayLabel(task.finish)}`;
+    bar.title = task.wbs
+      ? `${task.wbs} · ${task.name} · ${interval}`
+      : `${task.name} · ${interval}`;
+    bar.setAttribute("aria-label", bar.title);
+    return bar;
   }
 
-  function renderWorkstreamRow(board, item, dates, records, row) {
-    const schedules = relatedScheduleUris(item["@id"]);
-    const tasks = tasksInWindow(
-      tasksForSchedules(records, schedules),
-      dates,
+  function createGeneralScheduleTimeline(tasks, dates) {
+    const timeline = createCell("general-schedule-timeline");
+    const rowCount = Math.max(tasks.length, 1);
+    timeline.style.setProperty("--general-schedule-row-count", String(rowCount));
+    timeline.setAttribute(
+      "aria-label",
+      tasks.length
+        ? `Cronograma Geral com ${tasks.length} tarefas no período`
+        : "Cronograma Geral sem tarefas no período",
     );
-    const taskCount = schedules.length ? tasks.length : null;
-    board.appendChild(createWorkstreamCell(item, taskCount, row));
 
-    if (schedules.length) {
-      board.appendChild(
-        createScheduleTimeline(
-          tasks,
-          dates,
-          row,
-          "workstream-schedule-timeline",
-          true,
-        )
-      );
-      return;
-    }
-
-    const today = normalizeDate(new Date());
-    dates.forEach((date, index) => {
-      board.appendChild(
-        createCalendarSlot(date, today, row, index + 2)
-      );
+    tasks.forEach((task, index) => {
+      const range = taskGridRange(task, dates);
+      if (range) {
+        timeline.appendChild(createScheduleTaskBar(task, index + 1, range));
+      }
     });
+    return timeline;
   }
 
-  function linkedScheduleUris() {
-    const values = new Set();
-    Object.values(relationMap).forEach((rawValue) => {
-      const scheduleValues = Array.isArray(rawValue) ? rawValue : [rawValue];
-      scheduleValues.forEach((value) => {
-        const normalized = String(value || "").trim();
-        if (normalized) {
-          values.add(normalized);
-        }
-      });
-    });
-    return values;
-  }
-
-  function renderGeneralScheduleRow(board, dates, records, row) {
-    const linked = linkedScheduleUris();
-    const generalSchedules = scheduleUris(records)
-      .filter((scheduleUri) => !linked.has(scheduleUri));
-    if (!generalSchedules.length) {
-      return;
-    }
-
-    const tasks = tasksInWindow(
-      tasksForSchedules(records, generalSchedules),
-      dates,
-    );
+  function renderGeneralScheduleRow(board, dates) {
+    const tasks = tasksInWindow(scheduleTasks(), dates);
     board.append(
-      createGeneralScheduleLabel(tasks.length, row),
-      createScheduleTimeline(tasks, dates, row, "", false),
+      createGeneralScheduleLabel(tasks.length),
+      createGeneralScheduleTimeline(tasks, dates),
     );
   }
 
   function renderEmptyState(board, message) {
     const state = document.createElement("div");
     state.className = "workstream-board-state";
-    state.style.gridColumn = "1 / -1";
-    state.style.gridRow = "2";
     const text = document.createElement("p");
     text.textContent = message;
     state.appendChild(text);
@@ -671,11 +516,10 @@
 
   function renderBoard(board) {
     const dates = calendarWindow();
-    const records = allRecords();
-    const workstreams = workstreamList(records);
+    const workstreams = workstreamList();
 
     if (dates.length !== calendarDayCount) {
-      throw new Error("A janela do calendário deve conter 11 dias úteis.");
+      throw new Error("A janela do calendário deve conter 15 dias corridos.");
     }
 
     board.replaceChildren();
@@ -686,15 +530,10 @@
       return;
     }
 
-    workstreams.forEach((item, index) => {
-      renderWorkstreamRow(board, item, dates, records, index + 2);
+    workstreams.forEach((item) => {
+      renderWorkstreamRow(board, item, dates);
     });
-    renderGeneralScheduleRow(
-      board,
-      dates,
-      records,
-      workstreams.length + 2,
-    );
+    renderGeneralScheduleRow(board, dates);
   }
 
   function initialize() {

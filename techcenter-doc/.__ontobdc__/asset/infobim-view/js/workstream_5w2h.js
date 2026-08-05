@@ -336,6 +336,69 @@
     });
   }
 
+  function jsonLdPropertyValue(node, localName) {
+    const property = Object.entries(node || {}).find(([key]) => {
+      const normalized = key.split("#").at(-1).split("/").at(-1);
+      return normalized.toLowerCase() === localName.toLowerCase();
+    });
+    if (!property) {
+      return "";
+    }
+    const values = Array.isArray(property[1]) ? property[1] : [property[1]];
+    const first = values[0];
+    if (first && typeof first === "object") {
+      return first["@value"] ?? first["@id"] ?? "";
+    }
+    return first ?? "";
+  }
+
+  function embeddedWorkStreamRecord() {
+    const script = document.getElementById("facades-jsonld");
+    if (!script) {
+      return null;
+    }
+    const documentData = JSON.parse(script.textContent || "{}");
+    const graph = Array.isArray(documentData["@graph"])
+      ? documentData["@graph"]
+      : [];
+    const node = graph.find((item) =>
+      item && item["@id"] === payload.workstreamUri
+    );
+    if (!node) {
+      throw new Error(
+        "A instância WorkStream não foi encontrada no JSON-LD incorporado.",
+      );
+    }
+    return {
+      GlobalId: jsonLdPropertyValue(node, "identifier") || payload.elementId,
+      Name: jsonLdPropertyValue(node, "title"),
+      Description: jsonLdPropertyValue(node, "description"),
+      What: jsonLdPropertyValue(node, "what"),
+      Why: jsonLdPropertyValue(node, "why"),
+      Who: jsonLdPropertyValue(node, "who"),
+      Where: jsonLdPropertyValue(node, "where"),
+      When: jsonLdPropertyValue(node, "when"),
+      How: jsonLdPropertyValue(node, "how"),
+      HowMuch: jsonLdPropertyValue(node, "howMuch"),
+    };
+  }
+
+  function loadEmbeddedWorkStream() {
+    try {
+      const record = embeddedWorkStreamRecord();
+      if (!record) {
+        return false;
+      }
+      renderWorkStream(record);
+      setStatus("Dados incorporados à página.", "is-ready");
+      return true;
+    } catch (error) {
+      const message = error instanceof Error ? error.message : String(error);
+      setStatus(message, "is-error");
+      return false;
+    }
+  }
+
   function categoryMatches(resource, category) {
     return resource.category === category;
   }
@@ -1669,16 +1732,8 @@ graph.serialize(format="turtle")
       const pyodide = await loadPyodide();
       activePyodide = pyodide;
       const mountPath = `/container_${Date.now()}`;
-      const metadataHandle = await containerHandle.getDirectoryHandle(
-        ".__ontobdc__",
-      );
-      const payloadHandle = await containerHandle.getDirectoryHandle("payload");
       pyodide.FS.mkdirTree(mountPath);
-      await pyodide.mountNativeFS(
-        `${mountPath}/.__ontobdc__`,
-        metadataHandle,
-      );
-      await pyodide.mountNativeFS(`${mountPath}/payload`, payloadHandle);
+      await pyodide.mountNativeFS(mountPath, containerHandle);
       await pyodide.loadPackage("micropip");
       await pyodide.runPythonAsync(`
 import micropip
@@ -1702,6 +1757,7 @@ linkset_path = container / payload["linksetPath"]
 resource_linkset_path = container / payload["resourceLinksetPath"]
 ro_crate_path = container / payload["roCratePath"]
 file_display_ontology_path = container / payload["fileDisplayOntologyPath"]
+dataset_prefix = str(payload.get("datasetPath") or "").strip("/")
 
 datapackage = json.loads(datapackage_path.read_text(encoding="utf-8"))
 resource = next(
@@ -1718,17 +1774,18 @@ worksheet_name = (
 
 LS = Namespace("https://standards.iso.org/iso/21597/-1/ed-1/en/Linkset#")
 linkset = Graph()
-linkset.parse(linkset_path, format="turtle")
 mappings = {}
-for link in linkset.subjects(RDF.type, LS.DirectedBinaryLink):
-    from_element = linkset.value(link, LS.hasFromLinkElement)
-    to_element = linkset.value(link, LS.hasToLinkElement)
-    from_identifier = linkset.value(from_element, LS.hasIdentifier)
-    to_identifier = linkset.value(to_element, LS.hasIdentifier)
-    column = linkset.value(from_identifier, LS.identifier)
-    facade_field = linkset.value(to_identifier, LS.uri)
-    if isinstance(column, Literal) and facade_field is not None:
-        mappings[str(column)] = str(facade_field)
+if linkset_path.exists():
+    linkset.parse(linkset_path, format="turtle")
+    for link in linkset.subjects(RDF.type, LS.DirectedBinaryLink):
+        from_element = linkset.value(link, LS.hasFromLinkElement)
+        to_element = linkset.value(link, LS.hasToLinkElement)
+        from_identifier = linkset.value(from_element, LS.hasIdentifier)
+        to_identifier = linkset.value(to_element, LS.hasIdentifier)
+        column = linkset.value(from_identifier, LS.identifier)
+        facade_field = linkset.value(to_identifier, LS.uri)
+        if isinstance(column, Literal) and facade_field is not None:
+            mappings[str(column)] = str(facade_field)
 
 workbook = load_workbook(workbook_path, data_only=True, read_only=True)
 worksheet = workbook[worksheet_name]
@@ -1745,7 +1802,7 @@ if record is None:
     raise ValueError(
         f"WorkStream not found in workbook: {payload['elementId']}"
     )
-if any(field not in mappings for field in headers):
+if mappings and any(field not in mappings for field in headers):
     missing = sorted(field for field in headers if field not in mappings)
     raise ValueError(
         "The ICDD linkset does not map workbook fields: " + ", ".join(missing)
@@ -1771,7 +1828,8 @@ FILE_DISPLAY = Namespace(
     "https://w3id.org/ontobdc/ontology/file-display#"
 )
 file_display_graph = Graph()
-file_display_graph.parse(file_display_ontology_path, format="turtle")
+if file_display_ontology_path.exists():
+    file_display_graph.parse(file_display_ontology_path, format="turtle")
 display_profiles = []
 for profile in file_display_graph.subjects(
     RDF.type,
@@ -1852,10 +1910,19 @@ except FileNotFoundError:
 catalog_resources = []
 resources = []
 for item in ro_crate.get("@graph", []):
-    resource_id = item.get("@id")
+    source_resource_id = item.get("@id")
     types = set(text_values(item, "@type"))
-    if not resource_id or resource_id in (".", "./"):
+    if not source_resource_id or source_resource_id in (".", "./"):
         continue
+    is_external_resource = (
+        "://" in source_resource_id
+        or source_resource_id.startswith("urn:")
+    )
+    resource_id = (
+        source_resource_id
+        if is_external_resource or not dataset_prefix
+        else f"{dataset_prefix}/{source_resource_id.lstrip('./')}"
+    )
     if not types.intersection({
         "File", "MediaObject", "DigitalDocument",
         "CreativeWork", "Message", "EmailMessage",
@@ -1863,7 +1930,7 @@ for item in ro_crate.get("@graph", []):
         continue
     names = text_values(item, "name")
     formats = text_values(item, "encodingFormat")
-    category = category_for(item, resource_id)
+    category = category_for(item, source_resource_id)
     display_parts = [
         unquote(part)
         for part in resource_id.split("/")
@@ -1871,6 +1938,7 @@ for item in ro_crate.get("@graph", []):
     ]
     catalog_resource = {
         "id": resource_id,
+        "sourceId": source_resource_id,
         "name": (
             unquote(names[0])
             if names
@@ -1890,7 +1958,11 @@ relationships = {}
 if resource_linkset_path.exists():
     resource_linkset = Graph()
     resource_linkset.parse(resource_linkset_path, format="turtle")
-    resource_ids = {item["id"] for item in resources}
+    resource_id_by_endpoint = {
+        key: item["id"]
+        for item in resources
+        for key in (item["id"], item["sourceId"])
+    }
 
     def endpoint_value(element):
         identifier = resource_linkset.value(element, LS.hasIdentifier)
@@ -1913,7 +1985,11 @@ if resource_linkset_path.exists():
             None,
         )
         resource_id = next(
-            (value for value in endpoint_strings if value in resource_ids),
+            (
+                resource_id_by_endpoint[value]
+                for value in endpoint_strings
+                if value in resource_id_by_endpoint
+            ),
             None,
         )
         if dimension_uri and resource_id:

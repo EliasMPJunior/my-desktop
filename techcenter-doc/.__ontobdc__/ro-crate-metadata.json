@@ -26,6 +26,12 @@
         },
         {
           "@id": "view/work_stream/7c7e9d91-046d-5bcb-ad09-a04c5821c6de.html"
+        },
+        {
+          "@id": "template/work_stream.html.jinja"
+        },
+        {
+          "@id": "template/ifc_work_schedule.html.jinja"
         }
       ]
     },
@@ -86,6 +92,18 @@
       "about": {
         "@id": "urn:infobim:workstream/7c7e9d91-046d-5bcb-ad09-a04c5821c6de"
       }
+    },
+    {
+      "@id": "template/work_stream.html.jinja",
+      "@type": "File",
+      "name": "WorkStream Jinja view template",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@id": "template/ifc_work_schedule.html.jinja",
+      "@type": "File",
+      "name": "IfcWorkSchedule Jinja view template",
+      "encodingFormat": "text/plain"
     }
   ]
 }

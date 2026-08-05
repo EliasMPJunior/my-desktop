@@ -71,7 +71,6 @@
     loadStyle("../css/workstream_board.css");
     loadStyle("../css/workstream_schedule_summary.css");
     await loadLegacyWorkstreamDataWhenNeeded();
-    await loadScript("workstream_schedule_relations.js");
     await loadScript("workstream_board.js");
   }
 
