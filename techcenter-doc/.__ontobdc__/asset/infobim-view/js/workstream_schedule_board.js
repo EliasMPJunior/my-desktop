@@ -2,42 +2,25 @@
   "use strict";
 
   const relationMap = window.infoBimWorkStreamScheduleRelations || {};
+  const schedulePrefix = "urn:infobim:ifc-work-schedule/";
+  const calendarDayCount = 15;
+  const previousCalendarDays = 7;
+  const nextCalendarDays = 7;
   const locale = "pt-BR";
-  const previousBusinessDays = 5;
-  const nextBusinessDays = 5;
 
   function normalizeDate(value) {
     return new Date(value.getFullYear(), value.getMonth(), value.getDate());
   }
 
-  function isBusinessDay(value) {
-    const weekday = value.getDay();
-    return weekday !== 0 && weekday !== 6;
-  }
-
-  function moveBusinessDay(value, direction) {
-    const next = new Date(value);
-    do {
-      next.setDate(next.getDate() + direction);
-    } while (!isBusinessDay(next));
-    return next;
-  }
-
   function calendarWindow() {
     const today = normalizeDate(new Date());
-    const previous = [];
-    let cursor = new Date(today);
-    for (let index = 0; index < previousBusinessDays; index += 1) {
-      cursor = moveBusinessDay(cursor, -1);
-      previous.unshift(new Date(cursor));
+    const dates = [];
+    for (let offset = -previousCalendarDays; offset <= nextCalendarDays; offset += 1) {
+      const date = new Date(today);
+      date.setDate(date.getDate() + offset);
+      dates.push(date);
     }
-    const following = [];
-    cursor = new Date(today);
-    for (let index = 0; index < nextBusinessDays; index += 1) {
-      cursor = moveBusinessDay(cursor, 1);
-      following.push(new Date(cursor));
-    }
-    return [...previous, today, ...following];
+    return dates;
   }
 
   function localName(value) {
@@ -128,6 +111,27 @@
       : null;
   }
 
+  function scheduleUriFromId(value) {
+    const id = String(value || "");
+    if (!id.startsWith(schedulePrefix)) {
+      return "";
+    }
+    const suffix = id.slice(schedulePrefix.length);
+    const identifier = suffix.split("/")[0];
+    return identifier ? `${schedulePrefix}${identifier}` : "";
+  }
+
+  function allScheduleUris() {
+    const values = new Set();
+    nestedRecords(jsonLdNodes()).forEach((item) => {
+      const uri = scheduleUriFromId(valueByLocalName(item, ["@id"]));
+      if (uri) {
+        values.add(uri);
+      }
+    });
+    return Array.from(values);
+  }
+
   function scheduleTasks(scheduleUri) {
     const records = nestedRecords(jsonLdNodes());
     const scheduleRecords = records.filter((item) => {
@@ -154,6 +158,9 @@
         ? timeRecord
         : taskRecords[index] || timeRecord;
       return {
+        id: String(valueByLocalName(taskRecord, [
+          "@id", "document_identifier", "identifier", "IdentifierField",
+        ]) || index),
         name: String(valueByLocalName(taskRecord, ["name", "Name"]) || "Tarefa sem nome"),
         wbs: String(valueByLocalName(taskRecord, [
           "work_breakdown_structure", "Identification", "WorkBreakdownStructureField",
@@ -218,30 +225,122 @@
     return value ? [String(value)] : [];
   }
 
-  function timeline(tasks, dates) {
-    const element = document.createElement("div");
-    element.className = "workstream-board-cell general-schedule-timeline workstream-schedule-timeline";
-    element.style.minHeight = "112px";
-    element.style.setProperty(
+  function dayLabel(value) {
+    return new Intl.DateTimeFormat(locale, {
+      day: "2-digit",
+      month: "2-digit",
+    }).format(value);
+  }
+
+  function summaryTask(tasks) {
+    if (!tasks.length) {
+      return null;
+    }
+    return {
+      start: new Date(Math.min(...tasks.map((task) => task.start.getTime()))),
+      finish: new Date(Math.max(...tasks.map((task) => task.finish.getTime()))),
+    };
+  }
+
+  function createTaskBar(task, row, range, labelText) {
+    const bar = document.createElement("span");
+    bar.className = "general-schedule-task-bar";
+    bar.style.gridRow = String(row);
+    bar.style.gridColumn = `${range.start} / span ${range.span}`;
+
+    const label = document.createElement("span");
+    label.textContent = labelText;
+    bar.appendChild(label);
+
+    bar.title = `${labelText} · ${dayLabel(task.start)}–${dayLabel(task.finish)}`;
+    bar.setAttribute("aria-label", bar.title);
+    return bar;
+  }
+
+  function createTimeline(tasks, dates, summaryOnly) {
+    const timeline = document.createElement("div");
+    timeline.className = "workstream-board-cell general-schedule-timeline";
+    if (summaryOnly) {
+      timeline.classList.add("workstream-schedule-timeline");
+    }
+
+    const visibleTasks = summaryOnly
+      ? [summaryTask(tasks)].filter(Boolean)
+      : tasks;
+    timeline.style.setProperty(
       "--general-schedule-row-count",
-      String(Math.max(tasks.length, 1)),
+      String(Math.max(visibleTasks.length, 1)),
     );
-    tasks.forEach((task, index) => {
+    timeline.style.minHeight = summaryOnly ? "112px" : "";
+
+    visibleTasks.forEach((task, index) => {
       const range = taskGridRange(task, dates);
       if (!range) {
         return;
       }
-      const bar = document.createElement("div");
-      bar.className = "general-schedule-task-bar";
-      bar.style.gridColumn = `${range.start} / span ${range.span}`;
-      bar.style.gridRow = String(index + 1);
-      bar.title = [task.wbs, task.name].filter(Boolean).join(" — ");
-      const label = document.createElement("span");
-      label.textContent = task.wbs ? `${task.wbs} — ${task.name}` : task.name;
-      bar.appendChild(label);
-      element.appendChild(bar);
+      const label = summaryOnly
+        ? "Cronograma da frente"
+        : (task.wbs ? `${task.wbs} — ${task.name}` : task.name);
+      timeline.appendChild(createTaskBar(task, index + 1, range, label));
     });
-    return element;
+    return timeline;
+  }
+
+  function replaceWorkstreamSlots(label, tasks, dates) {
+    const slots = [];
+    let cursor = label.nextElementSibling;
+    while (
+      cursor
+      && slots.length < calendarDayCount
+      && cursor.classList.contains("workstream-calendar-slot")
+    ) {
+      slots.push(cursor);
+      cursor = cursor.nextElementSibling;
+    }
+    if (slots.length !== calendarDayCount) {
+      return;
+    }
+
+    const timeline = createTimeline(tasks, dates, true);
+    slots[0].replaceWith(timeline);
+    slots.slice(1).forEach((slot) => slot.remove());
+
+    const status = label.querySelector(".workstream-board-link span");
+    if (status) {
+      status.textContent = tasks.length
+        ? `${tasks.length} tarefas no período`
+        : "Cronograma relacionado";
+    }
+  }
+
+  function replaceGeneralSchedule(unrelatedScheduleUris, dates) {
+    const label = document.querySelector(
+      "[data-workstream-board] .general-schedule-label",
+    );
+    const timeline = document.querySelector(
+      "[data-workstream-board] .general-schedule-timeline:not(.workstream-schedule-timeline)",
+    );
+    if (!label || !timeline) {
+      return;
+    }
+
+    if (!unrelatedScheduleUris.length) {
+      label.remove();
+      timeline.remove();
+      return;
+    }
+
+    const tasks = tasksInWindow(
+      unrelatedScheduleUris.flatMap((scheduleUri) => scheduleTasks(scheduleUri)),
+      dates,
+    );
+    const subtitle = label.querySelector("span");
+    if (subtitle) {
+      subtitle.textContent = tasks.length === 1
+        ? "1 tarefa no período"
+        : `${tasks.length} tarefas no período`;
+    }
+    timeline.replaceWith(createTimeline(tasks, dates, false));
   }
 
   function render() {
@@ -249,15 +348,25 @@
     if (!board || !Object.keys(relationMap).length) {
       return;
     }
+
     const dates = calendarWindow();
-    const uris = workstreamUris();
-    const labels = Array.from(board.querySelectorAll(".workstream-board-workstream"));
+    if (dates.length !== calendarDayCount) {
+      throw new Error("A janela do calendário deve conter 15 dias corridos.");
+    }
+
+    const workstreamIds = workstreamUris();
+    const labels = Array.from(
+      board.querySelectorAll(".workstream-board-workstream"),
+    );
+    const relatedSet = new Set();
+
     labels.forEach((label, index) => {
-      const workstreamUri = uris[index];
+      const workstreamUri = workstreamIds[index];
       if (!workstreamUri) {
         return;
       }
       const schedules = relatedScheduleUris(workstreamUri);
+      schedules.forEach((scheduleUri) => relatedSet.add(scheduleUri));
       if (!schedules.length) {
         return;
       }
@@ -265,25 +374,13 @@
         schedules.flatMap((scheduleUri) => scheduleTasks(scheduleUri)),
         dates,
       );
-      const slots = [];
-      let cursor = label.nextElementSibling;
-      while (cursor && slots.length < 11 && cursor.classList.contains("workstream-calendar-slot")) {
-        slots.push(cursor);
-        cursor = cursor.nextElementSibling;
-      }
-      if (slots.length !== 11) {
-        return;
-      }
-      const replacement = timeline(tasks, dates);
-      slots[0].replaceWith(replacement);
-      slots.slice(1).forEach((slot) => slot.remove());
-      const status = label.querySelector(".workstream-board-link span");
-      if (status) {
-        status.textContent = tasks.length
-          ? `${tasks.length} tarefas no período`
-          : "Cronograma relacionado";
-      }
+      replaceWorkstreamSlots(label, tasks, dates);
     });
+
+    replaceGeneralSchedule(
+      allScheduleUris().filter((scheduleUri) => !relatedSet.has(scheduleUri)),
+      dates,
+    );
   }
 
   if (document.readyState === "loading") {
