@@ -391,7 +391,6 @@
       }
       renderWorkStream(record);
       setStatus("Dados incorporados à página.", "is-ready");
-      openButton.textContent = "Carregar arquivos";
       return true;
     } catch (error) {
       const message = error instanceof Error ? error.message : String(error);
