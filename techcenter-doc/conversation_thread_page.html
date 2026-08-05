@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>InfoBIM Conversation Thread — Visual Mock</title>
+  <style>
+    :root {
+      --bg: #09101d;
+      --surface: rgba(14, 22, 38, .9);
+      --surface-strong: #172338;
+      --line: rgba(148, 163, 184, .2);
+      --text: #e5eefc;
+      --muted: #97a7bf;
+      --accent: #67e8f9;
+      --accent-strong: #38bdf8;
+      --green: #22c55e;
+      --amber: #fbbf24;
+      --red: #fb7185;
+      --shadow: 0 28px 70px rgba(0, 0, 0, .36);
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      color: var(--text);
+      font-family: "Segoe UI", Arial, sans-serif;
+      background:
+        radial-gradient(circle at top left, rgba(56, 189, 248, .18), transparent 28%),
+        radial-gradient(circle at bottom right, rgba(103, 232, 249, .1), transparent 22%),
+        linear-gradient(180deg, #08101c, #060b14);
+    }
+    body::before {
+      content: "";
+      position: fixed;
+      inset: 0;
+      pointer-events: none;
+      background-image:
+        linear-gradient(rgba(255,255,255,.035) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255,255,255,.035) 1px, transparent 1px);
+      background-size: 28px 28px;
+      mask-image: linear-gradient(180deg, #000, transparent);
+    }
+    button { font: inherit; }
+    .shell { position: relative; max-width: 1500px; margin: auto; padding: 28px; }
+    .card {
+      border: 1px solid var(--line);
+      border-radius: 28px;
+      background: var(--surface);
+      box-shadow: var(--shadow);
+      backdrop-filter: blur(18px);
+    }
+    .hero { padding: 26px 30px 30px; }
+    .brand { display: flex; align-items: center; gap: 18px; }
+    .logo {
+      width: 84px; height: 84px; object-fit: contain; padding: 8px;
+      border-radius: 18px; background: rgba(255,255,255,.04);
+    }
+    .brand-copy { display: grid; gap: 10px; }
+    .eyebrow {
+      display: inline-flex; align-items: center; gap: 10px; width: fit-content;
+      padding: 10px 15px; border-radius: 999px;
+      color: var(--accent); background: rgba(103,232,249,.12);
+      font-size: .8rem; font-weight: 800; letter-spacing: .09em; text-transform: uppercase;
+    }
+    .eyebrow::before { content: ""; width: 8px; height: 8px; border-radius: 50%; background: currentColor; }
+    .project { color: rgba(229,238,252,.68); font: .82rem Consolas, monospace; }
+    h1 { margin: 24px 0 8px; font-size: clamp(2.6rem, 6vw, 5rem); line-height: .95; letter-spacing: -.055em; }
+    .lead { margin: 0; max-width: 78ch; color: var(--muted); line-height: 1.6; }
+    .statusbar {
+      display: flex; align-items: center; justify-content: space-between; gap: 18px;
+      margin: 16px 0 22px; padding: 12px 16px;
+    }
+    .status { display: flex; align-items: center; gap: 10px; font-weight: 750; }
+    .status i { width: 11px; height: 11px; border-radius: 50%; background: var(--green); box-shadow: 0 0 0 7px rgba(34,197,94,.13); }
+    .ghost-button {
+      color: var(--text); border: 1px solid rgba(103,232,249,.28);
+      background: rgba(103,232,249,.06); border-radius: 999px; padding: 10px 16px;
+      font-weight: 750; cursor: pointer;
+    }
+    .tabs {
+      display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px;
+      padding: 6px; margin-bottom: 18px;
+    }
+    .tab {
+      border: 1px solid transparent; border-radius: 18px; padding: 13px 18px;
+      color: var(--muted); background: transparent; font-weight: 800; cursor: pointer;
+    }
+    .tab:hover { color: var(--text); }
+    .tab[aria-selected="true"] {
+      color: var(--accent); border-color: rgba(103,232,249,.35);
+      background: rgba(103,232,249,.11);
+    }
+    .view { display: none; }
+    .view.is-active { display: grid; grid-template-columns: minmax(300px,.72fr) minmax(0,1.28fr); gap: 18px; }
+    .panel { overflow: hidden; }
+    .panel-head {
+      display: flex; align-items: center; justify-content: space-between; gap: 12px;
+      padding: 18px 20px; border-bottom: 1px solid var(--line);
+    }
+    .panel-head h2 { margin: 0; font-size: 1rem; }
+    .panel-kicker { color: var(--muted); font-size: .75rem; font-weight: 800; letter-spacing: .08em; text-transform: uppercase; }
+    .panel-body { padding: 18px; }
+    .cluster-list, .annotation-list { display: grid; gap: 12px; }
+    .cluster, .annotation {
+      width: 100%; text-align: left; border: 1px solid var(--line); border-radius: 18px;
+      background: rgba(255,255,255,.025); color: var(--text); padding: 15px; cursor: pointer;
+    }
+    .cluster:hover, .annotation:hover, .cluster.is-active {
+      border-color: rgba(103,232,249,.42); background: rgba(103,232,249,.08);
+    }
+    .cluster strong, .annotation strong { display: block; margin-bottom: 7px; }
+    .meta { color: var(--muted); font-size: .82rem; line-height: 1.45; }
+    .count { float: right; color: var(--accent); }
+    .timeline { position: relative; display: grid; gap: 16px; padding-left: 28px; }
+    .timeline::before { content: ""; position: absolute; left: 8px; top: 8px; bottom: 8px; width: 2px; background: var(--line); }
+    .event { position: relative; padding: 16px; border-radius: 18px; border: 1px solid var(--line); background: rgba(255,255,255,.025); }
+    .event::before { content: ""; position: absolute; left: -27px; top: 21px; width: 12px; height: 12px; border-radius: 50%; background: var(--accent); box-shadow: 0 0 0 5px rgba(103,232,249,.12); }
+    .event time { color: var(--accent); font-size: .78rem; font-weight: 800; }
+    .people { display: grid; grid-template-columns: repeat(2, minmax(0,1fr)); gap: 14px; }
+    .person { padding: 18px; border-radius: 20px; border: 1px solid var(--line); background: rgba(255,255,255,.025); }
+    .avatar { display: grid; place-items: center; width: 44px; height: 44px; border-radius: 50%; color: #06202a; background: var(--accent); font-weight: 900; }
+    .person-head { display: flex; align-items: center; gap: 12px; margin-bottom: 14px; }
+    .person h3 { margin: 0 0 3px; font-size: 1rem; }
+    .detail-title { margin: 0 0 8px; font-size: 1.35rem; }
+    .detail-text { color: var(--text); line-height: 1.65; }
+    .chips { display: flex; flex-wrap: wrap; gap: 8px; margin: 16px 0; }
+    .chip { padding: 7px 10px; border: 1px solid var(--line); border-radius: 999px; color: var(--muted); font-size: .78rem; }
+    .source {
+      display: flex; justify-content: space-between; gap: 12px; padding: 14px;
+      border-radius: 16px; background: rgba(103,232,249,.07); border: 1px solid rgba(103,232,249,.18);
+    }
+    .source b { color: var(--accent); }
+    .mock-note { margin-top: 18px; color: var(--muted); text-align: center; font-size: .78rem; }
+    @media (max-width: 900px) {
+      .view.is-active { grid-template-columns: 1fr; }
+      .people { grid-template-columns: 1fr; }
+    }
+    @media (max-width: 620px) {
+      .shell { padding: 14px; }
+      .hero { padding: 20px; }
+      .brand { align-items: flex-start; }
+      .logo { width: 66px; height: 66px; }
+      .tabs { grid-template-columns: 1fr; }
+      .statusbar { align-items: flex-start; flex-direction: column; }
+    }
+  </style>
+</head>
+<body>
+  <main class="shell">
+    <header class="card hero">
+      <div class="brand">
+        <img class="logo" src="../../src/infobim/view/plugin/asset/logo.png" alt="InfoBIM">
+        <div class="brand-copy">
+          <span class="eyebrow">InfoBIM Conversation Thread</span>
+          <span class="project">Real Estate Brazil (Official) — Obras — Exp LabSea2025</span>
+        </div>
+      </div>
+      <h1>Instalação do eletroímã da porta</h1>
+      <p class="lead">Uma thread reúne contexto, deliberação, execução e mensagens sobre uma questão operacional, preservando participantes, decisões e responsabilidades.</p>
+    </header>
+    <section class="card statusbar">
+      <div class="status"><i aria-hidden="true"></i><span>12 mensagens organizadas</span></div>
+      <button class="ghost-button" type="button">Voltar ao WorkStream</button>
+    </section>
+    <nav class="card tabs" aria-label="Dimensões da Conversation Thread" role="tablist">
+      <button class="tab" type="button" role="tab" aria-selected="true" data-view="context">Contexto</button>
+      <button class="tab" type="button" role="tab" aria-selected="false" data-view="deliberation">Deliberação</button>
+      <button class="tab" type="button" role="tab" aria-selected="false" data-view="execution">Execução</button>
+    </nav>
+    <section class="view is-active" data-panel="context">
+      <aside class="card panel">
+        <header class="panel-head"><div><span class="panel-kicker">Context</span><h2>Subject, Topic e Trigger</h2></div></header>
+        <div class="panel-body cluster-list">
+          <button class="cluster is-active"><strong>Subject</strong><span class="meta">Controle de acesso da porta do Novo LabSea</span></button>
+          <button class="cluster"><strong>Topic</strong><span class="meta">Instalação de eletroímã e integração elétrica</span></button>
+          <button class="cluster"><strong>Trigger</strong><span class="meta">Necessidade identificada durante a vistoria de campo</span></button>
+        </div>
+      </aside>
+      <article class="card panel">
+        <header class="panel-head"><div><span class="panel-kicker">Participants</span><h2>Participantes da thread</h2></div><span class="meta">3 participantes</span></header>
+        <div class="panel-body people">
+          <div class="person"><div class="person-head"><span class="avatar">EM</span><div><h3>Elias Magalhães</h3><span class="meta">Engenharia / Coordenação</span></div></div><p class="detail-text">Abriu a questão e consolidou os requisitos de instalação.</p></div>
+          <div class="person"><div class="person-head"><span class="avatar">MC</span><div><h3>Mariana Costa</h3><span class="meta">Fiscalização</span></div></div><p class="detail-text">Registrou a interferência e as condições encontradas em campo.</p></div>
+        </div>
+      </article>
+    </section>
+    <section class="view" data-panel="deliberation">
+      <aside class="card panel">
+        <header class="panel-head"><div><span class="panel-kicker">Deliberation</span><h2>Elementos da discussão</h2></div></header>
+        <div class="panel-body annotation-list">
+          <button class="cluster is-active"><span class="count">1</span><strong>Issue</strong><span class="meta">A porta precisa permanecer travada sem comprometer a rota de fuga.</span></button>
+          <button class="cluster"><span class="count">2</span><strong>Proposals</strong><span class="meta">Eletroímã no marco ou fechadura eletromagnética integrada.</span></button>
+          <button class="cluster"><span class="count">1</span><strong>Decision</strong><span class="meta">Adotar eletroímã com liberação vinculada ao sistema de emergência.</span></button>
+        </div>
+      </aside>
+      <article class="card panel">
+        <header class="panel-head"><div><span class="panel-kicker">Linha da deliberação</span><h2>Evolução da decisão</h2></div></header>
+        <div class="panel-body timeline">
+          <div class="event"><time>31 JUL 2026 · 15:42</time><h3>Decisão registrada</h3><p class="meta">Adotar eletroímã com fail-safe e integração ao sistema de emergência.</p></div>
+          <div class="event"><time>30 JUL 2026 · 10:18</time><h3>Interferência identificada</h3><p class="meta">Espaço disponível no marco precisa ser validado antes da compra.</p></div>
+          <div class="event"><time>28 JUL 2026 · 17:06</time><h3>Necessidade levantada</h3><p class="meta">Ausência de dispositivo de retenção identificada durante a vistoria.</p></div>
+        </div>
+      </article>
+    </section>
+    <section class="view" data-panel="execution">
+      <aside class="card panel">
+        <header class="panel-head"><div><span class="panel-kicker">Execution</span><h2>Ações e responsáveis</h2></div></header>
+        <div class="panel-body annotation-list">
+          <button class="cluster is-active"><span class="count">Em andamento</span><strong>Validar espaço no marco</strong><span class="meta">Responsável: Mariana Costa · Prazo: 06 ago 2026</span></button>
+          <button class="cluster"><span class="count">Pendente</span><strong>Confirmar alimentação elétrica</strong><span class="meta">Responsável: Carlos Almeida · Prazo: 07 ago 2026</span></button>
+          <button class="cluster"><span class="count">Pendente</span><strong>Emitir liberação executiva</strong><span class="meta">Responsável: Elias Magalhães · Prazo: 08 ago 2026</span></button>
+        </div>
+      </aside>
+      <article class="card panel">
+        <header class="panel-head"><div><span class="panel-kicker">Status</span><h2>Execução da thread</h2></div><span class="meta">1 de 3 ações iniciada</span></header>
+        <div class="panel-body people">
+          <div class="person"><div class="person-head"><span class="avatar">MC</span><div><h3>Validar espaço no marco</h3><span class="meta">Em andamento</span></div></div><p class="detail-text">Conferir dimensões disponíveis e registrar fotografia com escala.</p></div>
+          <div class="person"><div class="person-head"><span class="avatar">CA</span><div><h3>Confirmar alimentação</h3><span class="meta">Pendente</span></div></div><p class="detail-text">Verificar tensão, circuito disponível e integração com o sistema de emergência.</p></div>
+        </div>
+      </article>
+    </section>
+    <section class="card panel" style="margin-top:18px">
+      <header class="panel-head"><div><span class="panel-kicker">Mensagem selecionada</span><h2 class="detail-title">Eletroímã precisa liberar em condição de emergência</h2></div><span class="meta">31 jul 2026 · 15:42</span></header>
+      <div class="panel-body">
+        <p class="detail-text">A solução deve operar em fail-safe e ser liberada automaticamente quando houver atuação do sistema de emergência.</p>
+        <div class="chips"><span class="chip">Elias Magalhães</span><span class="chip">Decision</span><span class="chip">Controle de acesso</span><span class="chip">Em execução</span></div>
+        <div class="source"><span><b>Fonte</b><br>ConversationThread: eletroima-porta-labsea</span><span class="meta">WorkStream: Infraestrutura do Novo LabSea</span></div>
+      </div>
+    </section>
+    <p class="mock-note">Mock visual estático preparado para ConversationThread → Context, Deliberation, Execution e Messages.</p>
+  </main>
+  <script>
+    const tabs = [...document.querySelectorAll("[data-view]")];
+    const panels = [...document.querySelectorAll("[data-panel]")];
+    tabs.forEach((tab) => {
+      tab.addEventListener("click", () => {
+        tabs.forEach((item) => item.setAttribute("aria-selected", String(item === tab)));
+        panels.forEach((panel) => panel.classList.toggle("is-active", panel.dataset.panel === tab.dataset.view));
+      });
+    });
+  </script>
+</body>
+</html>
