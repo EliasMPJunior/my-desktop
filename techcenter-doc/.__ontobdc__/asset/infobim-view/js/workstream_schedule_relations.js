@@ -1,0 +1,1 @@
+window.infoBimWorkStreamScheduleRelations = {"urn:infobim:workstream/7c7e9d91-046d-5bcb-ad09-a04c5821c6de":["urn:infobim:ifc-work-schedule/69240f56-8e7a-401a-93cc-c43e12d9c72e"]};
