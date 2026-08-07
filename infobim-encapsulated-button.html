@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>InfoBIM encapsulated button</title>
+</head>
+<body>
+
+  <infobim-button action="openProject">Abrir projeto</infobim-button>
+
+  <script>
+    (() => {
+      class InfoBIMButton extends HTMLElement {
+        #button;
+
+        constructor() {
+          super();
+
+          const shadow = this.attachShadow({ mode: 'closed' });
+
+          shadow.innerHTML = `
+            <style>
+              :host {
+                all: initial;
+                display: inline-block;
+                box-sizing: border-box;
+                contain: content;
+              }
+
+              *, *::before, *::after {
+                box-sizing: border-box;
+              }
+
+              button {
+                all: initial;
+                box-sizing: border-box;
+
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+
+                min-height: 50px;
+                padding: 13px 20px;
+
+                border: 1px solid rgba(103, 232, 249, 0.48);
+                border-radius: 999px;
+
+                color: #06111d;
+                background: linear-gradient(135deg, #67e8f9, #38bdf8);
+                box-shadow:
+                  0 14px 34px rgba(56, 189, 248, 0.20),
+                  inset 0 1px rgba(255, 255, 255, 0.42);
+
+                font-family: "Segoe UI", Inter, system-ui, -apple-system,
+                  BlinkMacSystemFont, sans-serif;
+                font-size: 16px;
+                font-weight: 850;
+                font-style: normal;
+                line-height: normal;
+                text-align: center;
+                text-decoration: none;
+                letter-spacing: normal;
+                text-transform: none;
+
+                cursor: pointer;
+                user-select: none;
+                -webkit-user-select: none;
+                -webkit-tap-highlight-color: transparent;
+
+                transition: transform 0.16s ease, filter 0.16s ease;
+              }
+
+              button:hover,
+              button:focus-visible {
+                transform: translateY(-2px);
+                filter: brightness(1.06);
+              }
+
+              button:focus-visible {
+                outline: 2px solid #67e8f9;
+                outline-offset: 3px;
+              }
+
+              button:active {
+                transform: translateY(0);
+              }
+
+              button:disabled {
+                cursor: default;
+                opacity: 0.48;
+                transform: none;
+                filter: none;
+              }
+            </style>
+
+            <button type="button" part="none">
+              <slot></slot>
+            </button>
+          `;
+
+          this.#button = shadow.querySelector('button');
+
+          this.#button.addEventListener('click', () => {
+            this.dispatchEvent(new CustomEvent('infobim-action', {
+              bubbles: true,
+              composed: true,
+              detail: {
+                action: this.getAttribute('action') || null
+              }
+            }));
+          });
+        }
+
+        static get observedAttributes() {
+          return ['disabled'];
+        }
+
+        connectedCallback() {
+          this.#syncDisabled();
+        }
+
+        attributeChangedCallback() {
+          this.#syncDisabled();
+        }
+
+        #syncDisabled() {
+          if (this.#button) {
+            this.#button.disabled = this.hasAttribute('disabled');
+          }
+        }
+      }
+
+      customElements.define('infobim-button', InfoBIMButton);
+
+      // Exemplo de escuta do evento sem acoplar o componente à página.
+      document.addEventListener('infobim-action', (event) => {
+        console.log('InfoBIM action:', event.detail);
+      });
+    })();
+  </script>
+
+</body>
+</html>
