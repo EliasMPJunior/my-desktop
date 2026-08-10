@@ -45,6 +45,60 @@ Ao longo da recuperação, Tommy passou a modificar a nave segundo suas própria
 
 ---
 
+## A conversão para o espaço
+
+Um dos principais motivos pelos quais a E2-PTR **nunca voltou a ser uma boa racer** foi o próprio Tommy.
+
+Durante a reconstrução, ele entrou em hiperfoco com uma possibilidade que não fazia parte do plano econômico original: **fazer a nave alcançar e operar no espaço**.
+
+Recursos que deveriam ter sido investidos em desempenho de corrida foram desviados para sistemas como:
+
+- pressurização;
+- controle térmico;
+- reforços estruturais;
+- controle de atitude fora da atmosfera;
+- navegação espacial;
+- suporte de vida;
+- distribuição de potência adequada a operação prolongada fora do regime de corrida;
+- adaptações de propulsão e estabilidade.
+
+Tommy não fez isso porque já tivesse uma carreira espacial planejada. Ele fez porque percebeu que talvez fosse possível.
+
+A nave ficou mais versátil, mais complexa e mais interessante tecnicamente — e menos capaz de cumprir a função que deveria pagar sua própria dívida.
+
+A E2-PTR materializa uma característica central de Tommy: ele frequentemente transforma uma solução econômica simples em um projeto tecnicamente fascinante que cria novos problemas.
+
+---
+
+## A primeira fuga para o espaço
+
+Tommy **nunca tinha ido ao espaço** antes de fugir dos credores.
+
+Quando a cobrança se tornou perigosa demais, ele entrou na E2-PTR e decolou sem saber com segurança se todas as modificações realmente seriam suficientes para levar a nave para fora da atmosfera.
+
+Essa foi a primeira operação espacial real da nave.
+
+Não houve campanha de testes completa, certificação ou validação tranquila.
+
+Havia apenas a necessidade de sair dali.
+
+Tommy sabia que a nave possuía potência e sistemas que, em teoria, poderiam funcionar. Não sabia se funcionariam juntos sob carga real.
+
+A subida deve ser tratada como um evento físico e precário, não como decolagem heroica perfeita:
+
+- vibrações novas;
+- carga térmica subindo;
+- alertas de pressurização;
+- elementos estruturais trabalhando fora do regime original;
+- sistemas recém-adaptados entrando em operação pela primeira vez;
+- Bug contestando continuamente a margem de segurança.
+
+Quando o ruído atmosférico finalmente desaparece e Tommy vê a curvatura do planeta, o momento deve carregar simultaneamente medo, perda e fascínio.
+
+A primeira vez em que Tommy descobre o espaço é também o momento em que deixa para trás a vida que conhecia.
+
+---
+
 ## Relação visual com o X-Wing
 
 Tommy redesenhou quatro estruturas móveis de modo que, em determinada configuração, a silhueta da E2-PTR Racer lembre um X-Wing.
@@ -100,11 +154,13 @@ Tommy sabe de cor:
 - como a nave reage com três motores;
 - como ela se comporta em diferentes configurações.
 
-A nave não é apenas transporte. Ela é o resultado material de dívida, sonho, fracasso, competência técnica e insistência.
+A nave não é apenas transporte. Ela é o resultado material de dívida, sonho, fracasso, competência técnica, hiperfoco e insistência.
 
 Ela deveria ter morrido como racer.
 
 Tommy fez com que continuasse voando.
+
+Mas, ao fazê-la capaz de ir muito além das pistas para as quais nasceu, também ajudou a destruir o plano que deveria estabilizar sua vida.
 
 ---
 
@@ -116,6 +172,7 @@ A E2-PTR Racer compartilha o mesmo eixo temático dos personagens:
 - foi reconstruída com peças, improvisos e soluções fora do padrão;
 - funciona apesar de não estar conforme;
 - carrega marcas de histórias anteriores;
-- é difícil de compreender para quem olha apenas especificação e diagnóstico de fábrica.
+- é difícil de compreender para quem olha apenas especificação e diagnóstico de fábrica;
+- está sempre aparentemente a um conserto de finalmente ficar pronta, mas nunca chega a uma condição definitiva.
 
 Tommy, Bug e a E2-PTR Racer formam um trio de coisas remendadas que não cabem facilmente em categorias padronizadas, mas que desenvolveram competências próprias justamente por causa dessa trajetória.
