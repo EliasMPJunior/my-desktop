@@ -187,6 +187,107 @@ Não existe magia envolvida.
 
 ---
 
+## Família
+
+Tommy **não é sozinho no mundo**.
+
+Ele teve uma vida familiar concreta antes de fugir: esposa e filhos permaneceram no planeta natal enquanto ele desapareceu para escapar dos credores e agiotas ligados à compra da E2-PTR Racer.
+
+A fuga inicialmente não foi pensada como abandono definitivo. Tommy imaginava que resolveria a situação, pagaria a dívida e voltaria.
+
+Isso nunca aconteceu.
+
+O tempo passou. Sua esposa precisou seguir a própria vida e acabou se casando com outra pessoa.
+
+O novo marido **não deve ser um antagonista**. Pelo contrário: é um sujeito decente, financeiramente estável, trata bem os filhos e não tenta apagar Tommy da vida deles. Isso torna a situação mais difícil para Tommy porque não existe um vilão conveniente a quem atribuir a perda de seu antigo lugar na família.
+
+Os filhos estão bem cuidados e materialmente seguros.
+
+Tommy mantém contato quando consegue e volta para vê-los sempre que as circunstâncias permitem, especialmente no **Dia da Vida**. Essa volta recorrente deve funcionar quase como um ritual pessoal: por mais instável que esteja sua vida, ele tenta aparecer.
+
+O problema é que seus credores também sabem disso.
+
+Assim, o Dia da Vida pode carregar simultaneamente afeto, culpa, humor e risco: Tommy tenta reencontrar os filhos enquanto pessoas interessadas em cobrar antigas dívidas sabem que aquele é um dos poucos momentos previsíveis de sua agenda.
+
+---
+
+## A primeira vez no espaço
+
+Tommy **nunca havia ido ao espaço** antes de fugir dos credores.
+
+A E2-PTR ainda era uma racer modificada e ele sequer tinha certeza de que a nave suportaria uma saída real da atmosfera.
+
+Quando a situação ficou insustentável, ele decolou mesmo assim.
+
+Sua primeira ida ao espaço não foi uma aventura planejada, uma viagem de formação ou uma escolha heroica. Foi uma fuga.
+
+Ele deixou o planeta sem saber com segurança se a nave seria capaz de:
+
+- sustentar subida até o espaço;
+- manter pressurização;
+- lidar com carga térmica e estrutural;
+- operar por tempo suficiente fora da atmosfera;
+- voltar a pousar depois.
+
+Essa experiência deve permanecer como memória central: o pior momento de sua vida coincidiu com a primeira vez em que viu o planeta de fora.
+
+---
+
+## Hiperfoco e autossabotagem funcional
+
+Um dos motivos pelos quais Tommy nunca conseguiu devolver a E2-PTR ao desempenho de uma racer competitiva é que ele desviou recursos do objetivo original para uma obsessão técnica nova: **fazer a nave ir ao espaço**.
+
+Isso revela uma característica importante do personagem.
+
+Tommy não costuma fracassar por falta de capacidade. Muitas vezes ele fracassa porque encontra uma possibilidade técnica mais interessante do que a prioridade que deveria estar resolvendo.
+
+O plano econômico era simples:
+
+1. comprar a racer destruída;
+2. reconstruí-la;
+3. fazê-la competir novamente;
+4. gerar dinheiro;
+5. pagar a dívida;
+6. estabilizar a vida familiar.
+
+Mas, durante a reconstrução, Tommy passou a investir em modificações que tornavam a nave mais capaz fora das pistas e menos eficiente como solução para o problema que deveria resolver.
+
+A E2-PTR acabou se tornando **mais interessante e mais versátil**, mas menos capaz de cumprir a função econômica que justificara sua compra.
+
+---
+
+## Sempre quase resolvendo
+
+Tommy não possui um passado dividido entre “fase ruim” e “vida resolvida”.
+
+Ele **nunca resolve completamente a vida**.
+
+Seu padrão recorrente é estar sempre muito perto de resolver tudo e então perder a posição conquistada, por fatores externos, escolhas próprias ou uma combinação dos dois.
+
+Ele está constantemente:
+
+- quase pagando a dívida;
+- quase conseguindo estabilidade;
+- quase recuperando a racer;
+- quase voltando para a família;
+- quase conseguindo um grande trabalho;
+- quase entrando para uma carreira como piloto;
+- quase resolvendo o defeito dos 72%.
+
+Esse “quase” deve ser parte estrutural do personagem, não simples azar episódico.
+
+Em muitos casos, Tommy contribui para a própria instabilidade: investe dinheiro que deveria preservar, aceita uma oportunidade improvável, modifica um sistema que estava suficientemente bom, persegue uma possibilidade técnica nova ou aposta que conseguirá resolver depois.
+
+Ele sabe parcialmente que vive assim, mas evita encarar o padrão de frente.
+
+Uma formulação possível para o personagem é:
+
+> **Tommy Bob está sempre a uma solução de resolver tudo.**
+
+Só que a próxima solução frequentemente cria o próximo problema.
+
+---
+
 ## Relação com a Aliança Rebelde
 
 Tommy chega à Aliança Rebelde num momento em que o alto comando está tentando desesperadamente transformar células, forças locais, pilotos de origens diferentes e equipamentos heterogêneos em uma força militar coordenada.
@@ -213,6 +314,8 @@ Ele precisa descobrir que:
 - entender profundamente uma máquina não equivale a dominar doutrina militar;
 - improvisação é valiosa, mas pode ser perigosa quando todos precisam agir de maneira previsível;
 - padronização é necessária, mas também pode excluir conhecimento útil produzido fora dela;
-- sua identidade como mecânico não é um degrau inferior rumo a virar piloto — é parte do que poderá torná-lo um piloto diferente.
+- sua identidade como mecânico não é um degrau inferior rumo a virar piloto — é parte do que poderá torná-lo um piloto diferente;
+- problemas humanos não possuem necessariamente uma configuração final estável como máquinas;
+- algumas partes da vida não podem ser “consertadas” apenas com a próxima solução técnica.
 
 O personagem funciona melhor quando **competência, procedimento e improvisação entram em conflito sem que nenhum deles seja tratado como resposta universal**.
