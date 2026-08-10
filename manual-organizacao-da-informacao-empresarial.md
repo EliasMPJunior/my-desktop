@@ -1,7 +1,7 @@
 # Manual de Organização da Informação Empresarial
 
-**Versão:** 1.0  
-**Data:** 03/08/2026  
+**Versão:** 1.1  
+**Data:** 10/08/2026  
 **Objetivo:** estabelecer uma estrutura empresarial simples de navegar, semanticamente coerente e sustentável para organizar documentos, dados e conhecimento.
 
 ---
@@ -88,6 +88,28 @@ Area/
 ├── 07_Decisoes_e_Licoes_Aprendidas/
 └── 90_Arquivo/
 ```
+
+### 3.1 Convenção transversal de Triage
+
+Sempre que um contexto possuir uma pasta de triagem, ela deve ser denominada **`00_Triage`** e ocupar a primeira posição da estrutura daquele contexto.
+
+`00_Triage` é uma **área de entrada e classificação temporária**: recebe materiais recém-chegados, ainda não analisados ou cuja localização canônica ainda não foi determinada. Depois da triagem, o conteúdo deve ser classificado e movido para a pasta correspondente ao seu contexto empresarial.
+
+A existência de `00_Triage` não significa que toda área precise obrigatoriamente de uma triagem própria. A regra é: **se houver Triage, Triage é sempre `00_Triage`**.
+
+Não usar `00_Triage` como arquivo permanente, depósito genérico ou substituto de classificação.
+
+Exemplo:
+
+```text
+Dossie_ou_Projeto/
+├── 00_Triage/
+├── 01_Contexto/
+├── 02_Planejamento/
+└── ...
+```
+
+**Fundamentação:** o uso de uma zona de entrada controlada preserva a separação entre material ainda não classificado e registros já contextualizados, sem alterar a localização canônica final definida pelos princípios da **ISO 15489-1:2016** e da análise funcional da **ISO/TR 26122:2008**.
 
 ### Significado das categorias
 
@@ -278,6 +300,8 @@ Documentos cuja função principal é comercial, financeira ou de projeto devem 
 
 ## 5.6 Projetos
 
+Em projetos ativos, `00_Triage` é obrigatório como ponto inicial de entrada de materiais ainda não classificados. As demais pastas mantêm localização semântica estável; documentos devem sair de `00_Triage` assim que forem classificados.
+
 ```text
 06_Projetos/
 ├── 00_Gestao_de_Projetos/
@@ -288,16 +312,17 @@ Documentos cuja função principal é comercial, financeira ou de projeto devem 
 │   └── Licoes_Aprendidas/
 ├── 01_Projetos_Ativos/
 │   └── PRJ-2026-001_Projeto_Alfa/
-│       ├── 00_Sobre_o_Projeto/
-│       ├── 01_Contrato_e_Escopo/
-│       ├── 02_Planejamento/
-│       ├── 03_Entradas_e_Referencias/
-│       ├── 04_Desenvolvimento/
-│       ├── 05_Entregas/
-│       ├── 06_Reunioes_e_Decisoes/
-│       ├── 07_Riscos_e_Pendencias/
-│       ├── 08_Relatorios/
-│       └── 09_Licoes_Aprendidas/
+│       ├── 00_Triage/
+│       ├── 01_Sobre_o_Projeto/
+│       ├── 02_Contrato_e_Escopo/
+│       ├── 03_Planejamento/
+│       ├── 04_Entradas_e_Referencias/
+│       ├── 05_Desenvolvimento/
+│       ├── 06_Entregas/
+│       ├── 07_Reunioes_e_Decisoes/
+│       ├── 08_Riscos_e_Pendencias/
+│       ├── 09_Relatorios/
+│       └── 10_Licoes_Aprendidas/
 ├── 02_Projetos_Suspensos/
 └── 90_Projetos_Encerrados/
 ```
@@ -548,7 +573,7 @@ Empresa/
 └── 06_Projetos/
     └── 01_Projetos_Ativos/
         └── PRJ-2026-021_Cliente_X/
-            └── 04_Desenvolvimento/
+            └── 05_Desenvolvimento/
 ```
 
 **Fundamentação:** mudança do contexto empresarial e do processo produtor conforme **ISO/TR 26122:2008** e **ISO 15489-1:2016**.
@@ -590,6 +615,7 @@ Os nomes devem revelar o conteúdo ou o processo representado.
 ### Usar
 
 ```text
+00_Triage
 Contas_a_Pagar
 Modelos_de_Proposta
 Relatorios_de_Faturamento
@@ -666,6 +692,8 @@ Cada documento ou conjunto de dados deve ter uma localização canônica. Quando
 - visualizações e consultas.
 
 Não criar cópias independentes em áreas diferentes.
+
+`00_Triage` é explicitamente uma exceção **temporária de entrada**, não uma segunda localização canônica. Após a classificação, o item deve sair da triagem e permanecer apenas em sua localização oficial.
 
 **Fundamentação:** autenticidade, integridade, confiabilidade e controle da **ISO 15489-1:2016**; relações da **ISO 23081-1:2017**; navegação transversal da **Arquitetura da Informação**.
 
@@ -779,6 +807,7 @@ Exemplos de tarefas de teste:
 | Restringir informações sensíveis | ISO/IEC 27001:2022; ISO/IEC 27002:2022 |
 | Manter uma localização canônica | ISO 15489-1:2016; ISO 23081-1:2017 |
 | Tratar status como metadado | ISO 23081-1:2017; classificação facetada |
+| Reservar `00_Triage` para entrada temporária | ISO 15489-1:2016; ISO/TR 26122:2008 |
 
 ---
 
