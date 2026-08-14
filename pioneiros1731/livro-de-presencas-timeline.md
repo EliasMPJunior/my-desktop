@@ -1,360 +1,312 @@
 # Pioneiros do Progresso 1731 — Linha do tempo do Livro de Presenças
 
-> Fonte primária desta reconstrução: exportação do grupo de WhatsApp **“Pioneiros - Somente Atvs”**, com mensagens entre 2017 e 2026. Este documento distingue cuidadosamente **o que foi efetivamente dito no grupo**, **o que aparece como prática da Loja**, **o que foi apresentado como regra/regulamento**, **o que foi confirmado por ação concreta** e **o que ainda precisa ser confirmado documentalmente junto ao GOB**.
+> Fonte primária: exportação do grupo de WhatsApp **“Pioneiros - Somente Atvs”**. Esta reconstrução distingue **fato registrado no chat**, **alegação/interpretação dos participantes**, **ação concreta de verificação**, **evidência operacional** e **documento ainda não examinado diretamente**.
 
 ## Objetivo
 
-Registrar, em ordem cronológica, como o **Livro de Presenças** aparece na história recente da Loja Pioneiros do Progresso 1731 e como a discussão evolui até a controvérsia de 2026 sobre o registro digital de frequência pelo GOB Digital, QR Code e geolocalização.
+Registrar como o Livro de Presenças aparece na história recente da Pioneiros do Progresso 1731 e como a discussão evolui até a adoção do registro digital de frequência pelo ecossistema GOB/GOB-RJ, envolvendo QR Code e geolocalização.
 
-A distinção central é esta:
+A distinção central é:
 
-- uma coisa é dizer que **o registro de presença passou a ter de existir no sistema digital do GOB**;
-- outra, bem mais forte, é afirmar que **o livro físico foi formalmente extinto**;
-- uma terceira afirmação, também diferente, é dizer que **o QR Code se tornou a única forma possível de registrar presença**.
+- **registro digital obrigatório de frequência**;
+- **uso de QR Code como uma das formas de registro**;
+- **eventual extinção formal do Livro de Presenças físico**.
 
-O próprio diálogo do grupo mostra que essas três proposições foram inicialmente misturadas e depois parcialmente separadas.
-
----
-
-## 10 de agosto de 2017 — discussão sobre as atribuições do Chanceler
-
-A primeira passagem relevante encontrada no histórico é uma discussão administrativa sobre quem deveria acompanhar presença, faltas e situação dos irmãos.
-
-Elias Aranda sustenta que caberia ao Chanceler “cobrar presença, anotar, alertar, informar”. Janilton intervém explicando que o **Chanceler cuida do livro de presenças**, informa os faltosos ao Venerável Mestre e que, a partir daí, o Hospitaleiro poderia ser acionado para saber o que ocorreu com o irmão.
-
-Na discussão, Janilton ainda destaca que **das presenças decorrem outros efeitos administrativos**, citando expressamente votar e ser votado e aumento de salário.
-
-Em seguida, é colado no grupo um trecho atribuído ao regulamento com as atribuições do Chanceler. O texto afirma que lhe compete:
-
-1. ter a seu cargo o **controle de presenças**, mantendo atualizado o índice de frequência;
-2. comunicar à Loja a quantidade de irmãos presentes;
-3. informar quais irmãos estão aptos a votar e ser votados;
-4. informar os irmãos cujas faltas excedam o limite permitido;
-5. expedir certificados de presença de visitantes;
-6. manter registros de identificação e qualificação do quadro;
-7. remeter prancha ao maçom cujas faltas excedam o limite permitido, solicitando justificativa por escrito.
-
-### Por que isso é importante
-
-Esse trecho mostra que, ao menos na compreensão administrativa praticada pela Loja naquele momento, o Livro de Presenças não era tratado como um mero caderno de assinaturas. Ele era a **fonte operacional para o controle de frequência** e, por consequência, alimentava decisões sobre direitos e situação maçônica do obreiro.
-
-Portanto, qualquer futura substituição do livro por um sistema digital não seria apenas uma troca de suporte físico por eletrônico. Estaria sendo deslocado para outro meio um **registro com efeitos administrativos concretos**.
+Essas três proposições não são equivalentes. O próprio chat inicialmente as mistura e depois as separa parcialmente.
 
 ---
 
-## 17 de agosto de 2017 — discussão sobre a confecção física do Livro de Presenças
+# Linha do tempo
 
-Poucos dias depois, o livro volta ao grupo de maneira bastante concreta.
+## 10 de agosto de 2017 — atribuições do Chanceler e efeitos da presença
 
-Marcelo Miranda informa que o Chanceler havia recuperado um Livro de Presenças produzido alguns anos antes e que o livro era ligeiramente diferente do modelo então usado pela Loja. Fotos dos dois modelos foram compartilhadas.
+Há uma discussão administrativa sobre quem acompanha presença, faltas e situação dos irmãos. Elias Aranda entende que caberia ao Chanceler “cobrar presença, anotar, alertar, informar”. Janilton explica que o **Chanceler cuida do Livro de Presenças**, informa faltosos ao Venerável Mestre e que, a partir daí, o Hospitaleiro pode verificar a situação do irmão.
 
-A discussão gira em torno de diferenças físicas e gráficas:
+Janilton ressalta ainda que **das presenças decorrem efeitos administrativos**, citando votar e ser votado e aumento de salário.
+
+Um trecho atribuído ao regulamento é colado no grupo e atribui ao Chanceler, entre outras funções:
+
+1. controle de presenças e atualização do índice de frequência;
+2. comunicação da quantidade de irmãos presentes;
+3. informação de quem está apto a votar e ser votado;
+4. informação sobre faltas acima do limite;
+5. certificados de presença para visitantes;
+6. registros de identificação e qualificação do quadro;
+7. comunicação aos irmãos com excesso de faltas.
+
+### Importância
+
+O Livro de Presenças não aparece como simples caderno de assinaturas. Ele funciona como **fonte administrativa para frequência e direitos decorrentes dela**.
+
+---
+
+## 17 de agosto de 2017 — confecção física do Livro de Presenças
+
+O grupo discute um Livro de Presenças recuperado pelo Chanceler, produzido anos antes e diferente do modelo em uso.
+
+São discutidos:
 
 - ordem das informações no cabeçalho;
-- existência ou não de numeração;
+- numeração;
 - espaço para assinatura do Chanceler;
 - folha simples ou dupla;
 - quantidade de folhas;
-- custo de confeccionar um novo exemplar.
+- custo de confeccionar novo exemplar.
 
-Marcelo observa que o novo modelo não tinha numeração nem local para assinatura do Chanceler. Flávio Bronziado reconhece que isso havia sido um erro na confecção e se dispõe a fazer outro.
+Marcelo Miranda observa que o novo modelo não tinha numeração nem espaço de assinatura do Chanceler. Flávio reconhece o erro de confecção.
 
-Em determinado momento, Marcelo afirma, com a ressalva “que eu saiba”, que **não existia legislação maçônica tratando da confecção do Livro de Presenças**. Diante do custo de produzir um novo, o grupo termina inclinando-se a usar o exemplar já pronto.
+Marcelo afirma, com a ressalva “que eu saiba”, que não conhecia legislação maçônica específica sobre a **confecção material** do Livro de Presenças.
 
-### O que essa passagem demonstra
+### Importância
 
-Em 2017 o livro era claramente entendido como:
+Em 2017 o livro era claramente:
 
-- um **artefato físico da Loja**;
-- sob responsabilidade funcional do Chanceler;
-- com características formais consideradas relevantes, inclusive assinatura e numeração;
-- mas sem que o grupo identificasse, naquele momento, uma norma específica sobre o desenho gráfico ou a encadernação do livro.
-
-Isso também reforça a diferença entre a **obrigação de controlar presença** e o **formato material específico do livro**.
+- artefato físico da Loja;
+- funcionalmente ligado ao Chanceler;
+- tratado com formalidade suficiente para se discutir numeração e assinatura;
+- distinto da obrigação mais ampla de controlar frequência.
 
 ---
 
-## 10 de julho de 2020 — presença em reunião administrativa por Zoom
+## 10 de julho de 2020 — presença em reunião administrativa remota
 
-Durante o período de reuniões remotas, aparece um caso interessante de adaptação do registro de presença.
+Durante reunião administrativa por Zoom, Elias Aranda solicita uma **lista de presença para anexar ao livro de sessões**.
 
-Elias Aranda pede ao secretário que faça uma **lista de presença para anexar ao livro de sessões**, em razão de uma reunião administrativa que seria realizada por Zoom.
+### Importância
 
-### Por que isso importa
-
-Essa passagem mostra que, diante de uma reunião em meio excepcional, a Loja já tratava o registro de presença de forma pragmática: uma lista separada poderia documentar quem participou e depois ser incorporada ao acervo documental.
-
-Não é evidência de substituição do Livro de Presenças, mas é um antecedente de **desacoplamento entre presença real e assinatura imediata em um livro físico único**.
+Já aparece uma adaptação pragmática: a presença pode ser registrada por um instrumento separado e depois incorporada ao acervo documental. Isso não extingue o Livro de Presenças, mas mostra que presença real e assinatura imediata em um único suporte físico não eram absolutamente inseparáveis.
 
 ---
 
-## 25 de junho de 2024 — o livro físico continua circulando como objeto da Loja
+## 25 de junho de 2024 — livro físico ainda em uso
 
-Após uma sessão, Leandro Trocado pergunta no grupo:
+Após uma sessão, Leandro Trocado pergunta:
 
 > “Meus irmãos, alguém ficou com o livro de presenças?”
 
-Na mensagem seguinte informa que o estandarte estava com ele.
+O livro é tratado junto de outros objetos materiais da Loja que precisavam ser guardados após a sessão.
 
-### O que isso demonstra
+### Marco seguro
 
-Em junho de 2024 o Livro de Presenças físico ainda estava claramente em uso e era tratado como um dos objetos materiais que precisavam ser guardados e transportados após a sessão.
-
-Essa passagem estabelece um **marco temporal seguro**: até pelo menos 25/06/2024, o livro físico existia e era usado pela Pioneiros.
+Até pelo menos **25/06/2024**, o Livro de Presenças físico estava em uso na Pioneiros.
 
 ---
 
-## 3 de dezembro de 2024 — assinatura do livro ainda aparece como parte natural da formalidade de sessão
+## 3 de dezembro de 2024 — assinatura física segue pressuposta
 
-Em uma conversa jocosa sobre uma eleição, Janilton descreve irmãos “assinando livro de presença” e ironiza a hipótese de alguém estar simultaneamente em casa e na Loja.
-
-Embora o trecho seja humorístico, ele pressupõe como normal e conhecida por todos a prática de **assinar fisicamente o Livro de Presenças durante a sessão**.
+Em conversa jocosa sobre eleição, Janilton menciona irmãos “assinando livro de presença”. Apesar do tom humorístico, a frase pressupõe como prática normal e reconhecida o preenchimento físico do livro.
 
 ---
 
-## 20 de agosto de 2025 — o CIM ainda é associado ao preenchimento do Livro de Presenças
+## 20 de agosto de 2025 — CIM associado ao preenchimento do livro
 
-Em uma conversa sobre o CIM de um irmão, Leandro relembra que Lauro tinha dificuldade para recordar o próprio número e só conseguia preencher o Livro de Presenças olhando o número de irmãos próximos no cadastro.
+Leandro relembra a dificuldade de Lauro para lembrar o CIM ao preencher o Livro de Presenças.
 
-### Por que isso interessa
+### Importância
 
-Além do caráter anedótico, a passagem confirma a associação entre:
+Fica registrada a associação entre:
 
-- identidade maçônica do irmão;
+- identidade do irmão;
 - CIM;
 - registro de presença.
 
-Esse vínculo reaparece em 2026 no sistema digital, quando o lançamento manual de presença passa a ser descrito como feito mediante **CIM + confirmação do irmão**.
+Esse mesmo vínculo reaparece no sistema digital em 2026, quando o lançamento administrativo é descrito como feito por CIM e confirmação.
 
 ---
 
 # A mudança de 2026
 
-## 27 de julho de 2026 — primeiro aviso de que “presenças agora são por QR”
+## 27 de julho de 2026 — primeiro aviso de presença por QR Code
 
-Janilton escreve no grupo que as **presenças agora seriam por QR do GOB**.
+Janilton informa no grupo que as presenças agora seriam por QR do GOB.
 
-Logo surge a ideia de imprimir um QR Code em placa de PVC e deixá-lo na porta do templo e com o Chanceler. A proposta é imediatamente corrigida: o grupo percebe que **não se trata de um QR Code fixo da Loja**, mas de algo obtido no GOB Digital e aparentemente relacionado a cada sessão.
+Um irmão propõe imprimir QR Code em placa de PVC e colocá-lo na porta do templo. A ideia é logo corrigida: o grupo percebe que aparentemente **não se trata de QR Code fixo da Loja**, mas de QR ligado ao sistema/sessão.
 
-Janilton afirma então que seria “trabalho para o Arnaldo Jr.”. Arnaldo Porto questiona explicitamente:
+Janilton diz que seria “trabalho para o Arnaldo Jr.”. Arnaldo Porto questiona explicitamente:
 
 > “Presença digital obrigatória? Certeza que é obrigatório isso?”
 
-### Importância
-
-Aqui começa a investigação propriamente dita. Ainda não há, nesse instante, fundamento normativo apresentado no grupo.
+Nesse instante ainda não há fundamento normativo apresentado no grupo.
 
 ---
 
-## 28 de julho de 2026, madrugada e manhã — primeiras verificações do funcionamento
+## 28 de julho de 2026 — primeiras verificações do funcionamento
 
-Janilton publica imagens e afirma que:
+Janilton publica imagens e relata que:
 
 - o MetaGOB mede frequência pelo QR Code;
-- as sessões são agendadas no sistema;
-- o QR Code parece ser um por sessão;
-- o acesso relevante aparece restrito a VM e Chanceler.
+- sessões são agendadas no sistema;
+- o QR parece ser um por sessão;
+- VM e Chanceler aparecem como perfis relevantes de acesso.
 
-Arnaldo Porto reage dizendo que a obrigatoriedade parecia absurda justamente porque poderia produzir problemas graves para Lojas pequenas.
+Arnaldo Porto começa a discutir consequências para Lojas pequenas, quórum e direitos dependentes de frequência.
 
 ---
 
-## 28 de julho de 2026, 15h55 — Arnaldo Porto liga para o GOB e confirma a obrigatoriedade
+## 28 de julho de 2026, 15h55 — Arnaldo Porto liga para o GOB
 
-Este é um dos pontos mais importantes de toda a timeline.
+Este é um dos pontos mais fortes da cronologia.
 
-Depois de haver dúvida no grupo sobre se o sistema já seria realmente obrigatório, Arnaldo Porto informa:
+Depois de dúvida sobre a obrigatoriedade, Arnaldo Porto informa:
 
 > “Liguei para o gob ... guarda dos selos ... e obrigatorio sim !!!”
 
 ### Peso da evidência
 
-Isso muda o estado da informação dentro do próprio chat.
+A partir daqui existe uma **ação concreta de verificação externa**. Segundo Arnaldo, a Guarda dos Selos confirmou por telefone a obrigatoriedade do registro digital.
 
-Até aqui havia apenas:
-
-- mensagens entre irmãos;
-- interpretação do funcionamento do sistema;
-- capturas de tela.
-
-A partir dessa ligação, existe uma **ação concreta de verificação externa**: Arnaldo Porto entra em contato com o GOB / Guarda dos Selos e relata ter recebido confirmação de que o registro digital era obrigatório.
-
-Isso **não substitui um ato normativo escrito**, mas é evidência muito mais forte do que simples boato interno.
+Isso fortalece muito a tese de **obrigatoriedade da frequência digital**, mas ainda não prova, por si só, a **extinção jurídica/formal do livro físico**.
 
 ---
 
-## 28 de julho de 2026 — caso real de falha por endereço/GPS em outra Loja
+## 28 de julho de 2026 — caso real de falha por endereço e GPS
 
-Ainda em 28/07, um participante relata uma experiência observada em outra Loja.
+Um participante relata o que ocorreu em outra Loja:
 
-Segundo ele:
-
-- a Loja havia mudado temporariamente de local em razão de reforma;
+- a Loja havia retornado a outro local após reforma;
 - o endereço cadastrado no sistema ainda apontava para Olaria;
-- os irmãos faziam check-in pelo QR Code no local real da sessão;
+- os irmãos faziam check-in por QR Code;
 - o sistema registrava **zero presença**;
-- ao tentar marcar presença, aparecia mensagem semelhante a **“fora de alcance ou raio de atuação”**;
-- o problema estaria relacionado à comparação entre GPS do celular e endereço cadastrado da Loja.
+- aparecia mensagem de “fora de alcance ou raio de atuação”;
+- o problema era associado ao GPS do celular comparado ao endereço cadastrado.
 
-### Por que esse caso é crítico
+### Importância
 
-Esse é o primeiro exemplo concreto, dentro do chat, de que a dependência de geolocalização **não é apenas uma preocupação teórica**.
+A preocupação com geolocalização deixa de ser teórica. O chat contém um **caso operacional de falso negativo de presença por inconsistência cadastral/geográfica**.
 
-O sistema pode produzir falso negativo de presença quando o cadastro institucional não corresponde ao local real da sessão.
+Isso abre questões sobre:
 
-Isso abre questões importantes:
-
-- quem pode corrigir o endereço;
-- quanto tempo leva a atualização;
-- como ficam as presenças durante o erro;
-- se existe correção retroativa;
-- se o sistema diferencia sessão temporariamente realizada em outro local;
-- quem responde administrativamente por presença zerada em razão de erro cadastral.
+- alteração de endereço;
+- sessões em local temporário;
+- correção retroativa;
+- responsabilidade por presença zerada;
+- contingência quando o sistema rejeita quem efetivamente esteve presente.
 
 ---
 
-## 29 de julho de 2026 — acesso restrito e a missão dos “Arnaldos”
+## 29 de julho de 2026 — acesso restrito e missão dos “Arnaldos”
 
-Janilton escreve em tom de emergência perguntando quem era o Chanceler de ofício. Leandro responde que era Lauro.
+Janilton pergunta em tom de emergência quem é o Chanceler de ofício. Leandro responde: Lauro.
 
-Janilton então afirma que a situação era pior do que parecia porque **somente VM e Chanceler teriam acesso ao QR Code de cada sessão**.
+Janilton afirma então que a situação era complicada porque **VM e Chanceler teriam acesso ao QR Code da sessão**.
 
-Pouco depois ele diz que Lauro precisaria ser visitado pelos **“Arnaldos”** para:
-
-- explicar o que seria internet;
-- explicar o GOB Digital;
-- conseguir a senha/acesso dele.
+Ele diz que Lauro precisaria ser visitado pelos **“Arnaldos”** para explicar internet/GOB Digital e resolver acesso/senha.
 
 ### Estado da ação
 
-A incumbência aos “Arnaldos” aparece claramente no chat.
-
-Entretanto, **não foi localizada evidência posterior de que essa visita tenha efetivamente ocorrido**.
-
-Portanto:
-
-- **ação proposta:** confirmada;
-- **execução da visita:** não comprovada no histórico analisado.
+- **Missão proposta aos Arnaldos:** comprovada pelo chat.
+- **Visita efetivamente realizada:** não foi localizada confirmação no histórico analisado.
 
 ---
 
 ## 30 de julho de 2026, 11h56 — pedido de acesso ao GOB Digital
 
-Janilton pede a Elias a senha do GOB Digital com urgência.
-
-Esse pedido antecede em menos de uma hora a grande discussão sobre o Livro de Presenças e mostra que a Loja ainda não havia resolvido **quem possuía acesso operacional suficiente para abrir/gerar a presença no sistema**.
+Janilton pede com urgência acesso/senha do GOB Digital. Isso mostra que, mesmo depois das discussões anteriores, a Loja ainda não tinha resolvido satisfatoriamente quem conseguiria executar o fluxo no sistema.
 
 ---
 
-## 30 de julho de 2026, 12h42 — nasce a formulação mais forte: “livro de presenças foi extinto”
+## 30 de julho de 2026, 12h42 — “livro de presenças foi extinto”
 
-Leandro Trocado escreve:
+Leandro escreve:
 
 > “livro de presenças foi extinto. agora é por QR Code por sessão”
 
-E logo em seguida:
+E em seguida:
 
 > “extinto pelo próprio GOB”
 
-Elias pergunta quando isso teria ocorrido e afirma não se lembrar de nenhuma prancha comunicando a mudança.
+Elias pergunta quando isso ocorreu e observa não se lembrar de prancha comunicando a mudança.
 
-### Primeiro ponto crítico
+### Estado da alegação
 
-Aqui surge a proposição:
+Aqui nasce a proposição mais forte:
 
-**Alegação A — o GOB extinguiu o Livro de Presenças.**
+**“O GOB extinguiu formalmente o Livro de Presenças.”**
 
-Apesar da confirmação telefônica de Arnaldo sobre a **obrigatoriedade do registro digital**, isso não é a mesma coisa que comprovar a **extinção formal do livro físico**.
+Ela deve ser separada daquilo que Arnaldo confirmou por telefone: **obrigatoriedade do registro digital**.
 
-Até o momento, o chat ainda não apresenta dispositivo normativo dizendo expressamente “fica extinto o Livro de Presenças” ou equivalente.
+Até o momento, ainda não foi examinado um dispositivo normativo escrito dizendo expressamente que o Livro de Presenças físico está extinto.
 
 ---
 
-## 30 de julho de 2026, 12h43 — QR Code por sessão e geolocalização por GPS
+## 30 de julho de 2026, 12h43 — QR Code por sessão e GPS
 
-Leandro explica que o QR Code seria:
+Leandro explica que:
 
-- gerado **por sessão**, não por Loja;
-- associado a limitação geográfica por **GPS na região do templo**.
+- o QR Code é por sessão, não por Loja;
+- há limitação geográfica associada ao local do templo.
 
-Elias reage dizendo ser completamente contra a medida.
+A geolocalização já estava também corroborada pelo caso operacional relatado em 28/07.
 
-### Estado da informação
-
-A existência de geolocalização passa a ser fortemente sustentada não só pela fala de Leandro, mas também pelo caso concreto relatado em 28/07 da Loja cujo endereço cadastrado estava errado e cujas presenças ficaram zeradas.
-
-Ainda falta, porém, documentação técnica oficial sobre:
+Ainda ficam abertas perguntas sobre:
 
 - raio de validação;
 - precisão;
-- retenção de localização;
-- tratamento de dados;
-- contingência;
+- armazenamento de localização;
+- política de tratamento de dados;
+- exceções;
 - correção administrativa.
 
 ---
 
-## 30 de julho de 2026, 12h44 — comunicação oficial e fim das pranchas
+## 30 de julho de 2026 — comunicação oficial e “fim das pranchas”
 
-Janilton sustenta que não existiria mais prancha para esse tipo de comunicação e que as informações agora apareceriam no site/GOB Digital/MetaGOB.
+Janilton sustenta que não existiria mais prancha para esse tipo de comunicação e que as informações seriam publicadas nos portais/sistemas do GOB.
 
-A reação de Elias — “não lembro de nenhuma prancha comunicando” — cria uma controvérsia independente da tecnologia:
+Isso gera uma questão distinta:
 
-**publicar uma obrigação em portal equivale a comunicar formalmente a Loja?**
+> **publicação em portal equivale, juridicamente/administrativamente, a comunicação formal da Loja?**
 
-Essa questão permanece sem resposta normativa no material analisado.
-
----
-
-## 30 de julho de 2026, 12h44–12h49 — discussão sobre obediência, risco e compartilhamento de credenciais
-
-Durante a discussão, vários irmãos sugerem que Elias forneça suas credenciais pessoais para que terceiros operem o sistema por ele.
-
-Leandro explica que o acesso seria necessário para obter o QR Code e que os privilégios relevantes estavam vinculados a determinados cargos.
-
-### Problema de segurança
-
-O chat revela uma questão objetiva de governança digital:
-
-**compartilhar senha pessoal para delegar função institucional destrói a rastreabilidade da autoria das operações.**
-
-Se o sistema só permite determinada ação a certos cargos, a solução correta deveria ser perfil, delegação ou substituição institucional — e não compartilhamento informal de senha.
+Essa alegação sobre a substituição das pranchas ainda não foi verificada em norma específica.
 
 ---
 
-## 30 de julho de 2026, 12h49–13h07 — QR Code não é a única forma de registrar presença
+## 30 de julho de 2026 — problema de compartilhamento de credenciais
 
-A conversa começa a corrigir a formulação inicial.
+Durante o debate, surge repetidamente a sugestão de compartilhar credenciais pessoais para que terceiros operem o sistema.
+
+### Problema de governança
+
+Se uma função é vinculada a determinado cargo, compartilhar senha pessoal:
+
+- destrói rastreabilidade de autoria;
+- mistura identidade individual com competência institucional;
+- dificulta auditoria;
+- cria risco de responsabilização indevida.
+
+A solução correta deveria ser perfil, substituição/delegação formal ou outro mecanismo institucional do sistema.
+
+---
+
+## 30 de julho de 2026, 12h49–13h07 — QR Code não é a única forma de lançar presença
+
+A própria conversa corrige a formulação “agora é tudo por QR Code”.
 
 Leandro explica que:
 
-- o QR Code serve para facilitar o registro;
-- seria possível registrar presença sem QR Code;
-- para isso a sessão precisa estar aberta no sistema;
-- VM ou Chanceler poderiam lançar irmão por irmão;
-- o lançamento seria feito utilizando CIM e confirmação.
+- QR Code facilita o registro;
+- é possível registrar presença sem QR;
+- a sessão precisa estar aberta no sistema;
+- VM ou Chanceler podem lançar irmão por irmão;
+- o lançamento é descrito como feito por CIM e confirmação.
 
-Outro participante esclarece que **a marcação feita pelo próprio irmão é que precisa ocorrer perto do local, via GPS**.
+Outro participante esclarece que a **marcação feita pelo próprio irmão** é que precisa ocorrer perto do local, por GPS.
 
-Um irmão relata ainda que, em visita à Loja Pedro Gomes em junho de 2026, já havia feito presença por QR Code.
+Um irmão relata ainda ter feito presença por QR Code em visita à Loja Pedro Gomes em junho de 2026.
 
-### Formulação mais precisa que emerge
+### Formulação mais precisa
 
-Ao final desse trecho, a interpretação mais consistente é:
-
-> **O GOB passou a exigir que a frequência seja registrada digitalmente. O QR Code é uma via de registro, mas não a única: VM ou Chanceler podem lançar presenças no sistema.**
-
-Isso é diferente de afirmar que o Livro de Presenças físico foi formalmente abolido.
+> **A frequência passou a precisar de registro digital. O QR Code é uma via de registro, mas não a única; VM ou Chanceler podem registrar presenças administrativamente no sistema.**
 
 ---
 
-## 31 de julho de 2026 — Boletim 620 entra na discussão
+## 31 de julho de 2026, 16h21 — Boletim 620 é anexado no grupo
 
-Janilton compartilha:
+O export do WhatsApp registra explicitamente:
 
 **`30072026 - Boletim 620.pdf`**
 
-Ele informa que a **página 61 de 68** traz orientação para:
+Janilton escreve que a **página 61 de 68** traz orientação para:
 
 - Venerável Mestre;
 - Secretário;
@@ -363,218 +315,256 @@ Ele informa que a **página 61 de 68** traz orientação para:
 
 usarem o **GOB Digital**.
 
-### Importância documental
+### O que o cruzamento com a pasta compartilhada mostrou
 
-É a primeira referência documental concreta mencionada no grupo logo após a controvérsia.
+Foi feita busca na pasta compartilhada fornecida para esta investigação e também no Drive conectado:
 
-Entretanto, o chat não reproduz integralmente a página 61. Portanto, ainda não é possível afirmar, apenas a partir do WhatsApp, que o Boletim 620 **extingue formalmente o Livro de Presenças**.
+- pelo nome exato `30072026 - Boletim 620.pdf`;
+- por `Boletim 620`;
+- por arquivos cujo nome contenha `620`;
+- por `30072026`;
+- por termos ligados a `GOB Digital`, `Chanceler` e à data de 30 de julho;
+- entre os PDFs diretamente contidos na pasta.
 
----
+O **arquivo físico do Boletim 620 não foi localizado no conjunto atualmente acessível**.
 
-# 13 de agosto de 2026 — o problema operacional reaparece
+Foram inspecionados falsos positivos com nomes genéricos (`1_5024285861353620011.pdf`, `file-1.pdf`, `file-2.pdf`, `70.pdf`), que se mostraram documentos não relacionados.
 
-Arnaldo Porto pergunta no grupo:
+Portanto, há uma distinção importante:
 
-- como a Loja procederia com as presenças online;
-- quem levaria/geraria o QR Code.
+- **a existência do anexo no chat e seu nome estão documentados no export**;
+- **o conteúdo integral da página 61 ainda não foi examinado**, porque o PDF correspondente não está presente, com nome identificável ou conteúdo recuperável, na pasta/Drive acessível nesta análise.
 
-Janilton responde que VM ou Chanceler precisariam resolver, afirma que já vinha avisando havia tempo e diz que todos continuavam com **zero de presença** no sistema.
-
-Também informa ter ligado para Lauro, que não dominava o uso do sistema e não demonstrou interesse em assumir o problema naquele momento.
-
-### O que isso revela
-
-Duas semanas depois da primeira discussão, a Pioneiros **ainda não havia operacionalizado corretamente o novo fluxo**.
-
-Portanto, a adoção não foi instantânea nem trivial para a Loja.
+Não é correto concluir que o boletim não existe; o correto é registrar que **o export prova que foi compartilhado, mas a cópia binária não foi recuperada no conjunto de arquivos atualmente disponível**.
 
 ---
 
-## 13 de agosto de 2026, 14h34 — QR Code efetivamente gerado e fluxo de registro descoberto
+## 31 de julho de 2026, 17h21–17h36 — novas informações operacionais após o Boletim
 
-Às 14h34, o participante identificado no export apenas como **`+55 21 98659-9640`** escreve:
+Depois da referência ao Boletim 620, um participante afirma estar usando o aplicativo havia cerca de 15 dias e elogia o **monitoramento dos percentuais de presença**, inclusive de visitas.
 
-> “Meus Irmãos, já resolvi a questão das presenças. Já gerei o QR Code, e vi aqui como registrar as presenças no site do GOB-RJ. Tudo resolvido.”
+Em seguida, aparecem três afirmações operacionais relevantes no grupo:
 
-Arnaldo Porto comemora e responde que era **“mais uma p.... resolvida”**, acrescentando que no dia seguinte explicariam tudo corretamente sobre as presenças.
+1. visitas a Lojas que ainda não estejam no sistema de QR Code ficam “invisíveis” no sistema;
+2. a **geolocalização já estaria em vigor**, e Lojas cadastradas em endereço diferente do local real teriam problemas de contabilização;
+3. segundo o participante, **49,9% de falta impediria votar e aumento de salário**.
+
+Janilton acrescenta experiência concreta na Ganganelli: a localização cadastral estaria na Penha e a presença da visita não entrou.
 
 ### Importância
 
-Este é o primeiro registro encontrado no histórico de que a própria Pioneiros:
+Essas mensagens reforçam que o sistema não é apenas um registrador passivo. Na percepção dos usuários, ele passa a funcionar como **infraestrutura de monitoramento e cálculo da frequência**, com consequências administrativas diretamente relacionadas ao percentual registrado.
 
-1. conseguiu gerar efetivamente um QR Code;
-2. identificou como lançar presenças no site do GOB-RJ;
-3. saiu da fase de especulação para uma **solução operacional testada**.
-
-O export não associa claramente um nome ao número `+55 21 98659-9640`, portanto o documento não atribui identidade não comprovada a esse participante.
+A regra exata de percentual e seus efeitos ainda deve ser verificada na legislação aplicável; aqui está registrada como **afirmação dos participantes do chat**, não como dispositivo normativo já conferido.
 
 ---
 
-# Síntese da evolução histórica
+# 13 de agosto de 2026 — problema ainda não resolvido na Pioneiros
 
-## 2017 — livro como instrumento administrativo central
+Arnaldo Porto pergunta:
 
-O Livro de Presenças aparece sob responsabilidade do Chanceler e como base do controle de frequência. O grupo associa a frequência a efeitos administrativos como votar, ser votado e progressão.
+- como procederiam com as presenças online;
+- quem levaria/geraria o QR Code.
 
-## 2020 — adaptação excepcional
+Janilton responde que VM ou Chanceler precisariam resolver e afirma que todos continuavam com **zero de presença** no sistema.
 
-Em reunião administrativa remota por Zoom, é solicitada lista de presença separada para anexação à documentação da Loja.
+Também relata ter ligado para Lauro, que não dominava o sistema.
 
-## 2024 — livro físico continua em uso
+### Importância
 
-O grupo procura pelo livro após sessão e trata sua guarda como rotina normal.
-
-## 2025 — CIM continua associado ao preenchimento do livro
-
-O histórico mostra o CIM como dado recorrente no preenchimento das presenças.
-
-## 27–28 de julho de 2026 — descoberta e confirmação da obrigatoriedade digital
-
-A Loja toma conhecimento do QR Code. Há inicialmente dúvida sobre obrigatoriedade. Em 28/07, Arnaldo Porto relata ter ligado para o GOB / Guarda dos Selos e recebido confirmação de que **o registro digital era obrigatório**.
-
-## 28 de julho de 2026 — problema real de geolocalização observado em outra Loja
-
-É relatado caso de Loja cuja presença ficava zerada porque o endereço cadastrado estava errado e o GPS classificava os irmãos como fora do raio permitido.
-
-## 29–30 de julho de 2026 — problema de acesso e governança
-
-Fica claro que determinadas operações dependem de VM/Chanceler. Surge proposta de os “Arnaldos” visitarem Lauro para resolver o acesso, mas o chat não comprova que essa visita ocorreu.
-
-## 30 de julho de 2026 — a afirmação “livro extinto” aparece
-
-Leandro afirma que o livro foi extinto pelo GOB. O chat, porém, não apresenta até esse ponto ato escrito que prove a extinção formal do suporte físico.
-
-## 30 de julho de 2026 — a própria conversa corrige a ideia de “QR Code obrigatório como único meio”
-
-Fica estabelecido que VM ou Chanceler também podem registrar presença diretamente no sistema pelo CIM.
-
-## 31 de julho de 2026 — Boletim 620
-
-O grupo identifica a página 61 do Boletim 620 como orientação para uso do GOB Digital por oficiais da Loja.
-
-## 13 de agosto de 2026 — operacionalização na Pioneiros
-
-Arnaldo Porto cobra solução. Pouco depois, `+55 21 98659-9640` informa que **gerou o QR Code e descobriu como registrar as presenças no site do GOB-RJ**.
+Duas semanas depois da descoberta da mudança, a Pioneiros ainda não havia operacionalizado corretamente o novo fluxo.
 
 ---
 
-# Matriz de alegações e estado atual da evidência
+## 13 de agosto de 2026, 14h34 — QR Code efetivamente gerado
 
-| Alegação | Estado com base no chat | Observação |
+O participante identificado no export apenas como **`+55 21 98659-9640`** escreve:
+
+> “Meus Irmãos, já resolvi a questão das presenças. Já gerei o QR Code, e vi aqui como registrar as presenças no site do GOB-RJ. Tudo resolvido.”
+
+Arnaldo Porto comemora e diz que no dia seguinte explicariam tudo sobre as presenças.
+
+### Importância
+
+É o primeiro registro localizado de que a própria Pioneiros:
+
+1. conseguiu gerar o QR Code;
+2. identificou como registrar presenças no site do GOB-RJ;
+3. passou de discussão para uma **solução operacional efetivamente obtida**.
+
+O export não associa com segurança um nome ao número `+55 21 98659-9640`; por isso a identidade não é inferida neste documento.
+
+---
+
+# Síntese
+
+## 2017–2025
+
+O Livro de Presenças físico é tratado como instrumento administrativo normal da Loja e ligado ao controle de frequência do Chanceler.
+
+## 27–28 de julho de 2026
+
+A Loja descobre o novo mecanismo. Arnaldo Porto questiona a obrigatoriedade e depois relata ter telefonado para o GOB / Guarda dos Selos, recebendo confirmação de que **o registro digital era obrigatório**.
+
+## 28 de julho de 2026
+
+Surge caso concreto de falha de presença causada por endereço cadastrado incorreto e validação por GPS.
+
+## 29–30 de julho de 2026
+
+Ficam evidentes problemas de acesso, governança e credenciais. Surge a afirmação de que o livro físico teria sido extinto, mas sem dispositivo escrito examinado.
+
+## 30 de julho de 2026
+
+A própria conversa estabelece que **QR Code não é a única via**: VM ou Chanceler podem lançar a presença diretamente no sistema.
+
+## 31 de julho de 2026
+
+O grupo compartilha e nomeia o **Boletim 620**, indicando a página 61/68 como orientação de uso do GOB Digital. Mais tarde, participantes descrevem monitoramento de percentuais, geolocalização em vigor e visitas não contabilizadas quando a Loja não está corretamente integrada ao sistema.
+
+## 13 de agosto de 2026
+
+A Pioneiros finalmente consegue gerar um QR Code e identificar o fluxo de lançamento de presença no site do GOB-RJ.
+
+---
+
+# Matriz de alegações e evidências
+
+| Alegação | Estado atual | Observação |
 |---|---|---|
-| O GOB passou a exigir registro digital de presença | **Fortemente sustentado** | Arnaldo relata confirmação direta por telefone com o GOB / Guarda dos Selos |
-| Existe QR Code por sessão | **Fortemente sustentado** | Repetido no grupo e efetivamente gerado pela Pioneiros em 13/08 |
-| QR Code usa validação de proximidade/GPS | **Fortemente sustentado pelo chat** | Há relato prático de check-in rejeitado por endereço cadastrado incorreto |
-| QR Code é a única forma de marcar presença | **Contradito pelo próprio chat** | VM/Chanceler podem lançar manualmente no sistema |
-| VM ou Chanceler podem registrar presença pelo CIM | **Fortemente sustentado pelo chat** | Descrição operacional consolidada em 30/07 |
-| Toda frequência precisa ser registrada virtualmente | **Fortemente sustentado** | Confirmado operacionalmente e por ligação ao GOB, segundo Arnaldo |
-| A Pioneiros conseguiu gerar QR Code | **Confirmado no chat** | `+55 21 98659-9640` declara ter gerado em 13/08 |
-| A Pioneiros descobriu como registrar presença no site do GOB-RJ | **Confirmado no chat** | Mesma mensagem de 13/08 |
-| Os “Arnaldos” visitaram Lauro para resolver o acesso | **Não comprovado** | A missão foi proposta, mas não há confirmação de execução |
-| O Livro de Presenças físico foi formalmente extinto pelo GOB | **Ainda não comprovado por ato escrito** | A frase aparece no grupo, mas falta dispositivo normativo |
-| O Boletim 620 trata do uso do GOB Digital por oficiais da Loja | **Sustentado** | Janilton identifica a página 61 |
-| O Boletim 620 extingue o Livro de Presenças | **Não demonstrado pelo chat** | Exige leitura do documento |
-| Não existem mais pranchas e toda comunicação oficial ocorre apenas nos portais | **Alegação ainda não verificada** | Precisa confronto com normas de comunicação do GOB |
+| O registro digital de frequência é obrigatório | **Fortemente sustentado** | Arnaldo relata confirmação telefônica da Guarda dos Selos |
+| Existe QR Code por sessão | **Fortemente sustentado** | Descrito repetidamente e QR foi gerado pela própria Pioneiros em 13/08 |
+| Há validação por proximidade/GPS | **Fortemente sustentado pelo chat** | Há casos concretos de rejeição por endereço divergente |
+| QR Code é a única forma de registrar presença | **Contradito pelo próprio chat** | VM/Chanceler podem lançar presença no sistema |
+| VM/Chanceler podem registrar presença por CIM | **Fortemente sustentado pelo chat** | Descrição operacional de 30/07 |
+| A Pioneiros conseguiu gerar QR Code | **Confirmado no chat** | Mensagem de `+55 21 98659-9640` em 13/08 |
+| Visitas podem ficar invisíveis se a Loja não estiver no sistema/QR | **Relato operacional no chat** | Informação de 31/07; requer confirmação técnica/normativa |
+| Percentual eletrônico repercute em votar/aumento de salário | **Afirmado no chat e coerente com a função histórica da frequência** | Percentual/regra exatos ainda precisam ser verificados em norma |
+| Os “Arnaldos” visitaram Lauro | **Não comprovado** | A missão foi proposta, mas a execução não aparece no histórico |
+| O Livro de Presenças físico foi formalmente extinto | **Ainda não comprovado por ato escrito examinado** | Leandro afirma; falta verificar texto normativo |
+| O Boletim 620 existe e foi compartilhado em 31/07 | **Comprovado pelo export do WhatsApp** | Nome do arquivo e referência à pág. 61/68 aparecem explicitamente |
+| A página 61 orienta VM, Sec., Tes. e Chanceler a usar GOB Digital | **Afirmado por Janilton no chat** | Conteúdo integral do PDF ainda não recuperado |
+| O Boletim 620 extingue o Livro de Presenças | **Não demonstrado** | Só poderá ser afirmado após leitura do PDF/ato correspondente |
+| Não existem mais pranchas e portal substitui comunicação formal | **Alegação não verificada** | Precisa de fundamento normativo específico |
 
 ---
 
-# Questões técnicas e administrativas abertas
+# Questões abertas
 
-## 1. Extinção ou apenas substituição do registro oficial?
+## 1. Extinção física ou apenas mudança da fonte oficial de frequência?
 
-A confirmação telefônica relatada por Arnaldo fortalece a tese de que **o registro digital é obrigatório**, mas não resolve uma questão distinta:
+A obrigatoriedade digital está muito bem sustentada pelo histórico. Ainda resta provar se o Livro de Presenças físico:
 
-> o livro físico foi juridicamente extinto ou apenas deixou de ser a fonte oficial de frequência?
+- foi formalmente abolido;
+- tornou-se facultativo;
+- continua existindo sem efeito oficial sobre frequência;
+- ou deve coexistir com o registro eletrônico.
 
-Essa diferença precisa de ato escrito.
+## 2. Boletim 620
 
-## 2. Função do QR Code
-
-O chat indica que o QR Code é uma interface de facilitação/autosserviço, enquanto VM e Chanceler conseguem lançar presença diretamente.
+Prioridade máxima: recuperar a cópia de **`30072026 - Boletim 620.pdf`** e examinar a página 61/68, incluindo eventuais atos citados.
 
 ## 3. Geolocalização
 
-É preciso esclarecer oficialmente:
+Verificar oficialmente:
 
-- qual informação de localização é capturada;
-- qual raio é usado;
-- se latitude/longitude são armazenadas;
-- qual precisão é exigida;
-- como se altera o endereço de uma sessão ou templo;
-- como corrigir falsos negativos;
-- qual a política de retenção e acesso a esses dados.
+- raio;
+- precisão;
+- armazenamento de coordenadas;
+- retenção;
+- quem acessa os dados;
+- sessão em endereço temporário;
+- correção de cadastro e de presença.
 
-## 4. Contingência operacional
+## 4. Contingência
 
-O caso da Loja com endereço incorreto demonstra que contingência não é hipótese abstrata.
+Verificar procedimentos para:
 
-É preciso descobrir procedimentos para:
-
-- endereço cadastrado errado;
-- sessão em local excepcional;
-- ausência de internet;
+- internet indisponível;
 - GPS indisponível;
-- celular sem bateria;
+- aparelho sem bateria/câmera;
 - sistema fora do ar;
-- correção retroativa de presença.
+- endereço incorreto;
+- sessão excepcional em outro local;
+- lançamento/correção posterior.
 
-## 5. Identidade e credenciais
+## 5. Identidade, perfis e auditoria
 
-A discussão sobre compartilhamento de senha demonstra uma fragilidade de governança.
-
-É necessário verificar se o GOB Digital possui:
+Verificar se GOB Digital oferece:
 
 - perfil por cargo;
-- delegação;
-- substituição temporária;
+- substituição/delegação;
 - trilha de auditoria;
-- autenticação adequada sem compartilhamento de credenciais pessoais.
+- autenticação sem compartilhamento de credenciais pessoais.
 
-## 6. Consequências administrativas de presença zerada
+## 6. Consequências de presença zerada
 
-Como frequência repercute em direitos e situação do obreiro, é preciso verificar o que acontece quando a presença não entra no sistema por falha técnica ou cadastral.
-
----
-
-# Próximas evidências a localizar
-
-1. **Boletim 620, de 30/07/2026 — página 61/68**.
-2. Atos, decretos ou resoluções citados nessa página.
-3. Manual/tutorial oficial do GOB Digital para frequência de sessão.
-4. Regra específica sobre geração do QR Code por sessão.
-5. Regra de geolocalização/GPS.
-6. Procedimento para endereço temporário ou incorreto.
-7. Regra sobre lançamento manual de presença por VM/Chanceler.
-8. Procedimento de contingência e correção retroativa.
-9. Dispositivo que eventualmente declare expressamente a **extinção do Livro de Presenças físico**.
-10. Política de privacidade/tratamento de dados aplicável à geolocalização.
-11. Regras de comunicação oficial do GOB para saber se publicação em portal substitui prancha/comunicação direta.
-12. Identificação, se possível por outra fonte interna legítima, do papel/cargo do participante `+55 21 98659-9640` que gerou o QR Code em 13/08 — sem inferir nome sem evidência.
+Como frequência repercute em direitos do obreiro, é necessário entender como falhas técnicas/cadastrais são corrigidas antes que gerem efeitos administrativos.
 
 ---
 
-# Conclusão provisória atualizada
+# Conclusão provisória
 
-A história registrada no grupo mostra uma transição clara.
+O histórico mostra uma mudança real e operacional para **registro digital de frequência**. A obrigatoriedade deixa de ser apenas rumor quando Arnaldo Porto relata confirmação direta, por telefone, com o GOB / Guarda dos Selos.
 
-O Livro de Presenças físico era, durante anos, um instrumento administrativo central da Loja e estava diretamente associado ao controle de frequência pelo Chanceler.
+O QR Code utiliza, segundo múltiplos relatos e experiências concretas, **validação geográfica**, e essa dependência já produziu casos de presença não registrada quando o endereço cadastral não correspondia ao local da sessão.
 
-Em julho de 2026 surge uma mudança efetiva para **registro digital de frequência**. A obrigatoriedade deixa de ser apenas boato interno quando Arnaldo Porto relata ter telefonado para o GOB / Guarda dos Selos e recebido confirmação de que o procedimento digital era obrigatório.
+Ao mesmo tempo, a própria conversa mostra que **QR Code não é sinônimo de única forma de registro**: VM ou Chanceler podem lançar irmãos diretamente no sistema.
 
-Também há evidência prática de que o QR Code utiliza validação geográfica: uma outra Loja teria ficado com presença zerada porque seu endereço cadastrado estava desatualizado e o sistema acusava os usuários como fora do raio permitido.
+Em 13/08/2026, a Pioneiros consegue finalmente gerar o QR Code e identificar como cadastrar presenças no site do GOB-RJ.
 
-A própria discussão mostra, contudo, que **QR Code não é sinônimo de registro digital obrigatório**: VM ou Chanceler podem registrar irmãos diretamente no sistema, aparentemente pelo CIM.
+A questão normativa que permanece aberta é mais específica:
 
-Em 13/08/2026, a Pioneiros finalmente sai da fase de discussão e chega a uma solução operacional: o participante `+55 21 98659-9640` declara ter **gerado o QR Code e identificado como registrar as presenças no site do GOB-RJ**.
+> **o registro digital obrigatório está fortemente sustentado; a extinção formal do Livro de Presenças físico ainda não foi comprovada por documento escrito examinado.**
 
-O ponto ainda não resolvido é outro e mais específico:
-
-> **a obrigatoriedade do registro digital está fortemente sustentada; a extinção formal do Livro de Presenças físico ainda depende de comprovação normativa escrita.**
+O Boletim 620 é a principal pista documental, mas, embora sua existência e compartilhamento estejam comprovados pelo export do WhatsApp, a cópia binária do PDF não foi localizada no conjunto atualmente acessível da pasta compartilhada/Drive.
 
 ---
 
-## Fonte de trabalho
+# Arquivos e links das evidências
 
-- Exportação de WhatsApp: `WhatsApp Chat with Pioneiros - Somente Atvs.txt`.
-- Período relevante desta reconstrução: agosto de 2017 a 13 de agosto de 2026.
-- Documento mencionado no chat e ainda pendente de exame direto: `30072026 - Boletim 620.pdf`, especialmente página 61/68.
+## Fontes principais
+
+- **Pasta compartilhada usada no cruzamento:**  
+  https://drive.google.com/drive/folders/1vhlZogMIuUFSi8m-cVH3k1ThSeFPYEuf
+
+- **Export completo do WhatsApp — `WhatsApp Chat with Pioneiros - Somente Atvs.txt`:**  
+  https://drive.google.com/file/d/1jYLcm7j6uheNHNmgiK_pYwqPqGx_CX-r/view?usp=drivesdk
+
+## Anexo de 30/07 cruzado com o chat
+
+- **`IMG-20260730-WA0011.jpg`:**  
+  https://drive.google.com/file/d/14Y7V0K3mTtYoSH1oQs3m8rZqIN1bFbVq/view?usp=drivesdk
+
+  **Nota:** o arquivo aparece cronologicamente dentro da discussão de 30/07 sobre o sistema, mas sua inspeção mostra que é uma fotografia comum de pessoas/evento e **não contém evidência documental do QR Code ou da norma**. Ele é mantido aqui apenas para registrar o cruzamento e evitar que seja tratado futuramente como prova do sistema.
+
+## Boletim 620
+
+- **Nome registrado no export:** `30072026 - Boletim 620.pdf`
+- **Mensagem que o acompanha:** Janilton indica a **página 61/68** como orientação para VM, Secretário, Tesoureiro e Chanceler utilizarem GOB Digital.
+- **Link direto:** **não disponível no conjunto acessível no momento**. Busca pelo nome exato, `620`, `30072026`, conteúdo correlato e PDFs da pasta não recuperou a cópia do arquivo.
+
+## Falsos positivos inspecionados e descartados
+
+Estes arquivos foram abertos durante a busca e **não são o Boletim 620**:
+
+- `1_5024285861353620011.pdf` — Revista M.B., março de 2022:  
+  https://drive.google.com/file/d/1OJjj90QwKrAaiCkRZ_Ri-yJzt80Lui6Q/view?usp=drivesdk
+
+- `file-1.pdf` — comprovante/boleto antigo:  
+  https://drive.google.com/file/d/1KlhLxU7afarHCf7LD9_YMGWUwQCRQKgE/view?usp=drivesdk
+
+- `file-2.pdf` — comprovante/boleto antigo:  
+  https://drive.google.com/file/d/163CeFOFF44oQIWiFZHKsnlMUUKaio0yA/view?usp=drivesdk
+
+- `70.pdf` — certificado de curso de 2025:  
+  https://drive.google.com/file/d/1tPlFmwPv38M1ZAdg3fBR7PxOIevPTByN/view?usp=drivesdk
+
+---
+
+## Fonte de trabalho e estado da investigação
+
+- Período coberto: agosto de 2017 a 13 de agosto de 2026.
+- Fonte principal: export de WhatsApp acima.
+- Evidência externa ao chat: verificação telefônica relatada por Arnaldo Porto; cruzamento dos anexos com a pasta compartilhada; consulta pública ao GOB-RJ mostrou a existência atual de superfície para consulta de visitas/presenças, mas não recuperou publicamente o Boletim 620.
+- Próximo documento decisivo: **`30072026 - Boletim 620.pdf`, página 61/68**.
