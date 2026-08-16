@@ -106,3 +106,42 @@ data,competencia,estabelecimento,valor_brl,status,parcelado,parcela_atual,parcel
 2027-02-10,2027-02,Plano de pagamento,709.22,Pendente,,,,Plano de pagamento,,prints_chatgpt_2026-08-16_03,Repetido em nova imagem enviada; preservar ocorrência.,sim
 2027-03-08,2027-03,Plano de pagamento,709.22,Pendente,,,,Plano de pagamento,,prints_chatgpt_2026-08-16_03,Repetido em nova imagem enviada; preservar ocorrência.,sim
 2027-04-07,2027-04,Plano de pagamento,709.22,Pendente,,,,Plano de pagamento,,prints_chatgpt_2026-08-16_03,Repetido em nova imagem enviada; preservar ocorrência.,sim
+2026-07-31,2026-07,Posto Barra Mansa,278.75,Registrado,nao,,,,NUBANK,email_Patricia_Concolato_Nubank_2026-08-08.csv,Importado do CSV original encaminhado por Patricia Concolato.,nao
+2026-07-31,2026-07,Emise Boa Vista,265.87,Registrado,nao,,,,NUBANK,email_Patricia_Concolato_Nubank_2026-08-08.csv,Importado do CSV original encaminhado por Patricia Concolato.,nao
+2026-07-30,2026-07,Jonas Ferreira Rodrig,68.50,Registrado,nao,,,,NUBANK,email_Patricia_Concolato_Nubank_2026-08-08.csv,Importado do CSV original encaminhado por Patricia Concolato.,nao
+2026-07-29,2026-07,Sergio Ricardo das Gra,30.90,Registrado,nao,,,,NUBANK,email_Patricia_Concolato_Nubank_2026-08-08.csv,Importado do CSV original encaminhado por Patricia Concolato.,nao
+2026-07-28,2026-07,Pix no Crédito - Catarina Flores Picanço  - 1/3,134.85,Registrado,sim,1,3,,NUBANK,email_Patricia_Concolato_Nubank_2026-08-08.csv,Importado do CSV original encaminhado por Patricia Concolato.,nao
+2026-07-27,2026-07,Pix no Crédito - Elias Magalhães da Paixão Junior - 1/3,231.98,Registrado,sim,1,3,,NUBANK,email_Patricia_Concolato_Nubank_2026-08-08.csv,Importado do CSV original encaminhado por Patricia Concolato.,nao
+2026-07-27,2026-07,Amazonprimebr,19.90,Registrado,nao,,,,NUBANK,email_Patricia_Concolato_Nubank_2026-08-08.csv,Importado do CSV original encaminhado por Patricia Concolato.,nao
+2026-07-27,2026-07,RECEITA FED-DARF NUM,190.12,Registrado,nao,,,,NUBANK,email_Patricia_Concolato_Nubank_2026-08-08.csv,Importado do CSV original encaminhado por Patricia Concolato.,nao
+2026-07-26,2026-07,Bem Comer Saudade,49.99,Registrado,nao,,,,NUBANK,email_Patricia_Concolato_Nubank_2026-08-08.csv,Importado do CSV original encaminhado por Patricia Concolato.,nao
+2026-07-25,2026-07,Amazon Ad Free For Pri,10.00,Registrado,nao,,,,NUBANK,email_Patricia_Concolato_Nubank_2026-08-08.csv,Importado do CSV original encaminhado por Patricia Concolato.,nao
+2026-07-25,2026-07,Raphaeldasilvasa,238.85,Registrado,nao,,,,NUBANK,email_Patricia_Concolato_Nubank_2026-08-08.csv,Importado do CSV original encaminhado por Patricia Concolato.,nao
+2026-07-24,2026-07,Emise Boa Vista,120.73,Registrado,nao,,,,NUBANK,email_Patricia_Concolato_Nubank_2026-08-08.csv,Importado do CSV original encaminhado por Patricia Concolato.,nao
+2026-07-24,2026-07,Google Youtube,5.00,Registrado,nao,,,,NUBANK,email_Patricia_Concolato_Nubank_2026-08-08.csv,Importado do CSV original encaminhado por Patricia Concolato.,nao
+2026-07-21,2026-07,Pix no Crédito - Sheila da Silva Elias - 1/2,39.37,Registrado,sim,1,2,,NUBANK,email_Patricia_Concolato_Nubank_2026-08-08.csv,Importado do CSV original encaminhado por Patricia Concolato.,nao
+2026-07-21,2026-07,Lojas Americanas,37.98,Registrado,nao,,,,NUBANK,email_Patricia_Concolato_Nubank_2026-08-08.csv,Importado do CSV original encaminhado por Patricia Concolato.,nao
+2026-07-20,2026-07,Bem Comer Saudade,37.44,Registrado,nao,,,,NUBANK,email_Patricia_Concolato_Nubank_2026-08-08.csv,Importado do CSV original encaminhado por Patricia Concolato.,nao
+2026-07-19,2026-07,Emise Boa Vista,110.22,Registrado,nao,,,,NUBANK,email_Patricia_Concolato_Nubank_2026-08-08.csv,Importado do CSV original encaminhado por Patricia Concolato.,nao
+2026-07-16,2026-07,Emise Boa Vista,236.42,Registrado,nao,,,,NUBANK,email_Patricia_Concolato_Nubank_2026-08-08.csv,Importado do CSV original encaminhado por Patricia Concolato.,nao
+2026-07-15,2026-07,Shopee *Vgvestidos - Parcela 1/3,43.66,Registrado,sim,1,3,,NUBANK,email_Patricia_Concolato_Nubank_2026-08-08.csv,Importado do CSV original encaminhado por Patricia Concolato.,nao
+2026-07-13,2026-07,Chale Usedons - Parcela 1/2,50.00,Registrado,sim,1,2,,NUBANK,email_Patricia_Concolato_Nubank_2026-08-08.csv,Importado do CSV original encaminhado por Patricia Concolato.,nao
+2026-07-13,2026-07,Posto e Serviços Tigrã,218.76,Registrado,nao,,,,NUBANK,email_Patricia_Concolato_Nubank_2026-08-08.csv,Importado do CSV original encaminhado por Patricia Concolato.,nao
+2026-07-13,2026-07,Associacao Jovens Sar - Parcela 1/2,80.00,Registrado,sim,1,2,,NUBANK,email_Patricia_Concolato_Nubank_2026-08-08.csv,Importado do CSV original encaminhado por Patricia Concolato.,nao
+2026-07-13,2026-07,Mc Donalds - Arcos Dou,79.80,Registrado,nao,,,,NUBANK,email_Patricia_Concolato_Nubank_2026-08-08.csv,Importado do CSV original encaminhado por Patricia Concolato.,nao
+2026-07-13,2026-07,Delapriasalgados,85.70,Registrado,nao,,,,NUBANK,email_Patricia_Concolato_Nubank_2026-08-08.csv,Importado do CSV original encaminhado por Patricia Concolato.,nao
+2026-07-09,2026-07,Shopee *Onlineeditora,67.75,Registrado,nao,,,,NUBANK,email_Patricia_Concolato_Nubank_2026-08-08.csv,Importado do CSV original encaminhado por Patricia Concolato.,nao
+2026-07-08,2026-07,Tatu Filmes,101.00,Registrado,nao,,,,NUBANK,email_Patricia_Concolato_Nubank_2026-08-08.csv,Importado do CSV original encaminhado por Patricia Concolato.,nao
+2026-07-08,2026-07,Cheirin Bao,45.00,Registrado,nao,,,,NUBANK,email_Patricia_Concolato_Nubank_2026-08-08.csv,Importado do CSV original encaminhado por Patricia Concolato.,nao
+2026-07-08,2026-07,Google Youtube,6.99,Registrado,nao,,,,NUBANK,email_Patricia_Concolato_Nubank_2026-08-08.csv,Importado do CSV original encaminhado por Patricia Concolato.,nao
+2026-07-08,2026-07,Onde Clico,310.00,Registrado,nao,,,,NUBANK,email_Patricia_Concolato_Nubank_2026-08-08.csv,Importado do CSV original encaminhado por Patricia Concolato.,nao
+2026-07-07,2026-07,Drogarias Pacheco - NuPay - Parcela 1/3,86.61,Registrado,sim,1,3,,NUBANK,email_Patricia_Concolato_Nubank_2026-08-08.csv,Importado do CSV original encaminhado por Patricia Concolato.,nao
+2026-07-06,2026-07,Pagamento recebido,-4589.16,Pagamento recebido,nao,,,Pagamento,NUBANK,email_Patricia_Concolato_Nubank_2026-08-08.csv,Importado do CSV original encaminhado por Patricia Concolato.,nao
+2026-07-01,2026-07,Arte Moveis - Parcela 7/10,81.98,Registrado,sim,7,10,,NUBANK,email_Patricia_Concolato_Nubank_2026-08-08.csv,Importado do CSV original encaminhado por Patricia Concolato.,nao
+2026-07-01,2026-07,Amazon Marketplace Cc - Parcela 4/4,97.33,Registrado,sim,4,4,,NUBANK,email_Patricia_Concolato_Nubank_2026-08-08.csv,Importado do CSV original encaminhado por Patricia Concolato.,nao
+2026-07-01,2026-07,52603699alfredo - Parcela 2/4,345.00,Registrado,sim,2,4,,NUBANK,email_Patricia_Concolato_Nubank_2026-08-08.csv,Importado do CSV original encaminhado por Patricia Concolato.,nao
+2026-07-01,2026-07,Pix no Crédito - Grace Kelly Luciano Do Vale - 2/3,46.09,Registrado,sim,2,3,,NUBANK,email_Patricia_Concolato_Nubank_2026-08-08.csv,Importado do CSV original encaminhado por Patricia Concolato.,nao
+2026-07-01,2026-07,Drogaria Povao - Parcela 2/3,159.94,Registrado,sim,2,3,,NUBANK,email_Patricia_Concolato_Nubank_2026-08-08.csv,Importado do CSV original encaminhado por Patricia Concolato.,nao
+2026-07-01,2026-07,Amazonmktplc*Coutinhov - Parcela 3/4,114.09,Registrado,sim,3,4,,NUBANK,email_Patricia_Concolato_Nubank_2026-08-08.csv,Importado do CSV original encaminhado por Patricia Concolato.,nao
+2026-07-01,2026-07,Beauty Hub Varejo - Parcela 3/3,61.27,Registrado,sim,3,3,,NUBANK,email_Patricia_Concolato_Nubank_2026-08-08.csv,Importado do CSV original encaminhado por Patricia Concolato.,nao
+2026-07-01,2026-07,Amazon - Parcela 2/5,35.61,Registrado,sim,2,5,,NUBANK,email_Patricia_Concolato_Nubank_2026-08-08.csv,Importado do CSV original encaminhado por Patricia Concolato.,nao
