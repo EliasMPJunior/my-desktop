@@ -1,75 +1,88 @@
-# Curva ABC do comprometimento do caixa — 2026-08-16
+# Curva ABC do comprometimento do caixa — por competência
 
-## Objetivo
+## Correção metodológica
 
-Esta análise mede **pressão sobre o caixa**, não apenas consumo. Ela agrega, sem duplicatas e sem transações canceladas:
+A versão anterior estava conceitualmente errada para fluxo de caixa: ela somava o estoque nominal de obrigações de vários meses e produzia uma única ABC. Isso mede estoque de compromissos, não comprometimento mensal do caixa.
 
-1. consumo corrente efetivamente registrado nos cartões;
-2. parcelas futuras conhecidas de cartão;
-3. empréstimos futuros capturados nos prints;
-4. plano de pagamento futuro capturado nos prints.
+Para gestão de caixa, a unidade correta é a **competência de pagamento/vencimento**. Portanto:
 
-O `Pagamento recebido` do Nubank não é tratado como gasto.
+- uma parcela de empréstimo que vence em setembro entra em setembro, não no total acumulado de todos os meses;
+- parcelas futuras entram apenas no mês em que forem exigíveis;
+- consumo no cartão só entra como obrigação do mês quando a fatura correspondente for identificada;
+- transações canceladas e duplicadas continuam excluídas;
+- `Pagamento recebido` não é gasto.
 
-## Base de comprometimento capturada
+## O que a base permite afirmar hoje
 
-- Consumo corrente: **R$ 7.001,14**
-- Parcelas futuras de cartão conhecidas: **R$ 3.033,64**
-- Empréstimos futuros: **R$ 8.279,54**
-- Plano de pagamento futuro: **R$ 6.352,34**
+### Agosto/2026
 
-**Comprometimento nominal total capturado: R$ 24.666,66.**
+A base contém a **fatura de agosto do Nubank**, formada por compras datadas em julho. O valor bruto de compras importado dessa fatura é R$ 4.223,45, separado do registro `Pagamento recebido` de R$ 4.589,16.
 
-> Atenção: este total é uma visão nominal/provisória. Os empréstimos, plano de pagamento e parcelas futuras de cartão foram somados como compromissos distintos porque aparecem como linhas distintas na base. Ainda é necessário confirmar se existe alguma sobreposição econômica entre eles antes de interpretar R$ 24.666,66 como “dívida líquida total”. Para gestão de caixa, porém, a visão é útil porque mostra onde estão as maiores pressões conhecidas.
+O FREE MASTERCARD contém transações até 15/08, mas a base não identifica com segurança em qual fatura/data de vencimento cada uma será paga. Portanto elas não devem ser automaticamente tratadas como saída de caixa de agosto.
 
-## Curva ABC — comprometimento do caixa
+**Importante:** nos dados capturados até agora não existe uma linha de empréstimo identificada como efetivamente paga/vencida em agosto. Logo, não é correto inventar um valor de empréstimo para agosto. Se houver parcela paga em agosto, falta o documento/lançamento correspondente na base.
 
-| Ordem | Grupo | Valor | % do total | % acumulado | Classe |
-|---:|---|---:|---:|---:|:---:|
-| 1 | Empréstimos | R$ 8.279,54 | 33,6% | 33,6% | A |
-| 2 | Plano de pagamento | R$ 6.352,34 | 25,8% | 59,3% | A |
-| 3 | Parcelas futuras de cartão | R$ 3.033,64 | 12,3% | 71,6% | A |
-| 4 | Não identificado — consumo corrente | R$ 2.052,40 | 8,3% | 79,9% | A |
-| 5 | Supermercado | R$ 1.298,87 | 5,3% | 85,2% | B |
-| 6 | Compras/Varejo | R$ 929,58 | 3,8% | 89,0% | B |
-| 7 | Alimentação fora | R$ 925,30 | 3,8% | 92,7% | B |
-| 8 | Combustível | R$ 536,51 | 2,2% | 94,9% | B |
-| 9 | Pix no crédito já lançado | R$ 452,29 | 1,8% | 96,7% | C |
-| 10 | Saúde/Farmácia | R$ 275,33 | 1,1% | 97,8% | C |
-| 11 | Religioso/Doações | R$ 230,00 | 0,9% | 98,8% | C |
-| 12 | Impostos | R$ 190,12 | 0,8% | 99,6% | C |
-| 13 | Assinaturas/Digital | R$ 101,79 | 0,4% | 100,0% | C |
-| 14 | Transporte | R$ 8,95 | <0,1% | 100,0% | C |
+### Setembro/2026 — obrigações de empréstimo explicitamente capturadas
 
-## O que compõe aproximadamente 80% da pressão sobre o caixa
+A base contém quatro obrigações de empréstimo com vencimento em setembro:
 
-Os quatro primeiros grupos chegam a **79,9%** do comprometimento capturado:
+| Data | Obrigação | Parcela | Valor |
+|---|---|---:|---:|
+| 01/09/2026 | Empréstimo | 6/6 | R$ 315,11 |
+| 09/09/2026 | Empréstimo | 3/12 | R$ 737,39 |
+| 11/09/2026 | Empréstimo pessoal | 8/10 | R$ 393,15 |
+| 11/09/2026 | Empréstimo pessoal | 2/12 | R$ 197,41 |
 
-1. **Empréstimos — R$ 8.279,54**
-2. **Plano de pagamento — R$ 6.352,34**
-3. **Parcelas futuras de cartão — R$ 3.033,64**
-4. **Consumo corrente ainda não identificado — R$ 2.052,40**
+**Total de empréstimos explicitamente exigíveis em setembro: R$ 1.643,06.**
 
-Somados: **R$ 19.717,92**, equivalentes a **79,9%** do comprometimento nominal capturado.
+Além disso, aparece um `Plano de pagamento` com vencimento em 08/09/2026 de **R$ 1.048,51**.
 
-Se for usado o critério clássico de incluir o primeiro item que faz o acumulado ultrapassar 80%, entra também **Supermercado — R$ 1.298,87**, levando a Classe A ampliada para **R$ 21.016,79 (85,2%)**.
+Assim, considerando apenas obrigações financeiras com vencimento explícito já capturadas:
 
-## Interpretação
+**Setembro/2026 = R$ 2.691,57**
 
-A principal conclusão muda radicalmente em relação à ABC apenas de consumo: **o problema dominante não é supermercado nem alimentação; é endividamento/comprometimento futuro**.
+- Empréstimos: R$ 1.643,06 — 61,0%
+- Plano de pagamento: R$ 1.048,51 — 39,0%
 
-Empréstimos + plano de pagamento + parcelas futuras de cartão somam **R$ 17.665,52**, cerca de **71,6% de toda a pressão de caixa conhecida**. Portanto, cortes de Netflix, alimentação fora ou pequenas compras ajudam, mas não resolvem estruturalmente o problema se novas dívidas e parcelamentos continuarem sendo criados.
+Essa é uma ABC mensal válida para as obrigações financeiras explícitas conhecidas de setembro.
 
-O quarto maior grupo, `Não identificado`, ainda merece investigação porque representa **R$ 2.052,40** de consumo corrente. Classificá-lo pode mostrar oportunidades de corte rápido, mas ele é secundário diante do estoque financeiro já contratado.
+## Fluxo financeiro explícito conhecido por mês
 
-## Prioridade operacional sugerida
+| Competência | Empréstimos | Plano de pagamento | Total explícito |
+|---|---:|---:|---:|
+| ago/2026 | não identificado na base | não identificado na base | incompleto |
+| set/2026 | R$ 1.643,06 | R$ 1.048,51 | **R$ 2.691,57** |
+| out/2026 | R$ 737,39 | R$ 1.048,51 | **R$ 1.785,90** |
+| nov/2026 | R$ 737,39 | R$ 709,22 | **R$ 1.446,61** |
+| dez/2026 | R$ 737,39 | R$ 709,22 | **R$ 1.446,61** |
+| jan/2027 | R$ 737,39 | R$ 709,22 | **R$ 1.446,61** |
+| fev/2027 | R$ 737,39 | R$ 709,22 | **R$ 1.446,61** |
+| mar/2027 | R$ 737,39 | R$ 709,22 | **R$ 1.446,61** |
+| abr/2027 | R$ 737,39 | R$ 709,22 | **R$ 1.446,61** |
+| mai/2027 | R$ 737,39 | — | **R$ 737,39** |
+| jun/2027 | R$ 737,36 | — | **R$ 737,36** |
 
-1. **Bloquear crescimento do estoque de dívida:** evitar novos empréstimos, planos e parcelamentos salvo necessidade real.
-2. **Mapear exatamente cada empréstimo/plano:** saldo, CET/taxa, parcelas restantes, possibilidade de antecipação ou refinanciamento.
-3. **Montar fluxo mensal de obrigações:** setembro/2026 já aparece como o pico dos compromissos financeiros explícitos capturados.
-4. **Identificar os R$ 2.052,40 ainda sem categoria:** é o principal espaço de consumo corrente ainda opaco.
-5. **Depois atacar os gastos discricionários:** compras/varejo e alimentação fora são os primeiros candidatos conhecidos; supermercado deve ser otimizado, não simplesmente cortado.
+## Como deve ser feita a ABC de comprometimento do caixa
 
-## Limite desta ABC
+A ABC deve ser recalculada **mês a mês**, juntando somente valores que efetivamente pressionam aquele mês:
 
-Esta é uma ABC de **comprometimento nominal capturado**, não uma demonstração completa do patrimônio ou da dívida líquida familiar. Ainda faltam, se existirem, contas fora desses cartões, débito, PIX, boletos, financiamentos e demais despesas fixas. Também deve ser verificada eventual sobreposição entre plano de pagamento, empréstimos e parcelas futuras antes de qualquer decisão de quitação ou refinanciamento.
+1. faturas de cartão que vencem no mês;
+2. parcelas de empréstimos com vencimento no mês;
+3. plano de pagamento com vencimento no mês;
+4. demais boletos, débitos e despesas fixas do mês;
+5. excluindo duplicidades, cancelamentos e transferências que não representem despesa.
+
+Portanto não há uma única “ABC de comprometimento do caixa” de R$ 24 mil. Esse número era apenas a soma nominal do estoque futuro e foi descartado como métrica de caixa.
+
+## Situação atual
+
+A competência mais completa para obrigações financeiras futuras é **setembro/2026**, com R$ 2.691,57 explicitamente mapeados antes de acrescentar faturas de cartão e outras contas do mês.
+
+Para agosto, a fatura Nubank é conhecida, mas ainda falta fechar corretamente:
+
+- o que já foi efetivamente pago;
+- eventual parcela de empréstimo de agosto;
+- a competência de pagamento do FREE MASTERCARD;
+- outras despesas fixas fora dos cartões.
+
+Sem esses dados, uma ABC completa de agosto seria falsa precisão.
