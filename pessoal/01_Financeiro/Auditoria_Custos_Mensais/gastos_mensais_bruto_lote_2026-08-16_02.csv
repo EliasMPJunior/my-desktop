@@ -1,0 +1,45 @@
+arquivo_origem,tela,tipo_registro,descricao,data_exibida,valor_exibido,status_exibido,parcela_exibida,detalhe_exibido,observacao
+1000274398.jpg,Detalhe do pagamento,lancamento,Empréstimo pessoal,11 de setembro,R$ 393,15,,Parcela 8 de 10,Solicitado em 23 de janeiro,
+1000274398.jpg,Detalhe do pagamento,lancamento,Empréstimo pessoal,11 de setembro,R$ 197,41,,Parcela 2 de 12,Solicitado em 5 de julho,
+1000274398.jpg,Detalhe do pagamento,resumo,Total a pagar,11 de setembro,R$ 590,56,,,,Soma exibida na tela; não é lançamento independente.
+1000274397.jpg,Minhas faturas,lancamento,Empréstimo [9/12],09 mar 2027,R$ 737,39,Abertas,9/12,,
+1000274397.jpg,Minhas faturas,lancamento,Empréstimo [10/12],09 abr 2027,R$ 737,39,Abertas,10/12,,
+1000274397.jpg,Minhas faturas,lancamento,Empréstimo [11/12],09 mai 2027,R$ 737,39,Abertas,11/12,,
+1000274397.jpg,Minhas faturas,lancamento,Empréstimo [12/12],09 jun 2027,R$ 737,36,Abertas,12/12,,
+1000274396.jpg,Minhas faturas,lancamento,Empréstimo [7/12],09 jan 2027,R$ 737,39,Abertas,7/12,,
+1000274396.jpg,Minhas faturas,lancamento,Empréstimo [8/12],09 fev 2027,R$ 737,39,Abertas,8/12,,
+1000274396.jpg,Minhas faturas,lancamento,Empréstimo [9/12],09 mar 2027,R$ 737,39,Abertas,9/12,,Repetido em outro print deste mesmo lote.
+1000274396.jpg,Minhas faturas,lancamento,Empréstimo [10/12],09 abr 2027,R$ 737,39,Abertas,10/12,,Repetido em outro print deste mesmo lote.
+1000274396.jpg,Minhas faturas,lancamento,Empréstimo [11/12],09 mai 2027,R$ 737,39,Abertas,11/12,,Repetido em outro print deste mesmo lote.
+1000274395.jpg,Minhas faturas,lancamento,Empréstimo [6/6],01 set 2026,R$ 315,11,Abertas,6/6,,
+1000274395.jpg,Minhas faturas,lancamento,Empréstimo [3/12],09 set 2026,R$ 737,39,Abertas,3/12,,
+1000274395.jpg,Minhas faturas,lancamento,Empréstimo [4/12],09 out 2026,R$ 737,39,Abertas,4/12,,
+1000274395.jpg,Minhas faturas,lancamento,Empréstimo [5/12],09 nov 2026,R$ 737,39,Abertas,5/12,,
+1000274395.jpg,Minhas faturas,lancamento,Empréstimo [6/12],09 dez 2026,R$ 737,39,Abertas,6/12,,
+1000274393.jpg,Plano de pagamento,lancamento,Plano de pagamento,07 jan 2027,R$ 709,22,Pendente,,,Valores pendentes com a mesma data de vencimento serão somados em uma única fatura.
+1000274393.jpg,Plano de pagamento,lancamento,Plano de pagamento,10 fev 2027,R$ 709,22,Pendente,,,Valores pendentes com a mesma data de vencimento serão somados em uma única fatura.
+1000274393.jpg,Plano de pagamento,lancamento,Plano de pagamento,08 mar 2027,R$ 709,22,Pendente,,,Valores pendentes com a mesma data de vencimento serão somados em uma única fatura.
+1000274393.jpg,Plano de pagamento,lancamento,Plano de pagamento,07 abr 2027,R$ 709,22,Pendente,,,Valores pendentes com a mesma data de vencimento serão somados em uma única fatura.
+1000274383.jpg,Plano de pagamento,lancamento,Plano de pagamento,08 set 2026,"R$ 1.048,51",Pendente,,,Valores pendentes com a mesma data de vencimento serão somados em uma única fatura.
+1000274383.jpg,Plano de pagamento,lancamento,Plano de pagamento,07 out 2026,"R$ 1.048,51",Pendente,,,Valores pendentes com a mesma data de vencimento serão somados em uma única fatura.
+1000274383.jpg,Plano de pagamento,lancamento,Plano de pagamento,09 nov 2026,R$ 709,22,Pendente,,,Valores pendentes com a mesma data de vencimento serão somados em uma única fatura.
+1000274383.jpg,Plano de pagamento,lancamento,Plano de pagamento,07 dez 2026,R$ 709,22,Pendente,,,Valores pendentes com a mesma data de vencimento serão somados em uma única fatura.
+1000274382.jpg,FREE MASTERCARD,lancamento,REDEGASVR,21/jul./2026,R$ 13,00,Autorizada,,,
+1000274382.jpg,FREE MASTERCARD,lancamento,ZP.L M COMERCIO DE DOC,20/jul./2026,R$ 32,46,Autorizada,,,
+1000274382.jpg,FREE MASTERCARD,lancamento,AMAZON BR,20/jul./2026,R$ 33,90,Autorizada,,,
+1000274382.jpg,FREE MASTERCARD,lancamento,MIGUEL PIZZAS E LANCHE,19/jul./2026,R$ 15,89,Autorizada,,,
+1000274382.jpg,FREE MASTERCARD,lancamento,DROGARIA POVAO 14,17/jul./2026,R$ 28,78,Autorizada,,,
+1000274381.jpg,FREE MASTERCARD,lancamento,AIRBNB . HMZCBC,28/jul./2026,R$ 380,16,Cancelada,COMPRA PARCELADA,,
+1000274381.jpg,FREE MASTERCARD,lancamento,UniversidadeDo,28/jul./2026,R$ 8,00,Autorizada,,,Nome aparece truncado no print.
+1000274381.jpg,FREE MASTERCARD,lancamento,JONAS FERREIRA RODRIG,27/jul./2026,R$ 33,50,Autorizada,,,Nome aparece truncado no print.
+1000274381.jpg,FREE MASTERCARD,lancamento,WPS*Paroquia Santo Ant,27/jul./2026,R$ 29,00,Autorizada,,,
+1000274381.jpg,FREE MASTERCARD,lancamento,EMISE BOA VISTA,25/jul./2026,R$ 96,85,Autorizada,,,
+1000274381.jpg,FREE MASTERCARD,lancamento,NETFLIX.COM,25/jul./2026,R$ 59,90,Autorizada,,,
+1000274381.jpg,FREE MASTERCARD,lancamento,PIX Olivia Castro Co,25/jul./2026,R$ 19,12,Autorizada,01/02,,
+1000274380.jpg,FREE MASTERCARD,lancamento,JONAS FERREIRA RODRIG,29/jul./2026,R$ 8,00,Autorizada,,,Nome aparece truncado no print.
+1000274380.jpg,FREE MASTERCARD,lancamento,UniversidadeDo,29/jul./2026,R$ 8,00,Autorizada,,,Nome aparece truncado no print.
+1000274380.jpg,FREE MASTERCARD,lancamento,MIGUEL PIZZAS E LANCHE,28/jul./2026,R$ 64,26,Autorizada,,,
+1000274380.jpg,FREE MASTERCARD,lancamento,REDEGASVR,28/jul./2026,R$ 26,00,Autorizada,,,
+1000274380.jpg,FREE MASTERCARD,lancamento,SERGIO RICARDO DAS GRA,28/jul./2026,R$ 39,80,Autorizada,,,Nome aparece truncado no print.
+1000274380.jpg,FREE MASTERCARD,lancamento,AIRBNB . HMZCBC,28/jul./2026,R$ 380,16,Cancelada,COMPRA PARCELADA,,Repetido em outro print deste mesmo lote.
+1000274380.jpg,FREE MASTERCARD,lancamento,UniversidadeDo,28/jul./2026,R$ 8,00,Autorizada,,,Repetido em outro print deste mesmo lote; nome aparece truncado.
