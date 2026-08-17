@@ -18,7 +18,7 @@ Inventar SaaS self-service PLG horizontal agora = erro confirmado por 4 LLMs ind
 ```
 ┌──────────────────────────────────────────────────────────────────────┐
 │  Tier 3 — Parceria White-Label (Boutiques Especializadas)            │
-│  R$ 4.997/mês base + R$ 2.997/projeto  →  receita recorrente +      │
+│  R$ 4.997/mês base + R$ 2.997/projeto  →  receita recorrente +       │
 │  alavancagem. InfoBIM é open-source gratuito; o cobrado é            │
 │  OPERAÇÃO + SUPORTE + ENTREGA de resultados com marca do parceiro.   │
 ├──────────────────────────────────────────────────────────────────────┤
