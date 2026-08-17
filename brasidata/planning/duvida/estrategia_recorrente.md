@@ -65,6 +65,13 @@ Uma assinatura de **monitoramento passivo de 1 projeto**, sem exigir mudança de
 - BIM manager ou coordenador que você já conhece de algum evento/conversa anterior
 - Pitch de 1 frase: *"Por menos do que você paga de celular por mês, eu deixo um robô rodando no seu projeto que te avisa todo mês quais lacunas de rastreabilidade vão te dar dor de cabeça no handover. Se nada aparecer, paz; se aparecer, você já sabe antes do marco."*
 
+### ⚠️ Risco conhecido: Tier 1 diverge do consenso das 4 LLMs (`resumo_consolidado.md`)
+As quatro análises independentes (ChatGPT, Claude, Gemini, Perplexity) convergem num mecanismo causal central: o valor do InfoBIM é **retroativo e episódico**, e o mercado não tem linha orçamentária nem urgência de compra para "capacidade preventiva que um dia pode valer" — só paga quando o gatilho (claim, handover, auditoria) já está ativo. O pitch do Tier 1 ("se nada aparecer, paz; se aparecer, você já sabe antes do marco") é exatamente essa venda de prevenção contra risco difuso, para um prospect **frio**, sem gatilho vivo — o padrão que as 4 LLMs recomendam não fazer. O preço baixo resolve a objeção de orçamento, mas não a de dor sentida; a meta de churn ≤15%/mês (ver Metas de 12 Meses) já é uma admissão implícita desse risco.
+
+Há também um obstáculo de acesso subestimado no roteiro: obter acesso somente leitura ao CDE de um prospect frio, num projeto em andamento, é um problema de confiança/jurídico, não de TI — mais difícil do que o roadmap assume. Por isso o Experimento 1 do consolidado (autópsia gratuita) usa acervo de **projeto já encerrado ou paralisado**, de risco político baixo, em vez de acesso ativo vendido a frio.
+
+**Mitigação adotada no roadmap abaixo:** o Tier 1 deixa de ser prospecção fria nos primeiros 45 dias. Ele só é oferecido a clientes que já passaram por um Experimento 1 (autópsia) ou por um serviço pontual — replicando para o Tier 1 a mesma regra de sequenciamento que já vale para o Tier 2 ("primeiro o evento/contato, depois a prevenção"). Prospecção fria de Watch vira experimento de estágio 2, só depois de os Experimentos 1 e 2 confirmarem que a dor é real.
+
 ---
 
 ## Tier 2 — Manutenção da Malha (receita recorrente REAL)
@@ -281,38 +288,44 @@ Para adicionar em qualquer tier ou vender separado:
 
 ## Roadmap de Lançamento (90 dias)
 
-### Dias 1–15 — Montar artefatos mínimos
+> **Reordenado** em relação à versão original para não repetir o padrão que as 4 LLMs (`resumo_consolidado.md`) apontam como o menos provável de converter: prevenção vendida a frio, sem gatilho vivo. Os dois experimentos que o consolidado identifica como realmente **discriminantes** (autópsia gratuita em projeto encerrado; proposta de preço fechado num gatilho ativo) entram já nos dias 1–15, em paralelo com a prospecção de parceiros Tier 3 — que é a peça mais bem validada pelo consenso (canal alugado, à la Vedacit/ConstruCode). O Tier 1 Watch deixa de ser prospecção fria e passa a ser oferecido só a quem já teve contato via autópsia ou serviço pontual.
+
+### Dias 1–15 — Artefatos mínimos + iniciar os 2 experimentos discriminantes
 1. 1 página de proposta comercial em PDF para cada tier (não precisa de site. PDF no WhatsApp já resolve)
 2. 1 template de relatório mensal do Tier 1 (Watch) — canva ou LaTeX, 1 página só com o que importa
 3. 1 script CLI wrapper simples: `infobim watch --project /caminho --output relatorio_mes.pdf`
-4. Lista de 30 prospects Tier 1 (BIM managers de EPCs e construtoras grandes) + 10 prospects Tier 3 (consultorias parceiras)
+4. Lista de **5 empresas com projeto encerrado/paralisado** (para o Experimento 1 — autópsia gratuita), **5 situações com gatilho ATIVO** (claim, handover travado, auditoria — para o Experimento 2), e **10 prospects Tier 3** (perícias, gerenciadoras, consultorias de commissioning)
+5. Iniciar contato com os 10 prospects Tier 3 desde já — o ciclo de venda desse tier é o mais longo do roadmap, então não pode esperar até o dia 76
 
-### Dias 16–45 — Validação do Tier 1
-- Mandar proposta para os 30 prospects Tier 1
-- Meta: **3 clientes pagantes no Tier 1 até dia 45** (nem que seja com 50% de desconto nos 3 primeiros meses pra validar)
-- Para cada um, operar manualmente. Anotar tudo que dá trabalho (depois automatiza)
+### Dias 16–45 — Rodar os experimentos discriminantes + abrir conversas Tier 3
+- **Experimento 1 (autópsia gratuita)**: entregar reconstituição de 10 entidades em 1 semana, para as 5 empresas com projeto encerrado. Mede se a dor é real, se o acervo é liberável e se a densidade das fontes sustenta o "por quê" de decisões.
+- **Experimento 2 (proposta em gatilho vivo)**: propor preço fechado (R$ 15k–R$ 30k piloto) para as 5 situações com gatilho ativo, sem trial. A objeção que vier já é o dado.
+- Continuar conversas com os 10 prospects Tier 3, incluindo oferta do piloto gratuito de pequeno trecho.
+- Tier 1 Watch, nesta janela, só é oferecido a quem já participou do Experimento 1 ou de uma conversa Tier 3 — nunca a prospecção fria.
+- Meta: pelo menos 1 dos 2 experimentos discriminantes gerar sinal de compra real (acervo liberado espontaneamente, ou proposta que gera objeção de preço em vez de silêncio).
 
-### Dias 46–75 — Vender primeiro serviço pontual + validar Tier 2
-- Com os 3 clientes Watch ativos, esperar aparecer uma oportunidade de serviço pontual ou criar uma: *"Olha, no relatório desse mês eu identifiquei 7 lacunas críticas no sistema elétrico que vão te impedir de entregar o handover em outubro. Quer que eu resolva num pacote fechado?"*
-- Meta: **1 serviço pontual fechado até dia 75**
+### Dias 46–75 — Vender primeiro serviço pontual + validar Tier 2 e Tier 1 (agora "quente")
+- Converter o melhor resultado dos Experimentos 1/2 em serviço pontual fechado. Meta: **1 serviço pontual fechado até dia 75**
 - Imediatamente após entrega do pontual: oferta Tier 2. Meta: **1 cliente Tier 2**
+- Oferecer Tier 1 Watch aos participantes do Experimento 1 que não converteram em pontual ainda — mantém o relacionamento aquecido com uma oferta barata, mas agora para gente que já viu o valor, não prospecção fria. Meta: **2–3 clientes Tier 1**, todos vindos desse funil "quente"
 
 ### Dias 76–90 — Fechar primeiro parceiro Tier 3 (Modelo A)
 - **Alvo**: 1 boutique de perícia de engenharia de Salvador/Bahia ou Rio (região com concentração de O&G, estaleiros, refinarias e clientes do laboratório, onde você já tem rede)
 - Ação: usar contato da Brasidata e de clientes de O&G do laboratório para apresentação de 30min. Pitch do dia: "Eu não quero te vender nenhum software. O InfoBIM é open-source e gratuito, qualquer um pode usar. O que eu faço é pegar o serviço de reconstituição que você hoje demora 3 semanas com 2 analistas abrindo pasta, e entrego em 3 dias úteis o pacote de evidências estruturado e a timeline navegável, com a SUA marca no resultado final. A gente testa no primeiro projeto com risco praticamente zero: eu faço de graça 1 pequeno trecho de um caso real seu, você compara com o resultado da sua equipe atual."
 - Meta: **1 parceiro Tier 3 Modelo A com contrato assinado até dia 90** (fidelidade de 3 meses, R$ 4.997/mês + R$ 2.997/projeto)
 - 1º mês do parceiro: 50% de desconto no valor base (R$ 2.497 em vez de R$ 4.997) para reduzir atrito
+- Se nenhum dos 10 prospects Tier 3 tiver fechado até aqui — dado o ciclo de venda mais longo desse tier — trate isso como normal, não como falha: o canal foi iniciado no dia 1, não no dia 76, então ainda está dentro do ciclo esperado.
 
 ### Resultado esperado em 90 dias
-- 3 clientes Tier 1 (Watch) → R$ 1.491 / mês
+- 2–3 clientes Tier 1 (Watch), vindos do funil quente (autópsia/pontual) → ~R$ 1.000–1.500 / mês
 - 1 cliente Tier 2 (Manutenção) → R$ 2.997 / mês
 - 1 parceiro Tier 3 Modelo A (contrato base) → R$ 4.997 / mês
 - + 1 projeto médio do parceiro Tier 3 no mês → + R$ 2.997 one-shot (fica contínuo nos meses seguintes)
 - 1 serviço pontual direto → R$ 40k (receita one-shot, não recorrente)
-- **Receita mensal recorrente base em 90 dias: R$ 9.485 / mês**
+- **Receita mensal recorrente base em 90 dias: ~R$ 9k / mês**
 - **+ projetos do parceiro = ~R$ 12k–R$ 15k / mês efetivo**
 
-Não é riqueza. Mas é recorrente, "deixado lá de exposição", com pipeline de serviços pontuais aquecido por trás. E o Tier 3 já tem fluxo de operação definido sem te obrigar a treinar parceiro em CLI.
+Não é riqueza. Mas é recorrente, "deixado lá de exposição", com pipeline de serviços pontuais aquecido por trás — e, diferente da versão anterior deste roadmap, cada oferta recorrente só chega a um cliente que já teve contato com o valor real, nunca a frio.
 
 ---
 
