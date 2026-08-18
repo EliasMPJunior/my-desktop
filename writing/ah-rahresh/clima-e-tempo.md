@@ -43,11 +43,15 @@ O Continente Norte deve possuir cadeias de montanhas espalhadas por todo o conti
 - charcos;
 - mangues.
 
-### 2. Continente Sul
+### 2. Continente Sul — Ãh-Rahresh
+
+**Ãh-Rahresh é o Continente Sul.**
 
 O Continente Sul deve ser muito plano, no máximo com montanhas baixas e extensos planaltos, e possuir uma imensa cordilheira situada a leste.
 
 Essa cordilheira deve ser dupla, com um grande planalto entre as duas cadeias. A cordilheira mais litorânea é um pouco mais baixa que a mais interna.
+
+Os personagens e povos de Ãh-Rahresh se referem a esse sistema de cordilheiras simplesmente como **As Montanhas**.
 
 Os ventos vindos do mar, carregados de nuvens, são barrados pela segunda cordilheira. Assim, há muita chuva no planalto central, onde se forma um imenso lago de água doce, porém pouco estável.
 
@@ -71,6 +75,35 @@ As plantas devem apresentar adaptações como:
 - folhas muito duras e pilosas;
 - poucos galhos;
 - frutos de casca muito dura e miolo suculento.
+
+#### Hidrografia subterrânea
+
+Em Ãh-Rahresh, **os cursos de água subterrâneos são mais importantes que os cursos superficiais**, sobretudo por sua maior estabilidade diante das condições extremas e variáveis da superfície.
+
+Consequências canônicas:
+
+- mapas frequentemente representam ou são organizados em função de **cursos subterrâneos**;
+- esses cursos podem ser mais relevantes para ocupação, abastecimento, oásis e planejamento territorial que rios superficiais;
+- pessoas comuns **não conseguem perceber naturalmente** a posição ou o percurso desses cursos de água;
+- existe um **cajado capaz de detectar cursos subterrâneos de água**.
+
+A hidrografia subterrânea, portanto, não é apenas uma característica geológica: ela participa diretamente da cartografia e da infraestrutura de Ãh-Rahresh.
+
+#### Controle da porosidade das Montanhas
+
+Boa parte da **porosidade das Montanhas** é, no período atual, **controlada pelo Conselho**.
+
+Isso significa que o Conselho exerce controle relevante sobre o sistema de infiltração e circulação de água que alimenta o reservatório e os cursos subterrâneos do continente.
+
+O mecanismo exato desse controle — físico, mágico, administrativo ou uma combinação dessas formas — não está definido aqui e não deve ser inventado.
+
+#### Povos das Montanhas
+
+Os povos originários ou habitantes das Montanhas possuem **pele azul**.
+
+A característica é associada ao **excesso de radiação solar** a que essas populações estão submetidas.
+
+O mecanismo biológico exato dessa pigmentação não está definido neste documento.
 
 ### 3. Continente Leste
 
@@ -145,7 +178,7 @@ Trecho preservado da fonte a partir desse ponto:
 - No meio desse período, o Grande Sol entra em conjunção com o Pequeno Sol no meio da tarde.
 - Cerca de dois dias antes dessa conjunção começa uma grande agitação no mar, atribuída à combinação da gravidade dos dois sóis, estendendo-se até cerca de dois dias depois.
 - É um período de maremotos e tsunamis, sobretudo no Hemisfério Norte, cujas costas são menos íngremes.
-- No Hemisfério Sul, a Grande Cordilheira Oriental atua como barreira ao avanço do mar e às grandes ondas.
+- No Hemisfério Sul, a Grande Cordilheira Oriental — **As Montanhas** — atua como barreira ao avanço do mar e às grandes ondas.
 - Esse evento é o **Pequeno Solstício**.
 
 ### Primavera e Outono
@@ -170,6 +203,7 @@ O ano religioso e agrícola gira em torno dos dois solstícios de verão.
 - O dia tem **28 horas**.
 - Um mês tem **48 dias**.
 - Para o Conselho Doszil, o mês tem **6 semanas**.
+- Consequentemente, no calendário do Conselho Doszil, **uma semana possui 8 dias**.
 
 ### Luas
 
@@ -188,7 +222,7 @@ A fonte contém um mapa esquemático com três grandes massas continentais e set
 O desenho indica:
 
 - grande concentração de terras no Hemisfério Norte;
-- uma massa continental longa no Hemisfério Sul;
+- uma massa continental longa no Hemisfério Sul, correspondente a **Ãh-Rahresh**;
 - circulação de ventos predominantemente de oeste para leste no extremo sul;
 - fluxos inclinados e meridionais em outras latitudes;
 - referência visual a sistemas de monções terrestres como comparação climática.
@@ -203,10 +237,28 @@ A fonte apresenta apenas o título **"Contagem de Tempo dos Povos"** e um anexo 
 
 ---
 
+## Canon complementar consolidado
+
+Além do texto original do PDF, ficam consolidados pelo autor os seguintes pontos:
+
+- **Ãh-Rahresh é o Continente Sul** do modelo planetário;
+- a Grande Cordilheira Oriental é conhecida pelos personagens simplesmente como **As Montanhas**;
+- os povos das Montanhas possuem **pele azul**, associada ao excesso de radiação solar;
+- a hidrografia **subterrânea é mais importante que a superficial** em Ãh-Rahresh por sua maior estabilidade;
+- mapas frequentemente representam e utilizam cursos subterrâneos como referências territoriais relevantes;
+- pessoas comuns não percebem naturalmente esses cursos;
+- existe um **cajado que detecta cursos de água subterrâneos**;
+- boa parte da **porosidade das Montanhas é atualmente controlada pelo Conselho**;
+- como o mês do Conselho possui 48 dias divididos em 6 semanas, a semana institucional do Conselho possui **8 dias**.
+
+---
+
 ## Observações sobre a fonte
 
-Este arquivo é uma conversão do PDF **Clima e Tempo** para Markdown.
+Este arquivo é uma conversão do PDF **Clima e Tempo** para Markdown acrescida de correções e complementos canônicos fornecidos posteriormente pelo autor.
 
 Foram preservadas as ideias e números do documento original. Pequenos ajustes de ortografia, pontuação e concordância foram feitos apenas para tornar o texto legível em Markdown, sem alterar o conteúdo conceitual.
 
 Trechos ausentes ou ambíguos na própria fonte foram marcados explicitamente e não foram completados por inferência.
+
+Considerações posteriores sobre plausibilidade física ou astronômica **não foram incorporadas como canon**.
