@@ -295,6 +295,8 @@ Outros Grão-vizirados existem, mas seus nomes e pares de competências ainda n�
 
 Auru, portanto, **não governa sozinha Ãh-Rahresh**. Ela ocupa um dos postos do Grão-vizirado da Segurança e da Guerra dentro de uma estrutura colegiada.
 
+A consolidação detalhada dos Grão-vizirados é mantida também no arquivo `grao-vizirados.md`.
+
 ---
 
 ## 20. Escolha dos vizires
@@ -367,13 +369,13 @@ Ela não escolhe diretamente a qual casta pertencerá. Escolhe **para qual casta
 
 Cada casta possui seu próprio teste.
 
-A oportunidade ocorre naquele ano e é, em princípio, **única**.
+A oportunidade ocorre naquele ano e é **única**.
 
-Se a criança for aprovada, ingressa naquela casta.
+Se a criança for aprovada, ingressa naquela casta. A partir daí, sua pertença é **permanente para toda a vida** e não existe mobilidade entre castas.
 
-A partir daí, sua pertença é **permanente para toda a vida**.
+Se a criança **reprovar** no teste escolhido ou **não realizar nenhum teste** naquele ano, ela fica **fora da sociedade organizada pelo Petatara**.
 
-Não existe mobilidade entre castas depois do ingresso.
+Não há uma nova casta ou categoria jurídica que absorva essas pessoas. Elas simplesmente não ingressam no corpo social formal. Na prática, podem fugir para o deserto, juntar-se a grupos marginais, viver do banditismo ou buscar outras formas de sobrevivência fora da sociedade oficial.
 
 ---
 
@@ -435,21 +437,21 @@ As equivalências podem variar conforme a região, o contexto e o responsável p
 
 ---
 
-## 29. Validação, pesagem e quitação
+## 29. A Pesagem
 
-Periodicamente, o passaporte precisa ser **validado**.
+O acerto periódico dos passaportes é chamado de **Pesagem**.
 
-A periodicidade exata — semanal, mensal ou outra — ainda não está definida.
+Na Pesagem, um **eunuco** realiza o balanço geral das prestações, obrigações, recebimentos e excedentes registrados no passaporte.
 
-A validação é realizada por um **eunuco**, que exerce uma função de elevada confiança social dentro do sistema.
+A periodicidade exata da Pesagem — semanal, mensal ou outra — ainda não está definida.
 
-O eunuco examina as prestações, obrigações, recebimentos e excedentes registrados no passaporte e os **pesa** de forma contextual. Essa pesagem não produz necessariamente um número ou saldo monetário.
+O eunuco **pesa** essas relações de forma contextual. Essa avaliação não produz um número ou saldo monetário.
 
-Ao final da avaliação, o eunuco pode declarar que as obrigações da pessoa estão **quitadas**. Em termos práticos, a decisão pode equivaler a: “está pago; neste período você não deve mais nada”.
+Ao final da Pesagem, o eunuco pode declarar que as obrigações da pessoa estão **quitadas**. Em termos práticos, a decisão pode equivaler a: “está pago; neste período você não deve mais nada”.
 
 Também pode reconhecer a existência de um **excedente** de contribuição. Parte desse excedente pode ser recolhida para o Estado, e o restante pode ser reconhecido em favor da pessoa segundo as regras aplicáveis.
 
-O sistema, portanto, funciona por **julgamentos de equivalência e suficiência**, e não por uma conversão universal de todas as atividades em uma unidade de valor.
+O sistema funciona por **julgamentos de equivalência e suficiência**, e não por uma conversão universal de todas as atividades em uma unidade de valor.
 
 ---
 
@@ -467,9 +469,9 @@ Podem existir divergências entre as partes e também diferenças de interpreta�
 
 ---
 
-## 31. Recursos contra a avaliação econômica
+## 31. Recursos contra a Pesagem
 
-Uma pessoa pode **recorrer** da decisão tomada pelo eunuco.
+Uma pessoa pode **recorrer** da decisão tomada pelo eunuco durante a Pesagem.
 
 O recurso sobe inicialmente para o **vizir local** competente.
 
@@ -493,15 +495,17 @@ Por isso, a exclusão do sistema de castas e a ausência de passaporte tornam pr
 
 ---
 
-## 33. Pessoas sem casta
+## 33. Pessoas fora das castas
 
-Existem pessoas que não ingressam em nenhuma das cinco castas.
+Quem reprova no teste de ingresso aos sete anos ou não realiza o teste fica **fora das cinco castas e fora da sociedade formal do Petatara**.
 
-Essas pessoas não podem permanecer normalmente dentro da sociedade organizada pelo Petatara.
+Essas pessoas não constituem uma casta paralela reconhecida e não possuem uma situação jurídica especial própria que substitua o pertencimento às castas.
 
-Sem casta, ficam também sem acesso regular ao **passaporte**, e portanto sem capacidade normal de participar da economia e sem direitos civis reconhecidos.
+Sem ingresso numa casta, ficam fora do acesso regular ao **passaporte**, da economia oficial e da proteção jurídica normal.
 
-Em geral, essas pessoas acabam se **exilando**, especialmente no deserto, onde existem comunidades e formas de sobrevivência externas à organização social oficial.
+Seus destinos variam. Podem se exilar no deserto, integrar comunidades marginais, tornar-se bandidos ou sobreviver por outras atividades externas ou periféricas ao sistema.
+
+Alguns grupos socialmente reconhecíveis existentes à margem do Petatara são, portanto, **consequências e formas concretas dessa exclusão**, não novas castas.
 
 ---
 
@@ -521,15 +525,13 @@ Esse grupo possui um nome próprio, mas ele ainda não foi recuperado e permanec
 
 ## 35. Malnascidos
 
-Existem magos que possuem capacidade mágica, mas **não ingressaram na Academia Doszil**.
+Existem pessoas com capacidade mágica que não ingressaram na Academia Doszil e, portanto, não se tornaram Doszil.
 
 Esses magos são chamados de **malnascidos**.
 
-Eles não constituem uma casta reconhecida.
+“Malnascido” não designa uma casta nem um status jurídico separado. É uma condição social concreta de alguém com magia que permaneceu **fora do Petatara formal**, nos mesmos termos gerais das demais pessoas que não ingressaram numa casta.
 
-Em geral, são perseguidos pelo sistema e podem ser **presos, mortos ou submetidos a outras formas de repressão**.
-
-A existência dos malnascidos demonstra que possuir capacidade mágica não é suficiente para possuir a condição social e jurídica de um Doszil: o pertencimento institucional à casta e à Academia é decisivo.
+Por serem magos fora da estrutura legítima da Academia Doszil, normalmente são perseguidos e podem ser presos ou mortos.
 
 ---
 
@@ -537,13 +539,9 @@ A existência dos malnascidos demonstra que possuir capacidade mágica não é s
 
 **Haler** é uma forma invariável: a palavra não possui plural distinto.
 
-Haler constituem outro grupo social de segunda categoria existente à margem da estrutura formal das cinco castas.
+Haler são descritas como **prostitutas de rua** e constituem um dos grupos socialmente reconhecíveis que existem à margem da sociedade formal.
 
-São descritas como **prostitutas de rua**.
-
-Neste momento, está consolidado apenas que formam um grupo social reconhecível e inferiorizado, mas **não uma casta formal do Petatara**.
-
-Ainda não estão definidos seu status jurídico, eventual relação com passaportes, grau de tolerância ou perseguição pelo Estado, vínculo com alguma casta de origem ou formas próprias de organização.
+Haler **não formam uma casta nem possuem uma situação jurídica própria distinta da exclusão geral do Petatara**. Sua condição é uma das formas sociais que podem decorrer da vida fora das castas e do sistema oficial.
 
 ---
 
@@ -566,15 +564,10 @@ Ainda não estão definidos seu status jurídico, eventual relação com passapo
 - Procedimento completo dos inquéritos contra decisões de Grão-vizires e possíveis punições.
 - Limites jurídicos e práticos da autoridade dos sultões frente ao Conselho de Grão-vizires.
 - Detalhes dos testes de ingresso de cada casta.
-- Consequências precisas para uma criança que não passe no teste escolhido aos sete anos.
-- Situação de crianças que, por qualquer razão, não realizem um teste naquele ano.
 - Relação entre a proibição jurídica da herança e os mecanismos informais de continuidade familiar do poder.
-- Periodicidade da validação dos passaportes.
+- Periodicidade da Pesagem dos passaportes.
 - Regras exatas para reconhecimento, retenção e recolhimento de excedentes.
-- Catálogo e alcance das categorias qualitativas usadas para orientar a pesagem das transações.
-- Procedimento detalhado de recurso contra decisões dos eunucos.
-- Relação institucional exata entre passaporte, casta e reconhecimento de direitos.
+- Catálogo e alcance das categorias qualitativas usadas para orientar a Pesagem.
+- Procedimento detalhado de recurso contra decisões tomadas na Pesagem.
 - Nome do grupo de mercadores de longa distância que opera com metais preciosos.
 - Regras e exceções concretas que explicam a tolerância estatal a esses mercadores.
-- Situação jurídica detalhada dos malnascidos.
-- Situação jurídica e social detalhada de Haler, incluindo relação com passaporte e castas.
