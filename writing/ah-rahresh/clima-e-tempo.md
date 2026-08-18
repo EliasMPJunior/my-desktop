@@ -229,14 +229,23 @@ Pelas unidades canônicas estabelecidas:
 
 Portanto, **7 anos-canônicos ≈ 17,17 anos terrestres**, e essa equivalência é canônica.
 
-Ãh-Rahresh **não utiliza aniversário individual baseado no dia ou no mês de nascimento**.
+No sistema oficial de Ãh-Rahresh **não existe aniversário individual baseado no dia ou no mês de nascimento**.
 
 - todas as pessoas avançam oficialmente um ano de idade no **Ano Novo**;
-- todos fazem aniversário no mesmo marco anual;
-- a data de nascimento de uma pessoa registra **apenas o ano-canônico de nascimento**;
-- dia-canônico e mês-canônico de nascimento não fazem parte da data civil de nascimento.
+- todos fazem aniversário oficialmente no mesmo marco anual;
+- a data civil de nascimento de uma pessoa registra **apenas o ano-canônico de nascimento**;
+- dia-canônico e mês-canônico de nascimento não fazem parte da data civil oficial.
 
 Assim, idade civil é determinada pelo ano-canônico de nascimento e atualizada coletivamente na virada do ano.
+
+#### Tradições locais de nascimento e aniversário
+
+Essas regras oficiais convivem com tradições locais que preservam outras informações, sem alterar o registro civil do Estado.
+
+- **Povos das Montanhas:** registram **dia-canônico e hora de nascimento**, porque atribuem ao nascimento importância astrológica, trabalhando com signo, mapa astral e práticas correlatas. Esse registro é tradicional/local e **não oficial**.
+- **Povos Rubros:** registram **a estação e o ano-canônico** como referência de nascimento/aniversário. Também é uma tradição local e **não oficial**.
+
+Esses costumes não mudam a idade civil nem a regra oficial segundo a qual o Estado registra apenas o ano-canônico de nascimento e todos avançam de idade no Ano Novo.
 
 ### Luas
 
@@ -287,8 +296,10 @@ Além do texto original do PDF, ficam consolidados pelo autor os seguintes ponto
 - 1 **ano-canônico** tem 16 meses-canônicos, portanto 768 dias-canônicos;
 - como o mês do Conselho possui 48 dias-canônicos divididos em 6 semanas, a semana institucional do Conselho possui **8 dias-canônicos**;
 - **7 anos-canônicos correspondem a aproximadamente 17,17 anos terrestres e marcam a maioridade**;
-- **não existe aniversário individual por dia/mês**: todos fazem aniversário no Ano Novo;
-- a data civil de nascimento de uma pessoa registra **apenas o ano-canônico de nascimento**.
+- oficialmente, **não existe aniversário individual por dia/mês**: todos fazem aniversário no Ano Novo;
+- a data civil de nascimento registra **apenas o ano-canônico de nascimento**;
+- os **Povos das Montanhas** preservam localmente dia-canônico e hora do nascimento para signo, mapa astral e práticas correlatas, sem valor oficial;
+- os **Povos Rubros** preservam localmente a estação e o ano-canônico como referência de nascimento/aniversário, também sem valor oficial.
 
 ---
 
