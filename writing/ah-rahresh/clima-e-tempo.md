@@ -196,22 +196,56 @@ O ano religioso e agrícola gira em torno dos dois solstícios de verão.
 
 ---
 
-## Números
+## Números e unidades canônicas de tempo
 
-### Dia e mês
+Para evitar confusão entre as unidades internas do mundo e unidades terrestres, passam a ser usados internamente os termos **dia-canônico**, **mês-canônico** e **ano-canônico**.
 
-- O dia tem **28 horas**.
-- Um mês tem **48 dias**.
-- Para o Conselho Doszil, o mês tem **6 semanas**.
-- Consequentemente, no calendário do Conselho Doszil, **uma semana possui 8 dias**.
+### Dia-canônico
+
+- 1 **dia-canônico** tem **28 horas terrestres**.
+
+### Mês-canônico
+
+- 1 **mês-canônico** tem **48 dias-canônicos**.
+- Para o Conselho Doszil, 1 mês-canônico possui **6 semanas**.
+- Consequentemente, no calendário do Conselho Doszil, 1 semana possui **8 dias-canônicos**.
+
+### Ano-canônico
+
+- 1 **ano-canônico** tem **16 meses-canônicos**.
+- Portanto, 1 ano-canônico tem **768 dias-canônicos**.
+- Mantendo a duração atual de 28 horas terrestres por dia-canônico, 1 ano-canônico corresponde a **896 dias terrestres**, aproximadamente **2,45 anos terrestres**.
+
+### Conversão dos sete anos de Dedicação Romil
+
+Pelos números atualmente registrados:
+
+- 7 anos-canônicos = **5.376 dias-canônicos**;
+- 5.376 dias-canônicos × 28 horas = **150.528 horas terrestres**;
+- isso corresponde a **6.272 dias terrestres**;
+- ou aproximadamente **17,17 anos terrestres**.
+
+### Inconsistência temporal a revisar
+
+Há uma intenção de worldbuilding previamente estabelecida de que **7 anos-canônicos deveriam corresponder aproximadamente a 14 anos e alguns meses terrestres**.
+
+Essa intenção **não é compatível**, neste momento, com a combinação dos seguintes valores:
+
+- 28 horas terrestres por dia-canônico;
+- 48 dias-canônicos por mês-canônico;
+- 16 meses-canônicos por ano-canônico.
+
+Com esses três valores simultaneamente válidos, a conversão resulta em aproximadamente **17,17 anos terrestres**.
+
+A inconsistência deve permanecer registrada para revisão futura. Não se deve alterar ou inventar qualquer uma dessas unidades apenas para forçar a equivalência pretendida sem decisão autoral explícita.
 
 ### Luas
 
-- Lua 1: **27,321661 dias** em torno do planeta.
-- Lua 2: **35,778365 dias** em torno do planeta.
-- Lua 1 e Lua 2 se encontram em eclipse a cada **11,829997 dias**.
-- Lua 1: velocidade de **13,176358 graus/dia**.
-- Lua 2: velocidade de **10,061946 graus/dia**.
+- Lua 1: **27,321661 dias-canônicos** em torno do planeta.
+- Lua 2: **35,778365 dias-canônicos** em torno do planeta.
+- Lua 1 e Lua 2 se encontram em eclipse a cada **11,829997 dias-canônicos**.
+- Lua 1: velocidade de **13,176358 graus/dia-canônico**.
+- Lua 2: velocidade de **10,061946 graus/dia-canônico**.
 
 ---
 
@@ -249,7 +283,11 @@ Além do texto original do PDF, ficam consolidados pelo autor os seguintes ponto
 - pessoas comuns não percebem naturalmente esses cursos;
 - existe um **cajado que detecta cursos de água subterrâneos**;
 - boa parte da **porosidade das Montanhas é atualmente controlada pelo Conselho**;
-- como o mês do Conselho possui 48 dias divididos em 6 semanas, a semana institucional do Conselho possui **8 dias**.
+- 1 **dia-canônico** tem 28 horas terrestres;
+- 1 **mês-canônico** tem 48 dias-canônicos;
+- 1 **ano-canônico** tem 16 meses-canônicos, portanto 768 dias-canônicos;
+- como o mês do Conselho possui 48 dias-canônicos divididos em 6 semanas, a semana institucional do Conselho possui **8 dias-canônicos**;
+- permanece aberta a inconsistência entre a conversão matemática atual de 7 anos-canônicos (**≈17,17 anos terrestres**) e a duração pretendida de **14 anos e alguns meses terrestres**.
 
 ---
 
