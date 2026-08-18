@@ -216,7 +216,7 @@ Para evitar confusão entre as unidades internas do mundo e unidades terrestres,
 - Portanto, 1 ano-canônico tem **768 dias-canônicos**.
 - Mantendo a duração de 28 horas terrestres por dia-canônico, 1 ano-canônico corresponde a **896 dias terrestres**, aproximadamente **2,45 anos terrestres**.
 
-### Maioridade
+### Maioridade e aniversários
 
 A **maioridade em Ãh-Rahresh ocorre aos 7 anos-canônicos**.
 
@@ -227,9 +227,16 @@ Pelas unidades canônicas estabelecidas:
 - isso corresponde a **6.272 dias terrestres**;
 - ou aproximadamente **17,17 anos terrestres**.
 
-Portanto, **7 anos-canônicos ≈ 17,17 anos terrestres**.
+Portanto, **7 anos-canônicos ≈ 17,17 anos terrestres**, e essa equivalência é canônica.
 
-Essa equivalência é considerada correta e canônica.
+Ãh-Rahresh **não utiliza aniversário individual baseado no dia ou no mês de nascimento**.
+
+- todas as pessoas avançam oficialmente um ano de idade no **Ano Novo**;
+- todos fazem aniversário no mesmo marco anual;
+- a data de nascimento de uma pessoa registra **apenas o ano-canônico de nascimento**;
+- dia-canônico e mês-canônico de nascimento não fazem parte da data civil de nascimento.
+
+Assim, idade civil é determinada pelo ano-canônico de nascimento e atualizada coletivamente na virada do ano.
 
 ### Luas
 
@@ -275,9 +282,13 @@ Além do texto original do PDF, ficam consolidados pelo autor os seguintes ponto
 - pessoas comuns não percebem naturalmente esses cursos;
 - existe um **cajado que detecta cursos de água subterrâneos**;
 - boa parte da **porosidade das Montanhas é atualmente controlada pelo Conselho**;
-- como o mês do Conselho possui 48 dias divididos em 6 semanas, a semana institucional do Conselho possui **8 dias**;
-- 1 ano-canônico possui **16 meses-canônicos de 48 dias-canônicos**;
-- a **maioridade ocorre aos 7 anos-canônicos**, equivalentes a aproximadamente **17,17 anos terrestres**.
+- 1 **dia-canônico** tem 28 horas terrestres;
+- 1 **mês-canônico** tem 48 dias-canônicos;
+- 1 **ano-canônico** tem 16 meses-canônicos, portanto 768 dias-canônicos;
+- como o mês do Conselho possui 48 dias-canônicos divididos em 6 semanas, a semana institucional do Conselho possui **8 dias-canônicos**;
+- **7 anos-canônicos correspondem a aproximadamente 17,17 anos terrestres e marcam a maioridade**;
+- **não existe aniversário individual por dia/mês**: todos fazem aniversário no Ano Novo;
+- a data civil de nascimento de uma pessoa registra **apenas o ano-canônico de nascimento**.
 
 ---
 
