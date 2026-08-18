@@ -13,9 +13,33 @@ A matéria viva simplesmente não cedia. O estrago nos órgãos internos continu
 Samira recolheu as mãos num movimento seco e abrupto, os punhos cerrados sobre os joelhos. A respiração dela própria estava entrecortada, os olhos fixos no chão de terra, onde uma gota de seu próprio suor acabara de cair.
 Um toque pousou em seu ombro.
 Não era um gesto cerimonial. A mão da mãe das crianças — calejada, coberta pela poeira do trabalho e pelo cansaço vigiado de dias inteiros — segurava o tecido pesado do ombro de Samira com firmeza. A mulher não fez reverências, não se afastou temendo a autoridade da sultana e nem implorou. Ficou apenas ali, dividindo o espaço exíguo da esteira, sustentando o peso daquele fracasso imediato.
-Samira permaneceu imóvel por um segundo sob o peso do toque, o peito ainda subindo e descendo com força. Sem levantar os olhos para a mulher, mantendo a vista fixa nos corpos pequenos que continuavam a lutar pelo ar, ela falou em voz baixa, áspera de contenção:
-— Eu consigo baixar a febre por um instante. Consigo forçar o ar a entrar. Mas cura... cura é a magia mais difícil que existe. E o Póler não cede fácil assim.
-A mãe não retirou a mão de imediato, apenas olhou para os filhos. O silêncio voltou a pesar sobre o casebre, preenchido unicamente pelo estertor fraco das crianças na esteira.
+Samira apoiou uma das mãos no joelho e começou a se levantar. Ainda olhando para as crianças, murmurou para si mesma:
+— Estado. Transição. Ciclo.
+A mãe ergueu os olhos para ela, sem entender.
+Samira percebeu.
+— É como a magia funciona.
+A mulher continuou olhando.
+Samira respirou fundo e tornou a olhar para o menino.
+— Primeiro, o estado. O que existe agora e o que deveria existir. A febre, a respiração, o pulso... e como o corpo deveria estar.
+Indicou a criança com um pequeno movimento da mão.
+— Depois, a transição. O que precisa começar e o que precisa parar para sair de um estado e chegar ao outro.
+— A febre parar? — perguntou a mãe.
+— Isso. A febre parar. A respiração voltar. O corpo reagir.
+Samira ficou em silêncio por um instante.
+— E então o ciclo.
+A mãe esperou.
+— Aquilo que não basta acontecer uma vez. Tem que continuar acontecendo sozinho.
+A mulher baixou os olhos para os filhos.
+— A respiração.
+— A respiração. O coração. O corpo regulando o próprio calor. Reagindo à doença. Uma coisa depende da outra.
+Samira abriu e fechou lentamente uma das mãos, ainda sentindo o esforço da magia nos dedos.
+— Eu consigo obrigar algumas dessas coisas a acontecer por um instante. Você viu.
+A mãe assentiu.
+— Mas fazer o corpo voltar a fazer tudo isso sozinho... — Samira balançou a cabeça. — Cura é a magia mais difícil que existe.
+A mãe permaneceu em silêncio.
+Samira olhou novamente para as duas crianças.
+— E o Póler é mortal porque não desarranja uma coisa só.
+O silêncio voltou a pesar sobre o casebre, preenchido unicamente pelo estertor fraco das crianças na esteira.
 Samira sentiu a garganta queimar. A tensão que lhe subia pela espinha não era mais de esforço mágico; era uma pressão dolorosa que ela não permitiria transparecer ali, diante daquela esteira.
 Ela afastou-se com calma calculada, rompendo o contato, e levantou-se com o porte ereto que sua posição exigia. Ajustou a túnica azul-escuro sobre o corpo, recuperando a compostura externa com a frieza aprendida de uma Doszil.
 — Já volto — disse ela, seca, sem olhar diretamente para o rosto da mãe.
