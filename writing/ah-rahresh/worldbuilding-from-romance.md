@@ -1,16 +1,16 @@
-# Worldbuilding extraído do romance
+# Worldbuilding extraído dos romances
 
 ## Estado deste documento
 
-Este arquivo consolida **características de worldbuilding extraídas do romance _Rei dos Malnascidos 2 — Filha do Segredo_**, com correções fornecidas posteriormente pelo autor.
+Este arquivo consolida **características de worldbuilding extraídas dos romances _O Rei dos Malnascidos 1_ e _Rei dos Malnascidos 2 — Filha do Segredo_**, com correções e complementos fornecidos posteriormente pelo autor.
 
 A finalidade deste documento é manter separadas três camadas:
 
-1. **o que aparece no romance**;
-2. **correções terminológicas e conceituais fornecidas pelo autor**;
+1. **o que aparece nos romances**;
+2. **correções terminológicas, conceituais e cronológicas fornecidas pelo autor**;
 3. **pontos ainda ambíguos ou deliberadamente em aberto**.
 
-Este arquivo não substitui `foundation.md`. Ele funciona como fonte de referência específica para o worldbuilding efetivamente exibido no romance e para as correções necessárias de leitura.
+Este arquivo não substitui `foundation.md`. Ele funciona como fonte de referência específica para o worldbuilding efetivamente exibido nos romances e para as correções necessárias de leitura.
 
 ---
 
@@ -20,11 +20,13 @@ O nome correto do fundador é **Sijim**, com **M**.
 
 Formas anteriores como `Sijin` devem ser tratadas como incorretas neste projeto.
 
-No romance, Sijim aparece como referência fundadora da ordem atual, da Academia Doszil e de leis antigas que ainda possuem força institucional.
+Nos romances, Sijim aparece como referência fundadora da ordem atual, da Academia Doszil e de leis antigas que ainda possuem força institucional.
 
 Há um **lamassu de Sijim**, representado como uma criatura com cabeça humana, corpo de leão e asas.
 
 As chamadas **leis de Sijim** podem ser invocadas formalmente em disputas sobre direitos de acadêmicos e membros da Academia Doszil.
+
+O primeiro romance chama Sijim de **“criador da vida moderna”** e mostra que o edifício do Conselho Doszil foi originalmente construído por ele com uma técnica antiga de tijolos porosos, cal e sebo animal, concebida para manter o interior fresco.
 
 ---
 
@@ -49,7 +51,7 @@ A casta dos comuns possui duas denominações:
 - **Burnzilla** — autodenominação usada pelos próprios membros da casta;
 - **Eguzilla** — nome usado pelas demais castas para se referirem a eles.
 
-No romance, a expressão genérica **“casta dos comuns”** aparece com frequência.
+Nos romances, a expressão genérica **“casta dos comuns”** aparece com frequência.
 
 Não se deve inferir automaticamente que `Eguzilla` seja insulto; o elemento canônico é que se trata do nome externo, enquanto `Burnzilla` é a autodenominação.
 
@@ -61,16 +63,17 @@ O nome correto da casta é **Oshul**.
 
 Formas como `Oxum` devem ser descartadas.
 
-A **Academia Oshul** aparece explicitamente no romance.
+A **Academia Oshul** aparece explicitamente nos romances.
 
-O romance mostra que Oshulla podem atuar em:
+Os romances mostram que Oshulla podem atuar em:
 
 - dança;
 - festas;
 - entretenimento;
 - prazer;
 - Casas dos Prazeres;
-- funções de representação e sedução.
+- funções de representação e sedução;
+- serviço especializado a pessoas importantes.
 
 Há avaliação estética no processo de ingresso da Academia Oshul. A aparência física pode ser determinante na admissão.
 
@@ -78,13 +81,15 @@ Uma Oshul pode sofrer sanções disciplinares aplicadas ou provocadas pela próp
 
 O romance também mostra que a exclusão da casta pode ocorrer posteriormente. Uma Oshul desfigurada, por exemplo, pode tornar-se incompatível com as exigências da casta e terminar expulsa.
 
+No primeiro romance, Dandara é descrita como **Oshul de quatro véus**. No segundo volume também aparece a expressão **quatro faixas**. A relação exata entre véus e faixas permanece em aberto e não deve ser presumida automaticamente.
+
 ---
 
 ## 4. Haler
 
 **Haler** é uma forma invariável.
 
-No romance, Haler são descritas como **prostitutas de rua** e são claramente diferenciadas das Oshulla.
+Nos romances, Haler são descritas como **prostitutas de rua** e são claramente diferenciadas das Oshulla.
 
 Uma personagem chega a corrigir explicitamente outro personagem que confunde uma Oshul com uma Haler.
 
@@ -104,9 +109,13 @@ Alukil designa o **eunuco pertencente à estrutura de castas**, e a **Academia A
 
 Matum recorda que foi castrado ao ingressar na Academia Alukil.
 
+O primeiro romance acrescenta que a mutilação ocorre **às vésperas da maioridade** e que existe uma crença social generalizada segundo a qual eunucos ficam livres das paixões que levam pessoas a mentir, enganar e trapacear.
+
+A palavra de eunucos recebe grande crédito entre membros de todas as castas.
+
 Os eunucos possuem posição institucional peculiar e alto grau de circulação social.
 
-O romance mostra que um eunuco pode:
+Os romances mostram que um eunuco pode:
 
 - dirigir departamentos;
 - exercer funções administrativas;
@@ -114,8 +123,6 @@ O romance mostra que um eunuco pode:
 - ocupar posição de Grão-administrador;
 - circular em ambientes de castas superiores com menor grau de suspeita;
 - transitar por espaços restritos onde outras pessoas seriam interrompidas ou questionadas.
-
-O próprio Matum entende que uma das vantagens de ser eunuco é ser percebido como pouco ameaçador e, por isso, poder acessar lugares com facilidade incomum.
 
 A relação exata entre **Alukil** e a casta de origem correspondente deve permanecer conforme definida pelo autor e não ser reinterpretada como uma nova casta.
 
@@ -158,14 +165,37 @@ Uma disputa explícita ocorre sobre o direito de acadêmicos postergarem a confi
 
 ### Ritos corporais Doszil
 
-O romance mostra marcas corporais e modificações associadas à condição Doszil, entre elas:
+Os romances mostram marcas corporais e modificações associadas à condição Doszil, entre elas:
 
-- tatuagens geométricas;
+- tatuagens;
 - implantes ou ossos incorporados ao corpo;
 - chifres implantados em determinados ritos de passagem;
+- argolas;
+- rebites;
 - outras modificações corporais associadas à trajetória dentro da casta.
 
+No primeiro romance, um Doszil afirma explicitamente que essas modificações simbolizam a superioridade Doszil sobre as demais castas.
+
 **Essas características são Doszil, não características gerais da etnia maati.**
+
+### Emirados da Academia Doszil
+
+O primeiro romance mostra subdivisões internas chamadas **emirados**.
+
+São citados pelo menos:
+
+- **Emirado da Serpente**;
+- **Emirado do Lagarto**.
+
+Ofíris e Alamar foram do Lagarto; Fahrak foi da Serpente. Famílias Doszil demonstram orgulho por filhos repetirem o emirado de seus pais.
+
+A função institucional exata dos emirados — agrupamento acadêmico, divisão pedagógica, casa, unidade competitiva ou outra estrutura — permanece em aberto.
+
+### Ancestralidade Doszil
+
+Em determinado rito de ingresso, uma candidata pode precisar apresentar uma **ancestralidade de quarenta e dois nomes de Doszilla**.
+
+O primeiro romance mostra que essa ascendência pode ser apresentada por escrito, segundo costumes antigos.
 
 ---
 
@@ -179,7 +209,7 @@ Essa condição não é corrigida posteriormente por ingresso normal na Academia
 
 O elemento decisivo é que **os testes da Academia Doszil destinados a malnascidos são letais**.
 
-Portanto, cenas em que malnascidos aparentemente avançam pelo processo acadêmico não devem ser interpretadas como demonstração de mobilidade jurídica normal.
+O primeiro romance mostra personagens dizendo explicitamente que malnascidos morrem nos testes e que eles foram concebidos para impedir sua entrada. Essa formulação aparece pela boca de personagens e não deve ser transformada, isoladamente, em exposição constitucional neutra; a letalidade dos testes, porém, é canônica.
 
 O romance mostra perseguição, prisão e execução de malnascidos.
 
@@ -201,8 +231,6 @@ São **categorias ou especializações de mago**.
 
 Doszilla também podem pertencer a essas categorias.
 
-O romance apresenta essas classificações em registros administrativos relacionados a magos e malnascidos, mas isso não deve ser interpretado como se tais categorias fossem próprias apenas de pessoas fora da Academia.
-
 ### Secadores
 
 Secadores conseguem interferir diretamente na **Energia Criativa**.
@@ -219,7 +247,7 @@ Projetores manifestam fenômenos mágicos que podem afetar o ambiente de forma i
 
 Comunicadores estão associados a formas de transmissão e comunicação mágica.
 
-O romance não fornece neste volume uma taxonomia completa de todas as categorias de mago.
+Os romances não fornecem uma taxonomia completa de todas as categorias de mago.
 
 ---
 
@@ -246,7 +274,7 @@ Bastões aparecem como exemplo explícito.
 
 A magia aparece como infraestrutura cotidiana e tecnológica, não apenas como arma.
 
-O romance mostra, entre outros:
+Os romances mostram, entre outros:
 
 - iluminação mágica;
 - amplificação de voz;
@@ -273,13 +301,13 @@ São descritos como uma das mais poderosas linhas de defesa de Ãh-Rahresh.
 
 Podem identificar transgressões relacionadas ao acesso e à permanência na Academia Doszil e possuem capacidade letal.
 
-O lamassu de Sijim possui papel simbólico e jurídico especial no romance.
+O lamassu de Sijim possui papel simbólico e jurídico especial nos romances.
 
 ---
 
 ## 11. Governo e Conselho Doszil
 
-O romance mostra o **Conselho Doszil** como centro importante de poder e administração.
+Os romances mostram o **Conselho Doszil** como centro importante de poder e administração.
 
 Existem:
 
@@ -296,6 +324,16 @@ Existem:
 Órgãos podem ser transferidos entre viziratos ao longo do tempo.
 
 O Departamento de Infiltrados, por exemplo, mudou de vinculação institucional.
+
+### Salão do Conselho e tradicionalismo
+
+O primeiro romance mostra que o salão do Conselho mantém deliberadamente características antigas atribuídas ao próprio Sijim.
+
+O ambiente é austero e desconfortável apesar do poder dos seus ocupantes. Tradição exige que membros permaneçam sentados em tapetes, com pernas cruzadas e costas eretas. Recostar-se pode ser entendido como sinal de inaptidão para o cargo.
+
+Até o uso de magia para aliviar desconforto físico é socialmente malvisto, embora possa ocorrer se não for percebido.
+
+Isso mostra forte **tradicionalismo performático** na cultura política do Conselho.
 
 ---
 
@@ -323,11 +361,11 @@ Não deve substituir **Segurança e Guerra** como nome oficial atualmente consol
 
 ### Magia e Criação
 
-O romance mostra explicitamente o **Grão-vizirado / Vizirato da Magia e da Criação**.
+Os romances mostram explicitamente o **Grão-vizirado / Vizirato da Magia e da Criação**.
 
 ### Memória e Comunicação
 
-O romance mostra explicitamente estrutura ligada à **Memória e Comunicação**.
+Os romances mostram explicitamente estrutura ligada à **Memória e Comunicação**.
 
 ### Trânsito e Permanência
 
@@ -335,36 +373,37 @@ O nome correto é **Trânsito e Permanência**.
 
 Formas anteriores como `Moradia e Transportes` devem ser descartadas.
 
-O romance menciona vizires e Grão-vizires associados ao Trânsito e Permanência.
-
 ### Fazenda e Comércio
 
-Esse Grão-vizirado pertence ao canon mais amplo já consolidado, embora este volume não seja a principal fonte para sua descrição econômica.
+Esse Grão-vizirado pertence ao canon mais amplo já consolidado, embora os romances não sejam a principal fonte para sua descrição econômica.
 
 ---
 
 ## 13. Sultanatos e competências sobrepostas
 
-O romance mostra que sultões possuem autoridade administrativa real sobre seus oásis e territórios.
+Os romances mostram que sultões possuem autoridade administrativa real sobre seus oásis e territórios.
 
 Essa autoridade pode se sobrepor às competências de Grão-vizires.
 
 Ofíris, sultão de Yaati, afirma que a segurança do oásis também é responsabilidade dele, apesar da existência de uma Grã-vizir da Segurança e Guerra.
 
-Isso demonstra que a estrutura política não funciona como divisão perfeitamente estanque de competências.
+O primeiro romance mostra ainda uma divisão jurisdicional explícita: em Yaati, Ofíris afirma ter competência para decidir quem será punido; dentro da Academia Doszil, o Grão-mestre Sharif afirma possuir essa autoridade.
 
-Há sobreposição entre:
+Isso indica que a autoridade muda conforme **território e instituição**, e não forma uma simples cadeia vertical única.
 
-- administração local;
-- sultanato;
-- Grão-vizirados;
-- Conselho.
+### Escolha e remoção de sultões
+
+O primeiro romance afirma que o Conselho escolhe sultões há séculos.
+
+Também mostra que o Conselho pode **retirar um casal do sultanato**. Essama e Baadi são citados como antigos sultões de Huad retirados pelo Conselho.
+
+O procedimento exato permanece em aberto.
 
 ---
 
 ## 14. Administração local
 
-O romance mostra cargos locais como **Grão-administrador**.
+Os romances mostram cargos locais como **Grão-administrador**.
 
 Em Huad, Mestre Sahyd atua como Grão-administrador.
 
@@ -376,11 +415,11 @@ Passaportes são utilizados nesse processo.
 
 ## 15. Passaporte
 
-O passaporte aparece no romance como instrumento de **identificação, circulação e registro administrativo**.
+O passaporte aparece nos romances como instrumento de **identificação, circulação e registro administrativo**.
 
 Ele não deve ser entendido apenas como mecanismo econômico.
 
-O romance mostra que:
+Os romances mostram que:
 
 - visitantes têm sua chegada registrada;
 - passaportes podem ser confiscados;
@@ -395,7 +434,7 @@ Isso reforça o papel do passaporte como instrumento central de existência civi
 
 Ãh-Rahresh é fortemente burocratizada.
 
-O romance mostra registros de:
+Os romances mostram registros de:
 
 - nascimento;
 - circulação;
@@ -411,7 +450,7 @@ A frase de que **nada acontece em Ãh-Rahresh sem ser registrado** sintetiza ess
 
 ## 17. Economia, impostos e circulação clandestina
 
-O romance mostra:
+Os romances mostram:
 
 - registradores;
 - declaração de recebimentos;
@@ -425,7 +464,7 @@ O romance mostra:
 
 ### Troca em bens
 
-O romance mostra valores expressos diretamente em bens, como **ovelhas**.
+Os romances mostram valores expressos diretamente em bens, como **ovelhas**.
 
 Isso é compatível com uma economia sem unidade monetária universal.
 
@@ -439,9 +478,42 @@ Algumas regiões, especialmente no Noroeste, aparecem associadas a contrabando, 
 
 ---
 
-## 18. Escravidão e servidão
+## 18. Kah’fi
 
-O romance mostra uma sociedade em que **escravidão e servidão são institucionalizadas e normalizadas**.
+**Kah’fi é uma planta conhecida e proibida em Ãh-Rahresh.**
+
+O primeiro romance mostra seu comércio clandestino e sua proibição, mas o autor acrescenta a razão fundamental dessa proibição:
+
+- a planta **esteriliza o local em que cresce por centenas de anos**;
+- por isso, seu cultivo causa dano territorial duradouro.
+
+### Conservação das folhas
+
+Depois de colhida, a folha de kah’fi pode ser mantida por **décadas em vasos**.
+
+Nessa condição:
+
+- ela não cresce;
+- não morre;
+- permanece conservada por longos períodos.
+
+Essa propriedade torna possível armazenar e traficar kah’fi por muitos anos.
+
+### Qahuad
+
+Na destruição de **Qahuad**, Auru não ordenou apenas o uso de sal.
+
+A terra foi submetida a **sal + plantação de kah’fi**.
+
+O objetivo era **esterilizar a terra de forma permanente ou pelo maior período possível**, impedindo a recuperação agrícola e a reocupação do local.
+
+A consequência não planejada ou secundária foi a criação de uma fonte duradoura de kah’fi para traficantes, já que as folhas colhidas podem permanecer viáveis por décadas em vasos.
+
+---
+
+## 19. Escravidão e servidão
+
+Os romances mostram uma sociedade em que **escravidão e servidão são institucionalizadas e normalizadas**.
 
 Há distinção textual entre:
 
@@ -462,17 +534,19 @@ Escravos aparecem trabalhando em:
 
 Aisha é apresentada como filha de escrava e inicialmente entende sua expectativa de vida como servidão.
 
+O primeiro romance mostra ainda um cavalo velho destinado a ser abatido e transformado em **ração para escravos**, e Milãh descendo de uma liteira sobre as costas de escravos usados como degraus humanos.
+
 ---
 
-## 19. Etnias
+## 20. Etnias
 
 As castas não eliminaram as etnias.
 
-O romance mostra reconhecimento formal de grupos étnicos e culturais dentro do Estado.
+Os romances mostram reconhecimento formal de grupos étnicos e culturais dentro do Estado.
 
 A Academia Doszil possui estátuas representando etnias reconhecidas pelo Conselho.
 
-Entre os nomes presentes no romance aparecem:
+Entre os nomes presentes aparecem:
 
 - **maati**;
 - **mênyã**;
@@ -483,7 +557,7 @@ Entre os nomes presentes no romance aparecem:
 
 ---
 
-## 20. Maati
+## 21. Maati
 
 A leitura anterior que atribuía diversas características corporais à etnia maati estava errada.
 
@@ -491,44 +565,37 @@ A leitura anterior que atribuía diversas características corporais à etnia ma
 
 Entre mulheres maati, **manter os seios à mostra durante o período fértil** é uma prática cultural da etnia.
 
+O primeiro romance mostra a passagem de Milãh à condição em que passa a poder expor os seios em público segundo a tradição de sua etnia.
+
 Esse costume não é uma marca específica da casta Doszil.
 
 ### Simbolismo fálico
 
 **Simbolismos fálicos são profundamente ofensivos para os maati.**
 
-No romance, uma representação fálica é entendida como insulto grave dentro da cultura maati.
-
 ### O que NÃO deve ser atribuído automaticamente aos maati
 
 Não são características étnicas gerais dos maati, mas elementos relacionados à casta Doszil ou a ritos específicos:
 
-- tatuagens geométricas Doszil;
+- tatuagens Doszil;
 - implantes corporais Doszil;
 - ossos incorporados à pele;
 - chifres rituais;
-- outras marcas de progressão na casta.
+- rebites e outras marcas de progressão na casta.
 
 ---
 
-## 21. Norumbu
+## 22. Norumbu
 
 **Norumbu é uma etnia.**
 
 Além disso, o termo **norumbu** também funciona como expressão qualificadora para algo **muito bem feito, excelente ou de grande qualidade**.
 
-Portanto, no texto, `norumbu` pode aparecer tanto:
-
-- como referência étnica;
-- quanto como expressão de excelência.
-
 O contexto deve determinar qual sentido está sendo usado.
-
-Não se deve reinterpretar automaticamente toda ocorrência de `norumbu` como nome de vestimenta ou exclusivamente como marcador étnico.
 
 ---
 
-## 22. Línguas e escrita
+## 23. Línguas e escrita
 
 Existe uma língua comum chamada **Unilíngua**.
 
@@ -539,7 +606,7 @@ Ela convive com:
 - línguas étnicas;
 - sistemas de escrita distintos.
 
-O romance mostra, entre outros:
+Os romances mostram, entre outros:
 
 - língua brazegue;
 - dialeto do Noroeste;
@@ -549,11 +616,23 @@ O romance mostra, entre outros:
 
 A alfabetização não é universal.
 
-Aisha e outros personagens chegam à Academia sem domínio dos hieróglifos, e alguns não dominam qualquer forma de escrita formal.
+---
+
+## 24. Reconhecimento de filiação
+
+O primeiro romance apresenta uma regra social e jurídica importante:
+
+**se um pai ou uma mãe não reconhece uma criança, essa pessoa não pode ser apontada como seu genitor dentro da convenção social dominante de Ãh-Rahresh.**
+
+Isso explica por que a expressão “filha bastarda do sultão” é tratada como contraditória enquanto Ofíris não reconhece formalmente Aisha.
+
+Também é crime grave fingir descendência de um Doszil.
+
+O reconhecimento, portanto, tem função constitutiva na relação social de filiação.
 
 ---
 
-## 23. Geografia geral
+## 25. Geografia geral
 
 Ãh-Rahresh possui:
 
@@ -568,13 +647,15 @@ Aisha e outros personagens chegam à Academia sem domínio dos hieróglifos, e a
 
 O **rio Yaati** é uma grande artéria geográfica e econômica.
 
+Yaati, apesar de chamada de oásis, é descrita no primeiro romance como uma grande cidade sobre o delta do maior rio do continente e como produtora de grande parte da comida do Norte.
+
 ---
 
-## 24. Noroeste
+## 26. Noroeste
 
 O Noroeste é uma região empobrecida e estigmatizada.
 
-O romance mostra preconceitos frequentes contra seus habitantes.
+Os romances mostram preconceitos frequentes contra seus habitantes.
 
 Pessoas de outras regiões associam o Noroeste a:
 
@@ -588,7 +669,7 @@ Esse preconceito pode atingir pessoas de castas elevadas apenas por sua origem r
 
 ---
 
-## 25. Huad e Qahuad
+## 27. Huad e Qahuad
 
 **Huad** foi erguida não muito distante de **Qahuad**.
 
@@ -600,18 +681,38 @@ Essa semelhança **não é acidental**.
 
 Foi criada propositalmente por **Auru** como parte do processo de apagamento de Qahuad.
 
-Assim, a política de apagamento não se limita a destruir a cidade ou remover registros. Ela interfere também na memória linguística e geográfica:
+Assim, a política de apagamento interfere também na memória linguística e geográfica:
 
 - Qahuad desaparece;
 - Huad permanece;
 - o nome sobrevivente ocupa espaço fonético semelhante;
 - referências posteriores a Qahuad podem ser reinterpretadas como erro de pronúncia de Huad.
 
-Huad é descrita no romance como um oásis pobre do Noroeste, com crescimento urbano desordenado, casas de barro, muralha degradada, mercado e palácio dos sultões.
+O primeiro romance mostra Huad já com história própria: o Conselho retirou **Essama e Baadi** do sultanato; posteriormente Fahrak tomou o poder e permaneceu no trono sem reconhecimento legítimo do Conselho.
 
 ---
 
-## 26. Urbanismo de Huad
+## 28. Fahrak e Qahuad
+
+**Fahrak é filho dos sultões Nazir e Sa.**
+
+Na época da história de Qahuad e do Djinn, Fahrak era **uma criança pequena**.
+
+Após a destruição de Qahuad, ele conseguiu **fugir para o deserto**.
+
+Isso conecta diretamente o sobrevivente infantil de Qahuad ao Fahrak adulto dos romances.
+
+### Descendência de Sijim
+
+**Fahrak descende de Sijim.**
+
+**Auru também descende de Sijim.**
+
+Portanto, os dois personagens pertencem a linhagens descendentes do fundador, embora o grau exato de parentesco e a cadeia genealógica entre eles e Sijim ainda não estejam detalhados neste arquivo.
+
+---
+
+## 29. Urbanismo de Huad
 
 Huad possui:
 
@@ -632,27 +733,25 @@ Tamareiras na entrada funcionam, segundo costume antigo, como sinal de prosperid
 
 ---
 
-## 27. Astronomia
+## 30. Astronomia
 
 Ãh-Rahresh possui:
 
 - **dois sóis**;
 - **duas luas**.
 
-O romance distingue:
+Os romances distinguem:
 
 - Grande Sol;
 - Pequeno Sol.
 
-O ciclo diário inclui mais de um alvorecer perceptível.
-
-As duas luas aparecem inclusive como parte da iluminação noturna de cidades do Noroeste.
+O primeiro romance menciona um **eclipse dos dois sóis** como referência temporal importante para o calendário da Academia Doszil.
 
 ---
 
-## 28. Estações e clima
+## 31. Estações e clima
 
-O romance menciona:
+Os romances mencionam:
 
 - **Grande Verão**;
 - **Pequeno Inverno**;
@@ -660,18 +759,17 @@ O romance menciona:
 
 O Grande Verão é extremamente severo.
 
-Durante as horas mais quentes, habitantes procuram abrigo em:
+O primeiro romance mostra que, durante a estação, grande parte da atividade na superfície dos oásis para durante o dia e populações inteiras descem para cidades subterrâneas.
 
-- subterrâneos;
-- casas;
-- tendas;
-- choupas.
+Agricultura, pastoreio e vários trabalhos são suspensos ou reduzidos, enquanto festas, música e dança ganham espaço.
 
-A magia é usada em algumas regiões e instituições para reduzir o impacto do calor.
+Pessoas que não conseguem chegar aos subterrâneos podem morrer na superfície.
+
+Também aparecem máscaras feitas com material animal para proteger os olhos da luminosidade extrema dos dois sóis refletida na areia.
 
 ---
 
-## 29. Urbanismo subterrâneo
+## 32. Urbanismo subterrâneo
 
 Grandes oásis possuem complexos subterrâneos para escapar do calor dos sóis.
 
@@ -691,11 +789,11 @@ Há forte desigualdade de infraestrutura entre áreas dos comuns e áreas das ca
 
 ---
 
-## 30. Academia Doszil — arquitetura
+## 33. Academia Doszil — arquitetura
 
 A Academia Doszil é uma estrutura monumental associada ao rio Yaati.
 
-O romance mostra:
+Os romances mostram:
 
 - pirâmides/zigurates;
 - cinco níveis relacionados às cinco castas;
@@ -710,9 +808,9 @@ O romance mostra:
 
 ---
 
-## 31. Materiais e recursos
+## 34. Materiais e recursos
 
-O romance menciona materiais como:
+Os romances mencionam materiais como:
 
 - ouro;
 - prata;
@@ -724,28 +822,33 @@ O romance menciona materiais como:
 - madeira;
 - tijolos;
 - Hamrar;
-- **Azrakim**, metal precioso azulado.
+- **Azrakim**, metal precioso azulado;
+- **bronze lunar**, empregado em armas de altíssima qualidade.
 
 ---
 
-## 32. Transporte
+## 35. Transporte
 
-O romance mostra:
+Os romances mostram:
 
 - barcos de papiro;
 - navios;
 - cavalos;
 - caravanas;
-- montarias;
+- camelos;
+- dromedários;
+- tarpans;
+- al’Amas;
+- crocodilos como montaria;
 - liteiras;
 - transporte por escravos;
 - transporte fluvial pelo Yaati.
 
-Nem todo transporte Doszil é mágico. Barcos comuns com remos coexistem com tecnologia mágica sofisticada.
+Dromedários são apresentados como animais caros, associados às castas nobres e aos beduínos do deserto.
 
 ---
 
-## 33. Comunicação
+## 36. Comunicação
 
 O mundo dispõe tanto de comunicação física quanto mágica.
 
@@ -767,7 +870,7 @@ Possuí-las pode representar privilégio político ou recompensa por serviços p
 
 ---
 
-## 34. Cinzas-vivas
+## 37. Cinzas-vivas
 
 **Cinzas-vivas** são um produto ou substância produzida por magia.
 
@@ -775,15 +878,107 @@ Podem ser armazenadas e transportadas em barris.
 
 São tratadas como ameaça grave à segurança.
 
-O romance mostra explosões de grande intensidade relacionadas a elas.
+O primeiro romance fornece alguma escala: um barril pode causar uma explosão muito séria, mas destruir toda Yaati exigiria aproximadamente muitos armazéns cheios; a estimativa de personagem citada é de cerca de dez armazéns.
 
 A responsabilidade institucional sobre cinzas-vivas pode envolver simultaneamente Magia e Criação, Segurança e autoridades locais.
 
 ---
 
-## 35. Costumes e calendário
+## 38. Romilla e Ritual de Dedicação
 
-O romance mostra:
+O primeiro romance acrescenta um elemento central da cultura Romil: o **Ritual de Dedicação**.
+
+Todo Romil recém-formado na Academia Romil precisa passar **sete anos dedicado a um Doszil**.
+
+Durante esse período:
+
+- o Doszil funciona como amo;
+- a fidelidade do Romil é colocada à prova;
+- a honra é valor central;
+- o Romil pode receber armas mágicas como resultado da dedicação.
+
+Ser considerado um **Romil desonrado** é uma condição socialmente gravíssima.
+
+### Repetição das dedicações
+
+O primeiro romance mostra que as dedicações podem ser repetidas.
+
+Nahyan relata:
+
+1. uma dedicação no Sul, que lhe rendeu um arco mágico;
+2. uma dedicação nas montanhas, que lhe rendeu uma cimitarra de bronze lunar;
+3. uma terceira dedicação a Fahrak, que lhe rendeu armadura mágica.
+
+O diálogo afirma que **duas dedicações são o padrão mais comum**, embora uma terceira seja possível.
+
+Essa relação cria uma forte interdependência institucional entre Romilla e Doszilla: serviço e fidelidade militar em troca de acesso a artefatos mágicos produzidos ou concedidos por magos.
+
+---
+
+## 39. Beduínos
+
+Os **beduínos do deserto** aparecem como grupo social e político distinto.
+
+São descritos como **inimigos tradicionais do Conselho**.
+
+O uso de turbantes à maneira beduína pode carregar significado político e identitário.
+
+Os romances também mencionam conflitos e mortes recorrentes ligados a confrontos com beduínos.
+
+---
+
+## 40. Funeral, almas e Jardins Eternos
+
+O primeiro romance mostra uma cosmologia funerária detalhada.
+
+Existe a crença nos **Jardins Eternos**, destino das almas humanas.
+
+As almas dos animais, ao contrário das almas humanas, **sempre sabem o caminho para os Jardins Eternos**.
+
+Por isso, um animal é sacrificado no funeral para conduzir a alma do morto.
+
+### Porco como animal funerário
+
+O porco é usado porque:
+
+- deve ser um mamífero;
+- outros animais adequados são caros;
+- cães e gatos já foram sagrados e ainda causariam resistência cultural se sacrificados;
+- o porco é a opção de menor custo.
+
+### Chacais
+
+O corpo preparado é deixado para os chacais.
+
+A crença é que eles libertam a alma ao consumir o corpo. O perigo é que os chacais não distinguem mortos de vivos.
+
+### Grande Verão
+
+Funerais normalmente não são realizados durante o Grande Verão por causa das condições ambientais extremas.
+
+### Mortalha
+
+A mortalha funerária mostrada é **branca**, cor associada ao luto e também aos escravos.
+
+### Relação com a proibição de religião
+
+Essas práticas sobrevivem numa sociedade em que religião organizada foi proibida por Sijim. O material não estabelece uma contradição obrigatória: crenças cosmológicas, ritos mortuários e funções mágicas podem ter sobrevivido ou sido absorvidos por instituições não sacerdotais.
+
+Não se deve definir a relação exata sem material adicional.
+
+---
+
+## 41. Cães e gatos sagrados no passado
+
+O primeiro romance afirma que **cães e gatos já foram considerados sagrados**.
+
+Isso constitui vestígio cultural direto de tradições religiosas anteriores à ordem de Sijim.
+
+---
+
+## 42. Costumes e calendário
+
+Os romances mostram:
 
 - celebrações de início de ano;
 - cerimônias acadêmicas;
@@ -793,15 +988,16 @@ O romance mostra:
 - Noite das Tendas;
 - ritos associados à taça;
 - nomes mágicos;
-- saudações relacionadas ao Pequeno Sol, como referências ao Pequeno Dia.
+- saudações relacionadas ao Pequeno Sol;
+- eclipse dos dois sóis como referência temporal.
 
-As regras completas de várias dessas práticas ainda não estão inteiramente expostas neste volume.
+As regras completas de várias dessas práticas permanecem abertas.
 
 ---
 
-## 36. Direito e punições
+## 43. Direito e punições
 
-O romance mostra um sistema jurídico e disciplinar severo.
+Os romances mostram um sistema jurídico e disciplinar severo.
 
 São mencionados:
 
@@ -814,13 +1010,14 @@ São mencionados:
 - sanções acadêmicas;
 - representação formal contra membros de academias;
 - punições impostas por autoridades locais;
-- legislação atribuída a Sijim.
+- legislação atribuída a Sijim;
+- crime grave de fingir descendência Doszil.
 
 As academias possuem poder disciplinar próprio além das estruturas gerais do Estado.
 
 ---
 
-## 37. Estratificação espacial e material
+## 44. Estratificação espacial e material
 
 A desigualdade social aparece também na infraestrutura.
 
@@ -844,24 +1041,30 @@ Castas superiores, especialmente Doszilla, têm acesso a:
 
 ---
 
-## 38. Religião
+## 45. Religião e memória religiosa
 
-Este volume não apresenta material suficiente para reconstruir detalhadamente a religião histórica ou a proibição religiosa de Ãh-Rahresh.
+Os romances não apresentam um tratado sobre religião, mas o primeiro volume fornece elementos adicionais:
 
-Expressões como “pelos mortos” aparecem culturalmente, mas não permitem inferir uma religião organizada.
+- Jardins Eternos;
+- almas humanas e animais;
+- ritos funerários;
+- palavras místicas;
+- cães e gatos anteriormente sagrados;
+- práticas que cabem a Doszilla em vez de sacerdotes.
 
-A estrutura histórica relativa à proibição de cultos e imortais pertence ao canon mais amplo e não deve ser reconstruída exclusivamente a partir deste romance.
+Esses elementos devem ser tratados como **sobrevivências culturais e cosmológicas** dentro de uma sociedade cuja religião organizada foi proibida, sem reconstruir automaticamente uma religião formal contemporânea.
 
 ---
 
-## 39. Pontos que o romance mostra mas ainda exigem detalhamento
+## 46. Pontos ainda em aberto
 
-Permanecem incompletamente definidos neste volume:
+Permanecem incompletamente definidos:
 
 - taxonomia completa das categorias de mago;
 - todos os ritos Doszil;
 - todas as regras dos nomes mágicos;
 - estrutura completa das Academias;
+- natureza institucional exata dos emirados Doszil;
 - relação formal exata entre Academia Alukil e a casta correspondente;
 - lista completa de Grão-vizirados;
 - hierarquia detalhada de vizires e Grão-vizires;
@@ -873,13 +1076,19 @@ Permanecem incompletamente definidos neste volume:
 - regras de pedras mensageiras;
 - diferenças completas entre todas as etnias;
 - sentidos contextuais e origem linguística do termo `norumbu`;
-- cronologia exata entre Qahuad, sua destruição e a fundação de Huad.
+- cronologia exata da fundação de Huad após Qahuad;
+- procedimento de retirada de sultões pelo Conselho;
+- funcionamento completo dos emirados da Academia Doszil;
+- relação exata entre as graduações Oshul por véus e faixas;
+- cadeia genealógica entre Sijim, Auru e Fahrak;
+- mecanismos exatos de esterilização do solo pelo kah’fi;
+- condições botânicas detalhadas da conservação das folhas de kah’fi em vasos.
 
 ---
 
-## 40. Correções autorais consolidadas neste arquivo
+## 47. Correções autorais consolidadas
 
-Para evitar que futuras leituras do romance repitam interpretações erradas, ficam registradas como correções explícitas do autor:
+Para evitar que futuras leituras dos romances repitam interpretações erradas, ficam registradas como correções explícitas do autor:
 
 - o correto é **Sijim**, com M;
 - o correto é **Oshul**;
@@ -892,9 +1101,17 @@ Para evitar que futuras leituras do romance repitam interpretações erradas, fi
 - o nome oficial consolidado é **Segurança e Guerra**;
 - `Segurança e Defesa` permanece apenas como anomalia textual a ser eventualmente explicada;
 - o correto é **Trânsito e Permanência**;
-- marcas corporais, tatuagens, implantes e chifres descritos no romance são **Doszil**, não características étnicas maati;
+- marcas corporais, tatuagens, implantes e chifres descritos nos romances são **Doszil**, não características étnicas maati;
 - entre os maati, **seios à mostra no período fértil** são costume étnico;
 - simbolismos fálicos são profundamente ofensivos para os maati;
 - **norumbu** é uma etnia e também uma expressão para algo muito bem feito;
 - **Huad** foi criada próxima a **Qahuad** e recebeu deliberadamente um nome de pronúncia quase igual;
-- essa semelhança foi criada por **Auru** como parte do apagamento de Qahuad.
+- essa semelhança foi criada por **Auru** como parte do apagamento de Qahuad;
+- Qahuad foi esterilizada com **sal e plantação de kah’fi**;
+- o kah’fi esteriliza o solo em que cresce por **centenas de anos**;
+- folhas colhidas de kah’fi podem permanecer por **décadas em vasos**, sem crescer e sem morrer;
+- essa propriedade contribuiu para o surgimento de traficantes de kah’fi;
+- **Fahrak é filho dos sultões Nazir e Sa**;
+- na época do Djinn e da destruição de Qahuad, Fahrak era **uma criança pequena** que conseguiu fugir para o deserto;
+- **Auru descende de Sijim**;
+- **Fahrak descende de Sijim**.
