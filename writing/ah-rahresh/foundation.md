@@ -280,9 +280,9 @@ Ela, porém, não eliminou os outros idiomas.
 
 ## 17. Ãh-Rahresh e o nome do mundo
 
-O nome **Ãh-Rahresh** está associado ao sentido de **“mundo conhecido”** ou simplesmente **“mundo”**.
+O nome **Ãh-Rahresh** significa **“mundo conhecido”** ou simplesmente **“mundo”**.
 
-Na narração oral que originou esta versão também apareceu a forma **“Jianharesh”** ao se referir à entidade coletiva simbolizada pela Petatara. A grafia, o significado exato e a relação entre “Jianharesh” e “Ãh-Rahresh” precisam ser confirmados antes de tratar os dois termos como equivalentes ou distintos.
+As variantes de grafia surgidas na transcrição oral eram erros de STT e não correspondem a entidades distintas.
 
 ---
 
@@ -300,4 +300,3 @@ Na narração oral que originou esta versão também apareceu a forma **“Jianh
 - Desenvolvimento posterior da Academia Dozil.
 - Processo político pelo qual a estrutura Petatara se consolidou depois de Sijin.
 - Relação exata entre a palavra Petatara enquanto planta, sistema de castas, identidade coletiva e estruturas políticas posteriores.
-- Grafia e significado exatos de “Jianharesh” em relação a Ãh-Rahresh.
