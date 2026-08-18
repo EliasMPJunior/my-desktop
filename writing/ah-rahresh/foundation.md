@@ -369,15 +369,24 @@ Enquanto isso não ocorrer, os dois não são considerados casados para esse fim
 
 ### 23.1. Contagem de idade, aniversário e maioridade
 
-Ãh-Rahresh **não reconhece aniversário individual por dia ou mês de nascimento**.
+No sistema oficial de Ãh-Rahresh **não existe aniversário individual por dia ou mês de nascimento**.
 
 A data civil de nascimento registra **somente o ano-canônico em que a pessoa nasceu**.
 
-Todas as pessoas fazem aniversário no mesmo momento: **o Ano Novo**. Na virada do ano, todas avançam oficialmente um ano de idade ao mesmo tempo.
+Todas as pessoas fazem aniversário oficialmente no mesmo momento: **o Ano Novo**. Na virada do ano, todas avançam oficialmente um ano de idade ao mesmo tempo.
 
 A maioridade ocorre quando a pessoa completa **7 anos-canônicos**, equivalentes a aproximadamente **17,17 anos terrestres**.
 
 Portanto, para fins sociais e jurídicos, a idade é determinada pelo ano-canônico de nascimento, e não pela quantidade exata de dias decorridos desde o parto.
+
+#### Tradições locais
+
+Há tradições locais que mantêm registros de nascimento mais detalhados, mas **não fazem parte do sistema oficial do Estado**:
+
+- os **Povos das Montanhas** registram **dia-canônico e hora de nascimento**, porque tratam o nascimento também em termos de signo, mapa astral e práticas correlatas;
+- os **Povos Rubros** registram **a estação e o ano-canônico** como referência de nascimento e aniversário.
+
+Esses registros locais não alteram a idade civil, a data oficial de nascimento nem a regra coletiva de aniversário no Ano Novo.
 
 ---
 
