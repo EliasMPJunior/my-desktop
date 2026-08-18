@@ -1,23 +1,23 @@
 # Inconsistências a revisar
 
-## Duração do ano de Ãh-Rahresh
+## Estado atual
 
-Há uma inconsistência entre os números atualmente registrados em `clima-e-tempo.md` e a duração pretendida dos anos de Ãh-Rahresh.
+No momento, **não há inconsistência aberta no modelo de duração do ano de Ãh-Rahresh**.
 
-### Valores atualmente registrados
+A questão anteriormente registrada neste arquivo foi resolvida e qualquer referência a uma equivalência de "7 anos de Ãh-Rahresh = 14 anos e alguns meses terrestres" deve ser considerada **descartada**.
 
-- um dia de Ãh-Rahresh possui **28 horas**;
-- um mês possui **48 dias**;
-- o número de meses ou de dias do ano **ainda não está definido**.
+### Valores canônicos consolidados
 
-### Intenção canônica a preservar
+- 1 **dia-canônico** = **28 horas terrestres**;
+- 1 **mês-canônico** = **48 dias-canônicos**;
+- 1 **ano-canônico** = **16 meses-canônicos**;
+- portanto, 1 ano-canônico = **768 dias-canônicos**;
+- 1 ano-canônico = **896 dias terrestres**, aproximadamente **2,45 anos terrestres**;
+- **7 anos-canônicos ≈ 17,17 anos terrestres**;
+- **7 anos-canônicos marcam a maioridade** em Ãh-Rahresh.
 
-A relação temporal pretendida é que **7 anos de Ãh-Rahresh correspondam a aproximadamente 14 anos e alguns meses na Terra**.
+A contagem civil oficial registra apenas o **ano-canônico de nascimento**, e todas as pessoas avançam oficialmente um ano de idade no Ano Novo, ressalvadas apenas as tradições locais de registro dos Povos das Montanhas e dos Povos Rubros, que não alteram o sistema oficial.
 
-Com os dados atualmente disponíveis, essa equivalência não pode ser obtida de forma consistente.
+---
 
-### Estado
-
-**Inconsistência aberta — revisar o modelo de calendário/ano antes de fixar a conversão.**
-
-Não definir arbitrariamente o número de dias ou meses do ano apenas para fechar a conta sem revisar o modelo temporal como um todo.
+Novas inconsistências podem ser adicionadas a este arquivo quando forem identificadas.
