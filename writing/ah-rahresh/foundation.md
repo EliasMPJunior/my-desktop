@@ -413,9 +413,9 @@ O **comércio existe** em Ãh-Rahresh.
 
 O que é proibido é a existência de um sistema monetário privado ou autônomo fora da estrutura controlada pelo Estado. Atos como **cunhar moedas** ou estabelecer meios independentes de circulação monetária são proibidos.
 
-A economia cotidiana funciona por um sistema de registro estatal de transações, sem circulação normal de dinheiro físico ou de uma unidade monetária numérica convencional.
+A economia cotidiana funciona por um sistema estatal de registro, compensação e quitação de obrigações. **Não existe uma unidade abstrata de valor equivalente a moeda escritural.**
 
-Esse sistema pode ser comparado, apenas como analogia funcional, a um **“Pix mágico”**: as transações ocorrem dentro de uma infraestrutura controlada pelo governo e são registradas de forma rastreável.
+O sistema não converte todas as prestações em um número comum. Em vez disso, registra o que cada pessoa recebeu, entregou, produziu ou passou a dever, e essas relações são posteriormente avaliadas e encerradas administrativamente.
 
 ---
 
@@ -427,29 +427,59 @@ O passaporte registra as transações realizadas pela pessoa.
 
 Exemplo básico: alguém recebe uma cesta de frutas de um vendedor. No passaporte do comprador fica registrado que ele recebeu aquela cesta e assumiu uma obrigação correspondente. No passaporte do vendedor fica registrado que ele entregou a cesta e possui uma expectativa de remuneração.
 
-As partes negociam uma equivalência ou intenção de remuneração, mas **o mecanismo exato de valoração ainda não está definido**. Não existe, pelo menos na forma atualmente consolidada, uma quantificação monetária simples equivalente a escrever um preço em moedas.
+As partes podem registrar a natureza e a importância da prestação, mas não atribuem a ela um preço expresso numa unidade monetária comum.
 
-O sistema opera por registros de prestação, obrigação, intenção de pagamento e compensação futura.
+Existem **categorias qualitativas e equivalências aproximadas**, como níveis de alimentação básica, média e outras classificações semelhantes. Essas categorias ajudam a orientar a avaliação, mas não constituem uma moeda nem uma tabela universal de preços.
 
-As pessoas podem acumular essas relações ao longo do tempo.
+As equivalências podem variar conforme a região, o contexto e o responsável pela avaliação.
 
 ---
 
-## 29. Validação das transações
+## 29. Validação, pesagem e quitação
 
 Periodicamente, o passaporte precisa ser **validado**.
 
 A periodicidade exata — semanal, mensal ou outra — ainda não está definida.
 
-A validação é realizada por um **Ermuco**, coerentemente com a função burocrática dessa casta.
+A validação é realizada por um **eunuco**, que exerce uma função de elevada confiança social dentro do sistema.
 
-Esse agente verifica e valida as transações registradas e também as **pesa**, isto é, participa do processo pelo qual as prestações e obrigações são avaliadas e conciliadas.
+O eunuco examina as prestações, obrigações, recebimentos e excedentes registrados no passaporte e os **pesa** de forma contextual. Essa pesagem não produz necessariamente um número ou saldo monetário.
 
-A mecânica completa dessa pesagem, conversão e liquidação ainda está em aberto.
+Ao final da avaliação, o eunuco pode declarar que as obrigações da pessoa estão **quitadas**. Em termos práticos, a decisão pode equivaler a: “está pago; neste período você não deve mais nada”.
+
+Também pode reconhecer a existência de um **excedente** de contribuição. Parte desse excedente pode ser recolhida para o Estado, e o restante pode ser reconhecido em favor da pessoa segundo as regras aplicáveis.
+
+O sistema, portanto, funciona por **julgamentos de equivalência e suficiência**, e não por uma conversão universal de todas as atividades em uma unidade de valor.
 
 ---
 
-## 30. O passaporte como condição de existência civil
+## 30. Confiança institucional nos eunucos
+
+Os eunucos ocupam uma posição de confiança excepcional dentro da sociedade.
+
+A castração possui importância institucional e cultural nessa confiança. Socialmente, entende-se que o eunuco, por não possuir determinadas ambições e desejos associados à reprodução, família e continuidade patrimonial, teria menos razões para mentir, favorecer interesses próprios ou manipular a avaliação econômica em benefício pessoal.
+
+Por isso, o eunuco é concebido idealmente como uma **ferramenta imparcial de julgamento** e sua decisão tende a possuir forte presunção de honestidade.
+
+Isso não significa que suas decisões sejam tratadas como infalíveis.
+
+Podem existir divergências entre as partes e também diferenças de interpretação entre eunucos, regiões e contextos.
+
+---
+
+## 31. Recursos contra a avaliação econômica
+
+Uma pessoa pode **recorrer** da decisão tomada pelo eunuco.
+
+O recurso sobe inicialmente para o **vizir local** competente.
+
+Em última instância, a matéria pode chegar ao **Grão-vizirado da Fazenda e do Comércio**, que ocupa o topo institucional dessa cadeia de revisão.
+
+Os detalhes processuais, prazos, formas de prova e competências intermediárias ainda não estão definidos.
+
+---
+
+## 32. O passaporte como condição de existência civil
 
 O passaporte não é apenas um instrumento comercial.
 
@@ -463,7 +493,7 @@ Por isso, a exclusão do sistema de castas e a ausência de passaporte tornam pr
 
 ---
 
-## 31. Pessoas sem casta
+## 33. Pessoas sem casta
 
 Existem pessoas que não ingressam em nenhuma das cinco castas.
 
@@ -475,7 +505,7 @@ Em geral, essas pessoas acabam se **exilando**, especialmente no deserto, onde e
 
 ---
 
-## 32. Grupos paralelos e tolerados
+## 34. Grupos paralelos e tolerados
 
 Além das cinco castas existem grupos sociais que às vezes são percebidos popularmente como se fossem castas, embora **não façam parte formal do Petatara**.
 
@@ -489,7 +519,7 @@ Esse grupo possui um nome próprio, mas ele ainda não foi recuperado e permanec
 
 ---
 
-## 33. Malnascidos
+## 35. Malnascidos
 
 Existem magos que possuem capacidade mágica, mas **não ingressaram na Academia Doszil**.
 
@@ -503,15 +533,17 @@ A existência dos malnascidos demonstra que possuir capacidade mágica não é s
 
 ---
 
-## 34. Haler
+## 36. Haler
 
-As **Haler** constituem outro grupo social de segunda categoria existente à margem da estrutura formal das cinco castas.
+**Haler** é uma forma invariável: a palavra não possui plural distinto.
+
+Haler constituem outro grupo social de segunda categoria existente à margem da estrutura formal das cinco castas.
 
 São descritas como **prostitutas de rua**.
 
 Neste momento, está consolidado apenas que formam um grupo social reconhecível e inferiorizado, mas **não uma casta formal do Petatara**.
 
-Ainda não estão definidos seu status jurídico, eventual relação com passaportes, grau de tolerância ou perseguição pelo Estado, vínculo com alguma casta de origem, formas próprias de organização ou se “Haler” possui flexão distinta para singular e plural.
+Ainda não estão definidos seu status jurídico, eventual relação com passaportes, grau de tolerância ou perseguição pelo Estado, vínculo com alguma casta de origem ou formas próprias de organização.
 
 ---
 
@@ -537,11 +569,12 @@ Ainda não estão definidos seu status jurídico, eventual relação com passapo
 - Consequências precisas para uma criança que não passe no teste escolhido aos sete anos.
 - Situação de crianças que, por qualquer razão, não realizem um teste naquele ano.
 - Relação entre a proibição jurídica da herança e os mecanismos informais de continuidade familiar do poder.
-- Mecânica exata de valoração, pesagem, compensação e liquidação das transações registradas no passaporte.
 - Periodicidade da validação dos passaportes.
+- Regras exatas para reconhecimento, retenção e recolhimento de excedentes.
+- Catálogo e alcance das categorias qualitativas usadas para orientar a pesagem das transações.
+- Procedimento detalhado de recurso contra decisões dos eunucos.
 - Relação institucional exata entre passaporte, casta e reconhecimento de direitos.
 - Nome do grupo de mercadores de longa distância que opera com metais preciosos.
 - Regras e exceções concretas que explicam a tolerância estatal a esses mercadores.
 - Situação jurídica detalhada dos malnascidos.
-- Situação jurídica e social detalhada das Haler, incluindo relação com passaporte e castas.
-- Confirmar se “Haler” é forma invariável ou se existe singular/plural distinto.
+- Situação jurídica e social detalhada de Haler, incluindo relação com passaporte e castas.
