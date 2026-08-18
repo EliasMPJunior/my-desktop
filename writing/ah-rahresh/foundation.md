@@ -58,49 +58,49 @@ Dentro desse cenário existia um **reino ainda sem nome definido**.
 
 ---
 
-## 5. Sijin
+## 5. Sijim
 
-Nesse reino vivia o príncipe **Sijin**.
+Nesse reino vivia o príncipe **Sijim**.
 
-Sijin tentou ingressar na **Academia Romil**, uma academia de guerreiros reconhecida como uma das grandes instituições marciais do mundo naquele período — e que continua relevante cerca de cinco mil anos depois, no período atual da narrativa.
+Sijim tentou ingressar na **Academia Romil**, uma academia de guerreiros reconhecida como uma das grandes instituições marciais do mundo naquele período — e que continua relevante cerca de cinco mil anos depois, no período atual da narrativa.
 
-Sijin realizou o teste de admissão e foi **reprovado**.
+Sijim realizou o teste de admissão e foi **reprovado**.
 
 Ao retornar para seu reino, sua caravana foi atacada por mercenários enviados por seu tio.
 
-Todos os integrantes da caravana foram mortos, com exceção de Sijin.
+Todos os integrantes da caravana foram mortos, com exceção de Sijim.
 
 O tio então usurpou o reino.
 
-Sijin sobreviveu sozinho no deserto.
+Sijim sobreviveu sozinho no deserto.
 
 ---
 
 ## 6. Arkho
 
-Durante sua sobrevivência no deserto, Sijin encontrou um velho sábio chamado **Arkho**.
+Durante sua sobrevivência no deserto, Sijim encontrou um velho sábio chamado **Arkho**.
 
-Arkho acolheu Sijin e o criou.
+Arkho acolheu Sijim e o criou.
 
-Ele possuía conhecimento de magia e passou a ensinar Sijin.
+Ele possuía conhecimento de magia e passou a ensinar Sijim.
 
-Sijin revelou-se **extremamente poderoso em magia**.
+Sijim revelou-se **extremamente poderoso em magia**.
 
 ---
 
-## 7. O conflito de Sijin com a ordem antiga
+## 7. O conflito de Sijim com a ordem antiga
 
-Ainda jovem, depois de crescer e ir para uma cidade, Sijin passou por diversos conflitos e dificuldades.
+Ainda jovem, depois de crescer e ir para uma cidade, Sijim passou por diversos conflitos e dificuldades.
 
 Em um deles, manteve uma rivalidade recorrente com um sacerdote de um culto local e acabou matando esse sacerdote.
 
-Sijin passou a ser perseguido e fugiu para o deserto.
+Sijim passou a ser perseguido e fugiu para o deserto.
 
 Grupos enviados para capturá-lo foram derrotados e mortos por ele. Novos grupos foram enviados, e também foram derrotados.
 
 O caso passou a ganhar notoriedade. O reino envolvido buscou alianças e outros reinos aderiram à perseguição, até que um exército foi reunido para capturar uma única pessoa.
 
-Sijin derrotou esse exército.
+Sijim derrotou esse exército.
 
 A partir daí, o conflito deixou de poder ser tratado como um incidente local.
 
@@ -108,9 +108,9 @@ A partir daí, o conflito deixou de poder ser tratado como um incidente local.
 
 ## 8. O primeiro imortal derrotado por um mortal
 
-Os próprios imortais passaram a agir contra Sijin.
+Os próprios imortais passaram a agir contra Sijim.
 
-Sijin enfrentou-os diretamente em combate.
+Sijim enfrentou-os diretamente em combate.
 
 Nesse processo ocorreu algo sem precedente conhecido: **um imortal foi derrotado por um mortal**.
 
@@ -120,33 +120,39 @@ Esse acontecimento mudou a escala do conflito e a percepção que mortais e imor
 
 ---
 
-## 9. A ascensão de Sijin
+## 9. A ascensão de Sijim
 
-Ao longo de poucos anos, Sijin ganhou seguidores.
+Ao longo de poucos anos, Sijim ganhou seguidores.
 
 Ele passou a treiná-los em magia, formando um grupo crescente de pessoas capazes de enfrentar a antiga ordem.
 
-Sijin e seus seguidores começaram a atacar outros reinos e a enfrentar os imortais ligados a eles.
+Sijim e seus seguidores começaram a atacar outros reinos e a enfrentar os imortais ligados a eles.
 
 Reino após reino foi derrotado. Imortais também foram derrotados.
 
-No resultado final desse processo, Sijin venceu a guerra e passou a controlar boa parte da região em torno do **rio YAATI**, especialmente suas margens, uma região de grande importância econômica.
+No resultado final desse processo, Sijim venceu a guerra e passou a controlar boa parte da região em torno do **rio YAATI**, especialmente suas margens, uma região de grande importância econômica.
 
 ---
 
 ## 10. Academia Doszil
 
-Na região sob seu domínio, Sijin fundou uma academia dedicada ao ensino de magia.
+Na região sob seu domínio, Sijim fundou uma academia dedicada ao ensino de magia.
 
 Essa instituição tornou-se conhecida como **Academia Doszil**.
 
-A criação da academia institucionalizou o treinamento de magos que até então havia ocorrido diretamente sob Sijin e seus seguidores.
+A criação da academia institucionalizou o treinamento de magos que até então havia ocorrido diretamente sob Sijim e seus seguidores.
+
+### Categorias de magos
+
+**Projetores, comunicadores e secadores** são categorias de **mago**, não categorias de malnascido.
+
+Essas categorias podem existir tanto entre **Doszilla** quanto entre magos que permanecem fora da Academia Doszil. O fato de o romance registrar projetores, comunicadores e secadores entre malnascidos não torna essas classificações exclusivas deles.
 
 ---
 
 ## 11. O fim da antiga ordem religiosa
 
-Depois da vitória, Sijin determinou que o mundo passaria a viver segundo uma nova ordem.
+Depois da vitória, Sijim determinou que o mundo passaria a viver segundo uma nova ordem.
 
 As **religiões foram proibidas**.
 
@@ -164,7 +170,7 @@ Alguns desses Djinns foram aprisionados fisicamente dentro de **recipientes**, d
 
 A condição de servidão dos Djinns, incluindo a obrigação de atender pedidos, está relacionada aos **contratos mágicos**.
 
-A ideia central atualmente estabelecida é que Sijin conseguiu usar contra os próprios imortais o sistema de contratos que eles haviam criado e dominado, conseguindo enganá-los e aprisionar alguns deles por meio de contrato.
+A ideia central atualmente estabelecida é que Sijim conseguiu usar contra os próprios imortais o sistema de contratos que eles haviam criado e dominado, conseguindo enganá-los e aprisionar alguns deles por meio de contrato.
 
 ### Estado provisório dessa mecânica
 
@@ -180,9 +186,9 @@ O elemento canônico neste momento é a relação estrutural:
 
 **Petatara não é originalmente o nome de um sistema de governo.**
 
-É a estrutura social criada por Sijin para organizar a nova ordem surgida após sua vitória.
+É a estrutura social criada por Sijim para organizar a nova ordem surgida após sua vitória.
 
-Sijin não partia da ideia de que todos os seres humanos seriam simplesmente iguais ou de que uma sociedade funcionaria sem diferenciação interna. Segundo sua visão, a humanidade precisava de **segregação social para se organizar e se compreender**.
+Sijim não partia da ideia de que todos os seres humanos seriam simplesmente iguais ou de que uma sociedade funcionaria sem diferenciação interna. Segundo sua visão, a humanidade precisava de **segregação social para se organizar e se compreender**.
 
 Por isso, ele dividiu a sociedade em **cinco castas**.
 
@@ -192,13 +198,13 @@ A casta mais poderosa e de posição superior dentro da estrutura.
 
 Um mago pertencente a essa casta é um **Doszil**. O plural é **Doszilla**.
 
-O próprio Sijin era mago e havia criado uma ordem na qual a magia adquiria posição central.
+O próprio Sijim era mago e havia criado uma ordem na qual a magia adquiria posição central.
 
 ### 13.2. Romil
 
 A casta dos **guerreiros**.
 
-O nome se relaciona à tradição representada pela Academia Romil, a mesma instituição cujo teste de ingresso Sijin havia falhado quando jovem.
+O nome se relaciona à tradição representada pela Academia Romil, a mesma instituição cujo teste de ingresso Sijim havia falhado quando jovem.
 
 Na nova ordem, os guerreiros ficaram hierarquicamente abaixo dos magos.
 
@@ -208,17 +214,23 @@ A casta dos **burocratas e agentes do funcionamento institucional**.
 
 Inclui funcionários públicos, juízes, contadores e funções administrativas e burocráticas equivalentes.
 
-### 13.4. Oxum
+Dentro dessa estrutura, **Alukil** designa o eunuco da casta. A **Academia Alukil** está ligada à formação desses eunucos; Alukil não constitui uma sexta casta.
 
-A casta ligada aos **artistas e ao entretenimento em geral**.
+### 13.4. Oshul
 
-Sijin considerava o entretenimento um elemento primordial para o funcionamento da sociedade e entendia que a população deveria dispor de formas constantes de entretenimento.
+A casta ligada aos **artistas, entretenimento e prazer**.
 
-### 13.5. Eguzila
+Sijim considerava o entretenimento um elemento primordial para o funcionamento da sociedade e entendia que a população deveria dispor de formas constantes de entretenimento.
 
-A casta dos **trabalhadores comuns**.
+### 13.5. Burnzilla / Eguzilla
 
-Inclui profissões como padeiros, pedreiros e trabalhadores comuns de diversas atividades.
+A casta dos **trabalhadores comuns**, incluindo profissões como padeiros, pedreiros e trabalhadores comuns de diversas atividades.
+
+A própria casta se denomina **Burnzilla**.
+
+As demais castas a chamam de **Eguzilla**.
+
+Os dois nomes, portanto, designam a mesma casta a partir de perspectivas sociais diferentes.
 
 ---
 
@@ -230,13 +242,13 @@ As cinco folhas não se distribuem de maneira linear. Elas se projetam em direç
 
 Essa forma oferece simultaneamente duas ideias: existe **hierarquia** entre as partes e todas continuam pertencendo ao **mesmo conjunto**.
 
-Sijin adotou a planta como símbolo da nova ordem e associou suas cinco folhas às cinco castas.
+Sijim adotou a planta como símbolo da nova ordem e associou suas cinco folhas às cinco castas.
 
 ---
 
 ## 15. Identidade coletiva e fim das tribos
 
-Sijin pretendia substituir as antigas divisões tribais por uma identidade coletiva comum.
+Sijim pretendia substituir as antigas divisões tribais por uma identidade coletiva comum.
 
 A ideia era que as pessoas deixassem de se definir politicamente pela tribo ou origem e passassem a pertencer ao **Petatara**.
 
@@ -246,7 +258,7 @@ Essa tentativa **não foi plenamente bem-sucedida**. Tribos, povos e etnias cont
 
 ## 16. A língua geral
 
-Como parte da mesma tentativa de unificação, Sijin criou uma **língua geral**.
+Como parte da mesma tentativa de unificação, Sijim criou uma **língua geral**.
 
 Sua finalidade era permitir que pessoas de diferentes povos e idiomas pudessem se comunicar sem depender de suas línguas locais.
 
@@ -264,15 +276,15 @@ As variantes de grafia surgidas na transcrição oral eram erros de STT e não c
 
 ---
 
-## 18. Sijin nunca foi governante
+## 18. Sijim nunca foi governante
 
-Apesar de ter derrotado a antiga ordem e criado o Petatara, **Sijin nunca assumiu a posição de governante de Ãh-Rahresh**.
+Apesar de ter derrotado a antiga ordem e criado o Petatara, **Sijim nunca assumiu a posição de governante de Ãh-Rahresh**.
 
 Depois de instituir a nova ordem, ele criou um **Conselho de Vizires** para exercer o governo.
 
 A estrutura evoluiu para um conjunto de **Grão-vizirados**, cada um responsável por determinados setores da vida pública. O governo de Ãh-Rahresh permanece colegiado por essa estrutura.
 
-O próprio Sijin ocupou apenas um dos cargos de vizir. Seu vizirado estava ligado ao **conhecimento, ensino e tradição**, mas a denominação exata e o par completo de competências desse vizirado ainda não estão definidos.
+O próprio Sijim ocupou apenas um dos cargos de vizir. Seu vizirado estava ligado ao **conhecimento, ensino e tradição**, mas a denominação exata e o par completo de competências desse vizirado ainda não estão definidos.
 
 ---
 
@@ -282,18 +294,20 @@ A cultura de Ãh-Rahresh atribui grande importância à **dualidade**.
 
 O próprio mundo possui **dois sóis e duas luas**, e essa dualidade se reflete na organização institucional.
 
-Os Grão-vizirados são estruturados em pares de competências e os cargos correspondentes são ocupados em dupla.
+Os Grão-vizirados são estruturados em pares de competências.
 
 Entre os Grão-vizirados já mencionados estão:
 
-- **Segurança e Guerra** — área à qual pertence o cargo de **Auru**;
+- **Segurança e Guerra** — nome correto da área ligada a **Auru**;
 - **Memória e Comunicação**;
-- **Moradia e Transportes**;
+- **Trânsito e Permanência**;
 - **Fazenda e Comércio**.
+
+O romance utiliza, em um ponto, a forma **“Segurança e Defesa”** ao se referir retrospectivamente ao cargo de Auru. Essa expressão **não substitui o nome canônico Segurança e Guerra**. Sua razão permanece aberta e pode ser preservada como anomalia textual: erro de personagem/narrador, nomenclatura histórica anterior ou mudança de nome posterior são possibilidades ainda não decididas.
 
 Outros Grão-vizirados existem, mas seus nomes e pares de competências ainda não estão completamente definidos.
 
-Auru, portanto, **não governa sozinha Ãh-Rahresh**. Ela ocupa um dos postos do Grão-vizirado da Segurança e da Guerra dentro de uma estrutura colegiada.
+Auru, portanto, **não governa sozinha Ãh-Rahresh**. Ela ocupa posição no Grão-vizirado da Segurança e da Guerra dentro de uma estrutura colegiada.
 
 A consolidação detalhada dos Grão-vizirados é mantida também no arquivo `grao-vizirados.md`.
 
@@ -313,13 +327,13 @@ A composição exata desse colégio eleitoral ainda precisa ser detalhada.
 
 ## 21. Proibição da herança
 
-Sijin aboliu e proibiu a **herança**.
+Sijim aboliu e proibiu a **herança**.
 
 Oficialmente, não existem cargos hereditários nem transmissão hereditária de patrimônio.
 
 Quando uma pessoa morre, seus bens retornam ao **Estado**.
 
-A ordem criada por Sijin é fortemente estatal: juridicamente, a estrutura social é concebida de modo que tudo exista dentro do Estado, e não como uma esfera patrimonial completamente independente dele.
+A ordem criada por Sijim é fortemente estatal: juridicamente, a estrutura social é concebida de modo que tudo exista dentro do Estado, e não como uma esfera patrimonial completamente independente dele.
 
 Na prática, porém, relações familiares, influência, favoritismo e continuidade social continuam existindo. Assim, embora a hereditariedade seja oficialmente proibida, famílias podem conservar poder e vantagens de fato.
 
@@ -431,7 +445,7 @@ Exemplo básico: alguém recebe uma cesta de frutas de um vendedor. No passaport
 
 As partes podem registrar a natureza e a importância da prestação, mas não atribuem a ela um preço expresso numa unidade monetária comum.
 
-Existem **categororias qualitativas e equivalências aproximadas**, como níveis de alimentação básica, média e outras classificações semelhantes. Essas categorias ajudam a orientar a avaliação, mas não constituem uma moeda nem uma tabela universal de preços.
+Existem **categorias qualitativas e equivalências aproximadas**, como níveis de alimentação básica, média e outras classificações semelhantes. Essas categorias ajudam a orientar a avaliação, mas não constituem uma moeda nem uma tabela universal de preços.
 
 As equivalências podem variar conforme a região, o contexto e o responsável pela avaliação.
 
@@ -529,9 +543,13 @@ Existem pessoas com capacidade mágica que não ingressaram na Academia Doszil e
 
 Esses magos são chamados de **malnascidos**.
 
-“Malnascido” não designa uma casta nem um status jurídico separado. É uma condição social concreta de alguém com magia que permaneceu **fora do Petatara formal**, nos mesmos termos gerais das demais pessoas que não ingressaram numa casta.
+Ser malnascido é uma **condição jurídica permanente**.
 
-Por serem magos fora da estrutura legítima da Academia Doszil, normalmente são perseguidos e podem ser presos ou mortos.
+Os testes da Academia Doszil destinados aos malnascidos são letais: o sistema não oferece uma via regular pela qual um malnascido sobreviva ao teste e deixe de ser malnascido para ingressar normalmente na casta Doszil.
+
+Projetor, comunicador, secador e classificações equivalentes descrevem **o tipo de mago**, não a condição jurídica. Um Doszil também pode pertencer a essas categorias mágicas.
+
+Por serem magos fora da estrutura legítima da Academia Doszil, malnascidos normalmente são perseguidos, presos ou executados.
 
 ---
 
@@ -577,21 +595,31 @@ A situação inicial pode seguir a base já proposta para a história: uma admin
 
 Os detalhes específicos da crise de Qahuad, sua infraestrutura, sua população, seus recursos e os nomes e características dos dois sultões ainda serão construídos.
 
+### Qahuad e Huad
+
+**Huad** é uma cidade erguida não muito distante de Qahuad.
+
+Os nomes foram deliberadamente aproximados. Na pronúncia local, **Huad** e **Qahuad** soam quase iguais, mas permanecem distintos o bastante para que pronunciar “Qahuad” possa soar como um **defeito fonético**, uma pronúncia defeituosa ou deformada de “Huad”.
+
+Essa semelhança não é acidental: **Auru a produziu propositalmente**.
+
+A existência de Huad, sua proximidade territorial e a escolha deliberada de um nome quase homófono fazem parte do processo de apagamento de Qahuad associado à ação de Auru.
+
 ---
 
 ## Pontos ainda em aberto
 
 - Nome do continente no período anterior à nova ordem, caso tenha existido algum.
-- Nome do reino de origem de Sijin.
+- Nome do reino de origem de Sijim.
 - Natureza exata dos diferentes tipos de imortais além dos elementais.
-- Estrutura política das cidades e oásis antes de Sijin.
+- Estrutura política das cidades e oásis antes de Sijim.
 - Regras completas e implicações do contrato mágico.
-- Forma exata pela qual Sijin enganou os imortais mediante contrato.
+- Forma exata pela qual Sijim enganou os imortais mediante contrato.
 - Regras exatas da servidão dos Djinns e dos pedidos que devem atender.
 - Natureza e regras dos recipientes usados para aprisionar Djinns.
-- Detalhes da primeira luta em que Sijin derrotou um imortal.
+- Detalhes da primeira luta em que Sijim derrotou um imortal.
 - Desenvolvimento posterior da Academia Doszil.
-- Nome e par completo de competências do vizirado ocupado por Sijin.
+- Nome e par completo de competências do vizirado ocupado por Sijim.
 - Lista completa dos Grão-vizirados e respectivos pares de competências.
 - Processo exato pelo qual os antigos vizirados evoluíram para Grão-vizirados.
 - Composição exata do colégio eleitoral de Doszilla que escolhe vizires e sultões.
@@ -608,3 +636,4 @@ Os detalhes específicos da crise de Qahuad, sua infraestrutura, sua população
 - Sintomas, progressão, transmissão, letalidade e demais características do Póler.
 - Detalhes concretos da situação inicial de Qahuad antes do Djinn.
 - Nomes e caracterização dos dois sultões de Qahuad.
+- Razão interna para o uso isolado de “Segurança e Defesa” no romance: erro, nomenclatura histórica ou mudança posterior.
