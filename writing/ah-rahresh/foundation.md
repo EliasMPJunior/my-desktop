@@ -286,6 +286,140 @@ As variantes de grafia surgidas na transcrição oral eram erros de STT e não c
 
 ---
 
+## 18. Sijin nunca foi governante
+
+Apesar de ter derrotado a antiga ordem e criado o Petatara, **Sijin nunca assumiu a posição de governante de Ãh-Rahresh**.
+
+Depois de instituir a nova ordem, ele criou um **Conselho de Vizires** para exercer o governo.
+
+A estrutura evoluiu para um conjunto de **Grão-vizirados**, cada um responsável por determinados setores da vida pública. O governo de Ãh-Rahresh permanece colegiado por essa estrutura.
+
+O próprio Sijin ocupou apenas um dos cargos de vizir. Seu vizirado estava ligado ao **conhecimento, ensino e tradição**, mas a denominação exata e o par completo de competências desse vizirado ainda não estão definidos.
+
+---
+
+## 19. Os Grão-vizirados e a dualidade
+
+A cultura de Ãh-Rahresh atribui grande importância à **dualidade**.
+
+O próprio mundo possui **dois sóis e duas luas**, e essa dualidade se reflete na organização institucional.
+
+Os Grão-vizirados são estruturados em pares de competências e os cargos correspondentes são ocupados em dupla.
+
+Entre os Grão-vizirados já mencionados estão:
+
+- **Segurança e Guerra** — área à qual pertence o cargo de **Auru**;
+- **Memória e Comunicação**;
+- **Moradia e Transportes**;
+- **Fazenda e Comércio**.
+
+Outros Grão-vizirados existem, mas seus nomes e pares de competências ainda não estão completamente definidos.
+
+Auru, portanto, **não governa sozinha Ãh-Rahresh**. Ela ocupa um dos postos do Grão-vizirado da Segurança e da Guerra dentro de uma estrutura colegiada.
+
+---
+
+## 20. Escolha dos vizires
+
+Os cargos de vizir e Grão-vizir **não são hereditários**.
+
+Pessoas podem se candidatar aos cargos, e a escolha é feita por votação de um conjunto restrito de membros da casta superior ligada à magia e ao conhecimento.
+
+Na transcrição oral mais recente, esses eleitores foram chamados de **“Dozil”** ou integrantes da **“casta Dozil”**. Isso entra em conflito com a nomenclatura já consolidada neste documento, em que **Dozil** é a academia de magia e a primeira casta é registrada como **Magos**.
+
+Até confirmação posterior, não se altera a nomenclatura das cinco castas: o termo “casta Dozil” permanece como **divergência de transcrição a esclarecer**.
+
+Também não é toda a casta superior que vota. Somente indivíduos responsáveis por determinadas esferas possuem direito de voto nessas escolhas.
+
+A composição exata desse colégio eleitoral ainda precisa ser detalhada.
+
+---
+
+## 21. Proibição da herança
+
+Sijin aboliu e proibiu a **herança**.
+
+Oficialmente, não existem cargos hereditários nem transmissão hereditária de patrimônio.
+
+Quando uma pessoa morre, seus bens retornam ao **Estado**.
+
+A ordem criada por Sijin é fortemente estatal: juridicamente, a estrutura social é concebida de modo que tudo exista dentro do Estado, e não como uma esfera patrimonial completamente independente dele.
+
+Na prática, porém, relações familiares, influência, favoritismo e continuidade social continuam existindo. Assim, embora a hereditariedade seja oficialmente proibida, famílias podem conservar poder e vantagens de fato.
+
+---
+
+## 22. Sultanatos como divisões administrativas
+
+Ãh-Rahresh é dividido em **sultanatos**.
+
+Esses sultanatos não precisam corresponder a antigos reinos que cresceram organicamente. São, em essência, **divisões administrativas territoriais**, definidas burocraticamente sobre o mapa.
+
+Cada sultanato é governado por **sultões**, que possuem ampla autoridade sobre sua região, mas precisam administrar continuamente relações com tribos, povos e grupos locais que não desapareceram com a criação do Petatara.
+
+A autoridade dos sultões, portanto, existe dentro da estrutura estatal de Ãh-Rahresh e não equivale a soberania independente.
+
+---
+
+## 23. Escolha dos sultões
+
+A escolha dos sultões segue princípio semelhante ao utilizado para os vizires.
+
+Há candidatos, e a nomeação é feita pelo conselho a partir de uma eleição restrita a determinados indivíduos da casta superior.
+
+O cargo **não é hereditário**.
+
+Por causa da importância cultural da dualidade, um sultanato não é governado por uma única pessoa: **o cargo de sultão deve ser exercido por um casal**.
+
+Somente um casal reconhecido como casado pode assumir o sultanato.
+
+Em Ãh-Rahresh, o casamento não é definido apenas por cerimônia ou declaração. Um casal passa a ser considerado efetivamente **casado quando nasce um filho dos dois**.
+
+Enquanto isso não ocorrer, os dois não são considerados casados para esse fim institucional.
+
+---
+
+## 24. Entrada nas castas
+
+As castas não são oficialmente determinadas pelo nascimento.
+
+Toda criança nasce, em princípio, **sem casta**.
+
+Na prática, filhos de membros de uma determinada casta tendem a ser socialmente tratados desde cedo como pertencentes à mesma casta dos pais, ainda que juridicamente sua definição não tenha ocorrido.
+
+Aos **sete anos**, a criança entra no processo de definição de sua casta.
+
+Ela não escolhe diretamente a qual casta pertencerá. Escolhe **para qual casta prestará o teste de ingresso**.
+
+Cada casta possui seu próprio teste.
+
+A oportunidade ocorre naquele ano e é, em princípio, **única**.
+
+Se a criança for aprovada, ingressa naquela casta.
+
+A partir daí, sua pertença é **permanente para toda a vida**.
+
+Não existe mobilidade entre castas depois do ingresso.
+
+---
+
+## 25. Separação institucional das castas
+
+As cinco castas não são apenas categorias simbólicas ou profissionais.
+
+Cada uma possui:
+
+- direitos próprios;
+- deveres próprios;
+- estruturas próprias;
+- funções sociais próprias.
+
+A separação entre as castas é institucional e permanente.
+
+A hierarquia entre elas convive com a ideia simbolizada pela planta Petatara: partes distintas e desiguais que ainda pertencem ao mesmo corpo social.
+
+---
+
 ## Pontos ainda em aberto
 
 - Nome do continente no período anterior à nova ordem, caso tenha existido algum.
@@ -298,5 +432,13 @@ As variantes de grafia surgidas na transcrição oral eram erros de STT e não c
 - Natureza e regras dos recipientes usados para aprisionar Djinns.
 - Detalhes da primeira luta em que Sijin derrotou um imortal.
 - Desenvolvimento posterior da Academia Dozil.
-- Processo político pelo qual a estrutura Petatara se consolidou depois de Sijin.
-- Relação exata entre a palavra Petatara enquanto planta, sistema de castas, identidade coletiva e estruturas políticas posteriores.
+- Nome e par completo de competências do vizirado ocupado por Sijin.
+- Lista completa dos Grão-vizirados e respectivos pares de competências.
+- Processo exato pelo qual os antigos vizirados evoluíram para Grão-vizirados.
+- Composição exata do colégio eleitoral que escolhe vizires e sultões.
+- Confirmar se “Dozil” designa também a casta superior ou se essa ocorrência foi erro de STT; até lá, mantém-se **Magos** como nomenclatura consolidada da primeira casta.
+- Limites jurídicos e práticos da autoridade dos sultões frente ao Conselho de Grão-vizires.
+- Detalhes dos testes de ingresso de cada casta.
+- Consequências para uma criança que não passe no teste escolhido aos sete anos.
+- Situação de crianças que, por qualquer razão, não realizem um teste naquele ano.
+- Relação entre a proibição jurídica da herança e os mecanismos informais de continuidade familiar do poder.
