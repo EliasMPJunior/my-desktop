@@ -507,7 +507,15 @@ A terra foi submetida a **sal + plantação de kah’fi**.
 
 O objetivo era **esterilizar a terra de forma permanente ou pelo maior período possível**, impedindo a recuperação agrícola e a reocupação do local.
 
-A consequência não planejada ou secundária foi a criação de uma fonte duradoura de kah’fi para traficantes, já que as folhas colhidas podem permanecer viáveis por décadas em vasos.
+O contrabando ligado ao kah’fi de Qahuad **não surgiu séculos depois**. Ele começou aproximadamente **10 a 20 anos após a queda de Qahuad**, quando a área já se tornara uma fonte clandestina da planta proibida.
+
+A conservação das folhas por décadas em vasos favoreceu a formação dessas redes de tráfico.
+
+### “Qahuad” como possível gíria
+
+Existe a possibilidade de que o próprio nome **Qahuad** tenha sobrevivido ou sido reaproveitado como **gíria para o entorpecente kah’fi**.
+
+Esse uso permanece **provisório/em aberto**, não devendo ser tratado ainda como nomenclatura definitivamente consolidada no canon.
 
 ---
 
@@ -1082,7 +1090,8 @@ Permanecem incompletamente definidos:
 - relação exata entre as graduações Oshul por véus e faixas;
 - cadeia genealógica entre Sijim, Auru e Fahrak;
 - mecanismos exatos de esterilização do solo pelo kah’fi;
-- condições botânicas detalhadas da conservação das folhas de kah’fi em vasos.
+- condições botânicas detalhadas da conservação das folhas de kah’fi em vasos;
+- se **Qahuad** efetivamente se consolidou como gíria para o kah’fi/entorpecente ou permaneceu apenas como uso regional/provisório.
 
 ---
 
@@ -1110,7 +1119,8 @@ Para evitar que futuras leituras dos romances repitam interpretações erradas, 
 - Qahuad foi esterilizada com **sal e plantação de kah’fi**;
 - o kah’fi esteriliza o solo em que cresce por **centenas de anos**;
 - folhas colhidas de kah’fi podem permanecer por **décadas em vasos**, sem crescer e sem morrer;
-- essa propriedade contribuiu para o surgimento de traficantes de kah’fi;
+- o contrabando de kah’fi relacionado a Qahuad começou cerca de **10 a 20 anos após a queda da cidade**, não séculos depois;
+- **Qahuad pode ter se tornado uma gíria para o entorpecente kah’fi**, ponto ainda não definitivamente fechado;
 - **Fahrak é filho do sultão Nadir e da sultana Samira**;
 - na época do Djinn e da destruição de Qahuad, Fahrak era **uma criança pequena** que conseguiu fugir para o deserto;
 - **Auru descende de Sijim**;
