@@ -214,30 +214,22 @@ Para evitar confusão entre as unidades internas do mundo e unidades terrestres,
 
 - 1 **ano-canônico** tem **16 meses-canônicos**.
 - Portanto, 1 ano-canônico tem **768 dias-canônicos**.
-- Mantendo a duração atual de 28 horas terrestres por dia-canônico, 1 ano-canônico corresponde a **896 dias terrestres**, aproximadamente **2,45 anos terrestres**.
+- Mantendo a duração de 28 horas terrestres por dia-canônico, 1 ano-canônico corresponde a **896 dias terrestres**, aproximadamente **2,45 anos terrestres**.
 
-### Conversão dos sete anos de Dedicação Romil
+### Maioridade
 
-Pelos números atualmente registrados:
+A **maioridade em Ãh-Rahresh ocorre aos 7 anos-canônicos**.
+
+Pelas unidades canônicas estabelecidas:
 
 - 7 anos-canônicos = **5.376 dias-canônicos**;
 - 5.376 dias-canônicos × 28 horas = **150.528 horas terrestres**;
 - isso corresponde a **6.272 dias terrestres**;
 - ou aproximadamente **17,17 anos terrestres**.
 
-### Inconsistência temporal a revisar
+Portanto, **7 anos-canônicos ≈ 17,17 anos terrestres**.
 
-Há uma intenção de worldbuilding previamente estabelecida de que **7 anos-canônicos deveriam corresponder aproximadamente a 14 anos e alguns meses terrestres**.
-
-Essa intenção **não é compatível**, neste momento, com a combinação dos seguintes valores:
-
-- 28 horas terrestres por dia-canônico;
-- 48 dias-canônicos por mês-canônico;
-- 16 meses-canônicos por ano-canônico.
-
-Com esses três valores simultaneamente válidos, a conversão resulta em aproximadamente **17,17 anos terrestres**.
-
-A inconsistência deve permanecer registrada para revisão futura. Não se deve alterar ou inventar qualquer uma dessas unidades apenas para forçar a equivalência pretendida sem decisão autoral explícita.
+Essa equivalência é considerada correta e canônica.
 
 ### Luas
 
@@ -283,11 +275,9 @@ Além do texto original do PDF, ficam consolidados pelo autor os seguintes ponto
 - pessoas comuns não percebem naturalmente esses cursos;
 - existe um **cajado que detecta cursos de água subterrâneos**;
 - boa parte da **porosidade das Montanhas é atualmente controlada pelo Conselho**;
-- 1 **dia-canônico** tem 28 horas terrestres;
-- 1 **mês-canônico** tem 48 dias-canônicos;
-- 1 **ano-canônico** tem 16 meses-canônicos, portanto 768 dias-canônicos;
-- como o mês do Conselho possui 48 dias-canônicos divididos em 6 semanas, a semana institucional do Conselho possui **8 dias-canônicos**;
-- permanece aberta a inconsistência entre a conversão matemática atual de 7 anos-canônicos (**≈17,17 anos terrestres**) e a duração pretendida de **14 anos e alguns meses terrestres**.
+- como o mês do Conselho possui 48 dias divididos em 6 semanas, a semana institucional do Conselho possui **8 dias**;
+- 1 ano-canônico possui **16 meses-canônicos de 48 dias-canônicos**;
+- a **maioridade ocorre aos 7 anos-canônicos**, equivalentes a aproximadamente **17,17 anos terrestres**.
 
 ---
 
