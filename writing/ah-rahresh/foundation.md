@@ -254,6 +254,22 @@ A ideia era que as pessoas deixassem de se definir politicamente pela tribo ou o
 
 Essa tentativa **não foi plenamente bem-sucedida**. Tribos, povos e etnias continuaram existindo ao longo do tempo.
 
+### 15.1. Povos das Montanhas e Povos Rubros
+
+Os **Povos das Montanhas** e os **Povos Rubros** são, entre os povos que integram Ãh-Rahresh, os mais **dissociados culturalmente e socialmente do Petatara**.
+
+Eles pertencem ao Petatara, mas preservam práticas, referências e tradições locais com maior autonomia em relação ao padrão institucional predominante. As diferenças na forma de registrar nascimento e aniversário são um exemplo dessa dissociação, mas não a esgotam.
+
+Historicamente, esses povos **não foram conquistados por Sijim**. Em vez disso, **Sijim os convenceu a integrar o Petatara**.
+
+Permanece em aberto por que essa dissociação se manteve tão forte ao longo do tempo. Entre as hipóteses possíveis, ainda não decididas pelo autor, estão:
+
+- a **localização geográfica** desses povos;
+- o fato de sua integração ter ocorrido por **adesão/convencimento**, e não por conquista;
+- uma combinação desses fatores.
+
+Nenhuma dessas hipóteses deve ser tratada como causa definitiva enquanto o ponto permanecer em aberto.
+
 ---
 
 ## 16. A língua geral
@@ -661,3 +677,4 @@ A existência de Huad, sua proximidade territorial e a escolha deliberada de um 
 - Sintomas, progressão, transmissão, letalidade e demais características do Póler.
 - Detalhes concretos da situação inicial de Qahuad antes do Djinn.
 - Razão interna para o uso isolado de “Segurança e Defesa” no romance: erro, nomenclatura histórica ou mudança posterior.
+- Razão predominante pela qual Povos das Montanhas e Povos Rubros permaneceram mais dissociados do Petatara: localização geográfica, forma de adesão sem conquista ou combinação desses fatores.
