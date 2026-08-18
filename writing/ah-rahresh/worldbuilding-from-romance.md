@@ -694,7 +694,7 @@ O primeiro romance mostra Huad já com história própria: o Conselho retirou **
 
 ## 28. Fahrak e Qahuad
 
-**Fahrak é filho dos sultões Nazir e Sa.**
+**Fahrak é filho do sultão Nadir e da sultana Samira.**
 
 Na época da história de Qahuad e do Djinn, Fahrak era **uma criança pequena**.
 
@@ -1111,7 +1111,7 @@ Para evitar que futuras leituras dos romances repitam interpretações erradas, 
 - o kah’fi esteriliza o solo em que cresce por **centenas de anos**;
 - folhas colhidas de kah’fi podem permanecer por **décadas em vasos**, sem crescer e sem morrer;
 - essa propriedade contribuiu para o surgimento de traficantes de kah’fi;
-- **Fahrak é filho dos sultões Nazir e Sa**;
+- **Fahrak é filho do sultão Nadir e da sultana Samira**;
 - na época do Djinn e da destruição de Qahuad, Fahrak era **uma criança pequena** que conseguiu fugir para o deserto;
 - **Auru descende de Sijim**;
 - **Fahrak descende de Sijim**.
