@@ -431,7 +431,7 @@ Exemplo básico: alguém recebe uma cesta de frutas de um vendedor. No passaport
 
 As partes podem registrar a natureza e a importância da prestação, mas não atribuem a ela um preço expresso numa unidade monetária comum.
 
-Existem **categorias qualitativas e equivalências aproximadas**, como níveis de alimentação básica, média e outras classificações semelhantes. Essas categorias ajudam a orientar a avaliação, mas não constituem uma moeda nem uma tabela universal de preços.
+Existem **categororias qualitativas e equivalências aproximadas**, como níveis de alimentação básica, média e outras classificações semelhantes. Essas categorias ajudam a orientar a avaliação, mas não constituem uma moeda nem uma tabela universal de preços.
 
 As equivalências podem variar conforme a região, o contexto e o responsável pela avaliação.
 
@@ -557,13 +557,21 @@ Esse preconceito não desaparece nas camadas superiores do Petatara. Mesmo indiv
 
 O estigma, portanto, é regional e atravessa parcialmente a própria hierarquia das castas.
 
+### Póler
+
+O Noroeste também sofre com uma doença chamada **Póler**.
+
+Póler é uma **variação de cólera**, mais grave e mais estranha que a forma comum da doença. Ela constitui um problema sanitário importante da região.
+
+Seus sintomas específicos, forma exata de progressão, transmissão, letalidade e demais características clínicas ainda não estão definidos.
+
 ---
 
 ## 38. Qahuad antes do Djinn
 
 **Qahuad** situa-se na região do **Noroeste**.
 
-Antes do encontro dos sultões com o Djinn, Qahuad é uma localidade pobre e problemática, inserida numa região que já sofre empobrecimento e forte estigma dentro de Ãh-Rahresh.
+Antes do encontro dos sultões com o Djinn, Qahuad é uma localidade pobre e problemática, inserida numa região que já sofre empobrecimento, forte estigma dentro de Ãh-Rahresh e o problema sanitário do **Póler**.
 
 A situação inicial pode seguir a base já proposta para a história: uma administração local ocupada principalmente em manter a região funcionando e lidar com dificuldades materiais persistentes, antes que o Djinn altere radicalmente suas possibilidades.
 
@@ -597,5 +605,6 @@ Os detalhes específicos da crise de Qahuad, sua infraestrutura, sua população
 - Procedimento detalhado de recurso contra decisões tomadas na Pesagem.
 - Nome do grupo de mercadores de longa distância que opera com metais preciosos.
 - Regras e exceções concretas que explicam a tolerância estatal a esses mercadores.
+- Sintomas, progressão, transmissão, letalidade e demais características do Póler.
 - Detalhes concretos da situação inicial de Qahuad antes do Djinn.
 - Nomes e caracterização dos dois sultões de Qahuad.
