@@ -503,6 +503,18 @@ A existência dos malnascidos demonstra que possuir capacidade mágica não é s
 
 ---
 
+## 34. Haler
+
+As **Haler** constituem outro grupo social de segunda categoria existente à margem da estrutura formal das cinco castas.
+
+São descritas como **prostitutas de rua**.
+
+Neste momento, está consolidado apenas que formam um grupo social reconhecível e inferiorizado, mas **não uma casta formal do Petatara**.
+
+Ainda não estão definidos seu status jurídico, eventual relação com passaportes, grau de tolerância ou perseguição pelo Estado, vínculo com alguma casta de origem, formas próprias de organização ou se “Haler” possui flexão distinta para singular e plural.
+
+---
+
 ## Pontos ainda em aberto
 
 - Nome do continente no período anterior à nova ordem, caso tenha existido algum.
@@ -531,3 +543,5 @@ A existência dos malnascidos demonstra que possuir capacidade mágica não é s
 - Nome do grupo de mercadores de longa distância que opera com metais preciosos.
 - Regras e exceções concretas que explicam a tolerância estatal a esses mercadores.
 - Situação jurídica detalhada dos malnascidos.
+- Situação jurídica e social detalhada das Haler, incluindo relação com passaporte e castas.
+- Confirmar se “Haler” é forma invariável ou se existe singular/plural distinto.
