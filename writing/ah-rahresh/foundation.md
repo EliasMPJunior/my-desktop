@@ -150,17 +150,9 @@ Depois da vitória, Sijin determinou que o mundo passaria a viver segundo uma no
 
 As **religiões foram proibidas**.
 
-Também foram proibidos:
+Também foram proibidos cultos, deuses enquanto objetos de culto, sacerdotes e o sacerdócio como instituição.
 
-- cultos;
-- deuses enquanto objetos de culto;
-- sacerdotes e o sacerdócio como instituição.
-
-Os imortais sobreviventes tiveram destinos diferentes:
-
-- alguns foram mortos;
-- alguns fugiram ou desapareceram;
-- alguns foram capturados.
+Os imortais sobreviventes tiveram destinos diferentes: alguns foram mortos; alguns fugiram ou desapareceram; alguns foram capturados.
 
 ---
 
@@ -178,7 +170,7 @@ A ideia central atualmente estabelecida é que Sijin conseguiu usar contra os pr
 
 A formulação exata do contrato, a natureza da armadilha jurídica/mágica, os limites da servidão, a quantidade ou tipo de pedidos e as regras de aprisionamento **ainda não estão definidas**.
 
-Portanto, o único elemento canônico neste momento é a relação estrutural:
+O elemento canônico neste momento é a relação estrutural:
 
 **Djinn aprisionado + contrato mágico irrevogável + obrigação de atender pedidos.**
 
@@ -190,9 +182,7 @@ Portanto, o único elemento canônico neste momento é a relação estrutural:
 
 É a estrutura social criada por Sijin para organizar a nova ordem surgida após sua vitória.
 
-Sijin não partia da ideia de que todos os seres humanos seriam simplesmente iguais ou de que uma sociedade funcionaria sem diferenciação interna.
-
-Segundo sua visão, a humanidade precisava de **segregação social para se organizar e se compreender**.
+Sijin não partia da ideia de que todos os seres humanos seriam simplesmente iguais ou de que uma sociedade funcionaria sem diferenciação interna. Segundo sua visão, a humanidade precisava de **segregação social para se organizar e se compreender**.
 
 Por isso, ele dividiu a sociedade em **cinco castas**.
 
@@ -216,12 +206,7 @@ Na nova ordem, os guerreiros ficaram hierarquicamente abaixo dos magos.
 
 A casta dos **burocratas e agentes do funcionamento institucional**.
 
-Inclui, entre outros:
-
-- funcionários públicos;
-- juízes;
-- contadores;
-- funções administrativas e burocráticas equivalentes.
+Inclui funcionários públicos, juízes, contadores e funções administrativas e burocráticas equivalentes.
 
 ### 13.4. Oxum
 
@@ -233,11 +218,7 @@ Sijin considerava o entretenimento um elemento primordial para o funcionamento d
 
 A casta dos **trabalhadores comuns**.
 
-Inclui profissões como:
-
-- padeiros;
-- pedreiros;
-- trabalhadores comuns de diversas atividades.
+Inclui profissões como padeiros, pedreiros e trabalhadores comuns de diversas atividades.
 
 ---
 
@@ -247,10 +228,7 @@ Inclui profissões como:
 
 As cinco folhas não se distribuem de maneira linear. Elas se projetam em direções diferentes a partir de uma mesma estrutura.
 
-Essa forma oferece simultaneamente duas ideias:
-
-- existe **hierarquia** entre as partes;
-- todas continuam pertencendo ao **mesmo conjunto**.
+Essa forma oferece simultaneamente duas ideias: existe **hierarquia** entre as partes e todas continuam pertencendo ao **mesmo conjunto**.
 
 Sijin adotou a planta como símbolo da nova ordem e associou suas cinco folhas às cinco castas.
 
@@ -262,9 +240,7 @@ Sijin pretendia substituir as antigas divisões tribais por uma identidade colet
 
 A ideia era que as pessoas deixassem de se definir politicamente pela tribo ou origem e passassem a pertencer ao **Petatara**.
 
-Essa tentativa **não foi plenamente bem-sucedida**.
-
-Tribos, povos e etnias continuaram existindo ao longo do tempo.
+Essa tentativa **não foi plenamente bem-sucedida**. Tribos, povos e etnias continuaram existindo ao longo do tempo.
 
 ---
 
@@ -355,7 +331,7 @@ Esses sultanatos não precisam corresponder a antigos reinos que cresceram organ
 
 Cada sultanato é governado por **sultões**, que possuem ampla autoridade sobre sua região, mas precisam administrar continuamente relações com tribos, povos e grupos locais que não desapareceram com a criação do Petatara.
 
-A autoridade dos sultões, portanto, existe dentro da estrutura estatal de Ãh-Rahresh e não equivale a soberania independente.
+A autoridade dos sultões existe dentro da estrutura estatal de Ãh-Rahresh e não equivale a soberania independente.
 
 ---
 
@@ -405,16 +381,125 @@ Não existe mobilidade entre castas depois do ingresso.
 
 As cinco castas não são apenas categorias simbólicas ou profissionais.
 
-Cada uma possui:
-
-- direitos próprios;
-- deveres próprios;
-- estruturas próprias;
-- funções sociais próprias.
+Cada uma possui direitos próprios, deveres próprios, estruturas próprias e funções sociais próprias.
 
 A separação entre as castas é institucional e permanente.
 
 A hierarquia entre elas convive com a ideia simbolizada pela planta Petatara: partes distintas e desiguais que ainda pertencem ao mesmo corpo social.
+
+---
+
+## 26. Prerrogativas de Auru
+
+O fato de o governo ser colegiado **não significa que toda ação de um Grão-vizir dependa de autorização prévia do Conselho**.
+
+Auru, em razão de seu cargo no **Grão-vizirado da Segurança e da Guerra**, possui prerrogativas próprias para agir dentro de sua esfera.
+
+Uma decisão como a destruição de Qahuad pode ser tomada e executada por Auru **sem autorização prévia do Conselho**, desde que esteja dentro das competências de seu cargo.
+
+O controle político e jurídico pode ocorrer **depois** da decisão.
+
+Caso sua atuação seja contestada, pode ser proposta a abertura de um **inquérito**. A abertura desse inquérito depende de aprovação do conselho competente dos Doszilla.
+
+Uma vez aberto, o inquérito investiga a decisão e pode resultar em consequências, punições ou determinações posteriores.
+
+Os procedimentos exatos, competências do órgão investigador e tipos de sanção ainda não estão definidos.
+
+---
+
+## 27. Comércio, moeda e controle estatal
+
+O **comércio existe** em Ãh-Rahresh.
+
+O que é proibido é a existência de um sistema monetário privado ou autônomo fora da estrutura controlada pelo Estado. Atos como **cunhar moedas** ou estabelecer meios independentes de circulação monetária são proibidos.
+
+A economia cotidiana funciona por um sistema de registro estatal de transações, sem circulação normal de dinheiro físico ou de uma unidade monetária numérica convencional.
+
+Esse sistema pode ser comparado, apenas como analogia funcional, a um **“Pix mágico”**: as transações ocorrem dentro de uma infraestrutura controlada pelo governo e são registradas de forma rastreável.
+
+---
+
+## 28. O passaporte
+
+A principal interface do indivíduo com o sistema econômico e jurídico é um caderno chamado **passaporte**.
+
+O passaporte registra as transações realizadas pela pessoa.
+
+Exemplo básico: alguém recebe uma cesta de frutas de um vendedor. No passaporte do comprador fica registrado que ele recebeu aquela cesta e assumiu uma obrigação correspondente. No passaporte do vendedor fica registrado que ele entregou a cesta e possui uma expectativa de remuneração.
+
+As partes negociam uma equivalência ou intenção de remuneração, mas **o mecanismo exato de valoração ainda não está definido**. Não existe, pelo menos na forma atualmente consolidada, uma quantificação monetária simples equivalente a escrever um preço em moedas.
+
+O sistema opera por registros de prestação, obrigação, intenção de pagamento e compensação futura.
+
+As pessoas podem acumular essas relações ao longo do tempo.
+
+---
+
+## 29. Validação das transações
+
+Periodicamente, o passaporte precisa ser **validado**.
+
+A periodicidade exata — semanal, mensal ou outra — ainda não está definida.
+
+A validação é realizada por um **Ermuco**, coerentemente com a função burocrática dessa casta.
+
+Esse agente verifica e valida as transações registradas e também as **pesa**, isto é, participa do processo pelo qual as prestações e obrigações são avaliadas e conciliadas.
+
+A mecânica completa dessa pesagem, conversão e liquidação ainda está em aberto.
+
+---
+
+## 30. O passaporte como condição de existência civil
+
+O passaporte não é apenas um instrumento comercial.
+
+Ele está ligado à própria **existência jurídica da pessoa dentro do Petatara**.
+
+Quem não possui passaporte não consegue participar normalmente do sistema econômico e também **não possui direitos reconhecidos pelo Estado**.
+
+Uma pessoa sem passaporte fica fora da proteção jurídica ordinária. Na prática, não dispõe das garantias que protegem os membros reconhecidos do Petatara.
+
+Por isso, a exclusão do sistema de castas e a ausência de passaporte tornam praticamente impossível uma vida normal dentro das cidades e sultanatos.
+
+---
+
+## 31. Pessoas sem casta
+
+Existem pessoas que não ingressam em nenhuma das cinco castas.
+
+Essas pessoas não podem permanecer normalmente dentro da sociedade organizada pelo Petatara.
+
+Sem casta, ficam também sem acesso regular ao **passaporte**, e portanto sem capacidade normal de participar da economia e sem direitos civis reconhecidos.
+
+Em geral, essas pessoas acabam se **exilando**, especialmente no deserto, onde existem comunidades e formas de sobrevivência externas à organização social oficial.
+
+---
+
+## 32. Grupos paralelos e tolerados
+
+Além das cinco castas existem grupos sociais que às vezes são percebidos popularmente como se fossem castas, embora **não façam parte formal do Petatara**.
+
+Um exemplo são determinados **mercadores de longa distância**.
+
+Esses mercadores operam, entre outras formas, com valores e trocas baseados em **metais preciosos**, algo proibido pelo sistema oficial.
+
+Apesar disso, são frequentemente tolerados porque mantêm rotas próprias, percorrem grandes distâncias e cumprem funções econômicas que o sistema oficial não substitui integralmente.
+
+Esse grupo possui um nome próprio, mas ele ainda não foi recuperado e permanece em aberto.
+
+---
+
+## 33. Malnascidos
+
+Existem magos que possuem capacidade mágica, mas **não ingressaram na Academia Doszil**.
+
+Esses magos são chamados de **malnascidos**.
+
+Eles não constituem uma casta reconhecida.
+
+Em geral, são perseguidos pelo sistema e podem ser **presos, mortos ou submetidos a outras formas de repressão**.
+
+A existência dos malnascidos demonstra que possuir capacidade mágica não é suficiente para possuir a condição social e jurídica de um Doszil: o pertencimento institucional à casta e à Academia é decisivo.
 
 ---
 
@@ -434,8 +519,15 @@ A hierarquia entre elas convive com a ideia simbolizada pela planta Petatara: pa
 - Lista completa dos Grão-vizirados e respectivos pares de competências.
 - Processo exato pelo qual os antigos vizirados evoluíram para Grão-vizirados.
 - Composição exata do colégio eleitoral de Doszilla que escolhe vizires e sultões.
+- Procedimento completo dos inquéritos contra decisões de Grão-vizires e possíveis punições.
 - Limites jurídicos e práticos da autoridade dos sultões frente ao Conselho de Grão-vizires.
 - Detalhes dos testes de ingresso de cada casta.
-- Consequências para uma criança que não passe no teste escolhido aos sete anos.
+- Consequências precisas para uma criança que não passe no teste escolhido aos sete anos.
 - Situação de crianças que, por qualquer razão, não realizem um teste naquele ano.
 - Relação entre a proibição jurídica da herança e os mecanismos informais de continuidade familiar do poder.
+- Mecânica exata de valoração, pesagem, compensação e liquidação das transações registradas no passaporte.
+- Periodicidade da validação dos passaportes.
+- Relação institucional exata entre passaporte, casta e reconhecimento de direitos.
+- Nome do grupo de mercadores de longa distância que opera com metais preciosos.
+- Regras e exceções concretas que explicam a tolerância estatal a esses mercadores.
+- Situação jurídica detalhada dos malnascidos.
