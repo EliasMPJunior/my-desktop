@@ -6,6 +6,8 @@ Este arquivo consolida as informações disponíveis sobre **Auru** a partir do 
 
 Quando o romance afirma algo diretamente, isso é tratado como **canônico textual**. Quando uma conclusão decorre fortemente do contexto, ela é marcada como **inferência**. Elementos inventados anteriormente apenas para o beat sheet de Qahuad não são tratados aqui como canon do romance.
 
+**Nota cronológica essencial:** a história de **Qahuad ocorre muito antes dos eventos familiares mostrados no romance. Na época de Qahuad, Alamar ainda não havia nascido.** Portanto, tudo que o romance revela sobre a relação de Auru com Alamar, Milãh, Aisha e a sucessão de Yaati pertence a uma fase posterior da vida de Auru e não pode ser projetado retroativamente sobre Qahuad como circunstância já existente.
+
 ---
 
 ## 1. Identidade
@@ -17,6 +19,8 @@ Quando o romance afirma algo diretamente, isso é tratado como **canônico textu
 - No período do romance, é uma mulher idosa.
 - É mãe de **Alamar**.
 - É avó de **Milãh**.
+
+Os dois últimos vínculos são posteriores ao episódio de Qahuad: **Alamar ainda não era nascida quando ocorreu a história de Qahuad**.
 
 ---
 
@@ -50,6 +54,8 @@ O romance não apresenta, no trecho localizado, a frase literal “Auru foi sult
 
 Alamar é filha de Auru.
 
+**Cronologia:** Alamar nasceu depois dos acontecimentos de Qahuad. Ela não existe ainda na época em que Auru participa da história de Qahuad.
+
 A relação entre as duas é marcada por:
 
 - disputa constante por domínio da conversa;
@@ -71,6 +77,8 @@ Auru acompanha e julga as alianças políticas feitas por Milãh, inclusive crit
 
 Ela demonstra uma visão explicitamente estratégica sobre relações familiares e políticas, tratando escolhas afetivas e sociais como instrumentos de continuidade de poder.
 
+Toda essa relação pertence a uma fase muito posterior a Qahuad.
+
 ### 3.3. Pai de Alamar
 
 O pai de Alamar estava à morte durante uma crise sucessória em Yaati.
@@ -78,6 +86,8 @@ O pai de Alamar estava à morte durante uma crise sucessória em Yaati.
 Nesse período, um homem chamado **Razzaq** tentava tornar-se sultão no lugar de Alamar.
 
 O nome do pai de Alamar não é fornecido no material localizado.
+
+Esse episódio também é posterior a Qahuad.
 
 ---
 
@@ -101,6 +111,8 @@ Uma de suas formulações mais representativas é a ideia de que **a estupidez �
 
 Quando descobre que Aisha sobreviveu e se tornou uma renascida, Auru recomenda novamente que Alamar “dê um jeito nela”, especialmente antes que Aisha possa alcançar posição elevada dentro da casta Doszil.
 
+**Todo este episódio ocorre depois de Qahuad e serve apenas para caracterizar a Auru de uma fase posterior de sua vida.**
+
 ---
 
 ## 5. Visão sobre violência e eliminação de ameaças
@@ -115,6 +127,8 @@ No romance, ela:
 - reage a incompetência administrativa com propostas de açoite coletivo de comandante e tripulação.
 
 A caracterização resultante é de alguém que pensa de maneira **preventiva e consequencialista**: se uma pessoa, decisão ou estrutura pode produzir uma ameaça futura, Auru tende a considerar legítimo eliminar o problema antes que cresça.
+
+Esses exemplos vêm de uma Auru mais velha que a Auru de Qahuad. Podem informar traços de continuidade da personagem, mas não provam automaticamente que ela já agia exatamente da mesma forma em todos os aspectos na época de Qahuad.
 
 ---
 
@@ -233,6 +247,8 @@ Isso demonstra vínculo cultural com tradições maati.
 
 O romance localizado não fornece declaração inequívoca suficiente para afirmar sem ressalva a etnia de Auru, então esse ponto deve permanecer como associação cultural até haver confirmação textual adicional.
 
+**A aparência descrita nesta seção é a da Auru idosa do romance, não a aparência dela na época de Qahuad.**
+
 ---
 
 ## 12. Magia
@@ -310,7 +326,21 @@ Auru, portanto, possui **influência residual significativa**, embora não deten
 
 ## 17. Auru no contexto de Qahuad
 
-### 17.1. Elementos já consolidados no worldbuilding atual
+### 17.1. Cronologia
+
+**Qahuad ocorre antes do nascimento de Alamar.**
+
+Consequentemente, durante a história de Qahuad:
+
+- Alamar ainda não existe;
+- Milãh ainda não existe;
+- Aisha ainda não existe;
+- a crise sucessória de Yaati envolvendo Alamar, Ofíris e Razzaq ainda não ocorreu;
+- a relação mãe-filha usada pelo romance para revelar boa parte da personalidade de Auru pertence ao futuro da personagem.
+
+A Auru de Qahuad deve, portanto, ser tratada como uma versão mais jovem da personagem, em uma fase anterior da vida. O romance posterior pode fornecer traços de personalidade e padrões de decisão que talvez tenham continuidade, mas não fornece automaticamente os acontecimentos, relações familiares ou circunstâncias políticas da época de Qahuad.
+
+### 17.2. Elementos já consolidados no worldbuilding atual
 
 No material atualmente desenvolvido para a história de Qahuad, Auru é tratada como ocupante de uma função ligada à **Segurança e Guerra** durante o episódio.
 
@@ -318,9 +348,9 @@ O cargo possui prerrogativas próprias que permitem a tomada de determinadas dec
 
 A destruição de Qahuad está sendo construída como uma decisão tomada por Auru dentro dessas prerrogativas.
 
-### 17.2. Compatibilidade com a Auru do romance
+### 17.3. Compatibilidade com a Auru do romance
 
-A personalidade já existente no romance torna plausível uma Auru que:
+A personalidade mostrada na fase posterior do romance é compatível com uma Auru que, em Qahuad:
 
 - identifique uma ameaça política antes de ela se tornar militarmente dominante;
 - prefira eliminação preventiva a tolerar risco futuro;
@@ -329,7 +359,7 @@ A personalidade já existente no romance torna plausível uma Auru que:
 - considere estabilidade institucional mais importante que vidas individuais;
 - aceite medidas extremas quando entende que há risco sistêmico.
 
-Essa compatibilidade é uma **análise de personagem**, não um fato narrado no romance sobre Qahuad.
+Essa compatibilidade é uma **análise de personagem**, não um fato narrado no romance sobre Qahuad e nem prova de que todos esses traços já se manifestavam da mesma maneira naquele período.
 
 O romance não menciona a destruição de Qahuad nem fornece a motivação específica desse episódio.
 
@@ -337,9 +367,13 @@ O romance não menciona a destruição de Qahuad nem fornece a motivação espec
 
 ## 18. Linha familiar resumida
 
+Em fase posterior a Qahuad:
+
 **Auru → Alamar → Milãh**
 
 Aisha entra nessa estrutura por meio do plano sucessório criado por Auru e executado parcialmente por Alamar e Ofíris.
+
+**Essa linha familiar ainda não existe durante os acontecimentos de Qahuad porque Alamar ainda não havia nascido.**
 
 ---
 
@@ -348,6 +382,7 @@ Aisha entra nessa estrutura por meio do plano sucessório criado por Auru e exec
 Não estão estabelecidos de forma segura no material consultado:
 
 - idade exata de Auru;
+- idade de Auru na época de Qahuad;
 - local de nascimento;
 - nome de seus pais;
 - nome do marido/companheiro com quem exerceu o sultanato;
@@ -362,14 +397,15 @@ Não estão estabelecidos de forma segura no material consultado:
 - motivo formal da aposentadoria;
 - relação completa com outros membros do Conselho;
 - participação explícita em Qahuad no romance;
-- qualquer menção textual no romance à destruição ou apagamento de Qahuad.
+- qualquer menção textual no romance à destruição ou apagamento de Qahuad;
+- circunstâncias familiares de Auru na época de Qahuad.
 
 ---
 
 ## 20. Síntese de personagem
 
-Auru é uma **Doszil idosa, ex-sultana e ex-Grã-vizir**, mãe de Alamar e avó de Milãh. É uma política experiente, autoritária, elitista, sarcástica e manipuladora, que pensa em termos de sucessão, estabilidade e consequências futuras. Usa violência e eliminação preventiva como instrumentos aceitáveis quando considera que uma ameaça pode crescer.
+No período do romance, Auru é uma **Doszil idosa, ex-sultana e ex-Grã-vizir**, mãe de Alamar e avó de Milãh. É uma política experiente, autoritária, elitista, sarcástica e manipuladora, que pensa em termos de sucessão, estabilidade e consequências futuras. Usa violência e eliminação preventiva como instrumentos aceitáveis quando considera que uma ameaça pode crescer.
 
 Ao mesmo tempo, não é apresentada apenas como uma figura solene ou monstruosa. Já aposentada, fuma narguilé, gosta de tomilho, compra queijo no mercado, gargalha, provoca a filha e demonstra certo prazer em viver longe das pressões do antigo cargo.
 
-Sua combinação de inteligência política, crueldade instrumental, confiança extrema e humanidade cotidiana forma a base mais sólida atualmente disponível para qualquer desenvolvimento posterior da personagem.
+**Na época de Qahuad, Alamar ainda não havia nascido.** Assim, a Auru de Qahuad é necessariamente uma fase anterior da personagem; as relações familiares e os episódios do romance são informações sobre seu futuro, úteis para compreender quem ela virá a ser, mas não fazem parte do contexto imediato daquela história.
