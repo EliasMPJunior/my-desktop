@@ -367,6 +367,18 @@ Em Ãh-Rahresh, o casamento não é definido apenas por cerimônia ou declaraç�
 
 Enquanto isso não ocorrer, os dois não são considerados casados para esse fim institucional.
 
+### 23.1. Contagem de idade, aniversário e maioridade
+
+Ãh-Rahresh **não reconhece aniversário individual por dia ou mês de nascimento**.
+
+A data civil de nascimento registra **somente o ano-canônico em que a pessoa nasceu**.
+
+Todas as pessoas fazem aniversário no mesmo momento: **o Ano Novo**. Na virada do ano, todas avançam oficialmente um ano de idade ao mesmo tempo.
+
+A maioridade ocorre quando a pessoa completa **7 anos-canônicos**, equivalentes a aproximadamente **17,17 anos terrestres**.
+
+Portanto, para fins sociais e jurídicos, a idade é determinada pelo ano-canônico de nascimento, e não pela quantidade exata de dias decorridos desde o parto.
+
 ---
 
 ## 24. Entrada nas castas
@@ -377,7 +389,7 @@ Toda criança nasce, em princípio, **sem casta**.
 
 Na prática, filhos de membros de uma determinada casta tendem a ser socialmente tratados desde cedo como pertencentes à mesma casta dos pais, ainda que juridicamente sua definição não tenha ocorrido.
 
-Aos **sete anos**, a criança entra no processo de definição de sua casta.
+No **Ano Novo em que passa a ter sete anos-canônicos**, a criança entra no processo de definição de sua casta.
 
 Ela não escolhe diretamente a qual casta pertencerá. Escolhe **para qual casta prestará o teste de ingresso**.
 
@@ -463,7 +475,7 @@ O eunuco **pesa** essas relações de forma contextual. Essa avaliação não pr
 
 Ao final da Pesagem, o eunuco pode declarar que as obrigações da pessoa estão **quitadas**. Em termos práticos, a decisão pode equivaler a: “está pago; neste período você não deve mais nada”.
 
-Também pode reconhecer a existência de um **excedente** de contribuição. Parte desse excedente pode ser recolhida para o Estado, e o restante pode ser reconhecido em favor da pessoa segundo as regras aplicáveis.
+Também pode reconhecer a existência de um **excedente** de contribuição. Parte desse excedente pode ser recolhida para o Estado. O tratamento do eventual restante permanece em aberto.
 
 O sistema funciona por **julgamentos de equivalência e suficiência**, e não por uma conversão universal de todas as atividades em uma unidade de valor.
 
@@ -591,9 +603,13 @@ Seus sintomas específicos, forma exata de progressão, transmissão, letalidade
 
 Antes do encontro dos sultões com o Djinn, Qahuad é uma localidade pobre e problemática, inserida numa região que já sofre empobrecimento, forte estigma dentro de Ãh-Rahresh e o problema sanitário do **Póler**.
 
+Os sultões de Qahuad são **Nadir** e **Samira**. Eles são os pais de **Fahrak**, que era uma criança pequena na época da história do Djinn e da posterior destruição da cidade.
+
+Após a queda de Qahuad, Fahrak conseguiu fugir para o deserto.
+
 A situação inicial pode seguir a base já proposta para a história: uma administração local ocupada principalmente em manter a região funcionando e lidar com dificuldades materiais persistentes, antes que o Djinn altere radicalmente suas possibilidades.
 
-Os detalhes específicos da crise de Qahuad, sua infraestrutura, sua população, seus recursos e os nomes e características dos dois sultões ainda serão construídos.
+Os detalhes específicos da crise de Qahuad, sua infraestrutura, sua população e seus recursos ainda serão construídos.
 
 ### Qahuad e Huad
 
@@ -635,5 +651,4 @@ A existência de Huad, sua proximidade territorial e a escolha deliberada de um 
 - Regras e exceções concretas que explicam a tolerância estatal a esses mercadores.
 - Sintomas, progressão, transmissão, letalidade e demais características do Póler.
 - Detalhes concretos da situação inicial de Qahuad antes do Djinn.
-- Nomes e caracterização dos dois sultões de Qahuad.
 - Razão interna para o uso isolado de “Segurança e Defesa” no romance: erro, nomenclatura histórica ou mudança posterior.
