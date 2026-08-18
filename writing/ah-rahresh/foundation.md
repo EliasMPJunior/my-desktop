@@ -134,11 +134,11 @@ No resultado final desse processo, Sijin venceu a guerra e passou a controlar bo
 
 ---
 
-## 10. Academia Dozil
+## 10. Academia Doszil
 
 Na região sob seu domínio, Sijin fundou uma academia dedicada ao ensino de magia.
 
-Essa instituição tornou-se conhecida como **Academia Dozil**.
+Essa instituição tornou-se conhecida como **Academia Doszil**.
 
 A criação da academia institucionalizou o treinamento de magos que até então havia ocorrido diretamente sob Sijin e seus seguidores.
 
@@ -196,9 +196,11 @@ Segundo sua visão, a humanidade precisava de **segregação social para se orga
 
 Por isso, ele dividiu a sociedade em **cinco castas**.
 
-### 13.1. Magos
+### 13.1. Magos — Doszil / Doszilla
 
 A casta mais poderosa e de posição superior dentro da estrutura.
+
+Um mago pertencente a essa casta é um **Doszil**. O plural é **Doszilla**.
 
 O próprio Sijin era mago e havia criado uma ordem na qual a magia adquiria posição central.
 
@@ -323,13 +325,9 @@ Auru, portanto, **não governa sozinha Ãh-Rahresh**. Ela ocupa um dos postos do
 
 Os cargos de vizir e Grão-vizir **não são hereditários**.
 
-Pessoas podem se candidatar aos cargos, e a escolha é feita por votação de um conjunto restrito de membros da casta superior ligada à magia e ao conhecimento.
+Pessoas podem se candidatar aos cargos, e a escolha é feita por votação de um conjunto restrito de **Doszilla**, isto é, membros da casta dos magos.
 
-Na transcrição oral mais recente, esses eleitores foram chamados de **“Dozil”** ou integrantes da **“casta Dozil”**. Isso entra em conflito com a nomenclatura já consolidada neste documento, em que **Dozil** é a academia de magia e a primeira casta é registrada como **Magos**.
-
-Até confirmação posterior, não se altera a nomenclatura das cinco castas: o termo “casta Dozil” permanece como **divergência de transcrição a esclarecer**.
-
-Também não é toda a casta superior que vota. Somente indivíduos responsáveis por determinadas esferas possuem direito de voto nessas escolhas.
+Não são todos os Doszilla que votam. Somente indivíduos responsáveis por determinadas esferas possuem direito de voto nessas escolhas.
 
 A composição exata desse colégio eleitoral ainda precisa ser detalhada.
 
@@ -365,7 +363,7 @@ A autoridade dos sultões, portanto, existe dentro da estrutura estatal de Ãh-R
 
 A escolha dos sultões segue princípio semelhante ao utilizado para os vizires.
 
-Há candidatos, e a nomeação é feita pelo conselho a partir de uma eleição restrita a determinados indivíduos da casta superior.
+Há candidatos, e a nomeação é feita pelo conselho a partir de uma eleição restrita a determinados **Doszilla**.
 
 O cargo **não é hereditário**.
 
@@ -431,12 +429,11 @@ A hierarquia entre elas convive com a ideia simbolizada pela planta Petatara: pa
 - Regras exatas da servidão dos Djinns e dos pedidos que devem atender.
 - Natureza e regras dos recipientes usados para aprisionar Djinns.
 - Detalhes da primeira luta em que Sijin derrotou um imortal.
-- Desenvolvimento posterior da Academia Dozil.
+- Desenvolvimento posterior da Academia Doszil.
 - Nome e par completo de competências do vizirado ocupado por Sijin.
 - Lista completa dos Grão-vizirados e respectivos pares de competências.
 - Processo exato pelo qual os antigos vizirados evoluíram para Grão-vizirados.
-- Composição exata do colégio eleitoral que escolhe vizires e sultões.
-- Confirmar se “Dozil” designa também a casta superior ou se essa ocorrência foi erro de STT; até lá, mantém-se **Magos** como nomenclatura consolidada da primeira casta.
+- Composição exata do colégio eleitoral de Doszilla que escolhe vizires e sultões.
 - Limites jurídicos e práticos da autoridade dos sultões frente ao Conselho de Grão-vizires.
 - Detalhes dos testes de ingresso de cada casta.
 - Consequências para uma criança que não passe no teste escolhido aos sete anos.
