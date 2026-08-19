@@ -226,6 +226,7 @@ bdc_org:Zigurat rdf:type owl:NamedIndividual .
                        "Engº"@pt-br ;
             schema:knowsAbout :IFC ,
                               :Python ,
+                              :Scrum ,
                               :SemanticWeb ,
                               :AWS ,
                               :Kafka ,
@@ -587,6 +588,8 @@ bdc_org:Zigurat rdf:type owl:NamedIndividual .
                                             cv:skillName "IAs Generativas (LLM)"@pt-br ,
                                             "Generative AIs (LLM)"@en ;
                                             cv:skillLevel "Advanced" ] ,
+                                        [ rdf:type cv:Skill ;
+                                            cv:skillName "Scrum" ] ,
                                         [ rdf:type cv:Skill ;
                                             cv:skillName "Bash" ;
                                             cv:skillLevel "Advanced" ] ,

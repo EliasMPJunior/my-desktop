@@ -202,6 +202,7 @@ schema:SoftwareSourceCode rdf:type owl:Class .
                                                      "Research Engineer"@en ;
                                      schema:knowsAbout <http://elias.eng.br/ontology/IFC> ,
                                                        <http://elias.eng.br/ontology/Python> ,
+                                                       <http://elias.eng.br/ontology/Scrum> ,
                                                        <http://elias.eng.br/ontology/SemanticWeb> ;
                                      schema:owns :Brasidata .
 
