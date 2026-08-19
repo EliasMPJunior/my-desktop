@@ -8,7 +8,7 @@ Kael permanecia ajoelhado, imóvel demais para alguém que minutos antes gritava
 
 Nadir deu um passo à frente.
 
-— Quem és tu? Pela autoridade do Conselho dos Il e pelo trono de Qahuad, identifica-te.
+— Quem és tu? Pela autoridade do Conselho Doszil e pelo trono de Qahuad, identifica-te.
 
 O Djinn virou os olhos para ele, mas não o corpo.
 
@@ -120,7 +120,7 @@ Nadir subiu novamente o degrau e parou ao lado da esposa.
 
 Falou baixo, apenas para ela:
 
-— Se isso chegar ao Conselho dos Il...
+— Se isso chegar ao Conselho Doszil...
 
 — Eu sei.
 
