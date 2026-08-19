@@ -167,3 +167,7 @@ A porta abriu apenas o necessário para que saíssem. Primeiro os dois litigante
 Quando a última pessoa atravessou, Nadir fechou a porta por dentro.
 
 Pela primeira vez desde que o canopo se abrira, restavam no salão apenas Samira, Nadir e o Djinn.
+
+Nadir esperou o ruído dos passos desaparecer no corredor e olhou para a criatura.
+
+— Bom. Agora vamos descobrir se essa coisa negocia ou se vamos ter que dar um jeito nela.
