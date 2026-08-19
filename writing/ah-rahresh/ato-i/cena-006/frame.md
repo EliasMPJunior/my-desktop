@@ -280,7 +280,7 @@ Possibilidades que podem aparecer:
 - não sabem se conseguem expulsá-lo;
 - não sabem se conseguiriam destruí-lo;
 - tentar destruí-lo sem compreender o vínculo pode ser pior;
-- o Conselho dos Il não pode saber ainda;
+- o Conselho Doszil não pode saber ainda;
 - antes de qualquer decisão definitiva, precisam entender o que Sijim fez e o que ainda permanece ativo.
 
 A decisão provisória do casal deve ser:
