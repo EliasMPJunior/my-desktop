@@ -58,8 +58,16 @@ A criatura ignorou o sultão. Não olhou para os guardas com suas lâminas prest
 
 Girou lentamente a fronte em direção a Samira.
 
-O ser inclinou o torso para a frente, aproximando seu rosto a escassos palmos das feições paralisadas da mulher. Puxou o ar ruidosamente, farejando a atmosfera ao redor dela com uma volúpia inquisitória e terrível.
+A criatura inclinou o torso para a frente, aproximando o rosto a escassos palmos das feições paralisadas da mulher. Puxou o ar ruidosamente, farejando a atmosfera ao redor dela com uma volúpia inquisitória e terrível.
 
-Os lábios da entidade abriram-se pela primeira vez, deixando escapar uma voz abafada, profunda e vibrante como o ribombar de um trovão nas entranhas das montanhas:
+Quando falou, as palavras vieram numa forma de nurumbu tão antiga e deslocada que Samira precisou de um instante para reconhecê-la. Era compreensível apenas o bastante para soar familiar.
 
-— Tanto tempo sepultado nas cinzas do mundo... — os olhos de fogo estreitaram-se num misto de asco e reconhecimento absoluto. — E ainda fede a Sijim!
+— Onde está Sijim? Que os mortos o levem para o subterrâneo do mundo! — bradou o ser com voz de trovão.
+
+Samira sustentou o olhar abrasador sem recuar um único milímetro, a respiração presa na garganta e a voz saindo com a frieza rígida de uma Doszil:
+
+— Sijim não vive há mais de cinco mil anos.
+
+Os olhos de fogo do Djinn estreitaram-se, faiscando num misto de asco e escárnio profundo. Ele aproximou ainda mais a face escura, expelindo um calor seco contra a pele da sultana:
+
+— Então o fedor dele vem de você.
