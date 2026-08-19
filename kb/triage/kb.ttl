@@ -1,0 +1,237 @@
+@prefix : <http://elias.eng.br/ontology/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <https://schema.org/> .
+@base <http://elias.eng.br/ontology/individual/> .
+
+[ rdf:type owl:Ontology
+ ] .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://www.w3.org/ns/org#hasMembership
+org:hasMembership rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/ns/org#organization
+org:organization rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/ns/org#role
+org:role rdf:type owl:AnnotationProperty .
+
+
+###  http://xmlns.com/foaf/0.1/birthday
+foaf:birthday rdf:type owl:AnnotationProperty .
+
+
+###  http://xmlns.com/foaf/0.1/currentProject
+foaf:currentProject rdf:type owl:AnnotationProperty .
+
+
+###  http://xmlns.com/foaf/0.1/familyName
+foaf:familyName rdf:type owl:AnnotationProperty .
+
+
+###  http://xmlns.com/foaf/0.1/firstName
+foaf:firstName rdf:type owl:AnnotationProperty .
+
+
+###  http://xmlns.com/foaf/0.1/gender
+foaf:gender rdf:type owl:AnnotationProperty .
+
+
+###  http://xmlns.com/foaf/0.1/givenName
+foaf:givenName rdf:type owl:AnnotationProperty .
+
+
+###  http://xmlns.com/foaf/0.1/homepage
+foaf:homepage rdf:type owl:AnnotationProperty .
+
+
+###  http://xmlns.com/foaf/0.1/lastName
+foaf:lastName rdf:type owl:AnnotationProperty .
+
+
+###  http://xmlns.com/foaf/0.1/made
+foaf:made rdf:type owl:AnnotationProperty .
+
+
+###  http://xmlns.com/foaf/0.1/maker
+foaf:maker rdf:type owl:AnnotationProperty .
+
+
+###  http://xmlns.com/foaf/0.1/mbox
+foaf:mbox rdf:type owl:AnnotationProperty .
+
+
+###  http://xmlns.com/foaf/0.1/member
+foaf:member rdf:type owl:AnnotationProperty .
+
+
+###  http://xmlns.com/foaf/0.1/name
+foaf:name rdf:type owl:AnnotationProperty .
+
+
+###  http://xmlns.com/foaf/0.1/nickname
+foaf:nickname rdf:type owl:AnnotationProperty .
+
+
+###  http://xmlns.com/foaf/0.1/pastProject
+foaf:pastProject rdf:type owl:AnnotationProperty .
+
+
+###  http://xmlns.com/foaf/0.1/phone
+foaf:phone rdf:type owl:AnnotationProperty .
+
+
+###  http://xmlns.com/foaf/0.1/title
+foaf:title rdf:type owl:AnnotationProperty .
+
+
+###  https://schema.org/jobTitle
+schema:jobTitle rdf:type owl:AnnotationProperty .
+
+
+###  https://schema.org/knowsAbout
+schema:knowsAbout rdf:type owl:AnnotationProperty .
+
+
+###  https://schema.org/license
+schema:license rdf:type owl:AnnotationProperty .
+
+
+###  https://schema.org/name
+schema:name rdf:type owl:AnnotationProperty .
+
+
+###  https://schema.org/owns
+schema:owns rdf:type owl:AnnotationProperty .
+
+
+###  https://schema.org/programmingLanguage
+schema:programmingLanguage rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.w3.org/ns/org#Membership
+org:Membership rdf:type owl:Class .
+
+
+###  http://xmlns.com/foaf/0.1/Email
+foaf:Email rdf:type owl:Class .
+
+
+###  http://xmlns.com/foaf/0.1/OnlineAccount
+foaf:OnlineAccount rdf:type owl:Class .
+
+
+###  http://xmlns.com/foaf/0.1/Organization
+foaf:Organization rdf:type owl:Class .
+
+
+###  http://xmlns.com/foaf/0.1/Person
+foaf:Person rdf:type owl:Class .
+
+
+###  http://xmlns.com/foaf/0.1/Project
+foaf:Project rdf:type owl:Class .
+
+
+###  https://schema.org/Group
+schema:Group rdf:type owl:Class .
+
+
+###  https://schema.org/SoftwareSourceCode
+schema:SoftwareSourceCode rdf:type owl:Class .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  :#eliasmagalhaesbr@gmail.com
+:eliasmagalhaesbr_gmail rdf:type owl:NamedIndividual ,
+                                        foaf:Email ,
+                                        foaf:OnlineAccount ;
+                               foaf:mbox "eliasmagalhaesbr@gmail.com" .
+
+
+###  http://elias.eng.br/ontology/Brasidata
+:Brasidata rdf:type owl:NamedIndividual ,
+                                                  foaf:Organization ;
+                                         schema:name "Brasidata" .
+
+
+###  http://elias.eng.br/ontology/Elias
+:Elias rdf:type owl:NamedIndividual ,
+                                              foaf:Person ;
+                                     org:hasMembership :OwnerInBrasidata ,
+                                                       :Zigurat ;
+                                     foaf:birthday "03-29" ;
+                                     foaf:currentProject :InfoBIM ;
+                                     foaf:familyName "Magalhães"@en ,
+                                                     "Magalhães da Paixão"@pt-br ;
+                                     foaf:firstName "Elias" ;
+                                     foaf:gender "male" ;
+                                     foaf:givenName "Elias"@en ,
+                                                    "Elias"@pt-br ;
+                                     foaf:homepage "https://elias.eng.br/" ;
+                                     foaf:lastName "Paixão Junior" ;
+                                     foaf:made :InfoBIM ;
+                                     foaf:mbox "eliasmagalhaesbr@gmail.com" ;
+                                     foaf:name "Elias Magalhães"@en ,
+                                               "Elias Magalhães da Paixão Junior"@pt-br ;
+                                     foaf:nickname "Sonecka" ;
+                                     foaf:pastProject :CDECerti ;
+                                     foaf:phone "+55 21 999-556-033" ;
+                                     foaf:title "Eng."@en ,
+                                                "Engº"@pt-br ;
+                                     schema:jobTitle "Engenheiro Pesquisador"@pt-br ,
+                                                     "Research Engineer"@en ;
+                                     schema:knowsAbout <http://elias.eng.br/ontology/IFC> ,
+                                                       <http://elias.eng.br/ontology/Python> ,
+                                                       <http://elias.eng.br/ontology/SemanticWeb> ;
+                                     schema:owns :Brasidata .
+
+
+###  http://elias.eng.br/ontology/FELA
+:FELA rdf:type owl:NamedIndividual ,
+                                             schema:Group ;
+                                    foaf:member :Elias ;
+                                    schema:name "F.E.L.A." .
+
+
+###  http://elias.eng.br/ontology/InfoBIM
+:InfoBIM rdf:type owl:NamedIndividual ,
+                                                foaf:Project ,
+                                                schema:SoftwareSourceCode ;
+                                       foaf:maker :Elias ;
+                                       schema:license "Open Source" ;
+                                       schema:name "InfoBIM Framework" ;
+                                       schema:programmingLanguage "Python" .
+
+
+###  http://elias.eng.br/ontology/TeacherInZigurat
+:Zigurat rdf:type owl:NamedIndividual ,foaf:Organization ;
+                                         schema:name "Zigurat" .
+
+
+###  https://github.com/EliasMPJunior
+:EliasMPJunior rdf:type owl:NamedIndividual ,
+                                            foaf:OnlineAccount ;
+                                   foaf:homepage "https://github.com/EliasMPJunior" .
+
+
+###  Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi
