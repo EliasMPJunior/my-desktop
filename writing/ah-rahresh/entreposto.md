@@ -69,8 +69,10 @@ Ela rivaliza diretamente com **Yaati** em beleza e importância visual.
 
 A diferença entre as duas está também na aparência urbana:
 
-- **Yaati** é muito bonita, mas antiga; grande parte de sua imponência vem de estruturas velhas e históricas.
+- **Yaati** é muito bonita, monumental e prestigiosa, mas antiga; grande parte de sua imponência vem de estruturas velhas e históricas.
 - **Entreposto** é muito bonita, muito rica e visualmente nova, com sensação de novidade, luxo e esplendor.
+
+**Analogia atual, não terminologia diegética:** Yaati funciona na comparação como uma grande capital histórica — algo na linha de Paris: prestigiosa, belíssima, antiga e carregada de passado. Entreposto ocupa o polo oposto da comparação: uma metrópole nova, feita de circulação, riqueza recente, engenharia e expansão. O autor cogitou Bastilha ou Manhattan como aproximações de sensação, sem fixar ainda uma equivalência contemporânea exata.
 
 Entreposto deve transmitir uma impressão de cidade fenomenal: riqueza, engenharia, movimento comercial, abastecimento sofisticado e monumentalidade recente.
 
@@ -105,4 +107,5 @@ Não definir sem nova decisão do autor:
 - relação administrativa exata entre Entreposto e o Conselho do Rio;
 - duração exata do período de crise fiscal durante a construção;
 - alíquotas, mecanismos e distribuição dos impostos criados para financiar a obra;
-- tempo exato necessário para recuperar o investimento após a entrada em operação.
+- tempo exato necessário para recuperar o investimento após a entrada em operação;
+- qual comparação contemporânea representa melhor Entreposto; Bastilha e Manhattan foram cogitadas apenas como aproximações de sensação.
