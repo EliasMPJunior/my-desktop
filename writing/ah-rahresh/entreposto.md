@@ -78,26 +78,18 @@ Entreposto deve transmitir uma impressão de cidade fenomenal: riqueza, engenhar
 
 A construção de Entreposto foi extremamente polêmica.
 
-Em termos atuais, a escala do investimento seria comparável a **torrar cerca de dois terços de todo o PIB de Ãh-Rahresh** para viabilizar a cidade e sua infraestrutura.
+**Analogia atual, não terminologia diegética:** em termos contemporâneos, seria como se tivessem torrado algo próximo de **dois terços de todo o PIB de Ãh-Rahresh** para construir a cidade e sua infraestrutura.
 
-Isso provocou um período de enorme tensão econômica e política:
+O esforço provocou um período de caos econômico e político, com muito imposto, forte pressão sobre a população e enorme contestação ao projeto. Durante a implantação, a obra pareceu para muita gente um gasto desproporcional, capaz de consumir recursos demais de toda a sociedade por uma única aposta de infraestrutura.
 
-- forte aumento de impostos;
-- grande pressão sobre a população e sobre a economia;
-- contestação e resistência ao projeto;
-- sensação de que recursos demais estavam sendo consumidos por uma única obra;
-- caos político e econômico durante a implantação.
+A construção, portanto, não foi um triunfo consensual desde o início. O custo foi brutal e a execução produziu uma crise real.
 
-A construção, portanto, não deve ser lembrada como uma obra consensual nem como um triunfo evidente desde o início. Durante sua execução, ela pareceu para muita gente um gasto desproporcional e potencialmente desastroso.
+Depois que Entreposto entrou em funcionamento, porém, veio a grande virada: a explosão do comércio, da circulação e da atividade econômica recuperou o investimento muito rapidamente. A prosperidade gerada pela nova rota não apenas compensou o sacrifício inicial como o superou.
 
-Depois que Entreposto entrou em operação, porém, o resultado econômico mudou rapidamente essa percepção. O aumento do comércio, da circulação e da atividade econômica associada à nova rota permitiu que o investimento fosse recuperado em relativamente pouco tempo.
+Assim, Entreposto carrega duas memórias históricas simultâneas:
 
-Depois da recuperação inicial, a cidade e sua infraestrutura passaram a gerar riqueza em escala superior ao custo que haviam imposto durante a construção.
-
-Assim, Entreposto carrega simultaneamente duas memórias históricas:
-
-1. a de uma obra que quase levou a economia ao limite durante sua construção;
-2. a de um investimento que, depois de concluído, não apenas se pagou como superou rapidamente o sacrifício econômico inicial.
+1. a de uma obra que exigiu um sacrifício econômico colossal e gerou caos durante sua construção;
+2. a de uma aposta que, depois de concluída, se pagou rapidamente e passou a produzir riqueza em escala superior ao que havia custado.
 
 ## Pontos ainda abertos
 
