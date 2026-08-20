@@ -74,6 +74,31 @@ A diferença entre as duas está também na aparência urbana:
 
 Entreposto deve transmitir uma impressão de cidade fenomenal: riqueza, engenharia, movimento comercial, abastecimento sofisticado e monumentalidade recente.
 
+## Custo e controvérsia da construção
+
+A construção de Entreposto foi extremamente polêmica.
+
+Em termos atuais, a escala do investimento seria comparável a **torrar cerca de dois terços de todo o PIB de Ãh-Rahresh** para viabilizar a cidade e sua infraestrutura.
+
+Isso provocou um período de enorme tensão econômica e política:
+
+- forte aumento de impostos;
+- grande pressão sobre a população e sobre a economia;
+- contestação e resistência ao projeto;
+- sensação de que recursos demais estavam sendo consumidos por uma única obra;
+- caos político e econômico durante a implantação.
+
+A construção, portanto, não deve ser lembrada como uma obra consensual nem como um triunfo evidente desde o início. Durante sua execução, ela pareceu para muita gente um gasto desproporcional e potencialmente desastroso.
+
+Depois que Entreposto entrou em operação, porém, o resultado econômico mudou rapidamente essa percepção. O aumento do comércio, da circulação e da atividade econômica associada à nova rota permitiu que o investimento fosse recuperado em relativamente pouco tempo.
+
+Depois da recuperação inicial, a cidade e sua infraestrutura passaram a gerar riqueza em escala superior ao custo que haviam imposto durante a construção.
+
+Assim, Entreposto carrega simultaneamente duas memórias históricas:
+
+1. a de uma obra que quase levou a economia ao limite durante sua construção;
+2. a de um investimento que, depois de concluído, não apenas se pagou como superou rapidamente o sacrifício econômico inicial.
+
 ## Pontos ainda abertos
 
 Não definir sem nova decisão do autor:
@@ -85,4 +110,7 @@ Não definir sem nova decisão do autor:
 - dimensões exatas do canal, das rodas, das cápsulas ou dos túneis;
 - número e distribuição das estações;
 - cronologia precisa do crescimento de Entreposto;
-- relação administrativa exata entre Entreposto e o Conselho do Rio.
+- relação administrativa exata entre Entreposto e o Conselho do Rio;
+- duração exata do período de crise fiscal durante a construção;
+- alíquotas, mecanismos e distribuição dos impostos criados para financiar a obra;
+- tempo exato necessário para recuperar o investimento após a entrada em operação.
