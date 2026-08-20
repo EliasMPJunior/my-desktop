@@ -93,6 +93,16 @@ Assim, Entreposto carrega duas memórias históricas simultâneas:
 1. a de uma obra que exigiu um sacrifício econômico colossal e gerou caos durante sua construção;
 2. a de uma aposta que, depois de concluída, se pagou rapidamente e passou a produzir riqueza em escala superior ao que havia custado.
 
+## Nadir e Entreposto
+
+**Entreposto não é novidade para Nadir.**
+
+Ele já esteve na cidade outras vezes antes da viagem atual. Portanto, quando o POV de Nadir chegar a Entreposto, a narrativa não deve tratá-la como sua primeira descoberta do lugar nem como uma cidade que ele vê pela primeira vez.
+
+Nadir já possui referências pessoais e afetivas em Entreposto. Entre elas existe **uma sorveteria de que ele gosta muito**, e há conversa sobre ele ir até lá.
+
+Isso deve informar a forma como ele percebe a cidade: ele conhece o esplendor, o movimento e alguns hábitos locais; o contraste com Qahuad continua importante, mas é um contraste já conhecido por ele, não uma revelação inédita.
+
 ## Pontos ainda abertos
 
 Não definir sem nova decisão do autor:
@@ -108,4 +118,5 @@ Não definir sem nova decisão do autor:
 - duração exata do período de crise fiscal durante a construção;
 - alíquotas, mecanismos e distribuição dos impostos criados para financiar a obra;
 - tempo exato necessário para recuperar o investimento após a entrada em operação;
-- qual comparação contemporânea representa melhor Entreposto; Bastilha e Manhattan foram cogitadas apenas como aproximações de sensação.
+- qual comparação contemporânea representa melhor Entreposto; Bastilha e Manhattan foram cogitadas apenas como aproximações de sensação;
+- nome, localização exata e características da sorveteria preferida de Nadir.
