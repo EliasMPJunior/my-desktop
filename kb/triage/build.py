@@ -365,11 +365,11 @@ def generate_html(graph: Graph, base_uri: str) -> str:
 
 def main():
     base_dir = pathlib.Path(__file__).resolve().parent
-    ttl_path = base_dir / "nid.ttl"
+    ttl_path = base_dir.parent / "nid.ttl"
     html_path = base_dir / "nid" / "index.html"
     
     # Define Base URI matching the ontology
-    base_uri = "http://kb.elias.eng.br/nid/elias.ttl#"
+    base_uri = "http://kb.elias.eng.br/nid.ttl#"
 
     print(f"Loading RDF from {ttl_path}...")
     g = Graph()
