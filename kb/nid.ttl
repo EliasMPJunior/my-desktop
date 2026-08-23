@@ -220,12 +220,15 @@ bdc_org:Zigurat rdf:type owl:NamedIndividual ;
                               :senior_data_architect_profile ,
                               :it_software_specialist_profile ;
             foaf:pastProject :CDECerti ,
+                              :EDISE ,
                               :Processo_Decisorio_Digital ,
                               :Carta_Precatoria_Eletronica ;
             foaf:phone "+55 21 999-556-033" ;
             foaf:title "Eng."@en ,
                        "Engº"@pt-br ;
             schema:knowsAbout :IFC ,
+                              :Navisworks ,
+                              :AutodeskConstructionCloud ,
                               :Python ,
                               :Scrum ,
                               :SemanticWeb ,
@@ -273,6 +276,22 @@ bdc_org:Zigurat rdf:type owl:NamedIndividual ;
                      cv:organizedBy bdc_org:buildingSMART ;
                      cv:courseFinishDate "2024-09-01" ;
                      cv:courseURL "https://education.buildingsmart.org/foundation/"^^xsd:anyURI .
+
+
+:Navisworks rdf:type owl:NamedIndividual ;
+            schema:name "Autodesk Navisworks" .
+
+:AutodeskConstructionCloud rdf:type owl:NamedIndividual ;
+                           schema:name "Autodesk Construction Cloud (ACC)" .
+
+:EDISE rdf:type owl:NamedIndividual ,
+                foaf:Project ;
+       schema:name "Edifício EDISE — Petrobras"@pt-br ,
+                   "EDISE Building — Petrobras"@en ;
+       schema:startDate "2023"^^xsd:gYear ;
+       schema:endDate "2023"^^xsd:gYear ;
+       dcterms:abstract "Atuação BIM em modelagem, revisão e compatibilização de instalações no Edifício EDISE, incluindo o auditório e o 1º pavimento, com análise de interferências e preparação de entregas de modelo. Utilização de Navisworks e Autodesk Construction Cloud (ACC)."@pt-br ,
+                         "BIM work involving modeling, model review and building-services coordination at the EDISE Building, including the auditorium and first floor, with interference analysis and model-delivery preparation. Used Navisworks and Autodesk Construction Cloud (ACC)."@en .
 
 
 :Work_CERTI rdf:type owl:NamedIndividual ,
@@ -571,6 +590,10 @@ bdc_org:Zigurat rdf:type owl:NamedIndividual ;
                                             cv:skillName "Integração de Projetos"@pt-br ,
                                                          "Project Integration"@en ;
                                             cv:skillLevel "Advanced" ] ,
+                                        [ rdf:type cv:Skill ;
+                                            cv:skillName "Autodesk Navisworks" ] ,
+                                        [ rdf:type cv:Skill ;
+                                            cv:skillName "Autodesk Construction Cloud (ACC)" ] ,
                                         [ rdf:type cv:Skill ;
                                             cv:skillName "Revit" ;
                                             cv:skillLevel "Intermediate" ] .
