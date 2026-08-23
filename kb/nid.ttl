@@ -106,7 +106,6 @@ bdc_role:BIMCoordinatorProfile a owl:Class .
         foaf:Project ;
     dcterms:abstract "BIM work on the electrical systems design for the EDISE Building, including the auditorium and first floor, with Revit modeling, Revit family creation, model review and coordination, interference analysis, and model-delivery preparation using Navisworks and Autodesk Construction Cloud (ACC)."@en,
         "Atuação BIM no projeto de instalações elétricas do Edifício EDISE, incluindo o auditório e o 1º pavimento, com modelagem em Revit, criação de famílias Revit, revisão e compatibilização, análise de interferências e preparação de entregas de modelo com Navisworks e Autodesk Construction Cloud (ACC)."@pt-br ;
-    foaf:maker :Elias ;
     schema:endDate "2023"^^xsd:gYear ;
     schema:name "EDISE Building — Petrobras"@en,
         "Edifício EDISE — Petrobras"@pt-br ;
