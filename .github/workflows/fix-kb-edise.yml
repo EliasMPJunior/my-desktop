@@ -1,0 +1,58 @@
+name: Fix canonical EDISE KB
+
+on:
+  push:
+    branches: [master]
+    paths:
+      - '.github/workflows/fix-kb-edise.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  fix:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Fix kb/nid.ttl
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          p = Path('kb/nid.ttl')
+          s = p.read_text(encoding='utf-8')
+
+          # Remove the inconsistent standalone tool resources from Elias.knowsAbout.
+          s = s.replace('''            schema:knowsAbout :IFC ,\n                              :Navisworks ,\n                              :AutodeskConstructionCloud ,\n                              :Python ,''', '''            schema:knowsAbout :IFC ,\n                              :Python ,''')
+
+          # Remove standalone software individuals: tools belong to BIM_Skills in this KB.
+          s = s.replace('''\n\n:Navisworks rdf:type owl:NamedIndividual ;\n            schema:name "Autodesk Navisworks" .\n\n:AutodeskConstructionCloud rdf:type owl:NamedIndividual ;\n                           schema:name "Autodesk Construction Cloud (ACC)" .\n''', '')
+
+          # Align EDISE with the existing foaf:Project pattern and record the actual scope.
+          old = ''':EDISE rdf:type owl:NamedIndividual ,\n                foaf:Project ;\n       schema:name "Edifício EDISE — Petrobras"@pt-br ,\n                   "EDISE Building — Petrobras"@en ;\n       schema:startDate "2023"^^xsd:gYear ;\n       schema:endDate "2023"^^xsd:gYear ;\n       dcterms:abstract "Atuação BIM em modelagem, revisão e compatibilização de instalações no Edifício EDISE, incluindo o auditório e o 1º pavimento, com análise de interferências e preparação de entregas de modelo. Utilização de Navisworks e Autodesk Construction Cloud (ACC)."@pt-br ,\n                         "BIM work involving modeling, model review and building-services coordination at the EDISE Building, including the auditorium and first floor, with interference analysis and model-delivery preparation. Used Navisworks and Autodesk Construction Cloud (ACC)."@en .'''
+          new = ''':EDISE rdf:type owl:NamedIndividual ,\n                foaf:Project ;\n       foaf:maker :Elias ;\n       schema:name "Edifício EDISE — Petrobras"@pt-br ,\n                   "EDISE Building — Petrobras"@en ;\n       schema:startDate "2023"^^xsd:gYear ;\n       schema:endDate "2023"^^xsd:gYear ;\n       dcterms:abstract "Atuação BIM no projeto de instalações elétricas do Edifício EDISE, incluindo o auditório e o 1º pavimento, com modelagem em Revit, criação de famílias Revit, revisão e compatibilização, análise de interferências e preparação de entregas de modelo com Navisworks e Autodesk Construction Cloud (ACC)."@pt-br ,\n                         "BIM work on the electrical systems design for the EDISE Building, including the auditorium and first floor, with Revit modeling, Revit family creation, model review and coordination, interference analysis, and model-delivery preparation using Navisworks and Autodesk Construction Cloud (ACC)."@en .'''
+          if old not in s:
+              raise SystemExit('EDISE block not found exactly; refusing partial mutation')
+          s = s.replace(old, new, 1)
+
+          # Keep tools/capabilities in the existing BIM_Skills structure; do not invent proficiency levels.
+          anchor = '''                                        [ rdf:type cv:Skill ;\n                                            cv:skillName "Autodesk Construction Cloud (ACC)" ] ,\n                                        [ rdf:type cv:Skill ;\n                                            cv:skillName "Revit" ;'''
+          replacement = '''                                        [ rdf:type cv:Skill ;\n                                            cv:skillName "Autodesk Construction Cloud (ACC)" ] ,\n                                        [ rdf:type cv:Skill ;\n                                            cv:skillName "Projeto de instalações elétricas"@pt-br ,\n                                                         "Electrical systems design"@en ] ,\n                                        [ rdf:type cv:Skill ;\n                                            cv:skillName "Criação de famílias Revit"@pt-br ,\n                                                         "Revit family creation"@en ] ,\n                                        [ rdf:type cv:Skill ;\n                                            cv:skillName "Revit" ;'''
+          if anchor not in s:
+              raise SystemExit('BIM_Skills anchor not found exactly; refusing partial mutation')
+          s = s.replace(anchor, replacement, 1)
+
+          p.write_text(s, encoding='utf-8')
+          PY
+
+          python - <<'PY'
+          from rdflib import Graph
+          g = Graph().parse('kb/nid.ttl', format='turtle')
+          print(f'kb/nid.ttl valid Turtle: {len(g)} triples')
+          PY
+
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          rm .github/workflows/fix-kb-edise.yml
+          git add kb/nid.ttl .github/workflows/fix-kb-edise.yml
+          git commit -m "fix(kb): align EDISE with canonical ontology"
+          git push
