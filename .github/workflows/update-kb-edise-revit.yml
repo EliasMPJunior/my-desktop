@@ -1,0 +1,71 @@
+name: Update KB EDISE Revit details
+
+on:
+  push:
+    branches: [master]
+    paths:
+      - '.github/workflows/update-kb-edise-revit.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Update canonical KB
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          p = Path('kb/nid.ttl')
+          s = p.read_text(encoding='utf-8')
+
+          # Make Revit explicit in the top-level knowledge list.
+          old = '''            schema:knowsAbout :IFC ,\n                              :Navisworks ,\n                              :AutodeskConstructionCloud ,\n                              :Python ,'''
+          new = '''            schema:knowsAbout :IFC ,\n                              :Revit ,\n                              :Navisworks ,\n                              :AutodeskConstructionCloud ,\n                              :Python ,'''
+          if ':Revit ,' not in s:
+              if old not in s:
+                  raise SystemExit('Could not locate knowsAbout block')
+              s = s.replace(old, new, 1)
+
+          # Add Revit individual next to the other Autodesk tools.
+          if ':Revit rdf:type owl:NamedIndividual' not in s:
+              marker = ':Navisworks rdf:type owl:NamedIndividual ;\n'
+              block = ':Revit rdf:type owl:NamedIndividual ;\n       schema:name "Autodesk Revit" .\n\n'
+              if marker not in s:
+                  raise SystemExit('Could not locate Autodesk tools block')
+              s = s.replace(marker, block + marker, 1)
+
+          # Expand EDISE description with the actual electrical-design work and family creation.
+          old_pt = 'Atuação BIM em modelagem, revisão e compatibilização de instalações no Edifício EDISE, incluindo o auditório e o 1º pavimento, com análise de interferências e preparação de entregas de modelo. Utilização de Navisworks e Autodesk Construction Cloud (ACC).'
+          new_pt = 'Atuação BIM no projeto elétrico do Edifício EDISE, incluindo o auditório e o 1º pavimento, com modelagem em Revit, criação de famílias Revit, revisão e compatibilização de instalações, análise de interferências e preparação de entregas de modelo. Utilização de Revit, Navisworks e Autodesk Construction Cloud (ACC).'
+          old_en = 'BIM work involving modeling, model review and building-services coordination at the EDISE Building, including the auditorium and first floor, with interference analysis and model-delivery preparation. Used Navisworks and Autodesk Construction Cloud (ACC).'
+          new_en = 'BIM work on the electrical design of the EDISE Building, including the auditorium and first floor, with Revit modeling, Revit family creation, building-services coordination, interference analysis and model-delivery preparation. Used Revit, Navisworks and Autodesk Construction Cloud (ACC).'
+          if old_pt not in s or old_en not in s:
+              raise SystemExit('Could not locate current EDISE abstract')
+          s = s.replace(old_pt, new_pt, 1).replace(old_en, new_en, 1)
+
+          # Add explicit Revit-family skill without changing proficiency claims.
+          needle = '''                                        [ rdf:type cv:Skill ;\n                                            cv:skillName "Autodesk Construction Cloud (ACC)" ] ,\n                                        [ rdf:type cv:Skill ;\n                                            cv:skillName "Revit" ;'''
+          replacement = '''                                        [ rdf:type cv:Skill ;\n                                            cv:skillName "Autodesk Construction Cloud (ACC)" ] ,\n                                        [ rdf:type cv:Skill ;\n                                            cv:skillName "Criação de famílias Revit"@pt-br ,\n                                                         "Revit Family Creation"@en ] ,\n                                        [ rdf:type cv:Skill ;\n                                            cv:skillName "Revit" ;'''
+          if 'cv:skillName "Criação de famílias Revit"' not in s:
+              if needle not in s:
+                  raise SystemExit('Could not locate BIM skill insertion point')
+              s = s.replace(needle, replacement, 1)
+
+          p.write_text(s, encoding='utf-8')
+          PY
+
+          python - <<'PY'
+          from rdflib import Graph
+          Graph().parse('kb/nid.ttl', format='turtle')
+          print('kb/nid.ttl: valid Turtle')
+          PY
+
+          rm .github/workflows/update-kb-edise-revit.yml
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add kb/nid.ttl .github/workflows/update-kb-edise-revit.yml
+          git commit -m "feat(kb): detail EDISE electrical Revit work"
+          git push
