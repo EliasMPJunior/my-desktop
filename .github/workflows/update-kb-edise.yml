@@ -21,7 +21,6 @@ jobs:
           p = Path('kb/nid.ttl')
           s = p.read_text(encoding='utf-8')
 
-          # Add EDISE to public past-project list.
           old = '''            foaf:pastProject :CDECerti ,\n                              :Processo_Decisorio_Digital ,\n                              :Carta_Precatoria_Eletronica ;'''
           new = '''            foaf:pastProject :CDECerti ,\n                              :EDISE ,\n                              :Processo_Decisorio_Digital ,\n                              :Carta_Precatoria_Eletronica ;'''
           if ':EDISE ,' not in s:
@@ -29,7 +28,6 @@ jobs:
                   raise SystemExit('Could not locate Elias pastProject block')
               s = s.replace(old, new, 1)
 
-          # Add confirmed BIM tools to the public skills list.
           old = '''            schema:knowsAbout :IFC ,\n                              :Python ,'''
           new = '''            schema:knowsAbout :IFC ,\n                              :Navisworks ,\n                              :AutodeskConstructionCloud ,\n                              :Python ,'''
           if ':Navisworks ,' not in s:
@@ -37,7 +35,6 @@ jobs:
                   raise SystemExit('Could not locate knowsAbout block')
               s = s.replace(old, new, 1)
 
-          # Add a minimal public project record: professional scope only.
           if ':EDISE rdf:type' not in s:
               block = '''\n\n:EDISE rdf:type owl:NamedIndividual ,\n                foaf:Project ;\n       schema:name "Edifício EDISE — Petrobras"@pt-br ,\n                   "EDISE Building — Petrobras"@en ;\n       schema:startDate "2023-05" ;\n       schema:endDate "2023-09" ;\n       dcterms:abstract "Atuação BIM em modelagem, revisão e compatibilização de instalações no Edifício EDISE, incluindo o auditório e o 1º pavimento, com análise de interferências e preparação de entregas de modelo. Utilização de Navisworks e Autodesk Construction Cloud (ACC)."@pt-br ,\n                         "BIM work involving modeling, model review and building-services coordination at the EDISE Building, including the auditorium and first floor, with interference analysis and model-delivery preparation. Used Navisworks and Autodesk Construction Cloud (ACC)."@en .\n'''
               marker = '\n\n:Work_CERTI rdf:type owl:NamedIndividual ,'
@@ -45,7 +42,6 @@ jobs:
                   raise SystemExit('Could not locate insertion marker')
               s = s.replace(marker, block + marker, 1)
 
-          # Add software/tool individuals if not already present.
           if ':Navisworks rdf:type' not in s:
               block = '''\n\n:Navisworks rdf:type owl:NamedIndividual ;\n            schema:name "Autodesk Navisworks" .\n\n:AutodeskConstructionCloud rdf:type owl:NamedIndividual ;\n                           schema:name "Autodesk Construction Cloud (ACC)" .\n'''
               marker = '\n\n:EDISE rdf:type owl:NamedIndividual ,'
