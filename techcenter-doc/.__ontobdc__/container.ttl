@@ -1,6 +1,6 @@
 @prefix ct: <http://standards.iso.org/iso/21597/-1/ed-1/en/Container#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
-@prefix obdc: <http://ontobdc.org/ontology/domain/ns.ttl#> .
+@prefix obdc: <http://ontobdc.org/ontology/domain/ontobdc/ns.ttl#> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
@@ -22,10 +22,17 @@
     dcterms:title "WorkStream — Desmobilização da obra"@pt-BR ;
     prov:atLocation <../desmobilizacao> .
 
+<urn:ontobdc:storage/dataset/techcenter-doc/checklist> a obdc:EntityDataset ;
+    obdc:belongsToDataContainer <urn:ontobdc:storage/local/techcenter-doc> ;
+    dcterms:description "Checklist de obra do LABSEA / Aditivo 099 Vale Feliz, modelado a partir de dois prints do WhatsApp datados de 19/08/2026 e 20/08/2026."@pt-BR ;
+    dcterms:title "Checklist de Obra — LABSEA / Aditivo 099 Vale Feliz"@pt-BR ;
+    prov:atLocation <../checklist> .
+
 <urn:ontobdc:storage/local/techcenter-doc> a obdc:DataContainer ;
     obdc:hasEntityDataset <urn:ontobdc:storage/dataset/techcenter-doc/.workstream>,
         <urn:ontobdc:storage/dataset/techcenter-doc/cronograma>,
-        <urn:ontobdc:storage/dataset/techcenter-doc/desmobilizacao> ;
+        <urn:ontobdc:storage/dataset/techcenter-doc/desmobilizacao>,
+        <urn:ontobdc:storage/dataset/techcenter-doc/checklist> ;
     dcterms:identifier "urn:ontobdc:storage/local/techcenter-doc" ;
     dcterms:title "Real Estate Brazil (Official)-Obras - Exp LabSea2025"@en ;
     ct:creationDate "2026-08-03T22:43:02.762347+00:00"^^xsd:dateTime ;

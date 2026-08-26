@@ -1,0 +1,25 @@
+@prefix ct: <http://standards.iso.org/iso/21597/-1/ed-1/en/Container#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix obdc: <http://ontobdc.org/ontology/domain/ontobdc/ns.ttl#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<dataset.ttl> a owl:Ontology .
+
+<urn:ontobdc:storage/dataset/techcenter-doc/checklist> a obdc:EntityDataset ;
+    obdc:belongsToDataContainer <urn:ontobdc:storage/local/techcenter-doc> ;
+    obdc:hasDataEntity <urn:ontobdc:storage/dataset/techcenter-doc/checklist/45966bfab2502a73581af3bc70dea8aae4104119223fa137ea20c9afffddb1a9> ;
+    dcterms:description "Checklist de obra do LABSEA / Aditivo 099 Vale Feliz, modelado a partir de dois prints do WhatsApp datados de 19/08/2026 e 20/08/2026."@pt-BR ;
+    dcterms:identifier "urn:ontobdc:storage/dataset/techcenter-doc/checklist" ;
+    dcterms:title "Checklist de Obra — LABSEA / Aditivo 099 Vale Feliz"@pt-BR ;
+    ct:creationDate "2026-08-25T00:00:00-03:00"^^xsd:dateTime ;
+    prov:atLocation <../> .
+
+<https://infobim.org/ontology/ns#IfcWorkSchedule> a obdc:SurfaceableEntity .
+
+<urn:ontobdc:storage/dataset/techcenter-doc/checklist/45966bfab2502a73581af3bc70dea8aae4104119223fa137ea20c9afffddb1a9> a obdc:DataEntity,
+        <https://infobim.org/ontology/ns#IfcWorkSchedule> ;
+    dcterms:conformsTo <https://infobim.org/ontology/ns#DefaultIfcWorkScheduleFacade> ;
+    dcterms:identifier "0uae9b7BX47O7yp0M3wFa0" ;
+    dcterms:title "Checklist de Obra"@pt-BR .

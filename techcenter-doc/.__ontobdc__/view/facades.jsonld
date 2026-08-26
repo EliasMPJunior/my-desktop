@@ -10,7 +10,7 @@
           "@id": "http://datacenter.app.br/ontology/bsi/element/ifc_work_schedule/type.ttl"
         },
         {
-          "@id": "http://ontobdc.org/ontology/domain/ns.ttl"
+          "@id": "http://ontobdc.org/ontology/domain/ontobdc/ns.ttl"
         }
       ]
     },
@@ -1014,7 +1014,7 @@
       ],
       "http://www.w3.org/2000/01/rdf-schema#domain": [
         {
-          "@id": "http://ontobdc.org/ontology/domain/ns.ttl#DataEntity"
+          "@id": "http://ontobdc.org/ontology/domain/ontobdc/ns.ttl#DataEntity"
         }
       ],
       "http://www.w3.org/2000/01/rdf-schema#label": [
@@ -1165,7 +1165,7 @@
       ],
       "http://www.w3.org/2000/01/rdf-schema#range": [
         {
-          "@id": "http://ontobdc.org/ontology/domain/ns.ttl#DataEntity"
+          "@id": "http://ontobdc.org/ontology/domain/ontobdc/ns.ttl#DataEntity"
         }
       ],
       "http://www.w3.org/2002/07/owl#inverseOf": [
