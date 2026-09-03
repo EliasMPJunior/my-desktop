@@ -1,0 +1,11 @@
+@prefix ex: <https://example.org/bairesdev/demo#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+
+ex:TaskShape a sh:NodeShape ;
+    sh:targetClass ex:Task ;
+    sh:property [
+        sh:path ex:status ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+        sh:message "Every task must have exactly one status."@en
+    ] .

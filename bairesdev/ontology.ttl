@@ -1,0 +1,29 @@
+@prefix ex: <https://example.org/bairesdev/demo#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+ex:ScheduleOntology a owl:Ontology ;
+    rdfs:label "Small Schedule Ontology Demo"@en .
+
+ex:Task a owl:Class ;
+    rdfs:label "Task"@en .
+
+ex:Person a owl:Class ;
+    rdfs:label "Person"@en .
+
+ex:dependsOn a owl:ObjectProperty, owl:TransitiveProperty ;
+    rdfs:domain ex:Task ;
+    rdfs:range ex:Task ;
+    rdfs:label "depends on"@en .
+
+ex:responsibleFor a owl:ObjectProperty ;
+    rdfs:domain ex:Person ;
+    rdfs:range ex:Task ;
+    rdfs:label "responsible for"@en .
+
+ex:status a owl:DatatypeProperty ;
+    rdfs:domain ex:Task ;
+    rdfs:range xsd:string ;
+    rdfs:label "status"@en .

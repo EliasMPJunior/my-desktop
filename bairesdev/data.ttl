@@ -1,0 +1,17 @@
+@prefix ex: <https://example.org/bairesdev/demo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+ex:alice a ex:Person ;
+    ex:responsibleFor ex:taskA, ex:taskB, ex:taskC .
+
+ex:taskA a ex:Task ;
+    ex:status "done" .
+
+ex:taskB a ex:Task ;
+    ex:dependsOn ex:taskA ;
+    ex:status "in-progress" .
+
+ex:taskC a ex:Task ;
+    ex:dependsOn ex:taskB .
+
+# taskC intentionally has no status so SHACL has something useful to catch.

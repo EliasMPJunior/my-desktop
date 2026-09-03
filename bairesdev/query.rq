@@ -1,0 +1,8 @@
+PREFIX ex: <https://example.org/bairesdev/demo#>
+
+# Which tasks depend, directly or indirectly, on taskA?
+SELECT ?task
+WHERE {
+  ?task ex:dependsOn+ ex:taskA .
+}
+ORDER BY ?task
