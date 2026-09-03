@@ -8,7 +8,7 @@ ibim:IfcWorkSchedule
     a owl:Class, obdc:SurfaceableEntity ;
     rdfs:subClassOf obdc:DataEntity, ifcowl:IfcWorkSchedule ;
     ibim:assignsRelatedClass ifcowl:IfcTask, ifcowl:IfcTaskTime, ifcowl:IfcRelSequence ;
-    rdfs:label "IFC Work Schedule"@en, "Cronograma IFC"@pt-BR .
+    rdfs:label "IFC Work Schedule"@en, "Cronograma"@pt-BR .
 
 ibim:assignsRelatedClass
     a owl:ObjectProperty ;
