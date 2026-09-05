@@ -11,3 +11,9 @@
 - **Task:** Trace and describe the next five steps of the `ontobdc view` execution flow and place the execution trace as a subsection of Body.
 - **Self-rated difficulty:** 3/5.
 - **Result:** Satisfactory.
+
+## 2026-09-04 22:07 (America/Sao_Paulo)
+
+- **Task:** Describe the next three steps of the `ontobdc view` execution flow and keep the execution trace as one continuous numbered sequence.
+- **Self-rated difficulty:** 3/5.
+- **Result:** Satisfactory.
