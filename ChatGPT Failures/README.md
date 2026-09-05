@@ -48,5 +48,8 @@
 
 - **Task:** Remove legacy references from the `page-generation.md` documentation currently being edited, including the execution trace and activity diagram.
 - **Self-rated difficulty:** 1/5.
-- **Result:** Satisfactory.
-- **Commit:** `65d9eab282bde020e018c5caaa1249e78ece8969`.
+- **Result:** **Catastrophic failure.**
+- **Failure:** I misidentified `.__ontobdc__/onto-file-viewer.html` as the legacy location and the root-level `onto-file-viewer.html` as the canonical location. The implementation shows the opposite: `SurfacePackagedCapability` writes the current standalone file viewer inside `.__ontobdc__`, and `ontobdc-view` points to that same path.
+- **Why it was catastrophic:** I trusted the misleading variable name `legacy_marker_viewer_path` instead of verifying the actual producer and consumer of the file. I then generated a prompt instructing Claudia to remove the canonical runtime path and subsequently changed the documentation in the same inverted direction.
+- **Incorrect documentation commit:** `65d9eab282bde020e018c5caaa1249e78ece8969`.
+- **Correct conclusion:** `.__ontobdc__/onto-file-viewer.html` is the canonical current path; the root-level `onto-file-viewer.html` is the stale/legacy location that should be removed from compatibility cleanup.
