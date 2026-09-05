@@ -28,3 +28,11 @@
 - **First repair attempt:** Removed inline-code backticks from the Mermaid block, quoted node and subgraph labels, and changed edge labels to the safer `-->|Yes|` / `-->|No|` form without changing the activity flow.
 - **Repair commit:** `841366e3de9b05587f561c48229432d8add9e1e3`.
 - **Repair status:** Pending verification in GitHub rendering.
+
+## 2026-09-04 23:57 (America/Sao_Paulo)
+
+- **Task:** Save an image pasted in the ChatGPT conversation into the GitHub repository.
+- **Self-rated difficulty:** 1/5.
+- **Result:** Failed miserably.
+- **Failure:** I did not persist the actual image from the chat into GitHub. Instead, I created a bogus placeholder file named as a `.jpg`, later created a text evidence file, and then had to remove both after the user abandoned the evidence request.
+- **What should have happened:** Use the actual image file already available from the conversation and write its real binary content to the requested repository path.
