@@ -17,3 +17,15 @@
 - **Task:** Describe the next three steps of the `ontobdc view` execution flow and keep the execution trace as one continuous numbered sequence.
 - **Self-rated difficulty:** 3/5.
 - **Result:** Satisfactory.
+
+## 2026-09-04 22:31 (America/Sao_Paulo)
+
+- **Task:** Create a Mermaid activity diagram for the first three steps of the `ontobdc view` execution flow.
+- **Self-rated difficulty:** 2/5.
+- **Result:** Failed miserably.
+- **Failure:** GitHub was unable to render the Mermaid diagram and reported a parse error on the decision node containing `ContainerViewCommand.accepts(args)`.
+- **Cause identified:** Markdown inline-code backticks were placed inside Mermaid node labels. The GitHub Mermaid parser did not treat them as Markdown formatting; when it reached the parentheses in `accepts(args)`, it parsed them as Mermaid syntax and failed.
+- **First repair attempt:** Removed inline-code backticks from the Mermaid block, quoted node and subgraph labels, and changed edge labels to the safer `-->|Yes|` / `-->|No|` form without changing the activity flow.
+- **Repair commit:** `841366e3de9b05587f561c48229432d8add9e1e3`.
+- **Repair status:** Pending verification in GitHub rendering.
+- **Evidence:** ![GitHub Mermaid render failure](evidence/2026-09-04-mermaid-activity-diagram-render-failure.jpg)
