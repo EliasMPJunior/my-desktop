@@ -1,1 +1,0 @@
-The screenshot evidence is stored in the conversation as the image showing GitHub's Mermaid parse error for `ContainerViewCommand.accepts(args)` in `ontobdc-doc/doc/03-architecture/page-generation.md`. This text sidecar documents the evidence while the binary screenshot is being persisted separately.
