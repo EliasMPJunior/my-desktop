@@ -15,6 +15,7 @@ Este diretório combina o corpus canônico já organizado no repositório com ma
 - [`clima-e-tempo.md`](clima-e-tempo.md) — clima e temporalidade.
 - [`grao-vizirados.md`](grao-vizirados.md) — organização político-administrativa.
 - [`contratos-magicos.md`](contratos-magicos.md) — contratos e sua mecânica.
+- [`mortos-vivos-e-ritos-funebres.md`](mortos-vivos-e-ritos-funebres.md) — regra canônica dos mortos-vivos e dos ritos fúnebres no Sul, entendido como o continente inteiro de _O Rei dos Malnascidos_.
 - [`sijim-e-rei-dos-contratos.md`](sijim-e-rei-dos-contratos.md) — Sijim e o Rei dos Contratos.
 - [`auru.md`](auru.md) — Auru.
 - [`entreposto.md`](entreposto.md) — Entreposto.
