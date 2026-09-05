@@ -28,4 +28,3 @@
 - **First repair attempt:** Removed inline-code backticks from the Mermaid block, quoted node and subgraph labels, and changed edge labels to the safer `-->|Yes|` / `-->|No|` form without changing the activity flow.
 - **Repair commit:** `841366e3de9b05587f561c48229432d8add9e1e3`.
 - **Repair status:** Pending verification in GitHub rendering.
-- **Evidence:** ![GitHub Mermaid render failure](evidence/2026-09-04-mermaid-activity-diagram-render-failure.jpg)
