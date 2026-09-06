@@ -53,3 +53,12 @@
 - **Why it was catastrophic:** I trusted the misleading variable name `legacy_marker_viewer_path` instead of verifying the actual producer and consumer of the file. I then generated a prompt instructing Claudia to remove the canonical runtime path and subsequently changed the documentation in the same inverted direction.
 - **Incorrect documentation commit:** `65d9eab282bde020e018c5caaa1249e78ece8969`.
 - **Correct conclusion:** `.__ontobdc__/onto-file-viewer.html` is the canonical current path; the root-level `onto-file-viewer.html` is the stale/legacy location that should be removed from compatibility cleanup.
+
+## 2026-09-06 04:24 (America/Sao_Paulo)
+
+- **Task:** Answer which terminal the user should use for the current departure at Rio de Janeiro/Galeão.
+- **Self-rated difficulty:** 1/5.
+- **Result:** Failed miserably.
+- **Failure:** Instead of recovering the active trip context and identifying the flight already known from the conversation and available connected data, I answered generically and then asked the user to provide the flight number.
+- **Why it failed:** The user had already provided and discussed the full itinerary, and the active Avianca reservation could be recovered directly. Asking for the flight number transferred context-retrieval work back to the user instead of doing it myself.
+- **What should have happened:** Recover the active booking, identify flight `AV260` (GIG → BOG on 2026-09-06), verify the current Galeão departure terminal, and answer directly without requesting information that was already available.
