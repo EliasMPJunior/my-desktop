@@ -116,3 +116,12 @@
 - **Failure:** I found occurrences of `_MarkdownBodyTile` in `src/ontobdc/cli/adapter/surface.py` and stated that the class was located there. I had only found references to the symbol; the class definition was not present in `noah-release`.
 - **Cause identified:** I conflated a symbol reference with a class definition and did not verify the exact declaration `class _MarkdownBodyTile` before answering.
 - **What should have happened:** Search specifically for the class declaration, verify the file and branch, and only then provide the link. If no definition existed, I should have said so immediately and distinguished the dangling references from an actual class definition.
+
+## 2026-09-08 18:59 (America/Sao_Paulo)
+
+- **Task:** Create an HTML Gmail draft replying to Fernando Escobar and include the user's established email signature.
+- **Self-rated difficulty:** 1/5.
+- **Result:** Failed miserably.
+- **Failure:** I invented a shortened signature (`Elias Paixão` / `Brasidata`) instead of reusing the user's existing HTML signature, even though the user had explicitly asked for “minha assinatura” and the established signature was recoverable from prior sent email.
+- **Why it failed:** I treated the signature as free-form text to generate rather than account-specific content that had to be retrieved and preserved exactly.
+- **What should have happened:** Read a prior sent message or existing draft containing the user's established signature, reuse that HTML block unchanged, and only then create the reply draft.
