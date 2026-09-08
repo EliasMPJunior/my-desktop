@@ -1,0 +1,1645 @@
+{
+  "schema_version": "1.0",
+  "title": "Pesquisa internacional de vagas BIM",
+  "researched_on": "2026-09-08",
+  "language": "pt-BR",
+  "format": "JSON",
+  "scope": {
+    "subject": "BIM, gestão da informação, coordenação, modelagem e desenvolvimento de software BIM.",
+    "exhaustive": false,
+    "geography": "Pesquisa internacional em África, Ásia, Europa, América do Norte, América do Sul e Oceania.",
+    "selection_policy": "Anúncios individuais relevantes; preferência por empregadores/recrutadores; sem excluir por Revit, senioridade ou modalidade.",
+    "coverage_note": "Amostra de busca pública, não censo de todas as vagas ou países. Contagens das páginas de busca não foram usadas como vagas verificadas.",
+    "linkedin_access": "Páginas públicas na web; sem sessão autenticada da conta do usuário."
+  },
+  "summary": {
+    "job_count": 29,
+    "country_count": 21,
+    "country_counts": {
+      "GB": 2,
+      "DE": 2,
+      "ES": 5,
+      "AU": 1,
+      "AE": 1,
+      "SA": 1,
+      "BR": 1,
+      "CO": 1,
+      "EG": 1,
+      "CA": 1,
+      "US": 1,
+      "IN": 2,
+      "PL": 1,
+      "MY": 1,
+      "FR": 1,
+      "IE": 1,
+      "CH": 1,
+      "FI": 1,
+      "NZ": 1,
+      "CL": 1,
+      "SG": 1
+    },
+    "remote_or_remote_option_count": 4,
+    "explicit_latam_remote_count": 1,
+    "pending_verification_count": 3,
+    "excluded_closed_or_expired_count": 9
+  },
+  "field_notes": {
+    "availability": "application_option_visible: página individual lida com opção/instrução de candidatura, sem encerramento ou prazo vencido identificado. Estado observado na fonte acessível, que pode ter cache; não garante vaga aberta nem funcionamento final do formulário.",
+    "null_values": "Informação não publicada ou não confirmada. Arrays vazios não provam ausência de exigência.",
+    "dates": "ISO 8601; datas de publicação/prazo só quando explicitadas. Tempos relativos não convertidos.",
+    "revit_requirement": {
+      "required": "Explicitamente necessário nas qualificações/atividade central.",
+      "preferred": "Explicitamente preferencial.",
+      "mentioned_in_requirements": "Citado nas qualificações; exclusividade não resolvida.",
+      "listed_among_alternatives": "Listado entre ferramentas alternativas/equivalentes.",
+      "not_mentioned_in_reviewed_text": "Não encontrado no texto revisado; NÃO significa vaga comprovadamente sem Revit."
+    },
+    "openbim_terms": "Termos extraídos; IFC/ISO 19650 não significam independência de ferramentas proprietárias.",
+    "salary": "Somente valor publicado, sem estimativas/conversão. Moeda ou periodicidade não explícitas permanecem null.",
+    "remote_from_brazil": "true quando alcance LATAM/Brasil explícito; null = não confirmado. Não representa parecer migratório nem garantia de elegibilidade.",
+    "country_count": "Países dos 29 anúncios. LATAM sem lista de países e localidades alternativas da Utopia não aumentam a contagem.",
+    "source_type": "employer_careers = empregador/ATS; recruiter = recrutadora; employer_posted_linkedin = anúncio público no LinkedIn; job_board = portal de vagas."
+  },
+  "countries": {
+    "AE": {
+      "name": "Emirados Árabes Unidos",
+      "region": "Asia"
+    },
+    "AU": {
+      "name": "Austrália",
+      "region": "Oceania"
+    },
+    "BR": {
+      "name": "Brasil",
+      "region": "South America"
+    },
+    "CA": {
+      "name": "Canadá",
+      "region": "North America"
+    },
+    "CH": {
+      "name": "Suíça",
+      "region": "Europe"
+    },
+    "CL": {
+      "name": "Chile",
+      "region": "South America"
+    },
+    "CO": {
+      "name": "Colômbia",
+      "region": "South America"
+    },
+    "DE": {
+      "name": "Alemanha",
+      "region": "Europe"
+    },
+    "EG": {
+      "name": "Egito",
+      "region": "Africa"
+    },
+    "ES": {
+      "name": "Espanha",
+      "region": "Europe"
+    },
+    "FI": {
+      "name": "Finlândia",
+      "region": "Europe"
+    },
+    "FR": {
+      "name": "França",
+      "region": "Europe"
+    },
+    "GB": {
+      "name": "Reino Unido",
+      "region": "Europe"
+    },
+    "IE": {
+      "name": "Irlanda",
+      "region": "Europe"
+    },
+    "IN": {
+      "name": "Índia",
+      "region": "Asia"
+    },
+    "MY": {
+      "name": "Malásia",
+      "region": "Asia"
+    },
+    "NZ": {
+      "name": "Nova Zelândia",
+      "region": "Oceania"
+    },
+    "PL": {
+      "name": "Polônia",
+      "region": "Europe"
+    },
+    "SA": {
+      "name": "Arábia Saudita",
+      "region": "Asia"
+    },
+    "SG": {
+      "name": "Singapura",
+      "region": "Asia"
+    },
+    "US": {
+      "name": "Estados Unidos",
+      "region": "North America"
+    }
+  },
+  "search_queries": [
+    "BIM manager coordinator jobs Europe September 2026 careers",
+    "BIM information manager OpenBIM IFC software developer jobs remote",
+    "BIM manager jobs Asia Singapore India careers",
+    "BIM manager coordinator jobs Brazil Latin America careers",
+    "BIM manager coordinator careers Australia New Zealand jobs",
+    "BIM manager coordinator careers South Africa Egypt Morocco",
+    "BIM manager coordinator careers Dubai Saudi Arabia Qatar",
+    "BIM manager coordinator careers Canada United States",
+    "site:jobs.smartrecruiters.com BIM Spain Madrid",
+    "\"BIM Manager\" Singapore careers",
+    "\"BIM Coordinator\" India careers",
+    "\"BIM Manager\" Australia careers",
+    "\"BIM Manager\" Dubai careers",
+    "\"BIM Coordinator\" Riyadh careers",
+    "\"BIM\" \"IFC\" \"developer\" careers Germany",
+    "\"BIM Coordinator\" \"Utopia\" remote",
+    "\"BR - Information Manager\" Hatch",
+    "\"Digital Lead BIM Manager\" Colombia",
+    "\"BIM Specialist\" \"Italy\" \"careers\"",
+    "\"BIM Manager\" \"Warsaw\" \"Cundall\"",
+    "\"BIM Manager\" \"Amsterdam\" \"Sisk\"",
+    "\"BIM Technician Building Services\" Assemble",
+    "\"Coordinador BIM\" \"Delporte\" \"2026\"",
+    "\"Lead BIM Manager\" \"Bureau Veritas\" Singapore"
+  ],
+  "jobs": [
+    {
+      "id": "johnsonbim-7627730",
+      "title": "BIM / Information Manager - Consultancy",
+      "company": "Johnson BIM (recrutadora)",
+      "country_codes": [
+        "GB"
+      ],
+      "cities": [
+        "Birmingham",
+        "Manchester",
+        "London",
+        "Oxford",
+        "Bristol"
+      ],
+      "regions": [
+        "Europe"
+      ],
+      "category": "information_management",
+      "employment_type": "full_time",
+      "work_arrangement": "remote",
+      "remote_scope": "Vinculada a cidades do Reino Unido; contratação fora do país não esclarecida.",
+      "remote_from_brazil": null,
+      "salary": {
+        "min": null,
+        "max": 60000,
+        "currency": "GBP",
+        "period": "year",
+        "raw": "Up to £60k"
+      },
+      "requirements": [
+        "Gestão da informação, procedimentos BIM, IFC/IFC-SPF.",
+        "Modelagem Revit, verificação com Solibri/Navisworks e entrega COBie."
+      ],
+      "software": [
+        "Revit",
+        "Solibri",
+        "Navisworks"
+      ],
+      "revit_requirement": "required",
+      "openbim_terms": [
+        "IFC",
+        "IFC-SPF",
+        "COBie"
+      ],
+      "published_on": null,
+      "closes_on": null,
+      "source_type": "recruiter",
+      "source_url": "https://opportunities.johnsonbim.com/jobs/7627730-bim-information-manager-consultancy",
+      "additional_sources": [],
+      "checked_on": "2026-09-08",
+      "availability": "application_option_visible",
+      "notes": []
+    },
+    {
+      "id": "thinkproject-j1631",
+      "title": "Senior Software Developer C++ (f/m/d)",
+      "company": "Thinkproject",
+      "country_codes": [
+        "DE"
+      ],
+      "cities": [
+        "Munich",
+        "Wuppertal",
+        "Wurzburg"
+      ],
+      "regions": [
+        "Europe"
+      ],
+      "category": "software_development",
+      "employment_type": "full_time",
+      "work_arrangement": "hybrid",
+      "remote_scope": null,
+      "remote_from_brazil": null,
+      "salary": null,
+      "requirements": [
+        "6–8 anos em desenvolvimento; C/C++ moderno, arquitetura, CI/CD.",
+        "Inglês fluente e amostra própria de código C/C++.",
+        "Qt, gráficos, IFC/BCF e alemão são diferenciais."
+      ],
+      "software": [
+        "C++",
+        "Qt",
+        "OpenGL",
+        "DirectX",
+        "Vulkan",
+        "JavaScript",
+        "Python",
+        "C#"
+      ],
+      "revit_requirement": "not_mentioned_in_reviewed_text",
+      "openbim_terms": [
+        "openBIM",
+        "IFC",
+        "BCF"
+      ],
+      "published_on": "2026-07-07",
+      "closes_on": null,
+      "source_type": "employer_careers",
+      "source_url": "https://careers.thinkproject.com/Senior-Software-Developer-C-fmd-eng-j1631.html",
+      "additional_sources": [],
+      "checked_on": "2026-09-08",
+      "availability": "application_option_visible",
+      "notes": [
+        "Desenvolvimento do VDC Manager: modelos, verificação, quantitativos e simulação 4D."
+      ]
+    },
+    {
+      "id": "aecom-744000145778909",
+      "title": "BIM & Digital Specialist",
+      "company": "AECOM",
+      "country_codes": [
+        "ES"
+      ],
+      "cities": [
+        "Madrid",
+        "Barcelona"
+      ],
+      "regions": [
+        "Europe"
+      ],
+      "category": "digital_delivery_automation",
+      "employment_type": "full_time",
+      "work_arrangement": "hybrid",
+      "remote_scope": null,
+      "remote_from_brazil": null,
+      "salary": null,
+      "requirements": [
+        "3–7 anos em BIM, entrega digital, dados ou automação; graduação em arquitetura/engenharia.",
+        "Inglês fluente; estar baseado em Madrid ou Barcelona.",
+        "Revit/ACC e ferramentas de dados/automação."
+      ],
+      "software": [
+        "Revit",
+        "ACC",
+        "Power BI",
+        "Power Automate",
+        "Power Apps",
+        "Azure",
+        "Python",
+        "Dynamo",
+        "GitHub"
+      ],
+      "revit_requirement": "mentioned_in_requirements",
+      "openbim_terms": [
+        "IFC",
+        "ISO 19650"
+      ],
+      "published_on": null,
+      "closes_on": null,
+      "source_type": "employer_careers",
+      "source_url": "https://jobs.smartrecruiters.com/AECOM2/744000145778909-bim-digital-specialist",
+      "additional_sources": [],
+      "checked_on": "2026-09-08",
+      "availability": "application_option_visible",
+      "notes": [
+        "Competências incluem ETL, APIs e integração BIM–GIS."
+      ]
+    },
+    {
+      "id": "turnertownsend-744000134250968",
+      "title": "BIM Manager (Senior Consultant)",
+      "company": "Turner & Townsend",
+      "country_codes": [
+        "ES"
+      ],
+      "cities": [
+        "Madrid"
+      ],
+      "regions": [
+        "Europe"
+      ],
+      "category": "information_management",
+      "employment_type": "full_time",
+      "work_arrangement": "not_stated",
+      "remote_scope": null,
+      "remote_from_brazil": null,
+      "salary": null,
+      "requirements": [
+        "5+ anos em gestão BIM; inglês C1.",
+        "ACC avançado; OIR/AIR/EIR/PIR, validação e ISO 19650.",
+        "Análise/visualização de dados e coordenação de equipes."
+      ],
+      "software": [
+        "ACC",
+        "Power BI",
+        "Tableau",
+        "Revit",
+        "AECOsim",
+        "Navisworks",
+        "Vectorworks",
+        "BIM Collab",
+        "Solibri",
+        "IFC Checker"
+      ],
+      "revit_requirement": "listed_among_alternatives",
+      "openbim_terms": [
+        "IFC",
+        "ISO 19650"
+      ],
+      "published_on": null,
+      "closes_on": null,
+      "source_type": "employer_careers",
+      "source_url": "https://jobs.smartrecruiters.com/TurnerTownsend/744000134250968-bim-manager-senior-consultant-",
+      "additional_sources": [],
+      "checked_on": "2026-09-08",
+      "availability": "application_option_visible",
+      "notes": []
+    },
+    {
+      "id": "cundall-au-7",
+      "title": "Building Services BIM Manager",
+      "company": "Cundall",
+      "country_codes": [
+        "AU"
+      ],
+      "cities": [
+        "Melbourne"
+      ],
+      "regions": [
+        "Oceania"
+      ],
+      "category": "bim_management",
+      "employment_type": null,
+      "work_arrangement": "not_stated",
+      "remote_scope": null,
+      "remote_from_brazil": null,
+      "salary": null,
+      "requirements": [
+        "Experiência prática forte em Revit e instalações prediais.",
+        "Gestão de equipes/recursos, BEP e ISO 19650.",
+        "30–50% do tempo em produção/revisão/coordenação de projetos."
+      ],
+      "software": [
+        "Revit",
+        "Navisworks",
+        "ACC"
+      ],
+      "revit_requirement": "required",
+      "openbim_terms": [
+        "ISO 19650"
+      ],
+      "published_on": null,
+      "closes_on": null,
+      "source_type": "employer_careers",
+      "source_url": "https://www.cundall.com/careers/roles/building-services-bim-manager-7",
+      "additional_sources": [],
+      "checked_on": "2026-09-08",
+      "availability": "application_option_visible",
+      "notes": []
+    },
+    {
+      "id": "egis-5771",
+      "title": "BIM Manager - Infrastructure (Utilities & Roads)",
+      "company": "Egis",
+      "country_codes": [
+        "AE"
+      ],
+      "cities": [
+        "Dubai"
+      ],
+      "regions": [
+        "Asia"
+      ],
+      "category": "bim_management",
+      "employment_type": null,
+      "work_arrangement": "not_stated",
+      "remote_scope": null,
+      "remote_from_brazil": null,
+      "salary": null,
+      "requirements": [
+        "10+ anos profissionais e experiência em infraestrutura BIM/ISO 19650.",
+        "Civil 3D, Navisworks, ACC e Dynamo para Civil 3D avançados.",
+        "Coordenação e automação em redes e rodovias."
+      ],
+      "software": [
+        "Civil 3D",
+        "Navisworks",
+        "ACC",
+        "Dynamo"
+      ],
+      "revit_requirement": "not_mentioned_in_reviewed_text",
+      "openbim_terms": [
+        "ISO 19650"
+      ],
+      "published_on": null,
+      "closes_on": null,
+      "source_type": "employer_careers",
+      "source_url": "https://jobs.egis-group.com/job/bim-manager-infrastructure-utilities-and-roads-in-dubai-jid-5771",
+      "additional_sources": [],
+      "checked_on": "2026-09-08",
+      "availability": "application_option_visible",
+      "notes": [
+        "O texto consultado exige ferramentas Autodesk de infraestrutura; não menciona Revit."
+      ]
+    },
+    {
+      "id": "egis-7742",
+      "title": "Senior BIM Coordinator",
+      "company": "Egis",
+      "country_codes": [
+        "SA"
+      ],
+      "cities": [
+        "Riyadh"
+      ],
+      "regions": [
+        "Asia"
+      ],
+      "category": "bim_coordination",
+      "employment_type": "permanent",
+      "work_arrangement": "not_stated",
+      "remote_scope": null,
+      "remote_from_brazil": null,
+      "salary": null,
+      "requirements": [
+        "10+ anos em coordenação BIM ou áreas relacionadas.",
+        "Revit/Navisworks avançados ou plataformas equivalentes; ISO 19650.",
+        "Liderança, federação e qualidade; experiência local preferencial."
+      ],
+      "software": [
+        "Revit",
+        "Navisworks",
+        "Solibri",
+        "Synchro"
+      ],
+      "revit_requirement": "listed_among_alternatives",
+      "openbim_terms": [
+        "ISO 19650"
+      ],
+      "published_on": null,
+      "closes_on": null,
+      "source_type": "employer_careers",
+      "source_url": "https://jobs.egis-group.com/fr/job/senior-bim-coordinator-in-riyadh-jid-7742",
+      "additional_sources": [],
+      "checked_on": "2026-09-08",
+      "availability": "application_option_visible",
+      "notes": []
+    },
+    {
+      "id": "hatch-100651",
+      "title": "BR - Information Manager",
+      "company": "Hatch",
+      "country_codes": [
+        "BR"
+      ],
+      "cities": [
+        "Belo Horizonte"
+      ],
+      "regions": [
+        "South America"
+      ],
+      "category": "information_management",
+      "employment_type": null,
+      "work_arrangement": "not_stated",
+      "remote_scope": null,
+      "remote_from_brazil": null,
+      "salary": null,
+      "requirements": [
+        "Graduação em engenharia, computação ou relacionada; 10+ anos em Project IM.",
+        "Entrega EPCM ou Design-Build centrada em dados.",
+        "Gestão de documentos/modelos/desenhos, planos IM/BEP, equipes e governança."
+      ],
+      "software": [],
+      "revit_requirement": "not_mentioned_in_reviewed_text",
+      "openbim_terms": [],
+      "published_on": "2026-08-28",
+      "closes_on": null,
+      "source_type": "employer_careers",
+      "source_url": "https://jobs.hatch.com/job/Belo-Horizonte-BR-Information-Manager-Mina/1414397800/",
+      "additional_sources": [],
+      "checked_on": "2026-09-08",
+      "availability": "application_option_visible",
+      "notes": [
+        "Inclui BEPs; não lista software específico. Ambiente flexível não foi interpretado como trabalho remoto."
+      ]
+    },
+    {
+      "id": "wsp-linkedin-4454663733",
+      "title": "Digital Lead BIM Manager",
+      "company": "WSP en Colombia",
+      "country_codes": [
+        "CO"
+      ],
+      "cities": [
+        "Bogotá"
+      ],
+      "regions": [
+        "South America"
+      ],
+      "category": "bim_management",
+      "employment_type": null,
+      "work_arrangement": "not_stated",
+      "remote_scope": null,
+      "remote_from_brazil": null,
+      "salary": null,
+      "requirements": [
+        "5–10 anos em projetos BIM.",
+        "Revit, Navisworks, Revizto, Dynamo e ACC avançados.",
+        "Inglês avançado e francês, com B2 como mínimo indicado; currículo em inglês."
+      ],
+      "software": [
+        "Revit",
+        "Navisworks",
+        "Revizto",
+        "Dynamo",
+        "ACC",
+        "Autodesk Forma",
+        "Bluebeam",
+        "Clarity"
+      ],
+      "revit_requirement": "required",
+      "openbim_terms": [],
+      "published_on": null,
+      "closes_on": null,
+      "source_type": "employer_posted_linkedin",
+      "source_url": "https://co.linkedin.com/jobs/view/digital-lead-bim-manager-at-wsp-en-colombia-4454663733",
+      "additional_sources": [],
+      "checked_on": "2026-09-08",
+      "availability": "application_option_visible",
+      "notes": [
+        "Vaga em Bogotá apoiando a equipe de edificações do Quebec."
+      ]
+    },
+    {
+      "id": "cresta-linkedin-4421894744",
+      "title": "Junior BIM Coordinator - BIM Modeler",
+      "company": "Cresta",
+      "country_codes": [],
+      "cities": [],
+      "regions": [
+        "Latin America"
+      ],
+      "category": "bim_coordination_modeling",
+      "employment_type": "full_time",
+      "work_arrangement": "remote",
+      "remote_scope": "Qualquer lugar da América Latina; segunda a sexta, horário de Nova York.",
+      "remote_from_brazil": true,
+      "salary": {
+        "min": 1600,
+        "max": 1600,
+        "currency": "USD",
+        "period": "month",
+        "raw": "$1,600 USD/monthly"
+      },
+      "requirements": [
+        "Inglês profissional e experiência forte em modelagem arquitetônica Revit.",
+        "LOD 300, interferências e famílias Revit.",
+        "BEP e projetos dos EUA são diferenciais."
+      ],
+      "software": [
+        "Revit",
+        "Navisworks"
+      ],
+      "revit_requirement": "required",
+      "openbim_terms": [],
+      "published_on": null,
+      "closes_on": null,
+      "source_type": "employer_posted_linkedin",
+      "source_url": "https://www.linkedin.com/jobs/view/junior-bim-coordinator-bim-modeler-at-cresta-4421894744",
+      "additional_sources": [],
+      "checked_on": "2026-09-08",
+      "availability": "application_option_visible",
+      "notes": [
+        "Anúncio usa Latin America, sem discriminar países."
+      ],
+      "remote_from_brazil_basis": "Brasil pertence ao alcance LATAM expressamente indicado."
+    },
+    {
+      "id": "hitachi-18084832",
+      "title": "BIM Coordinator",
+      "company": "Hitachi Rail",
+      "country_codes": [
+        "EG"
+      ],
+      "cities": [],
+      "regions": [
+        "Africa"
+      ],
+      "category": "bim_coordination",
+      "employment_type": null,
+      "work_arrangement": "not_stated",
+      "remote_scope": null,
+      "remote_from_brazil": null,
+      "salary": null,
+      "requirements": [
+        "Graduação em engenharia elétrica ou área relacionada.",
+        "3+ anos em coordenação BIM ou função semelhante.",
+        "Revit, Navisworks Manage e AutoCAD; BEP e controle de qualidade."
+      ],
+      "software": [
+        "Revit",
+        "Navisworks Manage",
+        "AutoCAD"
+      ],
+      "revit_requirement": "required",
+      "openbim_terms": [],
+      "published_on": null,
+      "closes_on": null,
+      "source_type": "employer_careers",
+      "source_url": "https://careers.hitachi.com/jobs/18084832-bim-coordinator",
+      "additional_sources": [],
+      "checked_on": "2026-09-08",
+      "availability": "application_option_visible",
+      "notes": [
+        "Localização apresentada no cabeçalho: C, Egypt; cidade não foi inferida."
+      ]
+    },
+    {
+      "id": "atkinsrealis-r152362",
+      "title": "BIM Coordinator",
+      "company": "AtkinsRéalis",
+      "country_codes": [
+        "CA"
+      ],
+      "cities": [
+        "Toronto"
+      ],
+      "regions": [
+        "North America"
+      ],
+      "category": "bim_coordination",
+      "employment_type": "full_time",
+      "work_arrangement": "not_stated",
+      "remote_scope": null,
+      "remote_from_brazil": null,
+      "salary": null,
+      "requirements": [
+        "Graduação relacionada e 3+ anos em documentação técnica/BIM.",
+        "Autoria BIM, preferencialmente Revit; CDE e CAD/GIS.",
+        "Inglês obrigatório; francês e Python/Dynamo são diferenciais."
+      ],
+      "software": [
+        "Revit",
+        "ProjectWise",
+        "ACC",
+        "SharePoint",
+        "MicroStation",
+        "OpenRoads",
+        "ArcGIS",
+        "Python",
+        "Dynamo"
+      ],
+      "revit_requirement": "preferred",
+      "openbim_terms": [
+        "ISO 19650"
+      ],
+      "published_on": null,
+      "closes_on": null,
+      "source_type": "employer_careers",
+      "source_url": "https://careers.atkinsrealis.com/en/jobs/bim-coordinator-r-152362",
+      "additional_sources": [],
+      "checked_on": "2026-09-08",
+      "availability": "application_option_visible",
+      "notes": [
+        "Cultura híbrida geral da empresa citada; frequência presencial individual não confirmada."
+      ]
+    },
+    {
+      "id": "carollo-corporate-bim",
+      "title": "Corporate BIM Design Manager",
+      "company": "Carollo Engineers",
+      "country_codes": [
+        "US"
+      ],
+      "cities": [],
+      "regions": [
+        "North America"
+      ],
+      "category": "bim_management",
+      "employment_type": "full_time",
+      "work_arrangement": "not_stated",
+      "remote_scope": null,
+      "remote_from_brazil": null,
+      "salary": {
+        "min": 130000,
+        "max": 160000,
+        "currency": "USD",
+        "period": "year",
+        "raw": "$130,000 to $160,000 annually"
+      },
+      "requirements": [
+        "15+ anos em projeto/coordenação/entrega digital e 5+ anos de liderança.",
+        "Gestão BIM e tubulação de processo.",
+        "Revit, Civil 3D, AutoCAD, Plant 3D, Navisworks e Forma avançados."
+      ],
+      "software": [
+        "Revit",
+        "Civil 3D",
+        "AutoCAD",
+        "Plant 3D",
+        "Navisworks",
+        "Forma",
+        "ProjectWise",
+        "Python",
+        "Dynamo"
+      ],
+      "revit_requirement": "required",
+      "openbim_terms": [],
+      "published_on": null,
+      "closes_on": null,
+      "source_type": "employer_careers",
+      "source_url": "https://carollo.com/careers/career-opportunities/corporate-bim-design-manager/",
+      "additional_sources": [],
+      "checked_on": "2026-09-08",
+      "availability": "application_option_visible",
+      "notes": []
+    },
+    {
+      "id": "burohappold-2080",
+      "title": "Senior BIM Coordinator – Structures",
+      "company": "Buro Happold",
+      "country_codes": [
+        "IN"
+      ],
+      "cities": [
+        "Mumbai"
+      ],
+      "regions": [
+        "Asia"
+      ],
+      "category": "bim_coordination",
+      "employment_type": null,
+      "work_arrangement": "not_stated",
+      "remote_scope": null,
+      "remote_from_brazil": null,
+      "salary": null,
+      "requirements": [
+        "Anúncio pede 12–15 anos e também menciona 5+ anos relevantes em Revit Structures.",
+        "Revit, Navisworks e AutoCAD; coordenação e documentação multidisciplinar."
+      ],
+      "software": [
+        "Revit",
+        "Navisworks",
+        "AutoCAD",
+        "Enscape"
+      ],
+      "revit_requirement": "required",
+      "openbim_terms": [],
+      "published_on": null,
+      "closes_on": "2026-10-31",
+      "source_type": "employer_careers",
+      "source_url": "https://vacancies.burohappold.com/jobs/job/Senior-BIM-Coordinator/2080",
+      "additional_sources": [],
+      "checked_on": "2026-09-08",
+      "availability": "application_option_visible",
+      "notes": [
+        "As duas exigências de tempo aparecem no próprio anúncio e foram preservadas."
+      ]
+    },
+    {
+      "id": "cundall-5478",
+      "title": "BIM Manager",
+      "company": "Cundall",
+      "country_codes": [
+        "PL"
+      ],
+      "cities": [
+        "Warsaw"
+      ],
+      "regions": [
+        "Europe"
+      ],
+      "category": "bim_management",
+      "employment_type": "permanent_full_time",
+      "work_arrangement": "not_stated",
+      "remote_scope": null,
+      "remote_from_brazil": null,
+      "salary": null,
+      "requirements": [
+        "Experiência em instalações/Revit e coordenação de data centers.",
+        "Comunicação em polonês e inglês.",
+        "BEP, COBie, IFC, Uniclass e verificação de interferências."
+      ],
+      "software": [
+        "Revit",
+        "Navisworks",
+        "Autodesk Forma"
+      ],
+      "revit_requirement": "required",
+      "openbim_terms": [
+        "COBie",
+        "IFC",
+        "Uniclass"
+      ],
+      "published_on": null,
+      "closes_on": "2026-10-25",
+      "source_type": "employer_careers",
+      "source_url": "https://careers-cundall.icims.com/jobs/5478/bim-manager/job",
+      "additional_sources": [],
+      "checked_on": "2026-09-08",
+      "availability": "application_option_visible",
+      "notes": [
+        "40 horas por semana."
+      ]
+    },
+    {
+      "id": "bimeco-malaysia",
+      "title": "BIM Modeller",
+      "company": "BIMECO",
+      "country_codes": [
+        "MY"
+      ],
+      "cities": [],
+      "regions": [
+        "Asia"
+      ],
+      "category": "bim_modeling",
+      "employment_type": "full_time",
+      "work_arrangement": "not_stated",
+      "remote_scope": null,
+      "remote_from_brazil": null,
+      "salary": {
+        "min": 3500,
+        "max": 5000,
+        "currency": "MYR",
+        "period": null,
+        "raw": "MYR 3,500 to 5,000"
+      },
+      "requirements": [
+        "1–2 anos em modelagem BIM; diploma/graduação relacionada.",
+        "Revit, AutoCAD, ACC e exportação IFC.",
+        "Forma e Dynamo são diferenciais."
+      ],
+      "software": [
+        "Revit",
+        "AutoCAD",
+        "ACC",
+        "Forma",
+        "Dynamo"
+      ],
+      "revit_requirement": "required",
+      "openbim_terms": [
+        "IFC"
+      ],
+      "published_on": "2026-08-07",
+      "closes_on": null,
+      "source_type": "employer_careers",
+      "source_url": "https://www.bimeco.io/career/bim-modeller-malaysia/",
+      "additional_sources": [],
+      "checked_on": "2026-09-08",
+      "availability": "application_option_visible",
+      "notes": [
+        "Periodicidade salarial não explicitada na página."
+      ]
+    },
+    {
+      "id": "mercury-148978",
+      "title": "BIM Lead",
+      "company": "Mercury",
+      "country_codes": [
+        "FR"
+      ],
+      "cities": [
+        "Paris"
+      ],
+      "regions": [
+        "Europe"
+      ],
+      "category": "bim_management",
+      "employment_type": null,
+      "work_arrangement": "not_stated",
+      "remote_scope": null,
+      "remote_from_brazil": null,
+      "salary": null,
+      "requirements": [
+        "5+ anos como BIM Lead.",
+        "Liderança, coordenação de modelos, prazo e qualidade.",
+        "Possíveis viagens a obras."
+      ],
+      "software": [],
+      "revit_requirement": "not_mentioned_in_reviewed_text",
+      "openbim_terms": [],
+      "published_on": null,
+      "closes_on": null,
+      "source_type": "employer_careers",
+      "source_url": "https://www.mercuryeng.com/careers/explore-jobs/?job=148978",
+      "additional_sources": [],
+      "checked_on": "2026-09-08",
+      "availability": "application_option_visible",
+      "notes": []
+    },
+    {
+      "id": "mercury-148707",
+      "title": "BIM Manager",
+      "company": "Mercury",
+      "country_codes": [
+        "IE"
+      ],
+      "cities": [
+        "Leixlip, Co. Kildare"
+      ],
+      "regions": [
+        "Europe"
+      ],
+      "category": "bim_management",
+      "employment_type": null,
+      "work_arrangement": "not_stated",
+      "remote_scope": null,
+      "remote_from_brazil": null,
+      "salary": null,
+      "requirements": [
+        "5 anos como BIM Lead; qualificação superior em engenharia/BIM.",
+        "Inglês e conhecimento de sistemas mecânicos/elétricos.",
+        "Experiência em parte das ferramentas listadas; ISO 19650 é diferencial."
+      ],
+      "software": [
+        "AutoCAD",
+        "Revit",
+        "Fabrication CADmep",
+        "Navisworks",
+        "BIM360",
+        "Plant 3D",
+        "CADWorx"
+      ],
+      "revit_requirement": "listed_among_alternatives",
+      "openbim_terms": [
+        "ISO 19650"
+      ],
+      "published_on": null,
+      "closes_on": null,
+      "source_type": "employer_careers",
+      "source_url": "https://www.mercuryeng.com/careers/explore-jobs/?job=148707",
+      "additional_sources": [],
+      "checked_on": "2026-09-08",
+      "availability": "application_option_visible",
+      "notes": []
+    },
+    {
+      "id": "mercury-148801",
+      "title": "BIM Manager",
+      "company": "Mercury",
+      "country_codes": [
+        "CH"
+      ],
+      "cities": [
+        "Zurich"
+      ],
+      "regions": [
+        "Europe"
+      ],
+      "category": "bim_management",
+      "employment_type": null,
+      "work_arrangement": "not_stated",
+      "remote_scope": null,
+      "remote_from_brazil": null,
+      "salary": null,
+      "requirements": [
+        "5+ anos como BIM Manager ou em função BIM sênior.",
+        "Construção digital, fabricação fora do canteiro, automação e levantamento.",
+        "ISO 19650, liderança e software BIM avançado."
+      ],
+      "software": [],
+      "revit_requirement": "not_mentioned_in_reviewed_text",
+      "openbim_terms": [
+        "ISO 19650",
+        "COBie"
+      ],
+      "published_on": null,
+      "closes_on": null,
+      "source_type": "employer_careers",
+      "source_url": "https://www.mercuryeng.com/careers/explore-jobs/?job=148801",
+      "additional_sources": [],
+      "checked_on": "2026-09-08",
+      "availability": "application_option_visible",
+      "notes": [
+        "Responsabilidades incluem informação de ativos e entrega digital."
+      ]
+    },
+    {
+      "id": "mercury-148196",
+      "title": "BIM Modeller (Revit)",
+      "company": "Mercury",
+      "country_codes": [
+        "FI"
+      ],
+      "cities": [
+        "Helsinki"
+      ],
+      "regions": [
+        "Europe"
+      ],
+      "category": "bim_modeling",
+      "employment_type": null,
+      "work_arrangement": "not_stated",
+      "remote_scope": null,
+      "remote_from_brazil": null,
+      "salary": null,
+      "requirements": [
+        "3 anos como BIM Modeller/Detailer e Revit avançado.",
+        "Modelagem, detalhamento e coordenação; possíveis viagens."
+      ],
+      "software": [
+        "Revit"
+      ],
+      "revit_requirement": "required",
+      "openbim_terms": [],
+      "published_on": null,
+      "closes_on": null,
+      "source_type": "employer_careers",
+      "source_url": "https://www.mercuryeng.com/careers/explore-jobs/?job=148196",
+      "additional_sources": [],
+      "checked_on": "2026-09-08",
+      "availability": "application_option_visible",
+      "notes": []
+    },
+    {
+      "id": "aecom-744000131536329",
+      "title": "BIM Manager",
+      "company": "AECOM",
+      "country_codes": [
+        "ES"
+      ],
+      "cities": [
+        "Madrid"
+      ],
+      "regions": [
+        "Europe"
+      ],
+      "category": "information_management",
+      "employment_type": "full_time",
+      "work_arrangement": "hybrid",
+      "remote_scope": null,
+      "remote_from_brazil": null,
+      "salary": null,
+      "requirements": [
+        "7+ anos em BIM/entrega digital e experiência formal em gestão/coordenação.",
+        "Transportes com OpenRoads/OpenRail e administração de ProjectWise.",
+        "Inglês fluente; espanhol/polonês são diferenciais."
+      ],
+      "software": [
+        "ProjectWise",
+        "OpenRoads",
+        "OpenRail",
+        "MicroStation",
+        "iTwin",
+        "SYNCHRO",
+        "OpenBridge",
+        "Power BI"
+      ],
+      "revit_requirement": "not_mentioned_in_reviewed_text",
+      "openbim_terms": [],
+      "published_on": null,
+      "closes_on": null,
+      "source_type": "employer_careers",
+      "source_url": "https://jobs.smartrecruiters.com/AECOM2/744000131536329-bim-manager",
+      "additional_sources": [],
+      "checked_on": "2026-09-08",
+      "availability": "application_option_visible",
+      "notes": [
+        "Foco em ambiente Bentley, workspaces e governança da informação."
+      ]
+    },
+    {
+      "id": "aecom-744000131536151",
+      "title": "Senior BIM Coordinator",
+      "company": "AECOM",
+      "country_codes": [
+        "ES"
+      ],
+      "cities": [
+        "Madrid"
+      ],
+      "regions": [
+        "Europe"
+      ],
+      "category": "bim_coordination",
+      "employment_type": "full_time",
+      "work_arrangement": "hybrid",
+      "remote_scope": null,
+      "remote_from_brazil": null,
+      "salary": null,
+      "requirements": [
+        "5+ anos em BIM/entrega digital e coordenação multidisciplinar.",
+        "Projetos de energia, administração de CDE e inglês fluente.",
+        "Ferramentas de autoria/coordenação entre alternativas listadas."
+      ],
+      "software": [
+        "Plant 3D",
+        "Civil 3D",
+        "Revit",
+        "OpenPlant",
+        "ACC",
+        "ProjectWise",
+        "Navisworks",
+        "Revizto",
+        "Dynamo",
+        "Grasshopper"
+      ],
+      "revit_requirement": "listed_among_alternatives",
+      "openbim_terms": [
+        "ISO 19650"
+      ],
+      "published_on": null,
+      "closes_on": null,
+      "source_type": "employer_careers",
+      "source_url": "https://jobs.smartrecruiters.com/AECOM2/744000131536151-senior-bim-coordinator",
+      "additional_sources": [],
+      "checked_on": "2026-09-08",
+      "availability": "application_option_visible",
+      "notes": []
+    },
+    {
+      "id": "aecom-744000141189189",
+      "title": "Railway Systems BIM Modeller",
+      "company": "AECOM",
+      "country_codes": [
+        "ES"
+      ],
+      "cities": [
+        "Madrid"
+      ],
+      "regions": [
+        "Europe"
+      ],
+      "category": "bim_modeling",
+      "employment_type": "full_time",
+      "work_arrangement": "hybrid",
+      "remote_scope": null,
+      "remote_from_brazil": null,
+      "salary": null,
+      "requirements": [
+        "2–5 anos de experiência; pelo menos 2 com ferramentas Bentley.",
+        "MicroStation/OpenBuildings e ProjectWise; conhecimento de Revit/AutoCAD.",
+        "Inglês B2/C1; automação é diferencial."
+      ],
+      "software": [
+        "MicroStation",
+        "OpenBuildings",
+        "ProjectWise",
+        "Revit",
+        "AutoCAD",
+        "Navisworks",
+        "Dynamo"
+      ],
+      "revit_requirement": "mentioned_in_requirements",
+      "openbim_terms": [],
+      "published_on": null,
+      "closes_on": null,
+      "source_type": "employer_careers",
+      "source_url": "https://jobs.smartrecruiters.com/AECOM2/744000141189189-railway-systems-bim-modeller",
+      "additional_sources": [],
+      "checked_on": "2026-09-08",
+      "availability": "application_option_visible",
+      "notes": [
+        "Foco Bentley. Revit é preferencial no descritivo e conhecimento solicitado nas qualificações."
+      ]
+    },
+    {
+      "id": "des-bim-coordinator",
+      "title": "BIM Coordinator / BIM Quality Assurance (f/m/d)",
+      "company": "DES GmbH",
+      "country_codes": [
+        "DE"
+      ],
+      "cities": [
+        "Hamburg",
+        "Berlin",
+        "Munich",
+        "Rostock"
+      ],
+      "regions": [
+        "Europe"
+      ],
+      "category": "bim_coordination",
+      "employment_type": "full_or_part_time",
+      "work_arrangement": "remote_option",
+      "remote_scope": "Remoto, home office, escritórios e exterior; países elegíveis e vínculo não detalhados.",
+      "remote_from_brazil": null,
+      "salary": null,
+      "requirements": [
+        "3+ anos em BIM e Revit.",
+        "Coordenação/qualidade de modelos de instalações e intercâmbio de dados."
+      ],
+      "software": [
+        "Revit"
+      ],
+      "revit_requirement": "required",
+      "openbim_terms": [],
+      "published_on": null,
+      "closes_on": null,
+      "source_type": "employer_careers",
+      "source_url": "https://des.de/en/jobs/bim-coordinator",
+      "additional_sources": [],
+      "checked_on": "2026-09-08",
+      "availability": "application_option_visible",
+      "notes": [
+        "Candidatura por e-mail indicada. Não há confirmação de contratação no Brasil."
+      ]
+    },
+    {
+      "id": "atkinsrealis-r159740",
+      "title": "BIM Coordinator / Lead",
+      "company": "AtkinsRéalis",
+      "country_codes": [
+        "IN"
+      ],
+      "cities": [
+        "Chennai"
+      ],
+      "regions": [
+        "Asia"
+      ],
+      "category": "bim_coordination",
+      "employment_type": null,
+      "work_arrangement": "not_stated",
+      "remote_scope": null,
+      "remote_from_brazil": null,
+      "salary": null,
+      "requirements": [
+        "10+ anos em projeto CAD/BIM; diploma/graduação em engenharia de potência.",
+        "Ferramentas/processos BIM para subestações.",
+        "PAS 1192/ISO 19650."
+      ],
+      "software": [],
+      "revit_requirement": "not_mentioned_in_reviewed_text",
+      "openbim_terms": [
+        "ISO 19650"
+      ],
+      "published_on": null,
+      "closes_on": null,
+      "source_type": "employer_careers",
+      "source_url": "https://careers.atkinsrealis.com/en/jobs/bim-coordinator-lead-r-159740",
+      "additional_sources": [],
+      "checked_on": "2026-09-08",
+      "availability": "application_option_visible",
+      "notes": [
+        "Política híbrida geral citada; regime individual não inequívoco."
+      ]
+    },
+    {
+      "id": "assemble-681578",
+      "title": "BIM Technician Building Services",
+      "company": "Assemble (recrutadora; consultoria não identificada)",
+      "country_codes": [
+        "NZ"
+      ],
+      "cities": [
+        "Christchurch"
+      ],
+      "regions": [
+        "Oceania"
+      ],
+      "category": "bim_modeling",
+      "employment_type": null,
+      "work_arrangement": "not_stated",
+      "remote_scope": null,
+      "remote_from_brazil": null,
+      "salary": null,
+      "requirements": [
+        "Experiência como BIM/Revit/CAD Technician e domínio de Revit.",
+        "Coordenação e documentação de construção.",
+        "Experiência em instalações prediais é valorizada."
+      ],
+      "software": [
+        "Revit"
+      ],
+      "revit_requirement": "required",
+      "openbim_terms": [],
+      "published_on": null,
+      "closes_on": null,
+      "source_type": "recruiter",
+      "source_url": "https://www.assemblerecruit.com/job/bim-technician-building-services-681578",
+      "additional_sources": [],
+      "checked_on": "2026-09-08",
+      "availability": "application_option_visible",
+      "notes": []
+    },
+    {
+      "id": "delporte-3891244",
+      "title": "Coordinador BIM",
+      "company": "Delporte Ingenieros",
+      "country_codes": [
+        "CL"
+      ],
+      "cities": [
+        "Providencia, Santiago"
+      ],
+      "regions": [
+        "South America"
+      ],
+      "category": "bim_coordination",
+      "employment_type": "full_time",
+      "work_arrangement": "on_site",
+      "remote_scope": null,
+      "remote_from_brazil": null,
+      "salary": {
+        "min": 1000000,
+        "max": 1000000,
+        "currency": null,
+        "period": null,
+        "raw": "1000000"
+      },
+      "requirements": [
+        "2+ anos em coordenação BIM multidisciplinar.",
+        "Revit, Navisworks e AutoCAD.",
+        "Presencial em Providencia, Santiago."
+      ],
+      "software": [
+        "Revit",
+        "Navisworks",
+        "AutoCAD"
+      ],
+      "revit_requirement": "required",
+      "openbim_terms": [],
+      "published_on": "2026-08-31",
+      "closes_on": null,
+      "source_type": "job_board",
+      "source_url": "https://www.chiletrabajos.cl/trabajo/coordinador-bim-3891244",
+      "additional_sources": [],
+      "checked_on": "2026-09-08",
+      "availability": "application_option_visible",
+      "notes": [
+        "O campo salarial não explicita moeda nem periodicidade."
+      ]
+    },
+    {
+      "id": "bureauveritas-4461675352",
+      "title": "Lead BIM Manager #SGINFRA",
+      "company": "Bureau Veritas",
+      "country_codes": [
+        "SG"
+      ],
+      "cities": [
+        "Singapore"
+      ],
+      "regions": [
+        "Asia"
+      ],
+      "category": "bim_management",
+      "employment_type": null,
+      "work_arrangement": "not_stated",
+      "remote_scope": null,
+      "remote_from_brazil": null,
+      "salary": null,
+      "requirements": [
+        "Graduação em arquitetura/engenharia ou equivalente.",
+        "10+ anos BIM, incluindo 5 liderando equipe.",
+        "Domínio de Revit, Navisworks, BIM360 e CDE."
+      ],
+      "software": [
+        "Revit",
+        "Navisworks",
+        "BIM360"
+      ],
+      "revit_requirement": "required",
+      "openbim_terms": [],
+      "published_on": null,
+      "closes_on": null,
+      "source_type": "employer_posted_linkedin",
+      "source_url": "https://sg.linkedin.com/jobs/view/lead-bim-manager-%23sginfra-at-bureau-veritas-4461675352",
+      "additional_sources": [],
+      "checked_on": "2026-09-08",
+      "availability": "application_option_visible",
+      "notes": []
+    },
+    {
+      "id": "utopia-4450810358",
+      "title": "BIM Coordinator - Remote",
+      "company": "Utopia Design",
+      "country_codes": [
+        "GB"
+      ],
+      "cities": [],
+      "regions": [
+        "Europe"
+      ],
+      "category": "bim_coordination",
+      "employment_type": null,
+      "work_arrangement": "remote",
+      "remote_scope": "Colaboração GMT-1 a GMT+3; contratação no Brasil não confirmada.",
+      "remote_from_brazil": null,
+      "salary": null,
+      "requirements": [
+        "5–10 anos em projeto arquitetônico, hotelaria/residencial de baixa altura.",
+        "Revit, AutoCAD e Navisworks avançados; ISO 19650.",
+        "Inglês profissional."
+      ],
+      "software": [
+        "Revit",
+        "AutoCAD",
+        "Navisworks"
+      ],
+      "revit_requirement": "required",
+      "openbim_terms": [
+        "ISO 19650"
+      ],
+      "published_on": null,
+      "closes_on": null,
+      "source_type": "employer_posted_linkedin",
+      "source_url": "https://uk.linkedin.com/jobs/view/bim-coordinator-remote-at-utopia-design-4450810358",
+      "additional_sources": [
+        "https://archgee.com/jobs/bim-coordinator-remote-utopia-south-africa",
+        "https://apply.workable.com/utopia-life-worth-living/j/F446836249/apply/"
+      ],
+      "checked_on": "2026-09-08",
+      "availability": "application_option_visible",
+      "notes": [
+        "Anúncio principal associado ao Reino Unido. Também localizado para África do Sul; índice Workable lista PT, HR, GR, ES, RS e ZA, não usados para inflar contagem."
+      ]
+    }
+  ],
+  "pending_verification": [
+    {
+      "id": "arcadis-563671532259244",
+      "title": "BIM Team Manager - USA (Hybrid - Anywhere in the USA)",
+      "company": "Arcadis",
+      "country_codes": [
+        "US"
+      ],
+      "source_url": "https://jobs.arcadis.com/careers/job/563671532259244",
+      "known_details": [
+        "Título indica híbrido nos EUA; índice menciona 15+ anos em BIM e 5+ em liderança."
+      ],
+      "reason": "A página aberta retornou configuração, sem descrição/candidatura legíveis.",
+      "availability": "not_verified",
+      "source_access": "search_result_only",
+      "checked_on": "2026-09-08"
+    },
+    {
+      "id": "wood-30504",
+      "title": "BIM Specialist - Electrical & Instrumentation",
+      "company": "Wood",
+      "country_codes": [
+        "IT"
+      ],
+      "source_url": "https://ehif.fa.em2.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1/job/30504",
+      "known_details": [
+        "Índice exige elegibilidade para trabalhar na Itália."
+      ],
+      "reason": "Página oficial sem texto extraível.",
+      "availability": "not_verified",
+      "source_access": "search_result_only",
+      "checked_on": "2026-09-08"
+    },
+    {
+      "id": "ips-10766",
+      "title": "BIM Coordinator",
+      "company": "IPS – Integrated Project Services",
+      "country_codes": [
+        "IN"
+      ],
+      "source_url": "https://careers.ipsdb.com/jobs/10766?lang=en-us",
+      "known_details": [
+        "Vikhroli (W), Mumbai; projetos para EUA/EMEA."
+      ],
+      "reason": "Erro ao abrir a página; detalhes disponíveis apenas no índice.",
+      "availability": "not_verified",
+      "source_access": "search_result_only",
+      "checked_on": "2026-09-08"
+    }
+  ],
+  "excluded": [
+    {
+      "id": "excluded-1",
+      "company": "Arup",
+      "title": "BIM Manager",
+      "country_codes": [
+        "SG"
+      ],
+      "source_url": "https://jobs.arup.com/jobs/bim-manager-28627",
+      "status": "employer_closed",
+      "reason": "Página informa encerramento.",
+      "checked_on": "2026-09-08"
+    },
+    {
+      "id": "excluded-2",
+      "company": "Arup",
+      "title": "BIM Manager / Senior BIM Coordinator",
+      "country_codes": [
+        "NL"
+      ],
+      "source_url": "https://jobs.arup.com/jobs/bim-manager-senior-bim-coordinator-28000",
+      "status": "employer_closed",
+      "reason": "Página informa encerramento.",
+      "checked_on": "2026-09-08"
+    },
+    {
+      "id": "excluded-3",
+      "company": "Arup",
+      "title": "BIM Specialist",
+      "country_codes": [
+        "IT"
+      ],
+      "source_url": "https://jobs.arup.com/jobs/bim-specialist-29074",
+      "status": "employer_closed",
+      "reason": "Página informa encerramento.",
+      "checked_on": "2026-09-08"
+    },
+    {
+      "id": "excluded-4",
+      "company": "Bechtel",
+      "title": "BIM Coordinator",
+      "country_codes": [
+        "SA"
+      ],
+      "source_url": "https://jobs.bechtel.com/us/en/job/BCFBCKUS294526EXTERNALENUS/BIM-Coordinator",
+      "status": "employer_closed",
+      "reason": "Página informa vaga preenchida.",
+      "checked_on": "2026-09-08"
+    },
+    {
+      "id": "excluded-5",
+      "company": "Egis",
+      "title": "BIM Coordinator – Major Infrastructure Program",
+      "country_codes": [
+        "CA"
+      ],
+      "source_url": "https://jobs.egis-group.com/job/bim-coordinator-major-infrastructure-program-in-toronto-jid-3863",
+      "status": "employer_expired",
+      "reason": "Página oficial informa expiração.",
+      "checked_on": "2026-09-08"
+    },
+    {
+      "id": "excluded-6",
+      "company": "Egis",
+      "title": "BIM Coordinator - Electrical",
+      "country_codes": [
+        "IN"
+      ],
+      "source_url": "https://jobs.egis-group.com/job/bim-coordinator-electrical-in-bengaluru-jid-3744",
+      "status": "employer_expired",
+      "reason": "Página oficial informa expiração.",
+      "checked_on": "2026-09-08"
+    },
+    {
+      "id": "excluded-7",
+      "company": "BIMECO",
+      "title": "BIM Manager",
+      "country_codes": [
+        "SG"
+      ],
+      "source_url": "https://www.bimeco.io/career/bim-manager-2025-01/",
+      "status": "deadline_passed",
+      "reason": "Prazo 2025-04-30; botão ainda visível, sem confirmação de reabertura.",
+      "checked_on": "2026-09-08"
+    },
+    {
+      "id": "excluded-8",
+      "company": "BIMECO",
+      "title": "BIM Backend Developer",
+      "country_codes": [
+        "SG"
+      ],
+      "source_url": "https://www.bimeco.io/career/backend-developer-2025-01/",
+      "status": "deadline_passed",
+      "reason": "Prazo 2025-04-30; botão ainda visível, sem confirmação de reabertura.",
+      "checked_on": "2026-09-08"
+    },
+    {
+      "id": "excluded-9",
+      "company": "BIMECO",
+      "title": "BIM Frontend Developer",
+      "country_codes": [
+        "SG"
+      ],
+      "source_url": "https://www.bimeco.io/career/frontend-developer-2025-01/",
+      "status": "deadline_passed",
+      "reason": "Prazo 2025-04-30; botão ainda visível, sem confirmação de reabertura.",
+      "checked_on": "2026-09-08"
+    }
+  ],
+  "storage_context": {
+    "repository": "EliasMPJunior/my-desktop",
+    "branch": "research/bim-jobs-2026-09-08",
+    "path": "pessoal/08_Pessoas/04_Recrutamento_e_Selecao/Pesquisas_de_Vagas/2026-09-08_vagas_bim_mundo.json",
+    "purpose": "Prospecção de oportunidades profissionais.",
+    "classification_confidence": "high",
+    "classification_basis": "Área pessoal de recrutamento existente; AGENTS.md e manual de organização consultados."
+  }
+}
